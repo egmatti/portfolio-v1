@@ -13,13 +13,50 @@
   width: 60%;
 }
 
-#coffee-app .left-div {
+#coffee-app .wireframe-image {
+  align-items: center;
   background: #f2d4b4;
   clear: both;
-  height: 600px;
+  display: flex;
+  height: 700px;
+  justify-content: center;
+
+  div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 5%;
+
+    img {
+      object-fit: contain;
+      width: 23%;
+      box-sizing: border-box;
+      margin: 5%;
+    }
+  }
 }
 
-#coffee-app .right-div {
+#coffee-app .wireframe-description {
   background: #e6a96a;
-  height: 600px;
+  height: 700px;
+}
+
+#coffee-app .mockups {
+  background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85)
+    ),
+    /* bottom, image */
+    url("../images/projects/coffee-app/palm-trees.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: none;
+  height: 700px;
+}
+
+#coffee-app .prototypes {
+  height: 700px;
 }

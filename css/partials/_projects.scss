@@ -38,14 +38,83 @@
   width: 40%;
 }
 
-.projects .left-div {
+.projects .wireframe-image {
   float: left;
   height: auto;
   width: 50%;
 }
 
-.projects .right-div {
+.projects .wireframe-description {
   float: right;
   height: auto;
   width: 50%;
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: white;
+    line-height: 2rem;
+    margin: auto;
+    padding-bottom: 25px;
+    width: 60%;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.projects .mockups {
+  clear: both;
+  width: 100%;
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 5%;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: white;
+    line-height: 2rem;
+    padding-bottom: 25px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.projects .prototypes {
+  clear: both;
+  width: 100%;
+
+  h2 {
+    color: black;
+    font-size: 2rem;
+    margin-left: 5%;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: black;
+    line-height: 2rem;
+    padding-bottom: 25px;
+
+    span {
+      font-weight: bold;
+    }
+  }
 }

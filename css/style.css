@@ -47,15 +47,64 @@
   margin-right: 5%;
   width: 40%; }
 
-.projects .left-div {
+.projects .wireframe-image {
   float: left;
   height: auto;
   width: 50%; }
 
-.projects .right-div {
+.projects .wireframe-description {
   float: right;
   height: auto;
   width: 50%; }
+  .projects .wireframe-description h2 {
+    color: white;
+    font-size: 2rem;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase; }
+  .projects .wireframe-description p {
+    color: white;
+    line-height: 2rem;
+    margin: auto;
+    padding-bottom: 25px;
+    width: 60%; }
+    .projects .wireframe-description p span {
+      font-weight: bold; }
+
+.projects .mockups {
+  clear: both;
+  width: 100%; }
+  .projects .mockups h2 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 5%;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-transform: uppercase; }
+  .projects .mockups p {
+    color: white;
+    line-height: 2rem;
+    padding-bottom: 25px; }
+    .projects .mockups p span {
+      font-weight: bold; }
+
+.projects .prototypes {
+  clear: both;
+  width: 100%; }
+  .projects .prototypes h2 {
+    color: black;
+    font-size: 2rem;
+    margin-left: 5%;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-transform: uppercase; }
+  .projects .prototypes p {
+    color: black;
+    line-height: 2rem;
+    padding-bottom: 25px; }
+    .projects .prototypes p span {
+      font-weight: bold; }
 
 #coffee-app #coffee-app-overview-image {
   height: auto;
@@ -70,14 +119,38 @@
   left: 10%;
   width: 60%; }
 
-#coffee-app .left-div {
+#coffee-app .wireframe-image {
+  align-items: center;
   background: #f2d4b4;
   clear: both;
-  height: 600px; }
+  display: flex;
+  height: 700px;
+  justify-content: center; }
+  #coffee-app .wireframe-image div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 5%; }
+    #coffee-app .wireframe-image div img {
+      object-fit: contain;
+      width: 23%;
+      box-sizing: border-box;
+      margin: 5%; }
 
-#coffee-app .right-div {
+#coffee-app .wireframe-description {
   background: #e6a96a;
-  height: 600px; }
+  height: 700px; }
+
+#coffee-app .mockups {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/projects/coffee-app/palm-trees.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: none;
+  height: 700px; }
+
+#coffee-app .prototypes {
+  height: 700px; }
 
 * {
   font-family: "Avenir Next", sans-serif;
@@ -94,19 +167,19 @@ p {
   font-size: 1.15rem;
   margin: 0; }
 
-header {
+header, footer {
   height: 100px;
   width: 100%; }
-  header ul {
+  header ul, footer ul {
     float: right;
     margin-right: 5%;
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
-    header ul li {
+    header ul li, footer ul li {
       display: inline-block;
       list-style-type: none; }
-      header ul li a {
+      header ul li a, footer ul li a {
         color: black;
         font-size: 2rem;
         font-weight: 700;
@@ -114,7 +187,7 @@ header {
         padding: 0 25px;
         text-decoration: none;
         text-transform: uppercase; }
-        header ul li a span {
+        header ul li a span, footer ul li a span {
           font-family: "Milkshake", "Avenir Next", sans-serif;
           font-size: 1.25rem;
           font-weight: normal;
@@ -133,5 +206,17 @@ header {
   top: 50%;
   transform: translateY(-50%);
   width: auto; }
+
+.divider-white {
+  background: white;
+  clear: both;
+  height: 50px;
+  width: 100%; }
+
+.divider-black {
+  background: black;
+  clear: both;
+  height: 50px;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

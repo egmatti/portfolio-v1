@@ -19,10 +19,18 @@
 // document.addEventListener("DOMContentLoaded", function(e) {
 //     InitParalax();
 
+$(".mockups-carousel-for").slick({
+ arrows: false,
+ asNavFor: ".mockups-carousel-nav",
+ fade: true,
+ slidesToScroll: 1,
+ slidesToShow: 1
+});
 
-$(".mockups-carousel").slick({
+$(".mockups-carousel-nav").slick({
   arrows: true,
+  asNavFor: ".mockups-carousel-for",
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
+  slidesToShow: 3
 });

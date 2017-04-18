@@ -61,10 +61,44 @@
   height: 700px;
 }
 
+#coffee-app .mockups-carousel-for {
+  div {
+    margin: auto;
+    width: 80%;
 
-#coffee-app .mockups-carousel {
+    img {
+      float: right;
+      object-fit: contain;
+      width: 200px;
+    }
+  }
+}
+
+#coffee-app .mockups-carousel-text {
+  float: left;
+
+  h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: white;
+    line-height: 2rem;
+    padding-bottom: 25px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+#coffee-app .mockups-carousel-nav {
   margin: auto;
-  width: 60%;
+  width: 40%;
 
     img {
       left: 25%;

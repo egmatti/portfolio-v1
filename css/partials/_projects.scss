@@ -1,0 +1,51 @@
+.projects .project-name {
+  align-items: center;
+  background: black;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 100%;
+
+  h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+.projects .description {
+  float: left;
+  margin-left: 5%;
+  width: 50%;
+
+  h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    line-height: 2rem;
+    padding-bottom: 25px;
+  }
+}
+
+.projects .overview-image {
+  float: right;
+  margin-right: 5%;
+  width: 40%;
+}
+
+.projects .left-div {
+  float: left;
+  height: auto;
+  width: 50%;
+}
+
+.projects .right-div {
+  float: right;
+  height: auto;
+  width: 50%;
+}

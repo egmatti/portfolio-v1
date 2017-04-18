@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url("fonts/avenir_next.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/avenir_next.eot?#iefix") format("embedded-opentype"), url("fonts/avenir_next.woff2") format("woff2"), url("fonts/avenir_next.woff") format("woff"), url("fonts/avenir_next.ttf") format("truetype"), url("fonts/avenir_next.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: "Emily Mattison";
+  src: url("fonts/Emily_Mattison.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Emily_Mattison.eot?#iefix") format("embedded-opentype"), url("fonts/Emily_Mattison.woff2") format("woff2"), url("fonts/Emily_Mattison.woff") format("woff"), url("fonts/Emily_Mattison.ttf") format("truetype"), url("fonts/Emily_Mattison.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: "Milkshake";
+  src: url("fonts/Milkshake.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Milkshake.eot?#iefix") format("embedded-opentype"), url("fonts/Milkshake.woff2") format("woff2"), url("fonts/Milkshake.woff") format("woff"), url("fonts/Milkshake.ttf") format("truetype"), url("fonts/Milkshake.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+.projects .project-name {
+  align-items: center;
+  background: black;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 100%; }
+  .projects .project-name h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase; }
+
+.projects .description {
+  float: left;
+  margin-left: 5%;
+  width: 50%; }
+  .projects .description h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-transform: uppercase; }
+  .projects .description p {
+    line-height: 2rem;
+    padding-bottom: 25px; }
+
+.projects .overview-image {
+  float: right;
+  margin-right: 5%;
+  width: 40%; }
+
+.projects .left-div {
+  float: left;
+  height: auto;
+  width: 50%; }
+
+.projects .right-div {
+  float: right;
+  height: auto;
+  width: 50%; }
+
+#coffee-app #coffee-app-overview-image {
+  height: auto;
+  margin-top: 50px;
+  position: relative;
+  width: 100%; }
+
+#coffee-app #milk-and-sugar {
+  height: auto;
+  margin: 50px;
+  position: relative;
+  left: 10%;
+  width: 60%; }
+
+#coffee-app .left-div {
+  background: #f2d4b4;
+  clear: both;
+  height: 600px; }
+
+#coffee-app .right-div {
+  background: #e6a96a;
+  height: 600px; }
+
+* {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.15rem; }
+
+p {
+  font-size: 1.15rem;
+  margin: 0; }
+
+header {
+  height: 100px;
+  width: 100%; }
+  header ul {
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    header ul li {
+      display: inline-block;
+      list-style-type: none; }
+      header ul li a {
+        color: black;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        padding: 0 25px;
+        text-decoration: none;
+        text-transform: uppercase; }
+        header ul li a span {
+          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-size: 1.25rem;
+          font-weight: normal;
+          letter-spacing: 0rem;
+          text-transform: lowercase;
+          vertical-align: top; }
+
+.the-latest {
+  padding-left: 13px; }
+
+.logo {
+  float: left;
+  height: 70px;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto; }
+
+/*# sourceMappingURL=style.css.map */

@@ -18,3 +18,11 @@
 //
 // document.addEventListener("DOMContentLoaded", function(e) {
 //     InitParalax();
+
+
+$(".mockups-carousel").slick({
+  arrows: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+});

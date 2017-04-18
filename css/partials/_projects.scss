@@ -1,3 +1,5 @@
+@import "partials/coffeeapp";
+
 .projects .project-name {
   align-items: center;
   background: black;
@@ -63,7 +65,7 @@
     line-height: 2rem;
     margin: auto;
     padding-bottom: 25px;
-    width: 60%;
+    width: 50%;
 
     span {
       font-weight: bold;

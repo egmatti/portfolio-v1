@@ -16,6 +16,61 @@
   /* IE9 Compat Modes */
   src: url("fonts/Milkshake.eot?#iefix") format("embedded-opentype"), url("fonts/Milkshake.woff2") format("woff2"), url("fonts/Milkshake.woff") format("woff"), url("fonts/Milkshake.ttf") format("truetype"), url("fonts/Milkshake.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
+#coffee-app #coffee-app-overview-image {
+  height: auto;
+  margin-top: 50px;
+  position: relative;
+  width: 100%; }
+
+#coffee-app #milk-and-sugar {
+  height: auto;
+  margin: 50px;
+  position: relative;
+  left: 10%;
+  width: 60%; }
+
+#coffee-app .wireframe-image {
+  align-items: center;
+  background: #f2d4b4;
+  clear: both;
+  display: flex;
+  height: 700px;
+  justify-content: center; }
+  #coffee-app .wireframe-image div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 5%; }
+    #coffee-app .wireframe-image div img {
+      object-fit: contain;
+      width: 23%;
+      box-sizing: border-box;
+      margin: 5%; }
+
+#coffee-app .wireframe-description {
+  background: #e6a96a;
+  height: 700px; }
+
+#coffee-app .mockups {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/projects/coffee-app/palm-trees.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: none;
+  height: 700px; }
+
+#coffee-app .prototypes {
+  height: 700px; }
+
+#coffee-app .mockups-carousel {
+  margin: auto;
+  width: 60%; }
+  #coffee-app .mockups-carousel img {
+    left: 25%;
+    object-fit: contain;
+    position: relative;
+    width: 60%; }
+
 .projects .project-name {
   align-items: center;
   background: black;
@@ -68,7 +123,7 @@
     line-height: 2rem;
     margin: auto;
     padding-bottom: 25px;
-    width: 60%; }
+    width: 50%; }
     .projects .wireframe-description p span {
       font-weight: bold; }
 
@@ -105,52 +160,6 @@
     padding-bottom: 25px; }
     .projects .prototypes p span {
       font-weight: bold; }
-
-#coffee-app #coffee-app-overview-image {
-  height: auto;
-  margin-top: 50px;
-  position: relative;
-  width: 100%; }
-
-#coffee-app #milk-and-sugar {
-  height: auto;
-  margin: 50px;
-  position: relative;
-  left: 10%;
-  width: 60%; }
-
-#coffee-app .wireframe-image {
-  align-items: center;
-  background: #f2d4b4;
-  clear: both;
-  display: flex;
-  height: 700px;
-  justify-content: center; }
-  #coffee-app .wireframe-image div {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 5%; }
-    #coffee-app .wireframe-image div img {
-      object-fit: contain;
-      width: 23%;
-      box-sizing: border-box;
-      margin: 5%; }
-
-#coffee-app .wireframe-description {
-  background: #e6a96a;
-  height: 700px; }
-
-#coffee-app .mockups {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/projects/coffee-app/palm-trees.png");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: none;
-  height: 700px; }
-
-#coffee-app .prototypes {
-  height: 700px; }
 
 * {
   font-family: "Avenir Next", sans-serif;

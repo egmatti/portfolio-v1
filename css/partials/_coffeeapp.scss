@@ -60,3 +60,16 @@
 #coffee-app .prototypes {
   height: 700px;
 }
+
+
+#coffee-app .mockups-carousel {
+  margin: auto;
+  width: 60%;
+
+    img {
+      left: 25%;
+      object-fit: contain;
+      position: relative;
+      width: 60%;
+    }
+  }

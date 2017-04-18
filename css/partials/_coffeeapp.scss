@@ -69,18 +69,20 @@
     img {
       float: right;
       object-fit: contain;
-      width: 200px;
+      width: 225px;
     }
   }
 }
 
 #coffee-app .mockups-carousel-text {
   float: left;
+  width: 20%;
 
   h3 {
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
+    padding-top: 25px;
     padding-bottom: 25px;
     text-transform: uppercase;
   }
@@ -89,6 +91,7 @@
     color: white;
     line-height: 2rem;
     padding-bottom: 25px;
+    width: 80%;
 
     span {
       font-weight: bold;
@@ -98,6 +101,8 @@
 
 #coffee-app .mockups-carousel-nav {
   margin: auto;
+  position: relative;
+  top: -4%;
   width: 40%;
 
     img {

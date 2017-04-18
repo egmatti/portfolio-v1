@@ -108,13 +108,15 @@
   width: 50%; }
 
 .projects .wireframe-description {
+  align-items: center;
+  display: flex;
   float: right;
   height: auto;
+  justify-content: center;
   width: 50%; }
   .projects .wireframe-description h2 {
     color: white;
     font-size: 2rem;
-    padding-top: 75px;
     padding-bottom: 25px;
     text-align: center;
     text-transform: uppercase; }
@@ -126,6 +128,9 @@
     width: 50%; }
     .projects .wireframe-description p span {
       font-weight: bold; }
+
+.projects .last-paragraph {
+  padding-bottom: 0; }
 
 .projects .mockups {
   clear: both;
@@ -160,6 +165,11 @@
     padding-bottom: 25px; }
     .projects .prototypes p span {
       font-weight: bold; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: "Avenir Next";
+  font-size: 40px;
+  font-weight: 500; }
 
 * {
   font-family: "Avenir Next", sans-serif;

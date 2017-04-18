@@ -47,31 +47,38 @@
 }
 
 .projects .wireframe-description {
+  align-items: center;
+  display: flex;
   float: right;
   height: auto;
+  justify-content: center;
   width: 50%;
 
-  h2 {
-    color: white;
-    font-size: 2rem;
-    padding-top: 75px;
-    padding-bottom: 25px;
-    text-align: center;
-    text-transform: uppercase;
-  }
+    h2 {
+      color: white;
+      font-size: 2rem;
+      // padding-top: 75px;
+      padding-bottom: 25px;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
-  p {
-    color: white;
-    line-height: 2rem;
-    margin: auto;
-    padding-bottom: 25px;
-    width: 50%;
+    p {
+      color: white;
+      line-height: 2rem;
+      margin: auto;
+      padding-bottom: 25px;
+      width: 50%;
 
-    span {
-      font-weight: bold;
+      span {
+        font-weight: bold;
+      }
     }
   }
-}
+
+  .projects .last-paragraph {
+    padding-bottom: 0;
+  }
 
 .projects .mockups {
   clear: both;
@@ -120,3 +127,9 @@
     }
   }
 }
+
+.slick-prev:before, .slick-next:before {
+    font-family: "Avenir Next";
+    font-size: 40px;
+    font-weight: 500;
+  }

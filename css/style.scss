@@ -85,3 +85,36 @@ header, footer {
   height: 50px;
   width: 100%;
 }
+
+
+footer {
+  div {
+    float: left;
+    margin-left: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    span {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  ul li a {
+    font-size: 1.5rem;
+    padding: 0 25px;
+
+    span {
+      font-size: 0.9375rem;
+    }
+  }
+}
+
+footer .logo {
+  float: none;
+  height: 52.5px;
+  margin: 0;
+  top: 0%;
+  transform: none;
+}

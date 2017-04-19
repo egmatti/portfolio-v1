@@ -74,13 +74,13 @@
   }
 }
 
-#coffee-app .mockups-carousel-text {
+#coffee-app .mockups-carousel-description {
   float: left;
   width: 20%;
 
   h3 {
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.5rem;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -112,3 +112,10 @@
       width: 60%;
     }
   }
+
+
+#coffee-app #coffee-app-prototypes-image {
+  height: auto;
+  // position: relative;
+  width: 85%;
+}

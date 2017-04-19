@@ -97,24 +97,39 @@
 .projects .prototypes {
   clear: both;
   width: 100%; }
-  .projects .prototypes h2 {
+
+.projects .prototypes-description {
+  float: right;
+  margin-right: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%; }
+  .projects .prototypes-description h2 {
     color: black;
     font-size: 2rem;
-    margin-left: 5%;
     padding-top: 75px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  .projects .prototypes p {
+  .projects .prototypes-description p {
     color: black;
     line-height: 2rem;
     padding-bottom: 25px; }
-    .projects .prototypes p span {
+    .projects .prototypes-description p span {
       font-weight: bold; }
 
 .slick-prev:before, .slick-next:before {
   font-family: "Avenir Next";
   font-size: 40px;
   font-weight: 500; }
+
+.projects .prototypes-image {
+  align-items: center;
+  float: left;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 40%; }
 
 #coffee-app #coffee-app-overview-image {
   height: auto;
@@ -170,22 +185,22 @@
     object-fit: contain;
     width: 225px; }
 
-#coffee-app .mockups-carousel-text {
+#coffee-app .mockups-carousel-description {
   float: left;
   width: 20%; }
-  #coffee-app .mockups-carousel-text h3 {
+  #coffee-app .mockups-carousel-description h3 {
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.5rem;
     padding-top: 25px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  #coffee-app .mockups-carousel-text p {
+  #coffee-app .mockups-carousel-description p {
     color: white;
     line-height: 2rem;
     padding-bottom: 25px;
     width: 80%; }
-    #coffee-app .mockups-carousel-text p span {
+    #coffee-app .mockups-carousel-description p span {
       font-weight: bold; }
 
 #coffee-app .mockups-carousel-nav {
@@ -198,6 +213,10 @@
     object-fit: contain;
     position: relative;
     width: 60%; }
+
+#coffee-app #coffee-app-prototypes-image {
+  height: auto;
+  width: 85%; }
 
 * {
   font-family: "Avenir Next", sans-serif;
@@ -265,5 +284,27 @@ header, footer {
   clear: both;
   height: 50px;
   width: 100%; }
+
+footer div {
+  float: left;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+  footer div span {
+    display: block;
+    text-align: left; }
+footer ul li a {
+  font-size: 1.5rem;
+  padding: 0 25px; }
+  footer ul li a span {
+    font-size: 0.9375rem; }
+
+footer .logo {
+  float: none;
+  height: 52.5px;
+  margin: 0;
+  top: 0%;
+  transform: none; }
 
 /*# sourceMappingURL=style.css.map */

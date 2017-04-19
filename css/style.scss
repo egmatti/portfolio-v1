@@ -1,7 +1,8 @@
 @import "partials/variables";
-@import "partials/media-queries";
+@import "partials/info";
+@import "partials/the-latest";
 @import "partials/projects";
-@import "partials/coffeeapp";
+@import "partials/coffee-app";
 
 * {
   font-family: "Avenir Next", sans-serif;
@@ -72,6 +73,53 @@ header, footer {
   width: auto;
 }
 
+#hero {
+  background: white;
+  height: 800px;
+  width: 100%;
+
+  div {
+    position: fixed;
+    top: 50%;
+    transform: translateY(50%);
+    width: 100%;
+
+    h1, h2 {
+      color: black;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      padding-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 2rem;
+      text-transform: lowercase;
+    }
+  }
+}
+
+#downward-dog {
+  height: auto;
+  left: -10%;
+  position: relative;
+  top: 6%;
+  transform: rotate(-10deg);
+  width: 650px;
+}
+
+#tennis-ball {
+  height: auto;
+  right: 2%;
+  position: absolute;
+  top: 64%;
+  transform: rotate(10deg);
+  width: 200px;
+}
+
 .divider-white {
   background: white;
   clear: both;
@@ -118,3 +166,5 @@ footer .logo {
   top: 0%;
   transform: none;
 }
+
+@import "partials/media-queries";

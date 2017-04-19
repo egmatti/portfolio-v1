@@ -273,6 +273,42 @@ header, footer {
   transform: translateY(-50%);
   width: auto; }
 
+#hero {
+  background: white;
+  height: 800px;
+  width: 100%; }
+  #hero div {
+    position: fixed;
+    top: 50%;
+    transform: translateY(50%);
+    width: 100%; }
+    #hero div h1, #hero div h2 {
+      color: black;
+      text-align: center; }
+    #hero div h1 {
+      font-size: 4rem;
+      padding-bottom: 25px;
+      text-transform: uppercase; }
+    #hero div h2 {
+      font-size: 2rem;
+      text-transform: lowercase; }
+
+#downward-dog {
+  height: auto;
+  left: -10%;
+  position: relative;
+  top: 6%;
+  transform: rotate(-10deg);
+  width: 650px; }
+
+#tennis-ball {
+  height: auto;
+  right: 2%;
+  position: absolute;
+  top: 64%;
+  transform: rotate(10deg);
+  width: 200px; }
+
 .divider-white {
   background: white;
   clear: both;

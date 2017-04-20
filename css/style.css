@@ -16,6 +16,59 @@
   /* IE9 Compat Modes */
   src: url("fonts/Milkshake.eot?#iefix") format("embedded-opentype"), url("fonts/Milkshake.woff2") format("woff2"), url("fonts/Milkshake.woff") format("woff"), url("fonts/Milkshake.ttf") format("truetype"), url("fonts/Milkshake.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
+#the-latest-page .corkboard {
+  align-items: center;
+  background: url("../images/the-latest/corkboard.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 25px solid black;
+  border-bottom: 25px solid black;
+  box-sizing: border-box;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 100%; }
+  #the-latest-page .corkboard h1 {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 1.5px 1.5px 10px black;
+    text-transform: uppercase; }
+  #the-latest-page .corkboard span {
+    font-family: "Milkshake", "Avenir Next", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 0rem;
+    text-transform: lowercase;
+    vertical-align: top; }
+
+#raleigh-pin {
+  left: 10%;
+  object-fit: contain;
+  position: absolute;
+  top: 20%;
+  width: 150px; }
+
+.pin:hover {
+  -ms-transform: rotate(10deg);
+  /* IE 9 */
+  -webkit-transform: rotate(10deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(10deg); }
+
+#climate-march-pin {
+  left: 12%;
+  object-fit: contain;
+  position: absolute;
+  top: 45%;
+  width: 300px; }
+
+#downward-dog-pin {
+  right: 12%;
+  object-fit: contain;
+  position: absolute;
+  top: 30%;
+  width: 300px; }
+
 .projects .project-name {
   align-items: center;
   background: black;
@@ -131,90 +184,90 @@
   justify-content: center;
   width: 40%; }
 
-#coffee-app #coffee-app-overview-image {
+#coffee-app-page #coffee-app-overview-image {
   height: auto;
   margin-top: 50px;
   position: relative;
   width: 100%; }
 
-#coffee-app #milk-and-sugar {
+#coffee-app-page #milk-and-sugar {
   height: auto;
   margin: 50px;
   position: relative;
   left: 10%;
   width: 60%; }
 
-#coffee-app .wireframe-image {
+#coffee-app-page .wireframe-image {
   align-items: center;
   background: #f2d4b4;
   clear: both;
   display: flex;
   height: 700px;
   justify-content: center; }
-  #coffee-app .wireframe-image div {
+  #coffee-app-page .wireframe-image div {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 5%; }
-    #coffee-app .wireframe-image div img {
+    #coffee-app-page .wireframe-image div img {
       object-fit: contain;
       width: 23%;
       box-sizing: border-box;
       margin: 5%; }
 
-#coffee-app .wireframe-description {
+#coffee-app-page .wireframe-description {
   background: #e6a96a;
   height: 700px; }
 
-#coffee-app .mockups {
+#coffee-app-page .mockups {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../images/projects/coffee-app/palm-trees.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: none;
   height: 700px; }
 
-#coffee-app .prototypes {
+#coffee-app-page .prototypes {
   height: 700px; }
 
-#coffee-app .mockups-carousel-for div {
+#coffee-app-page .mockups-carousel-for div {
   margin: auto;
   width: 80%; }
-  #coffee-app .mockups-carousel-for div img {
+  #coffee-app-page .mockups-carousel-for div img {
     float: right;
     object-fit: contain;
     width: 225px; }
 
-#coffee-app .mockups-carousel-description {
+#coffee-app-page .mockups-carousel-description {
   float: left;
   width: 20%; }
-  #coffee-app .mockups-carousel-description h3 {
+  #coffee-app-page .mockups-carousel-description h3 {
     color: white;
     font-weight: 600;
     font-size: 1.5rem;
     padding-top: 25px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  #coffee-app .mockups-carousel-description p {
+  #coffee-app-page .mockups-carousel-description p {
     color: white;
     line-height: 2rem;
     padding-bottom: 25px;
     width: 80%; }
-    #coffee-app .mockups-carousel-description p span {
+    #coffee-app-page .mockups-carousel-description p span {
       font-weight: bold; }
 
-#coffee-app .mockups-carousel-nav {
+#coffee-app-page .mockups-carousel-nav {
   margin: auto;
   position: relative;
   top: -4%;
   width: 40%; }
-  #coffee-app .mockups-carousel-nav img {
+  #coffee-app-page .mockups-carousel-nav img {
     left: 25%;
     object-fit: contain;
     position: relative;
     width: 60%; }
 
-#coffee-app #coffee-app-prototypes-image {
+#coffee-app-page #coffee-app-prototypes-image {
   height: auto;
   width: 85%; }
 

@@ -1,11 +1,11 @@
-#coffee-app #coffee-app-overview-image {
+#coffee-app-page #coffee-app-overview-image {
   height: auto;
   margin-top: 50px;
   position: relative;
   width: 100%;
 }
 
-#coffee-app #milk-and-sugar {
+#coffee-app-page #milk-and-sugar {
   height: auto;
   margin: 50px;
   position: relative;
@@ -13,7 +13,7 @@
   width: 60%;
 }
 
-#coffee-app .wireframe-image {
+#coffee-app-page .wireframe-image {
   align-items: center;
   background: #f2d4b4;
   clear: both;
@@ -37,12 +37,12 @@
   }
 }
 
-#coffee-app .wireframe-description {
+#coffee-app-page .wireframe-description {
   background: #e6a96a;
   height: 700px;
 }
 
-#coffee-app .mockups {
+#coffee-app-page .mockups {
   background:
     /* top, transparent black, faked with gradient */
     linear-gradient(
@@ -57,11 +57,11 @@
   height: 700px;
 }
 
-#coffee-app .prototypes {
+#coffee-app-page .prototypes {
   height: 700px;
 }
 
-#coffee-app .mockups-carousel-for {
+#coffee-app-page .mockups-carousel-for {
   div {
     margin: auto;
     width: 80%;
@@ -74,7 +74,7 @@
   }
 }
 
-#coffee-app .mockups-carousel-description {
+#coffee-app-page .mockups-carousel-description {
   float: left;
   width: 20%;
 
@@ -99,7 +99,7 @@
   }
 }
 
-#coffee-app .mockups-carousel-nav {
+#coffee-app-page .mockups-carousel-nav {
   margin: auto;
   position: relative;
   top: -4%;
@@ -114,7 +114,7 @@
   }
 
 
-#coffee-app #coffee-app-prototypes-image {
+#coffee-app-page #coffee-app-prototypes-image {
   height: auto;
   width: 85%;
 }

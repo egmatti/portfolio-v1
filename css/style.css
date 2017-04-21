@@ -117,6 +117,7 @@
   width: 40%; }
   #the-latest-page .blog-image img {
     object-fit: contain;
+    height: 90%;
     width: 80%; }
 
 #the-latest-page .blog-image-left {

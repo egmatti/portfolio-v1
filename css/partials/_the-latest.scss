@@ -14,7 +14,7 @@
   h1 {
     color: white;
     font-size: 4rem;
-    text-shadow: 1.5px 1.5px 10px black;
+    text-shadow: 0.15px 0.15px 3px black;
     text-transform: uppercase;
   }
 
@@ -28,7 +28,7 @@
   }
 }
 
-#raleigh-pin {
+#the-latest-page #raleigh-pin {
   left: 10%;
   object-fit: contain;
   position: absolute;
@@ -36,13 +36,7 @@
   width: 150px;
 }
 
-.pin:hover {
-  -ms-transform: rotate(10deg); /* IE 9 */
-  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
-  transform: rotate(10deg);
-}
-
-#climate-march-pin {
+#the-latest-page #climate-march-pin {
   left: 12%;
   object-fit: contain;
   position: absolute;
@@ -50,10 +44,96 @@
   width: 300px;
 }
 
-#downward-dog-pin {
+#the-latest-page #downward-dog-pin {
   right: 12%;
   object-fit: contain;
   position: absolute;
   top: 30%;
   width: 300px;
+}
+
+#the-latest-page .pin:hover {
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+}
+
+#the-latest-page .blog-list {
+  height: auto;
+  margin: 0 5%;
+  width: 90%;
+}
+
+#the-latest-page article {
+  // background: $blue;
+  height: 400px;
+  margin: 50px 5%;
+  width: 90%;
+}
+
+#the-latest-page .blog-description {
+  width: 55%;
+
+  h3 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    width: 75%;
+  }
+
+  h4 {
+    color: black;
+    font-size: 0.9375rem;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    width: 90%;
+  }
+}
+
+#the-latest-page .blog-description-left {
+  float: right;
+}
+
+#the-latest-page .blog-description-right {
+  float: left;
+
+  h3, h4, p {
+    text-align: right;
+  }
+
+  h3, p {
+    float: right;
+  }
+
+  h4 {
+    clear: both;
+  }
+}
+
+#the-latest-page .blog-image {
+  align-items: center;
+  // background: $turquoise;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 40%;
+
+  img {
+    object-fit: contain;
+    width: 80%;
+  }
+}
+
+#the-latest-page .blog-image-left {
+  float: left;
+}
+
+#the-latest-page .blog-image-right {
+  float: right;
 }

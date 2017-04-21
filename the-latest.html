@@ -44,7 +44,26 @@
         <img id="downward-dog-pin" class="pin" src="images/the-latest/pins/downward-dog-pin.png" alt="Downward Dog illustration">
     </section>
 
+    <section class="blog-list">
+    <script id="blog-post" type="text/x-handlebars-template">
+      {{#each post}}
+        <article>
+          <div class="blog-description blog-description-{{position}}">
+            <h3>{{title}}</h3>
+            <h4>{{date}}</h4>
+            <p>{{text}}</p>
+          </div>
+          <div class="blog-image blog-image-{{position}}">
+            <img src="images/the-latest/blog-posts/{{image}}.png" alt="{{title}}">
+          </div>
+        </article>
+      {{/each}}
+    </script>
+  </section>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/slick.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
       <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,83 @@
+#home-page #hero {
+  height: 100vh;
+  width: 100%;
+}
+
+#home-page .panel {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+#home-page .text-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+
+  a {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    span {
+      font-family: "Milkshake", "Avenir Next", sans-serif;
+      font-size: 1.25rem;
+      font-weight: normal;
+      letter-spacing: 0rem;
+      text-transform: lowercase;
+      vertical-align: top;
+    }
+  }
+}
+
+#panel-1 {
+  background: url("../images/home/big-grams-panel-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#panel-2 {
+  background: url("../images/home/big-grams-panel-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#panel-3 {
+  background: url("../images/home/big-grams-panel-3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#panel-4 {
+  background: url("../images/home/big-grams-panel-4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#home-page .logo {
+  float: none;
+  height: 60px;
+  margin-left: none;
+  padding-top: 5px;
+  top: none;
+  transform: none;
+  width: auto;
+}
+
+#home-page .info {
+  padding: none;
+}
+
+#home-page .the-latest {
+  padding: none;
+}

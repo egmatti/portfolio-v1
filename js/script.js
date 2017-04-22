@@ -1,5 +1,34 @@
+// GETTING STARTED EXAMPLE
 // $(document).ready(function(){
 //   // jQuery code
+// });
+
+
+// CHANGING HERO IMAGE
+
+// WORKING METHOD
+$(document).ready(function(){
+  setTimeout(
+    function() {
+      $("#hero").css("background", "url(images/home/computer.png)");
+    }, 5000);
+});
+
+// NON-WORKING METHOD
+// $(document).ready(function(){
+//   setTimeout(
+//     function() {
+//       $("#hero").css({"background": "url(images/home/computer.png)", "background-size": "cover", "background-repeat": "no-repeat"}));
+//     }, 5000);
+// });
+
+// NON-WORKING SLICES
+// $(document).ready(function(){
+//   setTimeout(
+//     function() {
+//       $(".panel").slice(0,3).css("background-color", "red");
+//       // document.getElementById('div2').style.display='none';
+//     }, 5000);
 // });
 
 
@@ -19,6 +48,7 @@
 // document.addEventListener("DOMContentLoaded", function(e) {
 //     InitParalax();
 
+
 // CAROUSEL
 $(".mockups-carousel-for").slick({
  arrows: false,
@@ -35,6 +65,7 @@ $(".mockups-carousel-nav").slick({
   slidesToScroll: 1,
   slidesToShow: 3
 });
+
 
 // HANDLEBARS
 $(function () {

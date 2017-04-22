@@ -17,6 +17,9 @@
   src: url("fonts/Milkshake.eot?#iefix") format("embedded-opentype"), url("fonts/Milkshake.woff2") format("woff2"), url("fonts/Milkshake.woff") format("woff"), url("fonts/Milkshake.ttf") format("truetype"), url("fonts/Milkshake.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 #home-page #hero {
+  background: url("../images/home/concert.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   width: 100%; }
 
@@ -52,24 +55,16 @@
       vertical-align: top; }
 
 #panel-1 {
-  background: url("../images/home/big-grams-panel-1.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background: none; }
 
 #panel-2 {
-  background: url("../images/home/big-grams-panel-2.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background: none; }
 
 #panel-3 {
-  background: url("../images/home/big-grams-panel-3.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background: none; }
 
 #panel-4 {
-  background: url("../images/home/big-grams-panel-4.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background: none; }
 
 #home-page .logo {
   float: none;

@@ -112,13 +112,17 @@ button {
   height: 100vh;
   width: 100%; }
 
+#about-section .nav-div {
+  border-bottom: 2px solid #3b345e;
+  box-sizing: border-box; }
+
 #about-section .text-container a {
   color: #3b345e; }
 
 #about-section .text-container a:hover {
   color: #689cb9; }
 
-#logo-hover {
+#about-logo-hover {
   display: none; }
 
 #about-section #about-nav-div {
@@ -196,6 +200,53 @@ button {
     width: 95%; }
     #about-section #about-bio div p {
       font-size: 0.9rem; }
+
+#work-section {
+  background: white;
+  clear: both;
+  height: 100vh;
+  width: 100%; }
+
+#work-section .nav-div {
+  border-bottom: 2px solid #5bc2bf;
+  box-sizing: border-box; }
+
+#work-section .text-container a {
+  color: #5bc2bf; }
+
+#work-section .text-container a:hover {
+  color: #689cb9; }
+
+#work-logo-hover {
+  display: none; }
+
+#work-section #work-nav-div {
+  background-color: #5bc2bf;
+  border-bottom: 2px solid white;
+  box-sizing: border-box; }
+
+#work-section #turquoise-work {
+  color: white; }
+
+#work-section #work-image-div {
+  display: flex;
+  float: left;
+  height: 86.5%;
+  justify-content: center;
+  width: 50%; }
+
+#work-section #work-panel {
+  background: #5bc2bf;
+  display: inline-block;
+  height: 86.5%;
+  left: 0%;
+  position: relative;
+  top: 0;
+  width: 25%; }
+
+#work-section #work-image {
+  object-fit: contain;
+  width: 70%; }
 
 .projects .project-name {
   align-items: center;
@@ -563,10 +614,6 @@ header, footer {
   top: 50%;
   transform: translateY(-50%);
   width: auto; }
-
-#home-page #about-section header {
-  border-bottom: 2px solid #3b345e;
-  box-sizing: border-box; }
 
 #home-page .subsection .nav-div {
   border-left: none;

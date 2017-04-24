@@ -98,6 +98,11 @@
   width: 100%;
 }
 
+#about-section .nav-div {
+  border-bottom: 2px solid $purple;
+  box-sizing: border-box;
+}
+
 #about-section .text-container a {
   color: $purple;
 }
@@ -106,7 +111,7 @@
   color: $blue;
 }
 
-#logo-hover {
+#about-logo-hover {
   display: none;
 }
 
@@ -206,4 +211,65 @@
       font-size: 0.9rem;
     }
   }
+}
+
+
+// WORK SECTION
+
+#work-section {
+  background: white;
+  clear: both;
+  height: 100vh;
+  width: 100%;
+}
+
+#work-section .nav-div {
+  border-bottom: 2px solid $turquoise;
+  box-sizing: border-box;
+}
+
+#work-section .text-container a {
+  color: $turquoise;
+}
+
+#work-section .text-container a:hover {
+  color: $blue;
+}
+
+#work-logo-hover {
+  display: none;
+}
+
+#work-section #work-nav-div {
+  background-color: $turquoise;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+}
+
+#work-section #turquoise-work {
+  color: white;
+}
+
+#work-section #work-image-div {
+  // background: $blue;
+  display: flex;
+  float: left;
+  height: 86.5%;
+  justify-content: center;
+  width: 50%;
+}
+
+#work-section #work-panel {
+  background: $turquoise;
+  display: inline-block;
+  height: 86.5%;
+  left: 0%;
+  position: relative;
+  top: 0;
+  width: 25%;
+}
+
+#work-section #work-image {
+  object-fit: contain;
+  width: 70%;
 }

@@ -102,6 +102,14 @@
   color: $purple;
 }
 
+#about-section .text-container a:hover {
+  color: $blue;
+}
+
+#logo-hover {
+  display: none;
+}
+
 #about-section #about-nav-div {
   background-color: $purple;
   border-bottom: 2px solid $light-blue;
@@ -111,7 +119,7 @@
   color: $light-blue;
 }
 
-#home-page #about-panel {
+#about-section #about-panel {
   background: $purple;
   float: left;
   height: 86.5%;
@@ -121,7 +129,7 @@
   width: 25%;
 }
 
-#about-headline-div {
+#about-section #about-headline-div {
   // background: $turquoise;
   height: 50%;
   width: 100%;
@@ -150,7 +158,7 @@
   }
 }
 
-#home-page #about-image-div {
+#about-section #about-image-div {
   // background: $turquoise;
   align-items: flex-end;
   display: flex;
@@ -162,13 +170,13 @@
   width: 50%;
 }
 
-#home-page #about-image {
+#about-section #about-image {
   height: 90%;
   object-fit: contain;
   position: relative;
 }
 
-#home-page #about-bio-div {
+#about-section #about-bio-div {
   // background: $magenta;
   display: block;
   height: 43.25%;
@@ -179,7 +187,7 @@
   z-index: 5;
 }
 
-#home-page #about-bio {
+#about-section #about-bio {
   background: white;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.45);
   height: 80%;

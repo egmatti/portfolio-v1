@@ -41,6 +41,18 @@
 // });
 
 
+// LOGO HOVER
+// $("#about-logo-hover").hide();
+//
+// $("#about-logo-non-hover").hover() {
+//   console.log ("test");
+//   // function() {
+//   //   $("#about-section.logo-non-hover").hide();
+//   //   $("#about-section.logo-hover").show();
+//   // }
+// }
+
+
 // PARALLAX
 // function InitParalax() {
 //     var paralaxDom = document.getElementsByClassName("parallaxable")[0];

@@ -178,10 +178,18 @@ button {
 
 #home-page #about-bio {
   background: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.45);
   height: 80%;
   position: relative;
   top: 10%;
-  width: 75%; }
+  width: 93%; }
+  #home-page #about-bio div {
+    float: left;
+    margin: 2.5%;
+    position: absolute;
+    width: 95%; }
+    #home-page #about-bio div p {
+      font-size: 0.9rem; }
 
 .projects .project-name {
   align-items: center;

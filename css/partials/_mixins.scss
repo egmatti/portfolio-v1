@@ -1,0 +1,28 @@
+.divider-white {
+  background: white;
+  clear: both;
+  height: 50px;
+  width: 100%;
+}
+
+.divider-black {
+  background: black;
+  clear: both;
+  height: 50px;
+  width: 100%;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 12px 24px;
+}

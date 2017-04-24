@@ -1,4 +1,5 @@
 @import "partials/variables";
+@import "partials/mixins";
 @import "partials/home";
 @import "partials/work";
 @import "partials/projects";
@@ -79,7 +80,7 @@ header, footer {
   box-sizing: border-box;
 }
 
-#home-page .subsection .header-div {
+#home-page .subsection .nav-div {
   border-left: none;
   border-right: none;
 }
@@ -94,28 +95,6 @@ header, footer {
 
 #home-page .subsection .logo {
   height: 52.5px;
-}
-
-.divider-white {
-  background: white;
-  clear: both;
-  height: 50px;
-  width: 100%;
-}
-
-.divider-black {
-  background: black;
-  clear: both;
-  height: 50px;
-  width: 100%;
-}
-
-.flex-center {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
 }
 
 footer {

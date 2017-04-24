@@ -32,6 +32,15 @@
 // });
 
 
+// HOME PAGE SCROLLING
+// $("#about-section").hide();
+//
+// $( ".about" ).click(function() {
+//   $( "#hero" ).hide();
+//   $( "#about-section" ).slideDown('slow');
+// });
+
+
 // PARALLAX
 // function InitParalax() {
 //     var paralaxDom = document.getElementsByClassName("parallaxable")[0];
@@ -42,8 +51,6 @@
 //         }
 //     });
 // }
-//
-//
 //
 // document.addEventListener("DOMContentLoaded", function(e) {
 //     InitParalax();

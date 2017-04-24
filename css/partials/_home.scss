@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-#home-page .header-div {
+#home-page .nav-div {
   border-left: 1px solid white;
   border-right: 1px solid white;
   box-sizing: border-box;
@@ -65,7 +65,7 @@
 // HERO
 
 #home-page #hero {
-  background-image: url("../images/home/concert.png");
+  background-image: url("../images/hero/concert.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -102,7 +102,7 @@
   color: $purple;
 }
 
-#about-section #about-div {
+#about-section #about-nav-div {
   background-color: $purple;
   border-bottom: 2px solid $light-blue;
 }
@@ -111,19 +111,78 @@
   color: $light-blue;
 }
 
-#home-page #about-overview {
+#home-page #about-panel {
   background: $purple;
+  float: left;
   height: 86.5%;
   left: 25%;
   position: relative;
   top: 0;
   width: 25%;
+}
+
+#about-headline-div {
+  // background: $turquoise;
+  height: 50%;
+  width: 100%;
 
   span {
     color: $light-blue;
+    display: block;
     font-family: "Avenir Next";
     font-size: 1.75rem;
     font-weight: bold;
+    margin: 14% auto;
     width: 68%;
   }
+
+  button {
+    background: none;
+    border: 2px solid $light-blue;
+    color: $light-blue;
+    display: block;
+    margin: auto;
+  }
+
+  button:hover {
+    background: $light-blue;
+    color: $purple;
+  }
+}
+
+#home-page #about-image-div {
+  // background: $turquoise;
+  align-items: flex-end;
+  display: flex;
+  float: left;
+  height: 43.25%;
+  justify-content: center;
+  left: 25%;
+  position: relative;
+  width: 50%;
+}
+
+#home-page #about-image {
+  height: 90%;
+  object-fit: contain;
+  position: relative;
+}
+
+#home-page #about-bio-div {
+  // background: $magenta;
+  display: block;
+  height: 43.25%;
+  left: 37.5%;
+  position: relative;
+  top: 43.25%;
+  width: 62.5%;
+  z-index: 5;
+}
+
+#home-page #about-bio {
+  background: white;
+  height: 80%;
+  position: relative;
+  top: 10%;
+  width: 75%;
 }

@@ -1,9 +1,9 @@
 @import "partials/variables";
 @import "partials/home";
-@import "partials/info";
-@import "partials/the-latest";
+@import "partials/work";
 @import "partials/projects";
 @import "partials/coffee-app";
+@import "partials/the-latest";
 
 * {
   font-family: "Avenir Next", sans-serif;
@@ -74,6 +74,28 @@ header, footer {
   width: auto;
 }
 
+#home-page #about-section header {
+  border-bottom: 2px solid $purple;
+  box-sizing: border-box;
+}
+
+#home-page .subsection .header-div {
+  border-left: none;
+  border-right: none;
+}
+
+#home-page .subsection .text-container a {
+  font-size: 1.5rem;
+
+    span {
+      font-size: 0.9375rem;
+    }
+}
+
+#home-page .subsection .logo {
+  height: 52.5px;
+}
+
 .divider-white {
   background: white;
   clear: both;
@@ -85,6 +107,14 @@ header, footer {
   background: black;
   clear: both;
   height: 50px;
+  width: 100%;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   width: 100%;
 }
 

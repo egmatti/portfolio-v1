@@ -7,12 +7,12 @@
 // CHANGING HERO IMAGE
 
 // WORKING METHOD
-$(document).ready(function(){
-  setTimeout(
-    function() {
-      $("#hero").css("background", "url(images/home/computer.png)");
-    }, 5000);
-});
+// $(document).ready(function(){
+//   setTimeout(
+//     function() {
+//       $("#hero").css("background", "url(images/home/computer.png)");
+//     }, 5000);
+// });
 
 // NON-WORKING METHOD
 // $(document).ready(function(){

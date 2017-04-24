@@ -1,12 +1,12 @@
-#home-page #hero {
-  background: url("../images/home/concert.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+// HEADER
+
+#home-page header {
+  position: relative;
+  top: 0;
   width: 100%;
 }
 
-#home-page .panel {
+#home-page .header-div {
   border-left: 1px solid white;
   border-right: 1px solid white;
   box-sizing: border-box;
@@ -43,22 +43,6 @@
   }
 }
 
-#panel-1 {
-  background: none;
-}
-
-#panel-2 {
-  background: none;
-}
-
-#panel-3 {
-  background: none;
-}
-
-#panel-4 {
-  background: none;
-}
-
 #home-page .logo {
   float: none;
   height: 60px;
@@ -69,10 +53,77 @@
   width: auto;
 }
 
-#home-page .info {
+#home-page .work {
   padding: none;
 }
 
 #home-page .the-latest {
   padding: none;
+}
+
+
+// HERO
+
+#home-page #hero {
+  background-image: url("../images/home/concert.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#home-page .panel {
+  // background: linear-gradient(to right, rgba(196, 0, 133, 0.45) 50%, rgba(196, 0, 133, 0) 50%);
+  // transition: all 2s ease;
+  // background-size: 200% 100%;
+  // background-position:right bottom;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-sizing: border-box;
+  float: left;
+  height: 86.5%;
+  width: 25%;
+}
+
+// #home-page .panel:hover {
+//   background-position: left bottom;
+// }
+
+
+// ABOUT SECTION
+
+#about-section {
+  background: $light-blue;
+  height: 100vh;
+  width: 100%;
+}
+
+#about-section .text-container a {
+  color: $purple;
+}
+
+#about-section #about-div {
+  background-color: $purple;
+  border-bottom: 2px solid $light-blue;
+}
+
+#about-section #purple-about {
+  color: $light-blue;
+}
+
+#home-page #about-overview {
+  background: $purple;
+  height: 86.5%;
+  left: 25%;
+  position: relative;
+  top: 0;
+  width: 25%;
+
+  span {
+    color: $light-blue;
+    font-family: "Avenir Next";
+    font-size: 1.75rem;
+    font-weight: bold;
+    width: 68%;
+  }
 }

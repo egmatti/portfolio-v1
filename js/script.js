@@ -16,6 +16,7 @@ $(".logo").click(function() {
    scrollToAnchor('hero');
 
    $(".about, .work, .the-latest").css( "color", "white");
+   $("#home-page header .nav-div").css("border-bottom", "none");
 });
 
 $(".about").click(function() {
@@ -24,6 +25,8 @@ $(".about").click(function() {
 
   $(".about").css( "color", "white");
   $(".work, .the-latest").css( "color", "#3b345e");
+  $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
+  $("#home-page header #about-nav-div").css("border-bottom", "2px solid white");
 });
 
 
@@ -33,6 +36,8 @@ $(".work").click(function() {
 
    $(".work").css( "color", "white");
    $(".about, .the-latest").css( "color", "#339a97");
+   $("#home-page header .nav-div").css("border-bottom", "2px solid #339a97");
+   $("#home-page header #work-nav-div").css("border-bottom", "2px solid white");
 });
 
 $(".the-latest").click(function() {
@@ -41,6 +46,8 @@ $(".the-latest").click(function() {
 
    $(".the-latest").css( "color", "white");
    $(".about, .work").css( "color", "#3b345e");
+   $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
+   $("#home-page header #the-latest-nav-div").css("border-bottom", "2px solid white");
 });
 
 

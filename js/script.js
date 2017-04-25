@@ -14,29 +14,33 @@ $('#about-section, #work-section, #the-latest-section').hide();
 $(".logo").click(function() {
 		$('#hero').show();
    scrollToAnchor('hero');
+
+   $(".about, .work, .the-latest").css( "color", "white");
 });
 
 $(".about").click(function() {
 	$('#about-section').show();
   scrollToAnchor('about');
 
-  // var styles = {
-  // backgroundColor: "teal",
-  // border-bottom: "2px solid teal"
-  // };
-
-  $('#home-page .text-container a').css( "color", "teal" )
+  $(".about").css( "color", "white");
+  $(".work, .the-latest").css( "color", "#3b345e");
 });
 
 
 $(".work").click(function() {
 		$('#work-section').show();
    scrollToAnchor('work');
+
+   $(".work").css( "color", "white");
+   $(".about, .the-latest").css( "color", "#339a97");
 });
 
 $(".the-latest").click(function() {
 	$('#the-latest-section').show();
    scrollToAnchor('latest');
+
+   $(".the-latest").css( "color", "white");
+   $(".about, .work").css( "color", "#3b345e");
 });
 
 

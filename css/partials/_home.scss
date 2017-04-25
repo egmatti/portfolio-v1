@@ -34,32 +34,6 @@
   width: 100%;
 }
 
-#about-section .nav-div {
-  border-bottom: 2px solid $purple;
-  box-sizing: border-box;
-}
-
-#about-section .text-container a {
-  color: $purple;
-}
-
-#about-section .text-container a:hover {
-  color: $blue;
-}
-
-#about-logo-hover {
-  display: none;
-}
-
-#about-section #about-nav-div {
-  background-color: $purple;
-  border-bottom: 2px solid $light-blue;
-}
-
-#about-section #purple-about {
-  color: $light-blue;
-}
-
 #about-section #about-button-div {
   align-items: center;
   display: flex;
@@ -174,33 +148,6 @@
   width: 100%;
 }
 
-#work-section .nav-div {
-  border-bottom: 2px solid $turquoise;
-  box-sizing: border-box;
-}
-
-#work-section .text-container a {
-  color: $turquoise;
-}
-
-#work-section .text-container a:hover {
-  color: $blue;
-}
-
-#work-logo-hover {
-  display: none;
-}
-
-#work-section #work-nav-div {
-  background-color: $turquoise;
-  border-bottom: 2px solid white;
-  box-sizing: border-box;
-}
-
-#work-section #turquoise-work {
-  color: white;
-}
-
 #work-section #work-image-div {
   // background: $blue;
   display: flex;
@@ -218,18 +165,26 @@
 }
 
 #work-section #work-panel {
-  align-items: center;
   background: $turquoise;
-  display: flex;
   float: left;
   height: 100%;
-  justify-content: center;
   left: 0%;
   position: relative;
-  top: 0;
   width: 25%;
+}
+
+#work-section #work-approach-div {
+  align-items: center;
+  // background: $purple;
+  display: flex;
+  height: 86.5%;
+  justify-content: center;
+  position: relative;
+  top: 13.5%;
+  width: 100%;
 
   div {
+    // background: $blue;
     width: 75%;
 
     h2 {
@@ -247,6 +202,7 @@
     }
   }
 }
+
 
 #work-section #work-buttons-div {
   align-items: center;
@@ -410,11 +366,10 @@
 
 
 #the-latest-section #the-latest-panel {
-  // background: $purple;
+  background: $purple;
   float: left;
-  height: 86.5%;
+  height: 100%;
   position: relative;
-  top: 13.5%;
   width: 25%;
 }
 

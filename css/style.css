@@ -65,26 +65,6 @@ button {
   height: 100vh;
   width: 100%; }
 
-#about-section .nav-div {
-  border-bottom: 2px solid #3b345e;
-  box-sizing: border-box; }
-
-#about-section .text-container a {
-  color: #3b345e; }
-
-#about-section .text-container a:hover {
-  color: #689cb9; }
-
-#about-logo-hover {
-  display: none; }
-
-#about-section #about-nav-div {
-  background-color: #3b345e;
-  border-bottom: 2px solid #e1ebf1; }
-
-#about-section #purple-about {
-  color: #e1ebf1; }
-
 #about-section #about-button-div {
   align-items: center;
   display: flex;
@@ -175,27 +155,6 @@ button {
   height: 100vh;
   width: 100%; }
 
-#work-section .nav-div {
-  border-bottom: 2px solid #339a97;
-  box-sizing: border-box; }
-
-#work-section .text-container a {
-  color: #339a97; }
-
-#work-section .text-container a:hover {
-  color: #689cb9; }
-
-#work-logo-hover {
-  display: none; }
-
-#work-section #work-nav-div {
-  background-color: #339a97;
-  border-bottom: 2px solid white;
-  box-sizing: border-box; }
-
-#work-section #turquoise-work {
-  color: white; }
-
 #work-section #work-image-div {
   display: flex;
   float: left;
@@ -210,25 +169,30 @@ button {
   width: 70%; }
 
 #work-section #work-panel {
-  align-items: center;
   background: #339a97;
-  display: flex;
   float: left;
   height: 100%;
-  justify-content: center;
   left: 0%;
   position: relative;
-  top: 0;
   width: 25%; }
-  #work-section #work-panel div {
+
+#work-section #work-approach-div {
+  align-items: center;
+  display: flex;
+  height: 86.5%;
+  justify-content: center;
+  position: relative;
+  top: 13.5%;
+  width: 100%; }
+  #work-section #work-approach-div div {
     width: 75%; }
-    #work-section #work-panel div h2 {
+    #work-section #work-approach-div div h2 {
       color: white;
       font-size: 1.5rem;
       padding-bottom: 35px;
       text-align: center;
       text-transform: uppercase; }
-    #work-section #work-panel div p {
+    #work-section #work-approach-div div p {
       color: white;
       font-size: 1rem;
       padding-bottom: 17.5px; }
@@ -350,10 +314,10 @@ button {
   float: right; }
 
 #the-latest-section #the-latest-panel {
+  background: #3b345e;
   float: left;
-  height: 86.5%;
+  height: 100%;
   position: relative;
-  top: 13.5%;
   width: 25%; }
 
 #the-latest-section .twitter-timeline {

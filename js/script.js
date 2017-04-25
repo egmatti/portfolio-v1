@@ -23,10 +23,10 @@ $(".about").click(function() {
 	$('#about-section').show();
   scrollToAnchor('about');
 
-  $(".about").css( "color", "white");
+  $(".about").css( "color", "#e1ebf1");
   $(".work, .the-latest").css( "color", "#3b345e");
   $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
-  $("#home-page header #about-nav-div").css("border-bottom", "2px solid white");
+  $("#home-page header #about-nav-div").css("border-bottom", "2px solid #e1ebf1");
 });
 
 
@@ -44,10 +44,10 @@ $(".the-latest").click(function() {
 	$('#the-latest-section').show();
    scrollToAnchor('latest');
 
-   $(".the-latest").css( "color", "white");
+   $(".the-latest").css( "color", "#e1ebf1");
    $(".about, .work").css( "color", "#3b345e");
    $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
-   $("#home-page header #the-latest-nav-div").css("border-bottom", "2px solid white");
+   $("#home-page header #the-latest-nav-div").css("border-bottom", "2px solid #e1ebf1");
 });
 
 

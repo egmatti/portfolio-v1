@@ -45,57 +45,6 @@ button {
 .last-paragraph {
   padding-bottom: none; }
 
-#home-page header {
-  position: relative;
-  top: 0;
-  width: 100%; }
-
-#home-page .nav-div {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  box-sizing: border-box;
-  float: left;
-  height: 100%;
-  width: 25%; }
-
-#home-page .text-container {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  position: relative;
-  top: 0;
-  width: 100%; }
-  #home-page .text-container a {
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
-    text-decoration: none;
-    text-transform: uppercase; }
-    #home-page .text-container a span {
-      font-family: "Milkshake", "Avenir Next", sans-serif;
-      font-size: 1.25rem;
-      font-weight: normal;
-      letter-spacing: 0rem;
-      text-transform: lowercase;
-      vertical-align: top; }
-
-#home-page .logo {
-  float: none;
-  height: 60px;
-  margin-left: none;
-  padding-top: 5px;
-  top: none;
-  transform: none;
-  width: auto; }
-
-#home-page .work {
-  padding: none; }
-
-#home-page .the-latest {
-  padding: none; }
-
 #home-page #hero {
   background-image: url("../images/hero/concert.png");
   background-repeat: no-repeat;
@@ -108,7 +57,7 @@ button {
   border-right: 1px solid white;
   box-sizing: border-box;
   float: left;
-  height: 86.5%;
+  height: 100%;
   width: 25%; }
 
 #about-section {
@@ -142,6 +91,8 @@ button {
   float: left;
   height: 86.5%;
   justify-content: center;
+  position: relative;
+  top: 13.5%;
   width: 25%; }
   #about-section #about-button-div button {
     background: none;
@@ -156,7 +107,7 @@ button {
 #about-section #about-panel {
   background: #3b345e;
   float: left;
-  height: 86.5%;
+  height: 100%;
   left: 0%;
   position: relative;
   top: 0;
@@ -165,8 +116,10 @@ button {
 #about-section #about-headline-div {
   align-items: center;
   display: flex;
-  height: 50.5%;
+  height: 41.95%;
   justify-content: center;
+  position: relative;
+  top: 13.5%;
   width: 100%; }
   #about-section #about-headline-div span {
     color: #e1ebf1;
@@ -184,6 +137,7 @@ button {
   justify-content: center;
   left: 0%;
   position: relative;
+  top: 13.5%;
   width: 50%; }
 
 #about-section #about-image {
@@ -196,7 +150,7 @@ button {
   height: 49.5%;
   left: 37.5%;
   position: relative;
-  top: 37%;
+  top: 50.5%;
   width: 62.5%;
   z-index: 5; }
 
@@ -247,6 +201,8 @@ button {
   float: left;
   height: 86.5%;
   justify-content: center;
+  position: relative;
+  top: 13.5%;
   width: 50%; }
 
 #work-section #work-image {
@@ -258,7 +214,7 @@ button {
   background: #339a97;
   display: flex;
   float: left;
-  height: 86.5%;
+  height: 100%;
   justify-content: center;
   left: 0%;
   position: relative;
@@ -283,11 +239,13 @@ button {
   display: flex;
   height: 86.5%;
   justify-content: center;
+  position: relative;
+  top: 13.5%;
   width: 25%; }
   #work-section #work-buttons-div div {
     display: flex;
     flex-direction: column;
-    height: 25%;
+    height: 20%;
     width: 100%; }
     #work-section #work-buttons-div div button {
       background: none;
@@ -329,7 +287,7 @@ button {
 #the-latest-section #the-latest-blog-div {
   background: #689cb9;
   float: left;
-  height: 86.5%;
+  height: 100%;
   overflow: scroll;
   width: 75%; }
 
@@ -395,23 +353,54 @@ button {
   background: #3b345e;
   display: flex;
   float: left;
-  height: 86.5%;
+  height: 100%;
   justify-content: center;
   position: relative;
   top: 0;
   width: 25%; }
 
-.projects .project-name {
-  align-items: center;
-  background: black;
-  display: flex;
-  height: 400px;
-  justify-content: center;
+.projects p {
+  font-size: 1.15rem; }
+
+.projects header, footer {
+  height: 100px;
   width: 100%; }
-  .projects .project-name h1 {
-    color: white;
-    font-size: 4rem;
-    text-transform: uppercase; }
+  .projects header ul, footer ul {
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    .projects header ul li, footer ul li {
+      display: inline-block;
+      list-style-type: none; }
+      .projects header ul li a, footer ul li a {
+        color: black;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        padding: 0 25px;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .projects header ul li a span, footer ul li a span {
+          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-size: 1.25rem;
+          font-weight: normal;
+          letter-spacing: 0rem;
+          text-transform: lowercase;
+          vertical-align: top; }
+
+.projects .the-latest {
+  padding-left: 13px; }
+
+.projects .logo {
+  float: left;
+  height: 70px;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto; }
 
 .projects .description {
   float: left;
@@ -516,6 +505,40 @@ button {
   justify-content: center;
   width: 40%; }
 
+.projects footer div {
+  float: left;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+  .projects footer div span {
+    display: block;
+    text-align: left; }
+.projects footer ul li a {
+  font-size: 1.5rem;
+  padding: 0 25px; }
+  .projects footer ul li a span {
+    font-size: 0.9375rem; }
+
+.projects footer .logo {
+  float: none;
+  height: 52.5px;
+  margin: 0;
+  top: 0%;
+  transform: none; }
+
+.projects .project-name {
+  align-items: center;
+  background: black;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 100%; }
+  .projects .project-name h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase; }
+
 #coffee-app-page #coffee-app-overview-image {
   height: auto;
   margin-top: 50px;
@@ -602,6 +625,49 @@ button {
 #coffee-app-page #coffee-app-prototypes-image {
   height: auto;
   width: 85%; }
+
+#the-latest-page p {
+  font-size: 1.15rem; }
+
+#the-latest-page header, footer {
+  height: 100px;
+  width: 100%; }
+  #the-latest-page header ul, footer ul {
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    #the-latest-page header ul li, footer ul li {
+      display: inline-block;
+      list-style-type: none; }
+      #the-latest-page header ul li a, footer ul li a {
+        color: black;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        padding: 0 25px;
+        text-decoration: none;
+        text-transform: uppercase; }
+        #the-latest-page header ul li a span, footer ul li a span {
+          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-size: 1.25rem;
+          font-weight: normal;
+          letter-spacing: 0rem;
+          text-transform: lowercase;
+          vertical-align: top; }
+
+#the-latest-page .the-latest {
+  padding-left: 13px; }
+
+#the-latest-page .logo {
+  float: left;
+  height: 70px;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto; }
 
 #the-latest-page .corkboard {
   align-items: center;
@@ -725,81 +791,54 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.15rem; }
 
 p {
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin: 0; }
 
-header, footer {
-  height: 100px;
-  width: 100%; }
-  header ul, footer ul {
-    float: right;
-    margin-right: 5%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
-    header ul li, footer ul li {
-      display: inline-block;
-      list-style-type: none; }
-      header ul li a, footer ul li a {
-        color: black;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 0.15rem;
-        padding: 0 25px;
-        text-decoration: none;
-        text-transform: uppercase; }
-        header ul li a span, footer ul li a span {
-          font-family: "Milkshake", "Avenir Next", sans-serif;
-          font-size: 1.25rem;
-          font-weight: normal;
-          letter-spacing: 0rem;
-          text-transform: lowercase;
-          vertical-align: top; }
+#home-page header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
 
-.the-latest {
-  padding-left: 13px; }
-
-.logo {
-  float: left;
-  height: 70px;
-  margin-left: 5%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: auto; }
-
-#home-page .subsection .nav-div {
+#home-page header .nav-div {
+  border-bottom: 2px solid black;
   border-left: none;
-  border-right: none; }
-
-#home-page .subsection .text-container a {
-  font-size: 1.5rem; }
-  #home-page .subsection .text-container a span {
-    font-size: 0.9375rem; }
-
-#home-page .subsection .logo {
-  height: 52.5px; }
-
-footer div {
+  border-right: none;
   float: left;
-  margin-left: 5%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-  footer div span {
-    display: block;
-    text-align: left; }
-footer ul li a {
-  font-size: 1.5rem;
-  padding: 0 25px; }
-  footer ul li a span {
-    font-size: 0.9375rem; }
+  height: 100%;
+  width: 25%; }
 
-footer .logo {
+#home-page .text-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  width: 100%; }
+  #home-page .text-container a {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+    #home-page .text-container a span {
+      font-family: "Milkshake", "Avenir Next", sans-serif;
+      font-size: 1.09375rem;
+      font-weight: normal;
+      letter-spacing: 0rem;
+      text-transform: lowercase;
+      vertical-align: top; }
+
+#home-page header .logo {
   float: none;
   height: 52.5px;
-  margin: 0;
-  top: 0%;
-  transform: none; }
+  margin-left: none;
+  padding-top: 5px;
+  top: none;
+  transform: none;
+  width: auto; }
 
 /*# sourceMappingURL=style.css.map */

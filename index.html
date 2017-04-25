@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Mattison</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link href="css/style.css" rel="stylesheet">
 
     <!-- FAVICON -->
@@ -29,30 +31,34 @@
   <body id="home-page">
 
 
+<!-- HEADER -->
+    <header>
+      <div class="nav-div" id="logo-nav-div">
+        <div class="text-container">
+        <a href="index.html"><img id="about-logo-non-hover" class="logo" src="images/logo-white.svg" alt="Emily Mattison"></a>
+        <a href="index.html"><img id="about-logo-hover" class="logo" src="images/logo-blue.svg" alt="Emily Mattison"></a>
+        </div>
+      </div>
+      <div class="nav-div" id="about-nav-div">
+        <div class="text-container">
+          <a class="about" href="#about-section">About</a>
+        </div>
+      </div>
+      <div class="nav-div" id="work-nav-div">
+        <div class="text-container">
+          <a class="work" href="#work-section">Work</a>
+        </div>
+      </div>
+      <div class="nav-div" id="the-latest-nav-div">
+        <div class="text-container">
+          <a class="the-latest" href="#the-latest-section"><span>the   </span>Latest</a>
+        </div>
+      </div>
+    </header>
+
+
 <!-- HERO -->
     <section id="hero">
-      <header>
-        <div class="nav-div" id="logo-nav-div">
-          <div class="text-container">
-          <a href="index.html"><img class="logo" src="images/logo-white.svg" alt="Emily Mattison"></a>
-          </div>
-        </div>
-        <div class="nav-div" id="about-nav-div">
-          <div class="text-container">
-            <a class="about" href="#about-section">About</a>
-          </div>
-        </div>
-        <div class="nav-div" id="work-nav-div">
-          <div class="text-container">
-            <a class="work" href="#work-section">Work</a>
-          </div>
-        </div>
-        <div class="nav-div" id="the-latest-nav-div">
-          <div class="text-container">
-            <a class="the-latest" href="the-latest.html"><span>the   </span>Latest</a>
-          </div>
-        </div>
-      </header>
 
       <div class="panel" id="panel-1"></div>
       <div class="panel" id="panel-2"></div>
@@ -63,7 +69,7 @@
 
 <!-- ABOUT SECTION -->
     <section class="subsection" id="about-section">
-      <header>
+      <!-- <header>
         <div class="nav-div" id="logo-nav-div">
           <div class="text-container">
           <a href="index.html"><img id="about-logo-non-hover" class="logo" src="images/logo-purple.svg" alt="Emily Mattison"></a>
@@ -85,7 +91,7 @@
             <a class="the-latest" href="#the-latest-section"><span>the   </span>Latest</a>
           </div>
         </div>
-      </header>
+      </header> -->
 
       <div id="about-button-div">
         <button>View My Résumé</button>
@@ -97,28 +103,29 @@
         </div>
       </div>
 
-      <div id="about-image-div">
-        <img id="about-image" src="images/about/about-image.png" alt="Emily Mattison">
-      </div>
+        <div id="about-image-div">
+          <img id="about-image" src="images/about/about-image.png" alt="Emily Mattison">
+        </div>
 
-      <div id="about-bio-div">
-        <div id="about-bio">
-          <div>
-            <p>I’ve always enjoyed making unique things and this early creative spark inspired me to major in English in college so that I could study creative writing. While at school, I got involved with several on-campus organizations that had plenty of writers, but rarely someone who could quickly and easily layout magazines and brochures in a visually appealing way. With a little bit of knowledge of Adobe InDesign, I found myself stepping in to fill those gaps.</p>
-            <br>
-            <p>In the time since then, I’ve taken a variety of graphic communications, art, and user interface design classes, which have allowed me to expand on those initial design skills with a number of cool results. While taking a graphic design internship in Charleston, SC in the fall after I graduated, I discovered another gap that I was eager to fill: the need for marketing and creative direction among emerging musical artists.</p>
-            <br>
-            <p>Nowadays, I spend my free time looking for opportunities to make album artwork, promotional material, and websites for musicians and going to concerts or conferences to learn more about web development and the music industry. If you’re interested in working together or just discussing life, feel free to reach out! </p>
+        <div id="about-bio-div">
+          <div id="about-bio">
+            <div>
+              <p>I’ve always enjoyed making unique things and this early creative spark inspired me to major in English in college so that I could study creative writing. While at school, I got involved with several on-campus organizations that had plenty of writers, but rarely someone who could quickly and easily layout magazines and brochures in a visually appealing way. With a little bit of knowledge of Adobe InDesign, I found myself stepping in to fill those gaps.</p>
+              <br>
+              <p>In the time since then, I’ve taken a variety of graphic communications, art, and user interface design classes, which have allowed me to expand on those initial design skills with a number of cool results. While taking a graphic design internship in Charleston, SC in the fall after I graduated, I discovered another gap that I was eager to fill: the need for marketing and creative direction among emerging musical artists.</p>
+              <br>
+              <p>Nowadays, I spend my free time looking for opportunities to make album artwork, promotional material, and websites for musicians and going to concerts or conferences to learn more about web development and the music industry. If you’re interested in working together or just discussing life, feel free to reach out! </p>
+            </div>
           </div>
         </div>
-      </div>
+    
 
     </section>
 
 
 <!-- WORK SECTION -->
     <section class="subsection" id="work-section">
-      <header>
+      <!-- <header>
         <div class="nav-div" id="logo-nav-div">
           <div class="text-container">
           <a href="index.html"><img id="work-logo-non-hover" class="logo" src="images/logo-turquoise.svg" alt="Emily Mattison"></a>
@@ -140,7 +147,7 @@
             <a class="the-latest" href="#the-latest-section"><span>the   </span>Latest</a>
           </div>
         </div>
-      </header>
+      </header> -->
 
       <div id="work-image-div">
         <img id="work-image" src="images/work/work-image.png" alt="Album artwork in progress">
@@ -166,7 +173,7 @@
 
 <!-- THE LATEST SECTION -->
     <section class="subsection" id="the-latest-section">
-      <header>
+      <!-- <header>
         <div class="nav-div" id="logo-nav-div">
           <div class="text-container">
           <a href="index.html"><img id="the-latest-logo-non-hover" class="logo" src="images/logo-purple.svg" alt="Emily Mattison"></a>
@@ -188,11 +195,11 @@
             <a id="purple-the-latest" class="the-latest" href="#the-latest-section"><span>the   </span>Latest</a>
           </div>
         </div>
-      </header>
+      </header> -->
 
       <div id="the-latest-blog-div">
 
-        <section class="blog-list">
+        <!-- <section class="blog-list">
         <script id="blog-post" type="text/x-handlebars-template">
           {{#each post}}
             <article>
@@ -207,13 +214,13 @@
             </article>
           {{/each}}
         </script>
-      </section>
+      </section> -->
 
       </div>
 
       <div id="the-latest-panel">
         <div>
-          <!-- <a class="twitter-timeline" data-width="220" data-height="500" data-theme="light" data-link-color="#339a97" href="https://twitter.com/em_n_m92">Tweets by Emily Mattison</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+          <!-- <a class="twitter-timeline" data-lang="en" href="https://twitter.com/em_n_m92">Tweets by Emily Mattison</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
       </div>
 
@@ -221,6 +228,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

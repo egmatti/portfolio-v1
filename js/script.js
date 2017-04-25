@@ -38,6 +38,7 @@
 // $( ".about" ).click(function() {
 //   $( "#hero" ).hide();
 //   $( "#about-section" ).slideDown('slow');
+//   // header .style.backgroundColor = "blue"
 // });
 
 

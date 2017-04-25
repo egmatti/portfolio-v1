@@ -1,3 +1,58 @@
+#the-latest-page p {
+  font-size: 1.15rem;
+}
+
+#the-latest-page header, footer {
+  height: 100px;
+  width: 100%;
+
+  ul {
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      a {
+        color: black;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        padding: 0 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        span {
+          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-size: 1.25rem;
+          font-weight: normal;
+          letter-spacing: 0rem;
+          text-transform: lowercase;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+#the-latest-page .the-latest {
+  padding-left: 13px;
+}
+
+#the-latest-page .logo {
+  float: left;
+  height: 70px;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+
 #the-latest-page .corkboard {
   align-items: center;
   background: url("../images/the-latest/corkboard.png");

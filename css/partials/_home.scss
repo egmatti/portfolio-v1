@@ -124,19 +124,43 @@
   color: $light-blue;
 }
 
+#about-section #about-button-div {
+  align-items: center;
+  display: flex;
+  float: left;
+  height: 86.5%;
+  justify-content: center;
+  width: 25%;
+
+  button {
+    background: none;
+    border: 2px solid $purple;
+    color: $purple;
+    display: block;
+    margin: auto;
+  }
+
+  button:hover {
+    background: $purple;
+    color: $light-blue;
+  }
+}
+
 #about-section #about-panel {
   background: $purple;
   float: left;
   height: 86.5%;
-  left: 25%;
+  left: 0%;
   position: relative;
   top: 0;
   width: 25%;
 }
 
 #about-section #about-headline-div {
-  // background: $turquoise;
-  height: 50%;
+  align-items: center;
+  display: flex;
+  height: 50.5%;
+  justify-content: center;
   width: 100%;
 
   span {
@@ -145,21 +169,7 @@
     font-family: "Avenir Next";
     font-size: 1.75rem;
     font-weight: bold;
-    margin: 14% auto;
     width: 68%;
-  }
-
-  button {
-    background: none;
-    border: 2px solid $light-blue;
-    color: $light-blue;
-    display: block;
-    margin: auto;
-  }
-
-  button:hover {
-    background: $light-blue;
-    color: $purple;
   }
 }
 
@@ -168,15 +178,15 @@
   align-items: flex-end;
   display: flex;
   float: left;
-  height: 43.25%;
+  height: 37%;
   justify-content: center;
-  left: 25%;
+  left: 0%;
   position: relative;
   width: 50%;
 }
 
 #about-section #about-image {
-  height: 90%;
+  height: 86.62%;
   object-fit: contain;
   position: relative;
 }
@@ -184,10 +194,10 @@
 #about-section #about-bio-div {
   // background: $magenta;
   display: block;
-  height: 43.25%;
+  height: 49.5%;
   left: 37.5%;
   position: relative;
-  top: 43.25%;
+  top: 37%;
   width: 62.5%;
   z-index: 5;
 }
@@ -208,7 +218,7 @@
     width: 95%;
 
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 }
@@ -259,17 +269,68 @@
   width: 50%;
 }
 
+#work-section #work-image {
+  object-fit: contain;
+  width: 70%;
+}
+
 #work-section #work-panel {
+  align-items: center;
   background: $turquoise;
-  display: inline-block;
+  display: flex;
+  float: left;
   height: 86.5%;
+  justify-content: center;
   left: 0%;
   position: relative;
   top: 0;
   width: 25%;
+
+  div {
+    width: 75%;
+
+    h2 {
+      color: white;
+      font-size: 1.5rem;
+      padding-bottom: 35px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: white;
+      font-size: 1rem;
+      padding-bottom: 17.5px;
+    }
+  }
 }
 
-#work-section #work-image {
-  object-fit: contain;
-  width: 70%;
+#work-section #work-buttons-div {
+  align-items: center;
+  float: left;
+  display: flex;
+  height: 86.5%;
+  justify-content: center;
+  width: 25%;
+
+  div {
+    // background: $blue;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    width: 100%;
+
+    button {
+      background: none;
+      border: 2px solid $turquoise;
+      color: $turquoise;
+      display: block;
+      margin: auto;
+    }
+
+    button:hover {
+      background: $turquoise;
+      color: white;
+    }
+  }
 }

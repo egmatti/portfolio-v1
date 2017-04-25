@@ -3,6 +3,43 @@
 //   // jQuery code
 // });
 
+// SCROLLING NAV BAR
+function scrollToAnchor(menuname){
+    var link = $("[name='"+ menuname +"']");
+    $('html,body').animate({scrollTop: link.offset().top},'slow');
+}
+
+$('#about-section, #work-section, #the-latest-section').hide();
+
+$(".logo").click(function() {
+		$('#hero').show();
+   scrollToAnchor('hero');
+});
+
+$(".about").click(function() {
+	$('#about-section').show();
+  scrollToAnchor('about');
+
+  // var styles = {
+  // backgroundColor: "teal",
+  // border-bottom: "2px solid teal"
+  // };
+
+  $('#home-page .text-container a').css( "color", "teal" )
+});
+
+
+$(".work").click(function() {
+		$('#work-section').show();
+   scrollToAnchor('work');
+});
+
+$(".the-latest").click(function() {
+	$('#the-latest-section').show();
+   scrollToAnchor('latest');
+});
+
+
 
 // CHANGING HERO IMAGE
 

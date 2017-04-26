@@ -1,8 +1,8 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/home";
-@import "partials/work";
-@import "partials/projects";
+@import "partials/work-pages";
+@import "partials/project-pages";
 @import "partials/coffee-app";
 @import "partials/the-latest";
 
@@ -22,59 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 1rem;
   margin: 0;
-}
-
-#home-page header {
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-#home-page header .nav-div {
-  // border-bottom: 2px solid black;
-  float: left;
-  height: 100%;
-  width: 25%;
-}
-
-#home-page .text-container {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  position: relative;
-  top: 0;
-  width: 100%;
-
-  a {
-    color: white;
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    span {
-      font-family: "Milkshake", "Avenir Next", sans-serif;
-      font-size: 1.09375rem;
-      font-weight: normal;
-      letter-spacing: 0rem;
-      text-transform: lowercase;
-      vertical-align: top;
-    }
-  }
-}
-
-#home-page header .logo {
-  float: none;
-  height: 52.5px;
-  margin-left: none;
-  padding-top: 5px;
-  top: none;
-  transform: none;
-  width: auto;
 }
 
 @import "partials/media-queries";

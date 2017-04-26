@@ -45,6 +45,50 @@ button {
 .last-paragraph {
   padding-bottom: none; }
 
+#home-page header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+
+#home-page header .nav-div {
+  float: left;
+  height: 100%;
+  width: 25%; }
+
+#home-page .text-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  width: 100%; }
+  #home-page .text-container a {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+    #home-page .text-container a span {
+      font-family: "Milkshake", "Avenir Next", sans-serif;
+      font-size: 1.09375rem;
+      font-weight: normal;
+      letter-spacing: 0rem;
+      text-transform: lowercase;
+      vertical-align: top; }
+
+#home-page header .logo {
+  float: none;
+  height: 52.5px;
+  margin-left: none;
+  padding-top: 5px;
+  top: none;
+  transform: none;
+  width: auto; }
+
 #home-page #hero {
   background-image: url("../images/hero/concert.png");
   background-repeat: no-repeat;
@@ -245,22 +289,66 @@ button {
 #the-latest-section .twitter-timeline {
   overflow: scroll; }
 
-.projects p {
+.work-pages header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+
+.work-pages header .nav-div {
+  float: left;
+  height: 100%;
+  width: 25%; }
+
+.work-pages .text-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  width: 100%; }
+  .work-pages .text-container a {
+    color: black;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .work-pages .text-container a span {
+      font-family: "Milkshake", "Avenir Next", sans-serif;
+      font-size: 1.09375rem;
+      font-weight: normal;
+      letter-spacing: 0rem;
+      text-transform: lowercase;
+      vertical-align: top; }
+
+.work-pages header .logo {
+  float: none;
+  height: 52.5px;
+  margin-left: none;
+  padding-top: 5px;
+  top: none;
+  transform: none;
+  width: auto; }
+
+.project-pages p {
   font-size: 1.15rem; }
 
-.projects header, footer {
+.project-pages header, footer {
   height: 100px;
   width: 100%; }
-  .projects header ul, footer ul {
+  .project-pages header ul, footer ul {
     float: right;
     margin-right: 5%;
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
-    .projects header ul li, footer ul li {
+    .project-pages header ul li, footer ul li {
       display: inline-block;
       list-style-type: none; }
-      .projects header ul li a, footer ul li a {
+      .project-pages header ul li a, footer ul li a {
         color: black;
         font-size: 2rem;
         font-weight: 700;
@@ -268,7 +356,7 @@ button {
         padding: 0 25px;
         text-decoration: none;
         text-transform: uppercase; }
-        .projects header ul li a span, footer ul li a span {
+        .project-pages header ul li a span, footer ul li a span {
           font-family: "Milkshake", "Avenir Next", sans-serif;
           font-size: 1.25rem;
           font-weight: normal;
@@ -276,10 +364,10 @@ button {
           text-transform: lowercase;
           vertical-align: top; }
 
-.projects .the-latest {
+.project-pages .the-latest {
   padding-left: 13px; }
 
-.projects .logo {
+.project-pages .logo {
   float: left;
   height: 70px;
   margin-left: 5%;
@@ -288,94 +376,94 @@ button {
   transform: translateY(-50%);
   width: auto; }
 
-.projects .description {
+.project-pages .description {
   float: left;
   margin-left: 5%;
   width: 50%; }
-  .projects .description h2 {
+  .project-pages .description h2 {
     color: black;
     font-size: 2rem;
     padding-top: 75px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  .projects .description p {
+  .project-pages .description p {
     line-height: 2rem;
     padding-bottom: 25px; }
 
-.projects .overview-image {
+.project-pages .overview-image {
   float: right;
   margin-right: 5%;
   width: 40%; }
 
-.projects .wireframe-image {
+.project-pages .wireframe-image {
   float: left;
   height: auto;
   width: 50%; }
 
-.projects .wireframe-description {
+.project-pages .wireframe-description {
   align-items: center;
   display: flex;
   float: right;
   height: auto;
   justify-content: center;
   width: 50%; }
-  .projects .wireframe-description h2 {
+  .project-pages .wireframe-description h2 {
     color: white;
     font-size: 2rem;
     padding-bottom: 25px;
     text-align: center;
     text-transform: uppercase; }
-  .projects .wireframe-description p {
+  .project-pages .wireframe-description p {
     color: white;
     line-height: 2rem;
     margin: auto;
     padding-bottom: 25px;
     width: 50%; }
-    .projects .wireframe-description p span {
+    .project-pages .wireframe-description p span {
       font-weight: bold; }
 
-.projects .last-paragraph {
+.project-pages .last-paragraph {
   padding-bottom: 0; }
 
-.projects .mockups {
+.project-pages .mockups {
   clear: both;
   width: 100%; }
-  .projects .mockups h2 {
+  .project-pages .mockups h2 {
     color: white;
     font-size: 2rem;
     margin-left: 5%;
     padding-top: 75px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  .projects .mockups p {
+  .project-pages .mockups p {
     color: white;
     line-height: 2rem;
     padding-bottom: 25px; }
-    .projects .mockups p span {
+    .project-pages .mockups p span {
       font-weight: bold; }
 
-.projects .prototypes {
+.project-pages .prototypes {
   clear: both;
   width: 100%; }
 
-.projects .prototypes-description {
+.project-pages .prototypes-description {
   float: right;
   margin-right: 5%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   width: 50%; }
-  .projects .prototypes-description h2 {
+  .project-pages .prototypes-description h2 {
     color: black;
     font-size: 2rem;
     padding-top: 75px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  .projects .prototypes-description p {
+  .project-pages .prototypes-description p {
     color: black;
     line-height: 2rem;
     padding-bottom: 25px; }
-    .projects .prototypes-description p span {
+    .project-pages .prototypes-description p span {
       font-weight: bold; }
 
 .slick-prev:before, .slick-next:before {
@@ -383,7 +471,7 @@ button {
   font-size: 40px;
   font-weight: 500; }
 
-.projects .prototypes-image {
+.project-pages .prototypes-image {
   align-items: center;
   float: left;
   display: flex;
@@ -391,36 +479,36 @@ button {
   justify-content: center;
   width: 40%; }
 
-.projects footer div {
+.project-pages footer div {
   float: left;
   margin-left: 5%;
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
-  .projects footer div span {
+  .project-pages footer div span {
     display: block;
     text-align: left; }
-.projects footer ul li a {
+.project-pages footer ul li a {
   font-size: 1.5rem;
   padding: 0 25px; }
-  .projects footer ul li a span {
+  .project-pages footer ul li a span {
     font-size: 0.9375rem; }
 
-.projects footer .logo {
+.project-pages footer .logo {
   float: none;
   height: 52.5px;
   margin: 0;
   top: 0%;
   transform: none; }
 
-.projects .project-name {
+.project-pages .project-name {
   align-items: center;
   background: black;
   display: flex;
   height: 400px;
   justify-content: center;
   width: 100%; }
-  .projects .project-name h1 {
+  .project-pages .project-name h1 {
     color: white;
     font-size: 4rem;
     text-transform: uppercase; }
@@ -679,49 +767,5 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 1rem;
   margin: 0; }
-
-#home-page header {
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100; }
-
-#home-page header .nav-div {
-  float: left;
-  height: 100%;
-  width: 25%; }
-
-#home-page .text-container {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  position: relative;
-  top: 0;
-  width: 100%; }
-  #home-page .text-container a {
-    color: white;
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
-    text-decoration: none;
-    text-transform: uppercase; }
-    #home-page .text-container a span {
-      font-family: "Milkshake", "Avenir Next", sans-serif;
-      font-size: 1.09375rem;
-      font-weight: normal;
-      letter-spacing: 0rem;
-      text-transform: lowercase;
-      vertical-align: top; }
-
-#home-page header .logo {
-  float: none;
-  height: 52.5px;
-  margin-left: none;
-  padding-top: 5px;
-  top: none;
-  transform: none;
-  width: auto; }
 
 /*# sourceMappingURL=style.css.map */

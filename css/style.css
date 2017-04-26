@@ -333,6 +333,26 @@ button {
   transform: none;
   width: auto; }
 
+.work-pages .work-type {
+  align-items: center;
+  background: black;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  width: 100%; }
+  .work-pages .work-type h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0.15px 0.15px 3px black;
+    text-transform: uppercase; }
+
+#graphic-design-page .work-type {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/graphic-design/graphic-design.jpg");
+  background-size: cover;
+  background-repeat: none; }
+
 .project-pages p {
   font-size: 1.15rem; }
 

@@ -70,3 +70,83 @@
     text-transform: uppercase;
   }
 }
+
+.work-pages .projects-list {
+  height: auto;
+  margin: 0 5%;
+  width: 90%;
+}
+
+.work-pages article {
+  // background: $blue;
+  height: 400px;
+  margin: 50px 5%;
+  width: 90%;
+}
+
+.work-pages .project-description {
+  width: 55%;
+
+  h3 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    width: 75%;
+  }
+
+  h4 {
+    color: black;
+    font-size: 0.9375rem;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    width: 90%;
+  }
+}
+
+.work-pages .project-description-left {
+  float: right;
+}
+
+.work-pages .project-description-right {
+  float: left;
+
+  h3, h4, p {
+    text-align: right;
+  }
+
+  h3, p {
+    float: right;
+  }
+
+  h4 {
+    clear: both;
+  }
+}
+
+.work-pages .project-image {
+  align-items: center;
+  // background: $turquoise;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 40%;
+
+  img {
+    object-fit: contain;
+    height: 90%;
+    width: 80%;
+  }
+}
+.work-pages .project-image-left {
+  float: left;
+}
+
+.work-pages .project-image-right {
+  float: right;
+}

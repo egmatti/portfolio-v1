@@ -348,6 +348,63 @@ button {
     text-shadow: 0.15px 0.15px 3px black;
     text-transform: uppercase; }
 
+.work-pages .projects-list {
+  height: auto;
+  margin: 0 5%;
+  width: 90%; }
+
+.work-pages article {
+  height: 400px;
+  margin: 50px 5%;
+  width: 90%; }
+
+.work-pages .project-description {
+  width: 55%; }
+  .work-pages .project-description h3 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    width: 75%; }
+  .work-pages .project-description h4 {
+    color: black;
+    font-size: 0.9375rem;
+    padding-bottom: 25px;
+    text-transform: uppercase; }
+  .work-pages .project-description p {
+    width: 90%; }
+
+.work-pages .project-description-left {
+  float: right; }
+
+.work-pages .project-description-right {
+  float: left; }
+  .work-pages .project-description-right h3, .work-pages .project-description-right h4, .work-pages .project-description-right p {
+    text-align: right; }
+  .work-pages .project-description-right h3, .work-pages .project-description-right p {
+    float: right; }
+  .work-pages .project-description-right h4 {
+    clear: both; }
+
+.work-pages .project-image {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 40%; }
+  .work-pages .project-image img {
+    object-fit: contain;
+    height: 90%;
+    width: 80%; }
+
+.work-pages .project-image-left {
+  float: left; }
+
+.work-pages .project-image-right {
+  float: right; }
+
 #graphic-design-page .work-type {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/graphic-design/graphic-design.png");
   background-size: cover;

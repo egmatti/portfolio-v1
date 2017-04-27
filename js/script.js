@@ -135,7 +135,27 @@ $(".mockups-carousel-nav").slick({
 });
 
 
-// HANDLEBARS
+// GRAPHIC DESIGN PROJECTS HANDLEBARS
+$(function () {
+  var source = $("#project-post").html();
+  var template = Handlebars.compile(source);
+
+  var context = {
+    project: [{
+      title: "Developing a Personal Brand",
+      date: "4.15.17",
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      image: "style-guide",
+      position: "left"
+    }]
+  };
+
+  var compiled = template(context);
+  $(document.body).append(compiled);
+});
+
+
+// THE LATEST HANDLEBARS
 $(function () {
   var source = $("#blog-post").html();
   var template = Handlebars.compile(source);

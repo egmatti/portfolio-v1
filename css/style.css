@@ -349,7 +349,7 @@ button {
     text-transform: uppercase; }
 
 #graphic-design-page .work-type {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/graphic-design/graphic-design.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/graphic-design/graphic-design.png");
   background-size: cover;
   background-repeat: none; }
 

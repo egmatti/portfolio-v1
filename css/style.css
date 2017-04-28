@@ -105,7 +105,7 @@ button {
   width: 25%; }
 
 #about-section {
-  background: #e1ebf1;
+  background: #f3f3f3;
   height: 100vh;
   width: 100%; }
 
@@ -126,7 +126,7 @@ button {
     margin: auto; }
   #about-section #about-button-div button:hover {
     background: #3b345e;
-    color: #e1ebf1; }
+    color: #f3f3f3; }
 
 #about-section #about-panel {
   background: #3b345e;
@@ -146,7 +146,7 @@ button {
   top: 13.5%;
   width: 100%; }
   #about-section #about-headline-div span {
-    color: #e1ebf1;
+    color: #f3f3f3;
     display: block;
     font-family: "Avenir Next";
     font-size: 1.75rem;
@@ -266,7 +266,7 @@ button {
       color: white; }
 
 #the-latest-section {
-  background: #e1ebf1;
+  background: #f3f3f3;
   clear: both;
   height: 100vh;
   width: 100%; }
@@ -289,7 +289,12 @@ button {
 #the-latest-section .twitter-timeline {
   overflow: scroll; }
 
+.work-pages {
+  background-color: #f3f3f3; }
+
 .work-pages header {
+  background: white;
+  border-bottom: 2px solid #339a97;
   left: 0;
   position: fixed;
   top: 0;
@@ -336,6 +341,7 @@ button {
 .work-pages .work-type {
   align-items: center;
   background: black;
+  border-bottom: 2px solid #339a97;
   display: flex;
   height: 300px;
   justify-content: center;
@@ -350,7 +356,7 @@ button {
 
 .work-pages .projects-list {
   height: auto;
-  margin: 0 5%;
+  margin: 150px 5%;
   width: 90%; }
 
 .work-pages article {
@@ -359,12 +365,19 @@ button {
   width: 90%; }
 
 .work-pages .project-description {
-  width: 55%; }
+  background: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.45);
+  float: left;
+  margin: none;
+  padding: 45px;
+  position: relative;
+  right: 26px;
+  top: 25%;
+  width: 50%; }
   .work-pages .project-description h3 {
     color: black;
     font-size: 1.5rem;
     font-weight: 600;
-    padding-top: 45px;
     padding-bottom: 15px;
     text-transform: uppercase;
     width: 75%; }
@@ -376,34 +389,20 @@ button {
   .work-pages .project-description p {
     width: 90%; }
 
-.work-pages .project-description-left {
-  float: right; }
-
-.work-pages .project-description-right {
-  float: left; }
-  .work-pages .project-description-right h3, .work-pages .project-description-right h4, .work-pages .project-description-right p {
-    text-align: right; }
-  .work-pages .project-description-right h3, .work-pages .project-description-right p {
-    float: right; }
-  .work-pages .project-description-right h4 {
-    clear: both; }
-
 .work-pages .project-image {
   align-items: center;
   display: flex;
+  float: left;
   height: 100%;
   justify-content: center;
+  left: 26px;
+  margin: none;
+  position: relative;
   width: 40%; }
   .work-pages .project-image img {
     object-fit: contain;
     height: 90%;
     width: 80%; }
-
-.work-pages .project-image-left {
-  float: left; }
-
-.work-pages .project-image-right {
-  float: right; }
 
 #graphic-design-page .work-type {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/graphic-design/graphic-design.png");

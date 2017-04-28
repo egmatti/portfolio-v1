@@ -23,10 +23,10 @@ $(".about").click(function() {
 	$('#about-section').show();
   scrollToAnchor('about');
 
-  $(".about").css( "color", "#e1ebf1");
+  $(".about").css( "color", "#f3f3f3");
   $(".work, .the-latest").css( "color", "#3b345e");
   $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
-  $("#home-page header #about-nav-div").css("border-bottom", "2px solid #e1ebf1");
+  $("#home-page header #about-nav-div").css("border-bottom", "2px solid #f3f3f3");
 });
 
 
@@ -44,10 +44,10 @@ $(".the-latest").click(function() {
 	$('#the-latest-section').show();
    scrollToAnchor('latest');
 
-   $(".the-latest").css( "color", "#e1ebf1");
+   $(".the-latest").css( "color", "#f3f3f3");
    $(".about, .work").css( "color", "#3b345e");
    $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
-   $("#home-page header #the-latest-nav-div").css("border-bottom", "2px solid #e1ebf1");
+   $("#home-page header #the-latest-nav-div").css("border-bottom", "2px solid #f3f3f3");
 });
 
 
@@ -147,6 +147,24 @@ $(function () {
       text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       image: "style-guide",
       position: "left"
+      },{
+        title: "Stax Records Insights",
+        date: "4.13.17",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        image: "stax",
+        position: "right"
+      },{
+        title: "When JavaScript Finally Starts Making Sense",
+        date: "4.11.17",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        image: "hackathon",
+        position: "left"
+      },{
+        title: "Applying Gradient Mesh Tool Techniques to CSS",
+        date: "3.28.17",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        image: "gradient-mesh-with-css",
+        position: "right"
     }]
   };
 

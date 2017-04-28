@@ -328,6 +328,8 @@ button {
       letter-spacing: 0rem;
       text-transform: lowercase;
       vertical-align: top; }
+  .work-pages .text-container a:hover {
+    color: #339a97; }
 
 .work-pages header .logo {
   float: none;

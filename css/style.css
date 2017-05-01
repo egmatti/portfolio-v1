@@ -105,7 +105,7 @@ button {
   width: 25%; }
 
 #about-section {
-  background: #f3f3f3;
+  background: #f1f1f1;
   height: 100vh;
   width: 100%; }
 
@@ -126,7 +126,7 @@ button {
     margin: auto; }
   #about-section #about-button-div button:hover {
     background: #3b345e;
-    color: #f3f3f3; }
+    color: #f1f1f1; }
 
 #about-section #about-panel {
   background: #3b345e;
@@ -146,7 +146,7 @@ button {
   top: 13.5%;
   width: 100%; }
   #about-section #about-headline-div span {
-    color: #f3f3f3;
+    color: #f1f1f1;
     display: block;
     font-family: "Avenir Next";
     font-size: 1.75rem;
@@ -266,7 +266,7 @@ button {
       color: white; }
 
 #the-latest-section {
-  background: #f3f3f3;
+  background: #f1f1f1;
   clear: both;
   height: 100vh;
   width: 100%; }
@@ -290,7 +290,7 @@ button {
   overflow: scroll; }
 
 .work-pages {
-  background-color: #f3f3f3; }
+  background-color: #f1f1f1; }
 
 .work-pages header {
   background: white;
@@ -405,11 +405,6 @@ button {
     object-fit: contain;
     height: 90%;
     width: 80%; }
-
-#graphic-design-page .work-type {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/graphic-design/graphic-design.png");
-  background-size: cover;
-  background-repeat: none; }
 
 .project-pages p {
   font-size: 1.15rem; }

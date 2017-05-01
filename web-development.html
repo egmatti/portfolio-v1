@@ -54,6 +54,27 @@
           </div>
         </header>
 
+        <section class="work-type">
+          <h1>Web Design / Development</h1>
+        </section>
+
+        <section class="projects-list">
+          <script id="project-post" type="text/x-handlebars-template">
+            {{#each project}}
+              <article>
+                <div class="project-image">
+                  <img src="images/graphic-design/{{image}}.png" alt="{{title}}">
+                </div>
+                <div class="project-description">
+                  <h3>{{title}}</h3>
+                  <h4>{{date}}</h4>
+                  <p>{{text}}</p>
+                </div>
+              </article>
+            {{/each}}
+          </script>
+        </section>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
         <script type="text/javascript" src="js/slick.js"></script>

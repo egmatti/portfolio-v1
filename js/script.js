@@ -144,32 +144,32 @@ $(function () {
     project: [{
         title: "Chronicle Magazine",
         date: "2012–2015",
-        // text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        text: "Logos, layout designs, and promotional material for the Chronicle, Clemson University's student art and literary magazine",
         image: "chronicle-cover",
       },{
         title: "Dogs! Booklet",
         date: "2015",
-        // text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        text: "Layout design for a Graphic Communications class at Clemson University",
         image: "dogs-spread",
       },{
         title: "Jamaica Stickers",
         date: "2015",
-        // text: "Flexography designs",
+        text: "Sticker designs for a Graphic Communications class at Clemson University",
         image: "stickers",
       },{
         title: "Stillwater T-shirt",
         date: "2015",
-        // text: "Screen print design for Stillwater, the fictional band in Almost Famous",
+        text: "T-shirt design for a Graphic Communications class at Clemson University",
         image: "stillwater-t-shirt",
       },{
         title: "TopTix Marketing Collateral",
         date: "2016–2017",
-        // text: "Print and digital RFP responses, email marketing campaign designs, advertisements, and other marketing collateral for a ticketing software company",
+        text: "Print and digital RFP responses, email marketing campaign designs, advertisements, and other marketing collateral for TopTix, a ticketing, CRM/marketing, and fundraising software company ",
         image: "toptix-proposal"
       },{
         title: "Dogtooth Album Artwork",
         date: "2016–2017",
-        // text: "Print and digital album artwork for emerging hip hop producer Dogtooth",
+        text: "Print and digital album artwork for emerging hip hop producer Dogtooth",
         image: "dogtooth-artwork-with-border"
     }]
   };

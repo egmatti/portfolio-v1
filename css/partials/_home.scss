@@ -1,327 +1,174 @@
 // HEADER
 
 #home-page header {
-  left: 0;
+  background: white;
+  box-shadow: 0px 0.5px 7px rgba(0,0,0,0.35);
+  height: 80px;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 100;
-}
 
-#home-page header .nav-div {
-  // background: white;
-  // border-bottom: 2px solid $turquoise;
-  float: left;
-  height: 100%;
-  width: 25%;
-}
+  ul {
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
-#home-page .text-container {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  position: relative;
-  top: 0;
-  width: 100%;
+    li {
+      display: inline-block;
+      list-style-type: none;
 
-  a {
-    color: white;
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
-    text-decoration: none;
-    text-transform: uppercase;
+      a {
+        color: black;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        padding: 0 25px;
+        text-decoration: none;
+        text-transform: uppercase;
 
-    span {
-      font-family: "Milkshake", "Avenir Next", sans-serif;
-      font-size: 1.09375rem;
-      font-weight: normal;
-      letter-spacing: 0rem;
-      text-transform: lowercase;
-      vertical-align: top;
+        span {
+          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-size: 0.78125rem;
+          font-weight: normal;
+          letter-spacing: 0rem;
+          text-transform: lowercase;
+          vertical-align: top;
+        }
+      }
     }
   }
 }
 
-#home-page header .logo {
-  float: none;
-  height: 52.5px;
-  margin-left: none;
-  padding-top: 5px;
-  top: none;
-  transform: none;
+#home-page .the-latest {
+  padding-left: 13px;
+  padding-right: 0px;
+}
+
+#home-page .logo {
+  float: left;
+  height: 45px;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   width: auto;
 }
 
 // HERO
 
 #home-page #hero {
-  background-image: url("../images/hero/concert.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #fa4a4c;
   height: 100vh;
   width: 100%;
 }
-
-#home-page .panel {
-  // background: linear-gradient(to right, rgba(196, 0, 133, 0.45) 50%, rgba(196, 0, 133, 0) 50%);
-  // transition: all 2s ease;
-  // background-size: 200% 100%;
-  // background-position:right bottom;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  box-sizing: border-box;
-  float: left;
-  height: 100%;
-  width: 25%;
-}
-
-// #home-page .panel:hover {
-//   background-position: left bottom;
-// }
 
 
 // ABOUT SECTION
 
 #about-section {
-  background: $off-white;
+  background: white;
   height: 100vh;
   width: 100%;
 }
 
-#about-section #about-button-div {
-  align-items: center;
-  display: flex;
-  float: left;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 25%;
 
-  button {
-    background: none;
-    border: 2px solid $purple;
-    color: $purple;
-    display: block;
-    margin: auto;
-  }
+// BLOG SECTION
 
-  button:hover {
-    background: $purple;
-    color: $off-white;
-  }
-}
-
-#about-section #about-panel {
-  background: $purple;
-  float: left;
-  height: 100%;
-  left: 0%;
-  position: relative;
-  top: 0;
-  width: 25%;
-}
-
-#about-section #about-headline-div {
-  align-items: center;
-  display: flex;
-  height: 41.95%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 100%;
-
-  span {
-    color: $off-white;
-    display: block;
-    font-family: "Avenir Next";
-    font-size: 1.75rem;
-    font-weight: bold;
-    width: 68%;
-  }
-}
-
-#about-section #about-image-div {
-  // background: $turquoise;
-  align-items: flex-end;
-  display: flex;
-  float: left;
-  height: 37%;
-  justify-content: center;
-  left: 0%;
-  position: relative;
-  top: 13.5%;
-  width: 50%;
-}
-
-#about-section #about-image {
-  height: 86.62%;
-  object-fit: contain;
-  position: relative;
-}
-
-#about-section #about-bio-div {
-  // background: $magenta;
-  display: block;
-  height: 49.5%;
-  left: 37.5%;
-  position: relative;
-  top: 50.5%;
-  width: 62.5%;
-  z-index: 5;
-}
-
-#about-section #about-bio {
+#blog-section {
   background: white;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.45);
-  height: 80%;
-  position: relative;
-  top: 10%;
-  width: 93%;
-
-  div {
-    // background: $blue;
-    float: left;
-    margin: 2.5%;
-    position: absolute;
-    width: 95%;
-
-    p {
-      font-size: 1rem;
-    }
-  }
-}
-
-
-// WORK SECTION
-
-#work-section {
-  background: white;
+  border-bottom: 1.5px solid rgba(0,0,0,0.1);
+  border-top: 1.5px solid rgba(0,0,0,0.1);
   clear: both;
   height: 100vh;
   width: 100%;
 }
 
-#work-section #work-image-div {
-  // background: $blue;
-  display: flex;
-  float: left;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 50%;
-}
-
-#work-section #work-image {
-  object-fit: contain;
-  width: 70%;
-}
-
-#work-section #work-panel {
-  background: $turquoise;
+#blog-section #blog-div {
   float: left;
   height: 100%;
-  left: 0%;
   position: relative;
-  width: 25%;
-}
-
-#work-section #work-approach-div {
-  align-items: center;
-  // background: $purple;
-  display: flex;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 100%;
-
-  div {
-    // background: $blue;
-    width: 75%;
-
-    h2 {
-      color: white;
-      font-size: 1.5rem;
-      padding-bottom: 35px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    p {
-      color: white;
-      font-size: 1rem;
-      padding-bottom: 17.5px;
-    }
-  }
-}
-
-
-#work-section #work-buttons-div {
-  align-items: center;
-  float: left;
-  display: flex;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 25%;
-
-  div {
-    // background: $blue;
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-    width: 100%;
-
-    button {
-      background: none;
-      border: 2px solid $turquoise;
-      color: $turquoise;
-      display: block;
-      margin: auto;
-    }
-
-    button:hover {
-      background: $turquoise;
-      color: white;
-    }
-  }
-}
-
-
-// THE LATEST SECTION
-
-#the-latest-section {
-  background: $off-white;
-  clear: both;
-  height: 100vh;
-  width: 100%;
-}
-
-#the-latest-section #the-latest-blog-div {
-  // background: $blue;
-  float: left;
-  height: 86.5%;
-  overflow: scroll;
-  position: relative;
-  top: 13.5%;
   width: 75%;
 }
 
-#the-latest-section #the-latest-panel {
-  background: $purple;
-  float: left;
+#blog-section #blog-panel {
+  background: #1fd4f9;
   height: 100%;
-  position: relative;
+  left: 75%;
+  position: absolute;
   width: 25%;
 }
 
-#the-latest-section .twitter-timeline {
-  // height: 80%;
-  overflow: scroll;
-  // width: 80%;
+#home-page .mockups-carousel-for {
+  div {
+    background: #ededed;
+    float: right;
+    // margin: auto;
+    width: 87.5%;
+
+    img {
+      float: left;
+      object-fit: contain;
+      position: relative;
+      left: -100px;
+      width: 200px;
+    }
+  }
+}
+
+#home-page .mockups-carousel-description {
+  float: right;
+
+  h3 {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: black;
+    line-height: 2rem;
+    padding-bottom: 25px;
+    width: 80%;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+#home-page .mockups-carousel-nav {
+  margin: auto;
+  position: relative;
+  top: -4%;
+  width: 40%;
+
+    img {
+      left: 25%;
+      object-fit: contain;
+      position: relative;
+      width: 60%;
+    }
+  }
+
+// PROJECTS SECTION
+
+#projects-section {
+  background: white;
+  clear: both;
+  height: 100vh;
+  width: 100%;
+}
+
+
+// FOOTER
+
+#home-page footer {
+  background: #3d01c2;
+  height: 240px;
+  width: 100%;
 }

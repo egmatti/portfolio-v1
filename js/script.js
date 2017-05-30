@@ -1,119 +1,22 @@
-// // GETTING STARTED EXAMPLE
-// // $(document).ready(function(){
-// //   // jQuery code
-// // });
-
-// SCROLLING NAV BAR
-function scrollToAnchor(menuname){
-    var link = $("[name='"+ menuname +"']");
-    $('html,body').animate({scrollTop: link.offset().top},'slow');
-}
-
-$('#about-section, #work-section, #the-latest-section').hide();
-
-$(".logo").click(function() {
-		$('#hero').show();
-   scrollToAnchor('hero');
-
-   $(".about, .work, .the-latest").css( "color", "white");
-   $("#home-page header .nav-div").css("border-bottom", "none");
-});
-
-$(".about").click(function() {
-	$('#about-section').show();
-  scrollToAnchor('about');
-
-  $(".about").css( "color", "#f3f3f3");
-  $(".work, .the-latest").css( "color", "#3b345e");
-  $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
-  $("#home-page header #about-nav-div").css("border-bottom", "2px solid #f3f3f3");
-});
+// GETTING STARTED EXAMPLE
+// $(document).ready(function(){
+//   // jQuery code
+// });
 
 
-$(".work").click(function() {
-		$('#work-section').show();
-   scrollToAnchor('work');
-
-   $(".work").css( "color", "white");
-   $(".about, .the-latest").css( "color", "#339a97");
-   $("#home-page header .nav-div").css("border-bottom", "2px solid #339a97");
-   $("#home-page header #work-nav-div").css("border-bottom", "2px solid white");
-});
-
-$(".the-latest").click(function() {
-	$('#the-latest-section').show();
-   scrollToAnchor('latest');
-
-   $(".the-latest").css( "color", "#f3f3f3");
-   $(".about, .work").css( "color", "#3b345e");
-   $("#home-page header .nav-div").css("border-bottom", "2px solid #3b345e");
-   $("#home-page header #the-latest-nav-div").css("border-bottom", "2px solid #f3f3f3");
-});
-
-
-// // CHANGING HERO IMAGE
+// PARALLAX
+// function InitParalax() {
+//     var paralaxDom = document.getElementsByClassName("parallaxable")[0];
+//     window.addEventListener("GlobalScroll", function(e) {
+//         if (window.getComputedStyle(paralaxDom).position == "absolute") {
+//             var perc = Math.min(e.target.scrollY / (verge.viewportH()), 1);
+//             paralaxDom.style.transform = "translateY(" + (-perc*300) + "px)";
+//         }
+//     });
+// }
 //
-// // WORKING METHOD
-// // $(document).ready(function(){
-// //   setTimeout(
-// //     function() {
-// //       $("#hero").css("background", "url(images/home/computer.png)");
-// //     }, 5000);
-// // });
-//
-// // NON-WORKING METHOD
-// // $(document).ready(function(){
-// //   setTimeout(
-// //     function() {
-// //       $("#hero").css({"background": "url(images/home/computer.png)", "background-size": "cover", "background-repeat": "no-repeat"}));
-// //     }, 5000);
-// // });
-//
-// // NON-WORKING SLICES
-// // $(document).ready(function(){
-// //   setTimeout(
-// //     function() {
-// //       $(".panel").slice(0,3).css("background-color", "red");
-// //       // document.getElementById('div2').style.display='none';
-// //     }, 5000);
-// // });
-//
-//
-// // HOME PAGE SCROLLING
-// // $("#about-section").hide();
-// //
-// // $( ".about" ).click(function() {
-// //   $( "#hero" ).hide();
-// //   $( "#about-section" ).slideDown('slow');
-// //   // header .style.backgroundColor = "blue"
-// // });
-//
-//
-// // LOGO HOVER
-// // $("#about-logo-hover").hide();
-// //
-// // $("#about-logo-non-hover").hover() {
-// //   console.log ("test");
-// //   // function() {
-// //   //   $("#about-section.logo-non-hover").hide();
-// //   //   $("#about-section.logo-hover").show();
-// //   // }
-// // }
-//
-//
-// // PARALLAX
-// // function InitParalax() {
-// //     var paralaxDom = document.getElementsByClassName("parallaxable")[0];
-// //     window.addEventListener("GlobalScroll", function(e) {
-// //         if (window.getComputedStyle(paralaxDom).position == "absolute") {
-// //             var perc = Math.min(e.target.scrollY / (verge.viewportH()), 1);
-// //             paralaxDom.style.transform = "translateY(" + (-perc*300) + "px)";
-// //         }
-// //     });
-// // }
-// //
-// // document.addEventListener("DOMContentLoaded", function(e) {
-// //     InitParalax();
+// document.addEventListener("DOMContentLoaded", function(e) {
+//     InitParalax();
 //
 //
 // CAROUSEL

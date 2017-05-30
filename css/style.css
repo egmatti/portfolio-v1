@@ -46,248 +46,130 @@ button {
   padding-bottom: none; }
 
 #home-page header {
-  left: 0;
+  background: white;
+  box-shadow: 0px 0.5px 7px rgba(0, 0, 0, 0.35);
+  height: 80px;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 100; }
+  #home-page header ul {
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    #home-page header ul li {
+      display: inline-block;
+      list-style-type: none; }
+      #home-page header ul li a {
+        color: black;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        padding: 0 25px;
+        text-decoration: none;
+        text-transform: uppercase; }
+        #home-page header ul li a span {
+          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-size: 0.78125rem;
+          font-weight: normal;
+          letter-spacing: 0rem;
+          text-transform: lowercase;
+          vertical-align: top; }
 
-#home-page header .nav-div {
+#home-page .the-latest {
+  padding-left: 13px;
+  padding-right: 0px; }
+
+#home-page .logo {
   float: left;
-  height: 100%;
-  width: 25%; }
-
-#home-page .text-container {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: center;
+  height: 45px;
+  margin-left: 5%;
   position: relative;
-  top: 0;
-  width: 100%; }
-  #home-page .text-container a {
-    color: white;
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
-    text-decoration: none;
-    text-transform: uppercase; }
-    #home-page .text-container a span {
-      font-family: "Milkshake", "Avenir Next", sans-serif;
-      font-size: 1.09375rem;
-      font-weight: normal;
-      letter-spacing: 0rem;
-      text-transform: lowercase;
-      vertical-align: top; }
-
-#home-page header .logo {
-  float: none;
-  height: 52.5px;
-  margin-left: none;
-  padding-top: 5px;
-  top: none;
-  transform: none;
+  top: 50%;
+  transform: translateY(-50%);
   width: auto; }
 
 #home-page #hero {
-  background-image: url("../images/hero/concert.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #fa4a4c;
   height: 100vh;
   width: 100%; }
-
-#home-page .panel {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  box-sizing: border-box;
-  float: left;
-  height: 100%;
-  width: 25%; }
 
 #about-section {
-  background: #f1f1f1;
+  background: white;
   height: 100vh;
   width: 100%; }
 
-#about-section #about-button-div {
-  align-items: center;
-  display: flex;
-  float: left;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 25%; }
-  #about-section #about-button-div button {
-    background: none;
-    border: 2px solid #3b345e;
-    color: #3b345e;
-    display: block;
-    margin: auto; }
-  #about-section #about-button-div button:hover {
-    background: #3b345e;
-    color: #f1f1f1; }
-
-#about-section #about-panel {
-  background: #3b345e;
-  float: left;
-  height: 100%;
-  left: 0%;
-  position: relative;
-  top: 0;
-  width: 25%; }
-
-#about-section #about-headline-div {
-  align-items: center;
-  display: flex;
-  height: 41.95%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 100%; }
-  #about-section #about-headline-div span {
-    color: #f1f1f1;
-    display: block;
-    font-family: "Avenir Next";
-    font-size: 1.75rem;
-    font-weight: bold;
-    width: 68%; }
-
-#about-section #about-image-div {
-  align-items: flex-end;
-  display: flex;
-  float: left;
-  height: 37%;
-  justify-content: center;
-  left: 0%;
-  position: relative;
-  top: 13.5%;
-  width: 50%; }
-
-#about-section #about-image {
-  height: 86.62%;
-  object-fit: contain;
-  position: relative; }
-
-#about-section #about-bio-div {
-  display: block;
-  height: 49.5%;
-  left: 37.5%;
-  position: relative;
-  top: 50.5%;
-  width: 62.5%;
-  z-index: 5; }
-
-#about-section #about-bio {
+#blog-section {
   background: white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.45);
-  height: 80%;
-  position: relative;
-  top: 10%;
-  width: 93%; }
-  #about-section #about-bio div {
-    float: left;
-    margin: 2.5%;
-    position: absolute;
-    width: 95%; }
-    #about-section #about-bio div p {
-      font-size: 1rem; }
-
-#work-section {
-  background: white;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
   clear: both;
   height: 100vh;
   width: 100%; }
 
-#work-section #work-image-div {
-  display: flex;
-  float: left;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 50%; }
-
-#work-section #work-image {
-  object-fit: contain;
-  width: 70%; }
-
-#work-section #work-panel {
-  background: #339a97;
+#blog-section #blog-div {
   float: left;
   height: 100%;
-  left: 0%;
   position: relative;
-  width: 25%; }
-
-#work-section #work-approach-div {
-  align-items: center;
-  display: flex;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 100%; }
-  #work-section #work-approach-div div {
-    width: 75%; }
-    #work-section #work-approach-div div h2 {
-      color: white;
-      font-size: 1.5rem;
-      padding-bottom: 35px;
-      text-align: center;
-      text-transform: uppercase; }
-    #work-section #work-approach-div div p {
-      color: white;
-      font-size: 1rem;
-      padding-bottom: 17.5px; }
-
-#work-section #work-buttons-div {
-  align-items: center;
-  float: left;
-  display: flex;
-  height: 86.5%;
-  justify-content: center;
-  position: relative;
-  top: 13.5%;
-  width: 25%; }
-  #work-section #work-buttons-div div {
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-    width: 100%; }
-    #work-section #work-buttons-div div button {
-      background: none;
-      border: 2px solid #339a97;
-      color: #339a97;
-      display: block;
-      margin: auto; }
-    #work-section #work-buttons-div div button:hover {
-      background: #339a97;
-      color: white; }
-
-#the-latest-section {
-  background: #f1f1f1;
-  clear: both;
-  height: 100vh;
-  width: 100%; }
-
-#the-latest-section #the-latest-blog-div {
-  float: left;
-  height: 86.5%;
-  overflow: scroll;
-  position: relative;
-  top: 13.5%;
   width: 75%; }
 
-#the-latest-section #the-latest-panel {
-  background: #3b345e;
-  float: left;
+#blog-section #blog-panel {
+  background: #1fd4f9;
   height: 100%;
-  position: relative;
+  left: 75%;
+  position: absolute;
   width: 25%; }
 
-#the-latest-section .twitter-timeline {
-  overflow: scroll; }
+#home-page .mockups-carousel-for div {
+  background: #ededed;
+  float: right;
+  width: 87.5%; }
+  #home-page .mockups-carousel-for div img {
+    float: left;
+    object-fit: contain;
+    position: relative;
+    left: -100px;
+    width: 200px; }
+
+#home-page .mockups-carousel-description {
+  float: right; }
+  #home-page .mockups-carousel-description h3 {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-transform: uppercase; }
+  #home-page .mockups-carousel-description p {
+    color: black;
+    line-height: 2rem;
+    padding-bottom: 25px;
+    width: 80%; }
+    #home-page .mockups-carousel-description p span {
+      font-weight: bold; }
+
+#home-page .mockups-carousel-nav {
+  margin: auto;
+  position: relative;
+  top: -4%;
+  width: 40%; }
+  #home-page .mockups-carousel-nav img {
+    left: 25%;
+    object-fit: contain;
+    position: relative;
+    width: 60%; }
+
+#projects-section {
+  background: white;
+  clear: both;
+  height: 100vh;
+  width: 100%; }
+
+#home-page footer {
+  background: #3d01c2;
+  height: 240px;
+  width: 100%; }
 
 .work-pages {
   background-color: #f1f1f1; }

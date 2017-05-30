@@ -1,7 +1,7 @@
-// GETTING STARTED EXAMPLE
-// $(document).ready(function(){
-//   // jQuery code
-// });
+// // GETTING STARTED EXAMPLE
+// // $(document).ready(function(){
+// //   // jQuery code
+// // });
 
 // SCROLLING NAV BAR
 function scrollToAnchor(menuname){
@@ -51,72 +51,71 @@ $(".the-latest").click(function() {
 });
 
 
-
-// CHANGING HERO IMAGE
-
-// WORKING METHOD
-// $(document).ready(function(){
-//   setTimeout(
-//     function() {
-//       $("#hero").css("background", "url(images/home/computer.png)");
-//     }, 5000);
-// });
-
-// NON-WORKING METHOD
-// $(document).ready(function(){
-//   setTimeout(
-//     function() {
-//       $("#hero").css({"background": "url(images/home/computer.png)", "background-size": "cover", "background-repeat": "no-repeat"}));
-//     }, 5000);
-// });
-
-// NON-WORKING SLICES
-// $(document).ready(function(){
-//   setTimeout(
-//     function() {
-//       $(".panel").slice(0,3).css("background-color", "red");
-//       // document.getElementById('div2').style.display='none';
-//     }, 5000);
-// });
-
-
-// HOME PAGE SCROLLING
-// $("#about-section").hide();
+// // CHANGING HERO IMAGE
 //
-// $( ".about" ).click(function() {
-//   $( "#hero" ).hide();
-//   $( "#about-section" ).slideDown('slow');
-//   // header .style.backgroundColor = "blue"
-// });
-
-
-// LOGO HOVER
-// $("#about-logo-hover").hide();
+// // WORKING METHOD
+// // $(document).ready(function(){
+// //   setTimeout(
+// //     function() {
+// //       $("#hero").css("background", "url(images/home/computer.png)");
+// //     }, 5000);
+// // });
 //
-// $("#about-logo-non-hover").hover() {
-//   console.log ("test");
-//   // function() {
-//   //   $("#about-section.logo-non-hover").hide();
-//   //   $("#about-section.logo-hover").show();
-//   // }
-// }
-
-
-// PARALLAX
-// function InitParalax() {
-//     var paralaxDom = document.getElementsByClassName("parallaxable")[0];
-//     window.addEventListener("GlobalScroll", function(e) {
-//         if (window.getComputedStyle(paralaxDom).position == "absolute") {
-//             var perc = Math.min(e.target.scrollY / (verge.viewportH()), 1);
-//             paralaxDom.style.transform = "translateY(" + (-perc*300) + "px)";
-//         }
-//     });
-// }
+// // NON-WORKING METHOD
+// // $(document).ready(function(){
+// //   setTimeout(
+// //     function() {
+// //       $("#hero").css({"background": "url(images/home/computer.png)", "background-size": "cover", "background-repeat": "no-repeat"}));
+// //     }, 5000);
+// // });
 //
-// document.addEventListener("DOMContentLoaded", function(e) {
-//     InitParalax();
-
-
+// // NON-WORKING SLICES
+// // $(document).ready(function(){
+// //   setTimeout(
+// //     function() {
+// //       $(".panel").slice(0,3).css("background-color", "red");
+// //       // document.getElementById('div2').style.display='none';
+// //     }, 5000);
+// // });
+//
+//
+// // HOME PAGE SCROLLING
+// // $("#about-section").hide();
+// //
+// // $( ".about" ).click(function() {
+// //   $( "#hero" ).hide();
+// //   $( "#about-section" ).slideDown('slow');
+// //   // header .style.backgroundColor = "blue"
+// // });
+//
+//
+// // LOGO HOVER
+// // $("#about-logo-hover").hide();
+// //
+// // $("#about-logo-non-hover").hover() {
+// //   console.log ("test");
+// //   // function() {
+// //   //   $("#about-section.logo-non-hover").hide();
+// //   //   $("#about-section.logo-hover").show();
+// //   // }
+// // }
+//
+//
+// // PARALLAX
+// // function InitParalax() {
+// //     var paralaxDom = document.getElementsByClassName("parallaxable")[0];
+// //     window.addEventListener("GlobalScroll", function(e) {
+// //         if (window.getComputedStyle(paralaxDom).position == "absolute") {
+// //             var perc = Math.min(e.target.scrollY / (verge.viewportH()), 1);
+// //             paralaxDom.style.transform = "translateY(" + (-perc*300) + "px)";
+// //         }
+// //     });
+// // }
+// //
+// // document.addEventListener("DOMContentLoaded", function(e) {
+// //     InitParalax();
+//
+//
 // CAROUSEL
 $(".mockups-carousel-for").slick({
  arrows: false,
@@ -133,8 +132,8 @@ $(".mockups-carousel-nav").slick({
   slidesToScroll: 1,
   slidesToShow: 3
 });
-
-
+//
+//
 // GRAPHIC DESIGN PROJECTS HANDLEBARS
 $(function () {
   var source = $("#project-post").html();

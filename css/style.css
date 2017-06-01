@@ -121,40 +121,50 @@ button {
   position: absolute;
   width: 25%; }
 
-#home-page .mockups-carousel-for div {
+#blog-section .mockups-carousel-for {
   background: #ededed;
   float: right;
+  min-height: 100%;
   width: 87.5%; }
-  #home-page .mockups-carousel-for div img {
-    float: left;
-    object-fit: contain;
-    position: relative;
-    left: -100px;
-    width: 200px; }
+  #blog-section .mockups-carousel-for div {
+    overflow: visible;
+    min-height: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%; }
+    #blog-section .mockups-carousel-for div img {
+      float: left;
+      object-fit: contain;
+      overflow: scroll;
+      position: relative;
+      left: -5%;
+      width: 35%; }
 
-#home-page .mockups-carousel-description {
-  float: right; }
-  #home-page .mockups-carousel-description h3 {
+#blog-section .mockups-carousel-description {
+  display: inline-block;
+  float: right;
+  padding-right: 5%;
+  width: 60%; }
+  #blog-section .mockups-carousel-description h3 {
     color: black;
     font-weight: 600;
     font-size: 1.5rem;
     padding-top: 25px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  #home-page .mockups-carousel-description p {
+  #blog-section .mockups-carousel-description p {
     color: black;
     line-height: 2rem;
-    padding-bottom: 25px;
-    width: 80%; }
-    #home-page .mockups-carousel-description p span {
+    padding-bottom: 25px; }
+    #blog-section .mockups-carousel-description p span {
       font-weight: bold; }
 
-#home-page .mockups-carousel-nav {
+#blog-section .mockups-carousel-nav {
   margin: auto;
   position: relative;
   top: -4%;
   width: 40%; }
-  #home-page .mockups-carousel-nav img {
+  #blog-section .mockups-carousel-nav img {
     left: 25%;
     object-fit: contain;
     position: relative;

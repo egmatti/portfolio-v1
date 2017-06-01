@@ -132,19 +132,38 @@ button {
     padding-bottom: 10px;
     padding-top: 10px;
     width: 100%; }
-    #blog-section .mockups-carousel-for div img {
+    #blog-section .mockups-carousel-for div figure {
+      border: 15px solid white;
+      box-shadow: 0px 0.05px 10px rgba(0, 0, 0, 0.15);
       float: left;
-      object-fit: contain;
-      overflow: scroll;
+      margin: 0;
       position: relative;
-      left: -5%;
-      width: 35%; }
+      right: 5%;
+      width: 30%; }
+      #blog-section .mockups-carousel-for div figure img {
+        object-fit: contain;
+        width: 100%; }
+      #blog-section .mockups-carousel-for div figure figcaption {
+        background: white;
+        height: 160px;
+        width: 100%; }
+        #blog-section .mockups-carousel-for div figure figcaption span {
+          color: #a6a6a6;
+          font-family: "Milkshake", cursive;
+          font-size: 2.25rem;
+          margin: auto;
+          text-transform: lowercase; }
 
 #blog-section .mockups-carousel-description {
   display: inline-block;
   float: right;
   padding-right: 5%;
   width: 60%; }
+  #blog-section .mockups-carousel-description span {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase; }
   #blog-section .mockups-carousel-description h3 {
     color: black;
     font-weight: 600;
@@ -156,8 +175,6 @@ button {
     color: black;
     line-height: 2rem;
     padding-bottom: 25px; }
-    #blog-section .mockups-carousel-description p span {
-      font-weight: bold; }
 
 #blog-section .mockups-carousel-nav {
   margin: auto;

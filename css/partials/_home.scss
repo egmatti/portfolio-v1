@@ -113,13 +113,34 @@
     padding-top: 10px;
     width: 100%;
 
-    img {
+    figure {
+      border: 15px solid white;
+      box-shadow: 0px 0.05px 10px rgba(0,0,0,0.15);
       float: left;
-      object-fit: contain;
-      overflow: scroll;
+      margin: 0;
+      // object-fit: contain;
       position: relative;
-      left: -5%;
-      width: 35%;
+      right: 5%;
+      width: 30%;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+
+      figcaption {
+        background: white;
+        height: 160px;
+        width: 100%;
+
+        span {
+          color: #a6a6a6;
+          font-family: "Milkshake", cursive;
+          font-size: 2.25rem;
+          margin: auto;
+          text-transform: lowercase;
+        }
+      }
     }
   }
 }
@@ -129,6 +150,13 @@
   float: right;
   padding-right: 5%;
   width: 60%;
+
+  span {
+    color: rgba(0,0,0,0.35);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
   h3 {
     color: black;
@@ -143,11 +171,6 @@
     color: black;
     line-height: 2rem;
     padding-bottom: 25px;
-    // width: 80%;
-
-    span {
-      font-weight: bold;
-    }
   }
 }
 

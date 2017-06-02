@@ -106,7 +106,7 @@ button {
   border-top: 1.5px solid rgba(0, 0, 0, 0.1);
   clear: both;
   height: auto;
-  overflow: auto;
+  overflow: hidden;
   width: 100%; }
 
 #blog-section #blog-div {
@@ -129,7 +129,7 @@ button {
     overflow: visible; }
 
 #blog-section .blog-post {
-  overflow: visible;
+  overflow: hidden;
   padding-bottom: 50px;
   padding-top: 50px;
   width: 100%; }

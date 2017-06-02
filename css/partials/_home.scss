@@ -82,14 +82,12 @@
   border-top: 1.5px solid rgba(0,0,0,0.1);
   clear: both;
   height: auto;
-  // min-height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
 }
 
 #blog-section #blog-div {
   float: left;
-  // height: 100%;
   position: relative;
   width: 75%;
 }
@@ -105,7 +103,6 @@
 #blog-section .blog-slider-for {
   background: #ededed;
   float: right;
-  // min-height: 100%;
   width: 87.5%;
 
   div {
@@ -114,8 +111,7 @@
 }
 
 #blog-section .blog-post {
-  overflow: visible;
-  // min-height: 100%;
+  overflow: hidden;
   padding-bottom: 50px;
   padding-top: 50px;
   width: 100%;
@@ -125,7 +121,6 @@
       box-shadow: 0px 0.05px 10px rgba(0,0,0,0.15);
       float: left;
       margin: 0;
-      // object-fit: contain;
       position: relative;
       right: 5%;
       width: 30%;
@@ -160,13 +155,11 @@
   }
 
 #blog-section .share-container {
-  // background: red;
   height: 40%;
   padding-top: 5%;
 }
 
 #blog-section .social-media-icons-container {
-  // background: blue;
   height: 50%;
   padding-bottom: 5%;
 }

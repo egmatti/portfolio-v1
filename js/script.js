@@ -24,15 +24,20 @@ $(".blog-slider-for").slick({
  asNavFor: ".blog-slider-nav",
  fade: true,
  slidesToScroll: 1,
- slidesToShow: 1
+ slidesToShow: 1,
+ vertical: false
+ // verticalSwiping: false
 });
 
 $(".blog-slider-nav").slick({
   arrows: true,
   asNavFor: ".blog-slider-for",
   infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 1
+  focusOnSelect: true,
+  slidesToScroll: 2,
+  slidesToShow: 2,
+  vertical: true
+  // verticalSwiping: true
 });
 
 
@@ -48,6 +53,7 @@ $(".mockups-carousel-for").slick({
 $(".mockups-carousel-nav").slick({
   arrows: true,
   asNavFor: ".mockups-carousel-for",
+  focusOnSelect: true,
   infinite: true,
   slidesToScroll: 1,
   slidesToShow: 3

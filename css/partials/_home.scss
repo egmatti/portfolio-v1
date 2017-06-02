@@ -93,7 +93,6 @@
 }
 
 #blog-section #blog-panel {
-  background: #1fd4f9;
   height: auto;
   left: 75%;
   position: absolute;
@@ -164,7 +163,6 @@
   padding-bottom: 5%;
 }
 
-
 #blog-section .fa {
   color: #a6a6a6;
   font-size: 1.75rem;
@@ -172,7 +170,7 @@
 }
 
 #blog-section .fa-facebook, .fa-twitter {
-  border-right: 2px solid #ededed;
+  border-right: 1.5px solid #ededed;
 }
 
 #blog-section .slick-slide {
@@ -192,7 +190,7 @@
   span {
     color: rgba(0,0,0,0.35);
     font-size: 0.85rem;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 0.05rem;
     padding-top: 25px;
     text-transform: uppercase;
@@ -215,18 +213,48 @@
 }
 
 #blog-section .blog-slider-nav {
-  margin: auto;
-  position: relative;
-  top: -4%;
-  width: 40%;
+
+  div {
+    background: white;
+    border-bottom: 1.5px solid #ededed;
+    display: block;
+    height: 100px;
+    width: 100%;
 
     img {
-      left: 25%;
+      display: inline-block;
+      max-height: 75%;
+      float: left;
       object-fit: contain;
-      position: relative;
+      width: 30%;
+    }
+
+    div {
+      background: pink;
+      display: inline-block;
+      float: left;
       width: 60%;
+
+      span {
+        color: rgba(0,0,0,0.35);
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+      }
+
+      h5 {
+        color: #1fd4f9;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        padding-top: 2.5px;
+        text-transform: uppercase;
+      }
     }
   }
+}
+
 
 // PROJECTS SECTION
 

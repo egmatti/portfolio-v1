@@ -115,7 +115,6 @@ button {
   width: 75%; }
 
 #blog-section #blog-panel {
-  background: #1fd4f9;
   height: auto;
   left: 75%;
   position: absolute;
@@ -175,7 +174,7 @@ button {
   padding: 0 35px; }
 
 #blog-section .fa-facebook, .fa-twitter {
-  border-right: 2px solid #ededed; }
+  border-right: 1.5px solid #ededed; }
 
 #blog-section .slick-slide {
   height: 0; }
@@ -191,7 +190,7 @@ button {
   #blog-section .blog-slider-description span {
     color: rgba(0, 0, 0, 0.35);
     font-size: 0.85rem;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 0.05rem;
     padding-top: 25px;
     text-transform: uppercase; }
@@ -207,16 +206,36 @@ button {
     line-height: 2rem;
     padding-bottom: 25px; }
 
-#blog-section .blog-slider-nav {
-  margin: auto;
-  position: relative;
-  top: -4%;
-  width: 40%; }
-  #blog-section .blog-slider-nav img {
-    left: 25%;
+#blog-section .blog-slider-nav div {
+  background: white;
+  border-bottom: 1.5px solid #ededed;
+  display: block;
+  height: 100px;
+  width: 100%; }
+  #blog-section .blog-slider-nav div img {
+    display: inline-block;
+    max-height: 75%;
+    float: left;
     object-fit: contain;
-    position: relative;
+    width: 30%; }
+  #blog-section .blog-slider-nav div div {
+    background: pink;
+    display: inline-block;
+    float: left;
     width: 60%; }
+    #blog-section .blog-slider-nav div div span {
+      color: rgba(0, 0, 0, 0.35);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
+      text-transform: uppercase; }
+    #blog-section .blog-slider-nav div div h5 {
+      color: #1fd4f9;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      padding-top: 2.5px;
+      text-transform: uppercase; }
 
 #projects-section {
   background: white;

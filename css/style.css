@@ -150,22 +150,34 @@ button {
       background: white;
       height: 160px;
       width: 100%; }
-      #blog-section .blog-post figure figcaption span {
-        color: #a6a6a6;
-        font-family: "Milkshake", cursive;
-        font-size: 2.25rem;
-        text-transform: lowercase;
-        padding-top: 10px;
-        position: relative; }
       #blog-section .blog-post figure figcaption div {
         align-items: center;
         display: flex;
         flex-direction: row;
-        justify-content: space-around; }
+        justify-content: space-around;
+        width: 100%; }
+        #blog-section .blog-post figure figcaption div span {
+          color: #a6a6a6;
+          font-family: "Milkshake", cursive;
+          font-size: 2.25rem;
+          text-transform: lowercase;
+          position: relative; }
+
+#blog-section .share-container {
+  height: 40%;
+  padding-top: 5%; }
+
+#blog-section .social-media-icons-container {
+  height: 50%;
+  padding-bottom: 5%; }
 
 #blog-section .fa {
   color: #a6a6a6;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  padding: 0 35px; }
+
+#blog-section .fa-facebook, .fa-twitter {
+  border-right: 2px solid #ededed; }
 
 #blog-section .mockups-carousel-description {
   display: inline-block;

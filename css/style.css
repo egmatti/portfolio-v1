@@ -127,32 +127,45 @@ button {
   min-height: 100%;
   width: 87.5%; }
   #blog-section .mockups-carousel-for div {
-    overflow: visible;
-    min-height: 100%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    width: 100%; }
-    #blog-section .mockups-carousel-for div figure {
-      border: 15px solid white;
-      box-shadow: 0px 0.05px 10px rgba(0, 0, 0, 0.15);
-      float: left;
-      margin: 0;
-      position: relative;
-      right: 5%;
-      width: 30%; }
-      #blog-section .mockups-carousel-for div figure img {
-        object-fit: contain;
-        width: 100%; }
-      #blog-section .mockups-carousel-for div figure figcaption {
-        background: white;
-        height: 160px;
-        width: 100%; }
-        #blog-section .mockups-carousel-for div figure figcaption span {
-          color: #a6a6a6;
-          font-family: "Milkshake", cursive;
-          font-size: 2.25rem;
-          margin: auto;
-          text-transform: lowercase; }
+    overflow: visible; }
+
+#blog-section .blog-post {
+  overflow: visible;
+  min-height: 100%;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  width: 100%; }
+  #blog-section .blog-post figure {
+    border: 15px solid white;
+    box-shadow: 0px 0.05px 10px rgba(0, 0, 0, 0.15);
+    float: left;
+    margin: 0;
+    position: relative;
+    right: 5%;
+    width: 30%; }
+    #blog-section .blog-post figure img {
+      object-fit: contain;
+      width: 100%; }
+    #blog-section .blog-post figure figcaption {
+      background: white;
+      height: 160px;
+      width: 100%; }
+      #blog-section .blog-post figure figcaption span {
+        color: #a6a6a6;
+        font-family: "Milkshake", cursive;
+        font-size: 2.25rem;
+        text-transform: lowercase;
+        padding-top: 10px;
+        position: relative; }
+      #blog-section .blog-post figure figcaption div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+
+#blog-section .fa {
+  color: #a6a6a6;
+  font-size: 1.75rem; }
 
 #blog-section .mockups-carousel-description {
   display: inline-block;
@@ -163,12 +176,14 @@ button {
     color: rgba(0, 0, 0, 0.35);
     font-size: 0.85rem;
     font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding-top: 25px;
     text-transform: uppercase; }
   #blog-section .mockups-carousel-description h3 {
     color: black;
     font-weight: 600;
     font-size: 1.5rem;
-    padding-top: 25px;
+    padding-top: 18.75px;
     padding-bottom: 25px;
     text-transform: uppercase; }
   #blog-section .mockups-carousel-description p {

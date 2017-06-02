@@ -17,9 +17,26 @@
 //
 // document.addEventListener("DOMContentLoaded", function(e) {
 //     InitParalax();
-//
-//
-// CAROUSEL
+
+// HOME PAGE BLOG SLIDER
+$(".blog-slider-for").slick({
+ arrows: false,
+ asNavFor: ".blog-slider-nav",
+ fade: true,
+ slidesToScroll: 1,
+ slidesToShow: 1
+});
+
+$(".blog-slider-nav").slick({
+  arrows: true,
+  asNavFor: ".blog-slider-for",
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 1
+});
+
+
+// COFFEE APP PAGE MOCKUPS SLIDER
 $(".mockups-carousel-for").slick({
  arrows: false,
  asNavFor: ".mockups-carousel-nav",
@@ -35,8 +52,8 @@ $(".mockups-carousel-nav").slick({
   slidesToScroll: 1,
   slidesToShow: 3
 });
-//
-//
+
+
 // GRAPHIC DESIGN PROJECTS HANDLEBARS
 $(function () {
   var source = $("#project-post").html();

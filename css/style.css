@@ -105,34 +105,32 @@ button {
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
   border-top: 1.5px solid rgba(0, 0, 0, 0.1);
   clear: both;
-  height: 100vh;
+  height: auto;
+  overflow: auto;
   width: 100%; }
 
 #blog-section #blog-div {
   float: left;
-  height: 100%;
   position: relative;
   width: 75%; }
 
 #blog-section #blog-panel {
   background: #1fd4f9;
-  height: 100%;
+  height: auto;
   left: 75%;
   position: absolute;
   width: 25%; }
 
-#blog-section .mockups-carousel-for {
+#blog-section .blog-slider-for {
   background: #ededed;
   float: right;
-  min-height: 100%;
   width: 87.5%; }
-  #blog-section .mockups-carousel-for div {
+  #blog-section .blog-slider-for div {
     overflow: visible; }
 
 #blog-section .blog-post {
   overflow: visible;
-  min-height: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   padding-top: 50px;
   width: 100%; }
   #blog-section .blog-post figure {
@@ -179,36 +177,42 @@ button {
 #blog-section .fa-facebook, .fa-twitter {
   border-right: 2px solid #ededed; }
 
-#blog-section .mockups-carousel-description {
+#blog-section .slick-slide {
+  height: 0; }
+
+#blog-section .slick-current, .slick-active {
+  height: auto; }
+
+#blog-section .blog-slider-description {
   display: inline-block;
   float: right;
   padding-right: 5%;
   width: 60%; }
-  #blog-section .mockups-carousel-description span {
+  #blog-section .blog-slider-description span {
     color: rgba(0, 0, 0, 0.35);
     font-size: 0.85rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
     padding-top: 25px;
     text-transform: uppercase; }
-  #blog-section .mockups-carousel-description h3 {
+  #blog-section .blog-slider-description h3 {
     color: black;
     font-weight: 600;
     font-size: 1.5rem;
     padding-top: 18.75px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  #blog-section .mockups-carousel-description p {
+  #blog-section .blog-slider-description p {
     color: black;
     line-height: 2rem;
     padding-bottom: 25px; }
 
-#blog-section .mockups-carousel-nav {
+#blog-section .blog-slider-nav {
   margin: auto;
   position: relative;
   top: -4%;
   width: 40%; }
-  #blog-section .mockups-carousel-nav img {
+  #blog-section .blog-slider-nav img {
     left: 25%;
     object-fit: contain;
     position: relative;

@@ -215,6 +215,7 @@
 }
 
 #blog-section .blog-slider-nav {
+  overflow-y: scroll;
 
   div {
     background: white;
@@ -263,7 +264,6 @@
     text-transform: uppercase;
   }
 }
-
 
 
 // PROJECTS SECTION

@@ -1,6 +1,3 @@
-
-
-
 // HOME PAGE BLOG SLIDER
 $(".blog-slider-for").slick({
  arrows: false,
@@ -8,21 +5,22 @@ $(".blog-slider-for").slick({
  fade: true,
  slidesToScroll: 1,
  slidesToShow: 1,
- vertical: false,
- verticalSwiping: false
+ vertical: false
+ // verticalSwiping: false
 });
 
 $(".blog-slider-nav").slick({
   arrows: false,
   asNavFor: ".blog-slider-for",
-  infinite: true,
+  infinite: false,
   focusOnSelect: true,
   slidesToScroll: 6,
   slidesToShow: 6,
-  vertical: true,
-  verticalSwiping: true
+  vertical: true
+  // verticalSwiping: true
 });
 
+
 //HOME PAGE BLOG SLIDER NAV PANEL
-// var blogPostHeight = $("#blog-section .blog-post").height();
-// $("#blog-section .blog-slider-nav").css({"height": blogPostHeight});
+var blogPostHeight = $("#blog-section .blog-post").height();
+$("#blog-section .blog-slider-nav").css({"height": blogPostHeight});

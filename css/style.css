@@ -207,23 +207,25 @@ button {
     line-height: 2rem;
     padding-bottom: 25px; }
 
-#blog-section .blog-slider-nav div {
-  background: white;
-  border-bottom: 1.5px solid #ededed;
-  display: block;
-  height: 100px;
-  cursor: pointer;
-  width: 100%; }
-  #blog-section .blog-slider-nav div img {
-    display: inline-block;
-    max-height: 75%;
-    float: left;
-    object-fit: contain;
-    padding-left: 5%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30%; }
+#blog-section .blog-slider-nav {
+  overflow-y: scroll; }
+  #blog-section .blog-slider-nav div {
+    background: white;
+    border-bottom: 1.5px solid #ededed;
+    display: block;
+    height: 100px;
+    cursor: pointer;
+    width: 100%; }
+    #blog-section .blog-slider-nav div img {
+      display: inline-block;
+      max-height: 75%;
+      float: left;
+      object-fit: contain;
+      padding-left: 5%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30%; }
 
 .blog-post-title-container {
   display: inline-block;

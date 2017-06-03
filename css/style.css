@@ -211,31 +211,39 @@ button {
   border-bottom: 1.5px solid #ededed;
   display: block;
   height: 100px;
+  cursor: pointer;
   width: 100%; }
   #blog-section .blog-slider-nav div img {
     display: inline-block;
     max-height: 75%;
     float: left;
     object-fit: contain;
+    padding-left: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     width: 30%; }
-  #blog-section .blog-slider-nav div div {
-    background: pink;
-    display: inline-block;
-    float: left;
-    width: 60%; }
-    #blog-section .blog-slider-nav div div span {
-      color: rgba(0, 0, 0, 0.35);
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.05rem;
-      text-transform: uppercase; }
-    #blog-section .blog-slider-nav div div h5 {
-      color: #1fd4f9;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.1rem;
-      padding-top: 2.5px;
-      text-transform: uppercase; }
+
+.blog-post-title-container {
+  display: inline-block;
+  float: left;
+  padding-left: 5%;
+  position: relative;
+  top: 15%;
+  width: 60%; }
+  .blog-post-title-container span {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase; }
+  .blog-post-title-container h5 {
+    color: #1fd4f9;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding-top: 2.5px;
+    text-transform: uppercase; }
 
 #projects-section {
   background: white;
@@ -591,38 +599,38 @@ button {
 #coffee-app-page .prototypes {
   height: 700px; }
 
-#coffee-app-page .mockups-carousel-for div {
+#coffee-app-page .coffee-app-slider-for div {
   margin: auto;
   width: 80%; }
-  #coffee-app-page .mockups-carousel-for div img {
+  #coffee-app-page .coffee-app-slider-for div img {
     float: right;
     object-fit: contain;
     width: 225px; }
 
-#coffee-app-page .mockups-carousel-description {
+#coffee-app-page .coffee-app-slider-description {
   float: left;
   width: 20%; }
-  #coffee-app-page .mockups-carousel-description h3 {
+  #coffee-app-page .coffee-app-slider-description h3 {
     color: white;
     font-weight: 600;
     font-size: 1.5rem;
     padding-top: 25px;
     padding-bottom: 25px;
     text-transform: uppercase; }
-  #coffee-app-page .mockups-carousel-description p {
+  #coffee-app-page .coffee-app-slider-description p {
     color: white;
     line-height: 2rem;
     padding-bottom: 25px;
     width: 80%; }
-    #coffee-app-page .mockups-carousel-description p span {
+    #coffee-app-page .coffee-app-slider-description p span {
       font-weight: bold; }
 
-#coffee-app-page .mockups-carousel-nav {
+#coffee-app-page .coffee-app-slider-nav {
   margin: auto;
   position: relative;
   top: -4%;
   width: 40%; }
-  #coffee-app-page .mockups-carousel-nav img {
+  #coffee-app-page .coffee-app-slider-nav img {
     left: 25%;
     object-fit: contain;
     position: relative;

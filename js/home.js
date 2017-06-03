@@ -1,3 +1,6 @@
+
+
+
 // HOME PAGE BLOG SLIDER
 $(".blog-slider-for").slick({
  arrows: false,
@@ -19,3 +22,7 @@ $(".blog-slider-nav").slick({
   vertical: true,
   verticalSwiping: true
 });
+
+//HOME PAGE BLOG SLIDER NAV PANEL
+// var blogPostHeight = $("#blog-section .blog-post").height();
+// $("#blog-section .blog-slider-nav").css({"height": blogPostHeight});

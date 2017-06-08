@@ -6,7 +6,6 @@ $(".blog-slider-for").slick({
  slidesToScroll: 1,
  slidesToShow: 1,
  vertical: false
- // verticalSwiping: false
 });
 
 $(".blog-slider-nav").slick({
@@ -17,10 +16,12 @@ $(".blog-slider-nav").slick({
   slidesToScroll: 6,
   slidesToShow: 6,
   vertical: true
-  // verticalSwiping: true
 });
 
 
 //HOME PAGE BLOG SLIDER NAV PANEL
-var blogPostHeight = $("#blog-section .blog-post").height();
-$("#blog-section .blog-slider-nav").css({"height": blogPostHeight});
+// var blogPostHeight = $("#blog-section .blog-post").height();
+// $("#blog-section .blog-slider-nav").css({"height": blogPostHeight + 100});
+
+var blogPostHeight = $("#blog-section .slick-current").height();
+$("#blog-section .blog-slider-nav").css({"height": blogPostHeight + 100});

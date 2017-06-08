@@ -20,8 +20,10 @@ $(".blog-slider-nav").slick({
 
 
 //HOME PAGE BLOG SLIDER NAV PANEL
-// var blogPostHeight = $("#blog-section .blog-post").height();
-// $("#blog-section .blog-slider-nav").css({"height": blogPostHeight + 100});
+var blogPostHeight = $("#blog-section .slick-active").outerHeight();
+$("#blog-section .blog-slider-nav").css({"height": blogPostHeight});
 
-var blogPostHeight = $("#blog-section .slick-current").height();
-$("#blog-section .blog-slider-nav").css({"height": blogPostHeight + 100});
+$('#blog-section .slick-active').on( "click", function() {
+  var blogPostHeight = $("#blog-section .slick-active").outerHeight();
+  $("#blog-section .blog-slider-nav").css({"height": blogPostHeight});
+});

@@ -115,7 +115,7 @@ button {
   width: 75%; }
 
 #blog-section #blog-panel {
-  background: turquoise;
+  background: white;
   left: 75%;
   overflow-y: scroll;
   position: absolute;

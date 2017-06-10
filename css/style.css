@@ -49,7 +49,6 @@ button {
   background: white;
   box-shadow: 0px 0.5px 7px rgba(0, 0, 0, 0.35);
   height: 80px;
-  position: fixed;
   width: 100%;
   z-index: 100; }
   #home-page header ul {

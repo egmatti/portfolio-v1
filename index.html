@@ -52,55 +52,53 @@
     <section class="subsection" id="about-section">
     </section>
 
-    <!-- BLOG SECTION -->
-        <section class="subsection" id="blog-section">
 
-          <div id="blog-div">
-            <div class="blog-slider-for">
-            <script class="blog-posts" type="text/x-handlebars-template">
-              {{#each post}}
-                <div class="blog-post">
-                  <figure>
-                    <img src="images/the-latest/blog-posts/{{image}}.png" alt="{{title}}">
-                    <figcaption>
-                      <div class="share-container">
-                        <span>Share</span>
-                      </div>
-                      <div class="social-media-icons-container">
-                        <div class="fb-share-button" data-href="http://www.emilymattison.com" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.emilymattison.com%2F&amp;src=sdkpreparse"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-                        <a href="https://twitter.com/share" target="_blank" class="twitter-share-button" data-show-count="false"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a data-pin-do="buttonBookmark" data-pin-round="true" data-pin-save="false" href="https://www.pinterest.com/pin/create/button/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                      </div>
-                    </figcaption>
-                  </figure>
-                  <article class="blog-slider-description">
-                    <span>{{date}}</span>
-                    <h3>{{title}}</h3>
-                    <p>{{text}}</p>
-                  </article>
-                </div>
-              {{/each}}
-            </script>
+<!-- BLOG SECTION -->
+    <section class="subsection" id="blog-section">
+
+      <div id="blog-div">
+        <div class="blog-slider-for">
+        <script id="blog-slider-for-partial" type="text/x-handlebars-template">
+            <div class="blog-for">
+              <figure>
+                <img src="images/the-latest/blog-posts/{{image}}.png" alt="{{title}}">
+                <figcaption>
+                  <div class="share-container">
+                    <span>Share</span>
+                  </div>
+                  <div class="social-media-icons-container">
+                    <div class="fb-share-buttondata-href="http://www.emilymattison.com" data-layout="buttondata-size="small" data-mobile-iframe="true"><class="fb-xfbml-parse-ignore" target="_blankhref="https://www.facebook.com/sharer/sharer.php?u=http%3A%2FFwww.emilymattison.com%2F&amp;src=sdkpreparse"><i class="ffa-facebook" aria-hidden="true"></i></a></div>
+                    <a href="https://twitter.com/share" target="_blankclass="twitter-share-button" data-show-count="false"><class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a data-pin-do="buttonBookmark" data-pin-round="truedata-pin-save="falsehref="https://www.pinterest.com/pin/create/button/target="_blank"><i class="fa fa-pinterest-paria-hidden="true"></i></a>
+                  </div>
+                </figcaption>
+              </figure>
+              <article class="blog-slider-description">
+                <span>{{date}}</span>
+                <h3>{{title}}</h3>
+                <p>{{{text}}}</p>
+              </article>
             </div>
-          </div>
+        </script>
+        </div>
+      </div>
 
-          <div id="blog-panel">
-            <div class="blog-slider-nav">
-              <script class="blog-posts" type="text/x-handlebars-template">
-                {{#each post}}
-                <div>
-                  <img src="images/the-latest/blog-posts/{{image}}.png" alt="{{title}}">
-                  <article class="blog-post-title-container">
-                    <span>{{date}}</span>
-                    <h5>{{title}}</h5>
-                  </article>
-                </div>
-                {{/each}}
-              </script>
+      <div id="blog-panel">
+        <div class="blog-slider-nav">
+          <script id="blog-slider-nav-partial" type="text/x-handlebars-template">
+            <div class="blog-nav">
+              <img src="images/the-latest/blog-posts/{{image}}.png" alt="{{title}}">
+              <article class="blog-post-title-container">
+                <span>{{date}}</span>
+                <h5>{{title}}</h5>
+              </article>
             </div>
-          </div>
+          </script>
+        </div>
+      </div>
 
-        </section>
+    </section>
+
 
 
 <!-- PROJECTS SECTION -->
@@ -128,7 +126,7 @@
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <!-- <script type="text/javascript" src="js/the-latest.js"></script> -->
+    <script type="text/javascript" src="js/the-latest.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
 
   </body>

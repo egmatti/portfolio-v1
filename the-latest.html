@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Mattison | The Latest</title>
+    <title>The Latest | Emily Mattison</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ab03b8820e.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- FAVICON -->
+<!-- FAVICON -->
+
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon.ico/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.ico/apple-icon-72x72.png">
@@ -28,6 +32,9 @@
   </head>
   <body id="the-latest-page">
 
+
+<!-- HEADER -->
+
     <header>
       <a href="index.html"><img class="logo" src="images/logo-black.svg" alt="Emily Mattison"></a>
       <ul>
@@ -37,34 +44,10 @@
       </ul>
     </header>
 
-    <section class="corkboard">
-        <h1><span>the   </span>Latest</h1>
-        <img id="raleigh-pin" class="pin" src="images/the-latest/pins/raleigh-pin.png" alt="Downtown Raleigh photo">
-        <img id="climate-march-pin" class="pin" src="images/the-latest/pins/climate-march-pin.png" alt="Climate march note">
-        <img id="downward-dog-pin" class="pin" src="images/the-latest/pins/downward-dog-pin.png" alt="Downward Dog illustration">
-    </section>
 
-    <section class="blog-list">
-    <script id="blog-post-partial" type="text/x-handlebars-template">
-      {{#each post}}
-        <article>
-          <div class="blog-description blog-description-{{position}}">
-            <h3>{{title}}</h3>
-            <h4>{{date}}</h4>
-            <p>{{{text}}}</p>
-          </div>
-          <div class="blog-image blog-image-{{position}}">
-            <img src="images/the-latest/blog-posts/{{image}}.png" alt="{{title}}">
-          </div>
-        </article>
-      {{/each}}
-    </script>
-  </section>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script type="text/javascript" src="js/slick.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
-      <script type="text/javascript" src="js/the-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/the-latest.js"></script>
   </body>
 </html>

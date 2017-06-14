@@ -1,64 +1,7 @@
-// HEADER
-
-#home-page header {
-  background: white;
-  box-shadow: 0px 0.5px 7px rgba(0,0,0,0.35);
-  height: 80px;
-  width: 100%;
-  z-index: 100;
-
-  ul {
-    float: right;
-    margin-right: 5%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-
-    li {
-      display: inline-block;
-      list-style-type: none;
-
-      a {
-        color: black;
-        font-size: 1.25rem;
-        font-weight: 700;
-        letter-spacing: 0.15rem;
-        padding: 0 25px;
-        text-decoration: none;
-        text-transform: uppercase;
-
-        span {
-          font-family: "Milkshake", "Avenir Next", sans-serif;
-          font-size: 0.78125rem;
-          font-weight: normal;
-          letter-spacing: 0rem;
-          text-transform: lowercase;
-          vertical-align: top;
-        }
-      }
-    }
-  }
-}
-
-#home-page .the-latest {
-  padding-left: 13px;
-  padding-right: 0px;
-}
-
-#home-page .logo {
-  float: left;
-  height: 45px;
-  margin-left: 5%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: auto;
-}
-
 // HERO
 
 #home-page #hero {
-  background: #fa4a4c;
+  background: $hero-background;
   height: 100vh;
   width: 100%;
 }
@@ -77,8 +20,8 @@
 
 #blog-section {
   background: white;
-  border-bottom: 1.5px solid rgba(0,0,0,0.1);
-  border-top: 1.5px solid rgba(0,0,0,0.1);
+  border-bottom: 1.5px solid $blog-borders;
+  border-top: 1.5px solid $blog-borders;
   clear: both;
   height: auto;
   overflow: hidden;
@@ -100,7 +43,7 @@
 }
 
 #blog-section .blog-slider-for {
-  background: #ededed;
+  background: $blog-background;
   float: right;
   width: 87.5%;
 
@@ -116,6 +59,7 @@
   width: 100%;
 
     figure {
+      background: white;
       border: 15px solid white;
       box-shadow: 0px 0.05px 10px rgba(0,0,0,0.15);
       float: left;
@@ -142,7 +86,7 @@
           width: 100%;
 
           span {
-            color: #a6a6a6;
+            color: $blog-post-social-links;
             font-family: "Milkshake", cursive;
             font-size: 2.25rem;
             text-transform: lowercase;
@@ -164,13 +108,13 @@
 }
 
 #blog-section .fa {
-  color: #a6a6a6;
+  color: $blog-post-social-links;
   font-size: 1.75rem;
   padding: 0 35px;
 }
 
 #blog-section .fa-facebook, .fa-twitter {
-  border-right: 1.5px solid #ededed;
+  border-right: 1.5px solid $blog-borders;
 }
 
 #blog-section .slick-slide {
@@ -188,7 +132,7 @@
   width: 60%;
 
   span {
-    color: rgba(0,0,0,0.35);
+    color: $blog-post-date;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
@@ -201,14 +145,13 @@
     font-weight: 600;
     font-size: 1.5rem;
     padding-top: 18.75px;
-    padding-bottom: 25px;
     text-transform: uppercase;
   }
 
   p {
     color: black;
     line-height: 2rem;
-    padding-bottom: 25px;
+    padding-top: 25px;
   }
 }
 
@@ -217,7 +160,7 @@
 
   div {
     background: white;
-    border-bottom: 1.5px solid #ededed;
+    border-bottom: 1.5px solid $blog-borders;
     display: block;
     height: 100px;
     cursor: pointer;
@@ -246,7 +189,7 @@
   width: 60%;
 
   span {
-    color: rgba(0,0,0,0.35);
+    color: $blog-post-date;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
@@ -254,7 +197,7 @@
   }
 
   h5 {
-    color: #1fd4f9;
+    color: $blog-post-title;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -270,14 +213,5 @@
   background: white;
   clear: both;
   height: 100vh;
-  width: 100%;
-}
-
-
-// FOOTER
-
-#home-page footer {
-  background: #3d01c2;
-  height: 240px;
   width: 100%;
 }

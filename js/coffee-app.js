@@ -1,4 +1,5 @@
 // PARALLAX
+//
 // function InitParalax() {
 //     var paralaxDom = document.getElementsByClassName("parallaxable")[0];
 //     window.addEventListener("GlobalScroll", function(e) {
@@ -11,22 +12,3 @@
 //
 // document.addEventListener("DOMContentLoaded", function(e) {
 //     InitParalax();
-
-
-// COFFEE APP PAGE MOCKUPS SLIDER
-$(".coffee-app-slider-for").slick({
- arrows: false,
- asNavFor: ".coffee-app-slider-nav",
- fade: true,
- slidesToScroll: 1,
- slidesToShow: 1
-});
-
-$(".coffee-app-slider-nav").slick({
-  arrows: true,
-  asNavFor: ".coffee-app-slider-for",
-  focusOnSelect: true,
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 3
-});

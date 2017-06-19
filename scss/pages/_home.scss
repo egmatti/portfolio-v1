@@ -1,0 +1,221 @@
+// ==========================================
+// HOME PAGE
+// ==========================================
+
+// HERO
+
+#home-page #hero {
+  background: $hero-background;
+  height: 100vh;
+  width: 100%;
+}
+
+
+// ABOUT SECTION
+
+#about-section {
+  background: white;
+  height: 100vh;
+  width: 100%;
+}
+
+
+// BLOG SECTION
+
+#blog-section {
+  background: white;
+  border-bottom: 1.5px solid $blog-borders;
+  border-top: 1.5px solid $blog-borders;
+  clear: both;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+#blog-section #blog-div {
+  float: left;
+  position: relative;
+  width: 75%;
+}
+
+#blog-section #blog-panel {
+  background: white;
+  left: 75%;
+  overflow-y: scroll;
+  position: absolute;
+  width: 25%;
+}
+
+#blog-section .blog-slider-for {
+  background: $blog-background;
+  float: right;
+  width: 87.5%;
+
+  div {
+    overflow: visible;
+  }
+}
+
+#blog-section .blog-post {
+  overflow: hidden;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 100%;
+
+    figure {
+      background: white;
+      border: 15px solid white;
+      box-shadow: 0px 0.05px 10px rgba(0,0,0,0.15);
+      float: left;
+      margin: 0;
+      position: relative;
+      right: 5%;
+      width: 30%;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+
+      figcaption {
+        background: white;
+        height: 160px;
+        width: 100%;
+
+        div {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 100%;
+
+          span {
+            color: $blog-post-social-links;
+            font-family: "Milkshake", cursive;
+            font-size: 2.25rem;
+            text-transform: lowercase;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+
+#blog-section .share-container {
+  height: 40%;
+  padding-top: 5%;
+}
+
+#blog-section .social-media-icons-container {
+  height: 50%;
+  padding-bottom: 5%;
+}
+
+#blog-section .fa {
+  color: $blog-post-social-links;
+  font-size: 1.75rem;
+  padding: 0 35px;
+}
+
+#blog-section .fa-facebook, .fa-twitter {
+  border-right: 1.5px solid $blog-borders;
+}
+
+#blog-section .slick-slide {
+  height: 0;
+}
+
+#blog-section .slick-current, .slick-active {
+  height: auto;
+}
+
+#blog-section .blog-slider-description {
+  display: inline-block;
+  float: right;
+  padding-right: 5%;
+  width: 60%;
+
+  span {
+    color: $blog-post-date;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    padding-top: 25px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 18.75px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: black;
+    line-height: 2rem;
+    padding-top: 25px;
+  }
+}
+
+#blog-section .blog-slider-nav {
+  overflow-y: scroll;
+
+  div {
+    background: white;
+    border-bottom: 1.5px solid $blog-borders;
+    display: block;
+    height: 100px;
+    cursor: pointer;
+    width: 100%;
+
+    img {
+      display: inline-block;
+      max-height: 75%;
+      float: left;
+      object-fit: contain;
+      padding-left: 5%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30%;
+    }
+  }
+}
+
+.blog-post-title-container {
+  display: inline-block;
+  float: left;
+  padding-left: 5%;
+  position: relative;
+  top: 15%;
+  width: 60%;
+
+  span {
+    color: $blog-post-date;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    color: $blog-post-title;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding-top: 2.5px;
+    text-transform: uppercase;
+  }
+}
+
+
+// PROJECTS SECTION
+
+#projects-section {
+  background: white;
+  clear: both;
+  height: 100vh;
+  width: 100%;
+}

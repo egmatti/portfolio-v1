@@ -1,0 +1,58 @@
+// ==========================================
+// HEADER
+// ==========================================
+
+header {
+  background: white;
+  box-shadow: 0px 0.5px 7px rgba(0,0,0,0.35);
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+
+  ul {
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      a {
+        color: black;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        padding: 0 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        span {
+          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-size: 0.78125rem;
+          font-weight: normal;
+          letter-spacing: 0rem;
+          text-transform: lowercase;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+.the-latest {
+  padding-left: 13px;
+  padding-right: 0px;
+}
+
+.logo {
+  float: left;
+  height: 45px;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}

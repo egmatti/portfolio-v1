@@ -2,21 +2,74 @@
 // VARIABLES
 // ==========================================
 
+
 // COLORS
 
+$white: #fff;
+$black: #0b0b0b;
 $sunset-orange: #fa4a4c;
 $bright-turquoise: #1fd4f9;
-$light-gray: #ededed;
-$dark-gray: #a6a6a6;
+$gray: #a6a6a6;
+$light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
 
 
-// COLOR LOCATIONS
+// COLOR FUNCTIONS
 
-$hero-background: $sunset-orange;
-$blog-background: $light-gray;
-$blog-borders: $light-gray;
-$blog-post-date: $dark-gray;
-$blog-post-title: $bright-turquoise;
-$blog-post-social-links: $dark-gray;
-$footer: $royal-blue;
+$color-header: $white;
+
+$color-body: $white;
+$color-border: $light-gray;
+$color-shadow: rgba($black, 0.15);
+
+$color-nav: $black;
+$color-headline: $black;
+$color-body-text: $black;
+$color-date: $gray;
+
+$color-link-default: $bright-turquoise;
+$color-link-visited: $royal-blue;
+
+$color-hero-background: $sunset-orange;
+
+$color-blog-background: $light-gray;
+$color-blog-post-title: $bright-turquoise;
+$color-blog-post-social-link: $gray;
+
+$color-footer: $royal-blue;
+
+
+// FONTS
+
+$font-stack-primary: "Avenir Next", Helvetica, sans-serif;
+$font-stack-secondary: "Milkshake", "Avenir Next", Helvetica, sans-serif;
+$font-stack-accent: "Emily Mattison", "Milkshake", "Avenir Next", Helvetica, sans-serif;
+
+// $font-size-headline-1:
+// $font-size-body-text: 16px;
+
+
+// BORDERS
+
+$border: 1.5px solid $color-border;
+
+
+//PADDING AND MARGINS
+
+$padding-div: 50px;
+$padding-body-text: 25px;
+
+
+// PATHS
+
+$path-image: "../../images";
+
+
+// BREAKPOINTS
+
+$breakpoints: (
+  x-small : 575px,
+  small: 576px,
+  medium: 768px,
+  large: 992px
+);

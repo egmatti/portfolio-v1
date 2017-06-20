@@ -5,7 +5,7 @@
 // HERO
 
 #home-page #hero {
-  background: $hero-background;
+  background: $color-hero-background;
   height: 100vh;
   width: 100%;
 }
@@ -14,7 +14,7 @@
 // ABOUT SECTION
 
 #about-section {
-  background: white;
+  background: $color-body;
   height: 100vh;
   width: 100%;
 }
@@ -23,9 +23,9 @@
 // BLOG SECTION
 
 #blog-section {
-  background: white;
-  border-bottom: 1.5px solid $blog-borders;
-  border-top: 1.5px solid $blog-borders;
+  background: $color-body;
+  border-bottom: $border;
+  border-top: $border;
   clear: both;
   height: auto;
   overflow: hidden;
@@ -39,7 +39,7 @@
 }
 
 #blog-section #blog-panel {
-  background: white;
+  background: $color-body;
   left: 75%;
   overflow-y: scroll;
   position: absolute;
@@ -47,7 +47,7 @@
 }
 
 #blog-section .blog-slider-for {
-  background: $blog-background;
+  background: $color-blog-background;
   float: right;
   width: 87.5%;
 
@@ -58,14 +58,14 @@
 
 #blog-section .blog-post {
   overflow: hidden;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: $padding-div;
+  padding-top: $padding-div;
   width: 100%;
 
     figure {
-      background: white;
-      border: 15px solid white;
-      box-shadow: 0px 0.05px 10px rgba(0,0,0,0.15);
+      @include box-shadow;
+      background: $color-body;
+      border: 15px solid $color-body;
       float: left;
       margin: 0;
       position: relative;
@@ -78,20 +78,17 @@
       }
 
       figcaption {
-        background: white;
+        background: $color-body;
         height: 160px;
         width: 100%;
 
         div {
-          align-items: center;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
+          @include flexbox($direction: row, $justify: space-around);
           width: 100%;
 
           span {
-            color: $blog-post-social-links;
-            font-family: "Milkshake", cursive;
+            color: $color-blog-post-social-link;
+            font-family: $font-stack-secondary;
             font-size: 2.25rem;
             text-transform: lowercase;
             position: relative;
@@ -112,13 +109,14 @@
 }
 
 #blog-section .fa {
-  color: $blog-post-social-links;
+  color: $color-blog-post-social-link;
   font-size: 1.75rem;
+  cursor: pointer;
   padding: 0 35px;
 }
 
 #blog-section .fa-facebook, .fa-twitter {
-  border-right: 1.5px solid $blog-borders;
+  border-right: $border;
 }
 
 #blog-section .slick-slide {
@@ -136,16 +134,16 @@
   width: 60%;
 
   span {
-    color: $blog-post-date;
+    color: $color-date;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
-    padding-top: 25px;
+    padding-top: $padding-body-text;
     text-transform: uppercase;
   }
 
   h3 {
-    color: black;
+    color: $color-headline;
     font-weight: 600;
     font-size: 1.5rem;
     padding-top: 18.75px;
@@ -153,9 +151,9 @@
   }
 
   p {
-    color: black;
+    color: $color-body-text;
     line-height: 2rem;
-    padding-top: 25px;
+    padding-top: $padding-body-text;
   }
 }
 
@@ -163,22 +161,20 @@
   overflow-y: scroll;
 
   div {
-    background: white;
-    border-bottom: 1.5px solid $blog-borders;
+    background: $color-body;
+    border-bottom: $border;
     display: block;
     height: 100px;
     cursor: pointer;
     width: 100%;
 
     img {
+      @include vertical-align;
       display: inline-block;
       max-height: 75%;
       float: left;
       object-fit: contain;
       padding-left: 5%;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
       width: 30%;
     }
   }
@@ -193,7 +189,7 @@
   width: 60%;
 
   span {
-    color: $blog-post-date;
+    color: $color-date;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
@@ -201,7 +197,7 @@
   }
 
   h5 {
-    color: $blog-post-title;
+    color: $color-blog-post-title;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -214,7 +210,7 @@
 // PROJECTS SECTION
 
 #projects-section {
-  background: white;
+  background: $color-body;
   clear: both;
   height: 100vh;
   width: 100%;

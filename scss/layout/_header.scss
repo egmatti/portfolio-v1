@@ -3,25 +3,24 @@
 // ==========================================
 
 header {
-  background: white;
-  box-shadow: 0px 0.5px 7px rgba(0,0,0,0.35);
+  @include box-shadow($b: 7px);
+  background: $color-header;
   height: 80px;
   width: 100%;
   z-index: 100;
 
   ul {
+    @include vertical-align;
     float: right;
     margin-right: 5%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 
     li {
       display: inline-block;
       list-style-type: none;
 
       a {
-        color: black;
+        color: $color-nav;
+        font-family: $font-stack-primary;
         font-size: 1.25rem;
         font-weight: 700;
         letter-spacing: 0.15rem;
@@ -30,7 +29,7 @@ header {
         text-transform: uppercase;
 
         span {
-          font-family: "Milkshake", "Avenir Next", sans-serif;
+          font-family: $font-stack-secondary;
           font-size: 0.78125rem;
           font-weight: normal;
           letter-spacing: 0rem;

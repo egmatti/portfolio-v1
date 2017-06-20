@@ -8,34 +8,39 @@ header {
   height: 80px;
   width: 100%;
   z-index: 100;
+}
 
-  ul {
-    @include vertical-align;
-    float: right;
-    margin-right: 5%;
+.logo {
+  @include vertical-align;
+  float: left;
+  height: 45px;
+  margin-left: 5%;
+  width: auto;
+}
 
-    li {
-      display: inline-block;
-      list-style-type: none;
+.nav {
+  @include vertical-align;
+  float: right;
+  margin-right: 5%;
 
-      a {
-        color: $color-nav;
-        font-family: $font-stack-primary;
-        font-size: 1.25rem;
-        font-weight: 700;
-        letter-spacing: 0.15rem;
-        padding: 0 25px;
-        text-decoration: none;
-        text-transform: uppercase;
+  @include e(item) {
+    display: inline-block;
+    list-style-type: none;
 
-        span {
-          font-family: $font-stack-secondary;
-          font-size: 0.78125rem;
-          font-weight: normal;
-          letter-spacing: 0rem;
-          text-transform: lowercase;
-          vertical-align: top;
-        }
+    a {
+      @extend h1;
+      color: $color-nav;
+      font-size: 1.25rem;
+      padding: 0 25px;
+      text-decoration: none;
+
+      span {
+        font-family: $font-stack-secondary;
+        font-size: 0.78125rem;
+        font-weight: $font-weight-regular;
+        letter-spacing: 0rem;
+        text-transform: lowercase;
+        vertical-align: top;
       }
     }
   }
@@ -44,14 +49,4 @@ header {
 .the-latest {
   padding-left: 13px;
   padding-right: 0px;
-}
-
-.logo {
-  float: left;
-  height: 45px;
-  margin-left: 5%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: auto;
 }

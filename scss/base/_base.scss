@@ -4,20 +4,54 @@
 
 * {
   font-family: $font-stack-primary;
-  font-size: 16px;
+  font-size: $base-font-size;
   margin: 0;
   padding: 0;
 }
+
+
+// HEADLINES
 
 h1, h2, h3, h4, h5, h6 {
   color: $color-headline;
-  margin: 0;
-  padding: 0;
   letter-spacing: 0.15rem;
+  text-transform: uppercase;
 }
+
+h1, h2 {
+  font-weight: $font-weight-bold;
+}
+
+h3, h4, h5 {
+  font-weight: $font-weight-medium;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+
+// BODY TEXT
 
 p {
   color: $color-body-text;
-  font-size: 1rem;
-  margin: 0;
+  line-height: 2rem;
+  padding-top: $padding-body-text;
 }

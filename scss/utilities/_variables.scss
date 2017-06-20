@@ -5,6 +5,7 @@
 
 // COLORS
 
+//Color Descriptions
 $white: #fff;
 $black: #0b0b0b;
 $sunset-orange: #fa4a4c;
@@ -13,9 +14,7 @@ $gray: #a6a6a6;
 $light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
 
-
-// COLOR FUNCTIONS
-
+// Color Functions
 $color-header: $white;
 
 $color-body: $white;
@@ -34,19 +33,29 @@ $color-hero-background: $sunset-orange;
 
 $color-blog-background: $light-gray;
 $color-blog-post-title: $bright-turquoise;
-$color-blog-post-social-link: $gray;
+$color-blog-social-link: $gray;
+$color-blog-social-link-hover: lighten($bright-turquoise, 25%);
 
 $color-footer: $royal-blue;
 
 
 // FONTS
 
+// Font Stacks
 $font-stack-primary: "Avenir Next", Helvetica, sans-serif;
 $font-stack-secondary: "Milkshake", "Avenir Next", Helvetica, sans-serif;
 $font-stack-accent: "Emily Mattison", "Milkshake", "Avenir Next", Helvetica, sans-serif;
 
-// $font-size-headline-1:
-// $font-size-body-text: 16px;
+// Font Weights
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 900;
+
+//Font Sizes
+$base-font-size: 16px;
 
 
 // BORDERS

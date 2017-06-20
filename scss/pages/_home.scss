@@ -4,7 +4,7 @@
 
 // HERO
 
-#home-page #hero {
+#home-page #hero-section {
   background: $color-hero-background;
   height: 100vh;
   width: 100%;
@@ -13,7 +13,7 @@
 
 // ABOUT SECTION
 
-#about-section {
+#home-page #about-section {
   background: $color-body;
   height: 100vh;
   width: 100%;
@@ -22,7 +22,7 @@
 
 // BLOG SECTION
 
-#blog-section {
+#home-page #blog-section {
   background: $color-body;
   border-bottom: $border;
   border-top: $border;
@@ -32,13 +32,13 @@
   width: 100%;
 }
 
-#blog-section #blog-div {
+#home-page #blog-div {
   float: left;
   position: relative;
   width: 75%;
 }
 
-#blog-section #blog-panel {
+#home-page #blog-panel {
   background: $color-body;
   left: 75%;
   overflow-y: scroll;
@@ -46,7 +46,7 @@
   width: 25%;
 }
 
-#blog-section .blog-slider-for {
+#home-page .blog-slider-for {
   background: $color-blog-background;
   float: right;
   width: 87.5%;
@@ -54,13 +54,12 @@
   div {
     overflow: visible;
   }
-}
 
-#blog-section .blog-post {
-  overflow: hidden;
-  padding-bottom: $padding-div;
-  padding-top: $padding-div;
-  width: 100%;
+  @include e(post) {
+    overflow: hidden;
+    padding-bottom: $padding-div;
+    padding-top: $padding-div;
+    width: 100%;
 
     figure {
       @include box-shadow;
@@ -87,7 +86,7 @@
           width: 100%;
 
           span {
-            color: $color-blog-post-social-link;
+            color: $color-blog-social-link;
             font-family: $font-stack-secondary;
             font-size: 2.25rem;
             text-transform: lowercase;
@@ -97,70 +96,59 @@
       }
     }
   }
+}
 
-#blog-section .share-container {
+#home-page .share-container {
   height: 40%;
   padding-top: 5%;
 }
 
-#blog-section .social-media-icons-container {
+#home-page .social-media {
   height: 50%;
   padding-bottom: 5%;
 }
 
-#blog-section .fa {
-  color: $color-blog-post-social-link;
-  font-size: 1.75rem;
-  cursor: pointer;
+#home-page .fa {
+  color: $color-blog-social-link;
   padding: 0 35px;
+
+  &:hover {
+    color: $color-blog-social-link-hover;
+  }
 }
 
-#blog-section .fa-facebook, .fa-twitter {
+#home-page .fa-facebook, .fa-twitter {
   border-right: $border;
 }
 
-#blog-section .slick-slide {
+#home-page .slick-slide {
   height: 0;
 }
 
-#blog-section .slick-current, .slick-active {
+#home-page .slick-current, .slick-active {
   height: auto;
 }
 
-#blog-section .blog-slider-description {
+#home-page .blog-slider-description {
   display: inline-block;
   float: right;
   padding-right: 5%;
   width: 60%;
 
   span {
-    color: $color-date;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
+    @extend %date;
     padding-top: $padding-body-text;
-    text-transform: uppercase;
   }
 
   h3 {
-    color: $color-headline;
-    font-weight: 600;
-    font-size: 1.5rem;
     padding-top: 18.75px;
-    text-transform: uppercase;
-  }
-
-  p {
-    color: $color-body-text;
-    line-height: 2rem;
-    padding-top: $padding-body-text;
   }
 }
 
-#blog-section .blog-slider-nav {
+#home-page .blog-slider-nav {
   overflow-y: scroll;
 
-  div {
+  @include e(post) {
     background: $color-body;
     border-bottom: $border;
     display: block;
@@ -180,7 +168,7 @@
   }
 }
 
-.blog-post-title-container {
+#home-page .blog-post-title-container {
   display: inline-block;
   float: left;
   padding-left: 5%;
@@ -189,27 +177,19 @@
   width: 60%;
 
   span {
-    color: $color-date;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
+    @extend %date;
   }
 
   h5 {
     color: $color-blog-post-title;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
     padding-top: 2.5px;
-    text-transform: uppercase;
   }
 }
 
 
 // PROJECTS SECTION
 
-#projects-section {
+#home-page #projects-section {
   background: $color-body;
   clear: both;
   height: 100vh;

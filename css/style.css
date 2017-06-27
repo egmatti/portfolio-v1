@@ -711,6 +711,16 @@ template {
   font-size: 1.125rem;
   line-height: 2.25rem; }
 
+.fa {
+  font-size: 1.75rem;
+  cursor: pointer; }
+
+.slick-prev:before, .slick-next:before {
+  color: #fff;
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 400; }
+
 .button {
   border: 2px solid #fa4a4c;
   cursor: pointer;
@@ -727,10 +737,6 @@ template {
     border: 2px solid #fb6365; }
     .button:hover span {
       color: #fff; }
-
-.fa {
-  font-size: 1.75rem;
-  cursor: pointer; }
 
 .divider-white {
   background: white;
@@ -793,8 +799,8 @@ header {
   padding-right: 0px; }
 
 footer {
-  background: #3d01c2;
-  height: 240px;
+  background: #fff;
+  height: 160px;
   width: 100%; }
 
 #home-page #hero-section {
@@ -955,6 +961,9 @@ footer {
   background: #fff;
   height: auto; }
 
+#home-page #instagram-section .slick-prev:before, .slick-next:before {
+  color: #fa4a4c; }
+
 #home-page .instagram-div {
   height: auto;
   margin: 125px 10%;
@@ -972,11 +981,12 @@ footer {
 #home-page #instagram-section .button-container {
   align-items: center;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 125px; }
 
-#home-page #projects-section {
-  background: #fff;
-  clear: both;
-  height: 100vh; }
+#home-page #contact-section {
+  background: #f3f3f3;
+  height: 66vh;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

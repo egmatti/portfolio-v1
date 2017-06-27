@@ -20,6 +20,7 @@ $royal-blue: #3d01c2;
 $color-header: $white;
 
 $color-body: $white;
+$color-body-accent: $light-gray;
 $color-border: $light-gray;
 $color-shadow: rgba($black, 0.15);
 
@@ -35,6 +36,9 @@ $color-button-active: lighten($sunset-orange, 5%);
 $color-link-default: $bright-turquoise;
 $color-link-visited: $royal-blue;
 
+$color-arrows: $white;
+$color-arrows-instagram: $sunset-orange;
+
 $color-hero-background: $sunset-orange;
 
 $color-blog-background: $light-gray;
@@ -42,7 +46,7 @@ $color-blog-post-title: $bright-turquoise;
 $color-blog-social-link: $gray;
 $color-blog-social-link-hover: $dark-gray;
 
-$color-footer: $royal-blue;
+$color-footer: $white;
 
 
 // FONTS
@@ -76,6 +80,8 @@ $padding-div: 50px;
 $padding-body-text: 25px;
 
 $margin-section: 125px 10%;
+$margin-section-vertical: 125px;
+$margin-section-horizontal: 10%;
 
 
 // PATHS

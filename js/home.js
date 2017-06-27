@@ -38,6 +38,6 @@ $(document).ready(function(){
 $(".instagram-slider-for").slick({
  arrows: true,
  infinite: true,
- slidesToScroll: 3,
+ slidesToScroll: 1,
  slidesToShow: 3
 });

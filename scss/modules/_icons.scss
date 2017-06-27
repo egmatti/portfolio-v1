@@ -7,3 +7,10 @@
   font-size: 1.75rem;
   cursor: pointer;
 }
+
+.slick-prev:before, .slick-next:before {
+    color: $color-arrows;
+    font-family: $font-stack-primary;
+    font-size: 3rem;
+    font-weight: $font-weight-regular;
+  }

@@ -206,6 +206,10 @@
   height: auto;
 }
 
+#home-page #instagram-section .slick-prev:before, .slick-next:before {
+    color: $color-arrows-instagram;
+  }
+
 #home-page .instagram-div {
   height: auto;
   margin: $margin-section;
@@ -223,13 +227,14 @@
 
 #home-page #instagram-section .button-container {
   @include flexbox();
+  margin-bottom: $margin-section-vertical;
 }
 
 
-// PROJECTS SECTION
+// CONTACT SECTION
 
-#home-page #projects-section {
-  background: $color-body;
-  clear: both;
-  height: 100vh;
+#home-page #contact-section {
+  background: $color-body-accent;
+  height: 66vh;
+  width: 100%;
 }

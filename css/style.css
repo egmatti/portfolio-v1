@@ -701,6 +701,33 @@ template {
   letter-spacing: 0.05rem;
   text-transform: uppercase; }
 
+.center {
+  text-align: center; }
+
+.gray-headline {
+  color: #cccccc; }
+
+.large-body-text {
+  font-size: 1.125rem;
+  line-height: 2.25rem; }
+
+.button {
+  border: 2px solid #fa4a4c;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  padding: 15px 20px; }
+  .button span {
+    color: #fa4a4c;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase; }
+  .button:hover {
+    background: #fb6365;
+    border: 2px solid #fb6365; }
+    .button:hover span {
+      color: #fff; }
+
 .fa {
   font-size: 1.75rem;
   cursor: pointer; }
@@ -771,14 +798,29 @@ footer {
   width: 100%; }
 
 #home-page #hero-section {
-  background: #fa4a4c;
+  background: url("../images/home/neon-text.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100%; }
 
 #home-page #about-section {
   background: #fff;
-  height: 100vh;
+  height: auto;
   width: 100%; }
+
+#home-page #about-section div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 25%; }
+
+#home-page #about-section img {
+  height: 150px;
+  object-fit: contain;
+  padding-top: 25px; }
 
 #home-page #blog-section {
   background: #fff;
@@ -855,7 +897,7 @@ footer {
   color: #a6a6a6;
   padding: 0 35px; }
   #home-page .fa:hover {
-    color: #9becfc; }
+    color: gray; }
 
 #home-page .fa-facebook, .fa-twitter {
   border-right: 1.5px solid #f3f3f3; }
@@ -909,10 +951,32 @@ footer {
     color: #1fd4f9;
     padding-top: 2.5px; }
 
+#home-page #instagram-section {
+  background: #fff;
+  height: auto; }
+
+#home-page .instagram-div {
+  height: auto;
+  margin: 125px 10%;
+  margin-bottom: 75px; }
+
+#home-page .instagram-slider-for__post {
+  align-items: baseline;
+  display: flex;
+  justify-content: center; }
+
+#home-page .instagram-slider-for__post img {
+  height: 275px;
+  object-fit: contain; }
+
+#home-page #instagram-section .button-container {
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
 #home-page #projects-section {
   background: #fff;
   clear: both;
-  height: 100vh;
-  width: 100%; }
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

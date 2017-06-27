@@ -31,3 +31,13 @@ $(document).ready(function(){
     $("#blog-section .blog-slider-nav").css({"height": blogPostHeight});
   });
 });
+
+
+// HOME PAGE INSTAGRAM SLIDER
+
+$(".instagram-slider-for").slick({
+ arrows: true,
+ infinite: true,
+ slidesToScroll: 3,
+ slidesToShow: 3
+});

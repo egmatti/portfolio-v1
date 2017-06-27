@@ -6,11 +6,12 @@
 //BACKGROUND IMAGES
 
 @mixin bg-image (
+  $image-folder,
   $bg-image,
   $bg-attachment: null,
   $bg-size: cover,
   $bg-position: center) {
-    background: url("#{$path-image}/#{$bg-image}.png");
+    background: url("#{$path-image}/#{$image-folder}/#{$bg-image}.png");
     background-attachment: $bg-attachment;
     background-repeat: no-repeat;
     background-size: $bg-size;

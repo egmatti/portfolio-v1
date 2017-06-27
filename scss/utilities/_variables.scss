@@ -11,6 +11,8 @@ $black: #0b0b0b;
 $sunset-orange: #fa4a4c;
 $bright-turquoise: #1fd4f9;
 $gray: #a6a6a6;
+$dark-gray: darken($gray, 15%);
+$lighter-gray: lighten($gray, 15%);
 $light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
 
@@ -23,8 +25,12 @@ $color-shadow: rgba($black, 0.15);
 
 $color-nav: $black;
 $color-headline: $black;
+$color-headline-gray: $lighter-gray;
 $color-body-text: $black;
 $color-date: $gray;
+
+$color-button: $sunset-orange;
+$color-button-active: lighten($sunset-orange, 5%);
 
 $color-link-default: $bright-turquoise;
 $color-link-visited: $royal-blue;
@@ -34,7 +40,7 @@ $color-hero-background: $sunset-orange;
 $color-blog-background: $light-gray;
 $color-blog-post-title: $bright-turquoise;
 $color-blog-social-link: $gray;
-$color-blog-social-link-hover: lighten($bright-turquoise, 25%);
+$color-blog-social-link-hover: $dark-gray;
 
 $color-footer: $royal-blue;
 
@@ -65,13 +71,16 @@ $border: 1.5px solid $color-border;
 
 //PADDING AND MARGINS
 
+$padding-section: 100px;
 $padding-div: 50px;
 $padding-body-text: 25px;
+
+$margin-section: 125px 10%;
 
 
 // PATHS
 
-$path-image: "../../images";
+$path-image: "../images";
 
 
 // BREAKPOINTS

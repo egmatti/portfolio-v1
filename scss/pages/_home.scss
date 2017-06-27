@@ -5,7 +5,8 @@
 // HERO
 
 #home-page #hero-section {
-  background: $color-hero-background;
+  @include bg-image ($image-folder: "home", $bg-image: "neon-text");
+  // background: $color-hero-background;
   height: 100vh;
   width: 100%;
 }
@@ -15,8 +16,19 @@
 
 #home-page #about-section {
   background: $color-body;
-  height: 100vh;
+  height: auto;
   width: 100%;
+}
+
+#home-page #about-section div {
+  @include flexbox ($direction: column);
+  padding: $padding-section 25%;
+}
+
+#home-page #about-section img {
+  height: 150px;
+  object-fit: contain;
+  padding-top: $padding-body-text;
 }
 
 
@@ -187,11 +199,37 @@
 }
 
 
+// INSTAGRAM SECTION
+
+#home-page #instagram-section {
+  background: $color-body;
+  height: auto;
+}
+
+#home-page .instagram-div {
+  height: auto;
+  margin: $margin-section;
+  margin-bottom: 75px;
+}
+
+#home-page .instagram-slider-for__post {
+  @include flexbox($align: baseline);
+}
+
+#home-page .instagram-slider-for__post img {
+  height: 275px;
+  object-fit: contain;
+}
+
+#home-page #instagram-section .button-container {
+  @include flexbox();
+}
+
+
 // PROJECTS SECTION
 
 #home-page #projects-section {
   background: $color-body;
   clear: both;
   height: 100vh;
-  width: 100%;
 }

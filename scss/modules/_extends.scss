@@ -9,3 +9,16 @@
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+
+.center {
+  text-align: center;
+}
+
+.gray-headline {
+  color: $color-headline-gray;
+}
+
+.large-body-text {
+  font-size: 1.125rem;
+  line-height: (1.125 * 2rem);
+}

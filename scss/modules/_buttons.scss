@@ -3,7 +3,7 @@
 // ==========================================
 
 .button {
-  border: 2px solid $color-button;
+  border: $border-button;
   cursor: pointer;
   display: inline-block;
   height: auto;
@@ -18,7 +18,7 @@
 
   &:hover {
     background: $color-button-hover;
-    border: 2px solid $color-button-hover;
+    border: $border-button-hover;
 
     span {
       color: $color-body;

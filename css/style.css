@@ -22,6 +22,8 @@
   font-size: 16px;
   margin: 0;
   padding: 0; }
+  * ::selection {
+    background: rgba(31, 212, 249, 0.5); }
 
 h1, .nav__item a, h2, h3, h4, h5, h6 {
   color: #0b0b0b;
@@ -722,7 +724,7 @@ template {
   font-weight: 400; }
 
 .button {
-  border: 2px solid #fa4a4c;
+  border: 1.5px solid #fa4a4c;
   cursor: pointer;
   display: inline-block;
   height: auto;
@@ -734,7 +736,7 @@ template {
     text-transform: uppercase; }
   .button:hover {
     background: #fb6365;
-    border: 2px solid #fb6365; }
+    border: 1.5px solid #fb6365; }
     .button:hover span {
       color: #fff; }
 
@@ -750,33 +752,70 @@ template {
   height: 50px;
   width: 100%; }
 
-.contact-form {
+form {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.input__contact {
-  border: 2px solid #a6a6a6;
+.input-container {
+  display: inline-block;
   margin-top: 25px;
   margin-right: 50px;
-  padding: 5px 0px 5px 5px; }
+  position: relative; }
+
+.input-container label {
+  color: #a6a6a6;
+  left: 6.5px;
+  position: absolute;
+  top: 6.5px; }
+
+.input-container--last {
+  display: inline-block;
+  margin-top: 25px;
+  position: relative; }
+
+.input-container--last label {
+  color: #a6a6a6;
+  left: 6.5px;
+  position: absolute;
+  top: 6.5px; }
+
+.textarea-container {
+  display: block;
+  height: 250px;
+  margin-top: 25px;
+  position: relative; }
+
+.textarea-container label {
+  color: #a6a6a6;
+  left: 6.5px;
+  position: absolute;
+  top: 6.5px; }
+
+.input__contact {
+  border: 1.5px solid #a6a6a6;
+  padding: 5px;
+  width: 100%; }
   .input__contact:focus {
-    border: 2px solid #fb6365;
+    border: 1.5px solid #fb6365;
     outline: none; }
+  .input__contact:focus + label {
+    background: #fff;
+    color: #fb6365;
+    transform: translateY(-80%); }
   .input__contact--last {
-    border: 2px solid #a6a6a6;
-    margin-top: 25px;
-    padding: 5px 0px 5px 5px; }
+    border: 1.5px solid #a6a6a6;
+    padding: 5px;
+    width: 100%; }
     .input__contact--last:focus {
-      border: 2px solid #fb6365;
+      border: 1.5px solid #fb6365;
       outline: none; }
   .input__contact--message {
-    border: 2px solid #a6a6a6;
-    display: block;
-    height: 250px;
-    margin-top: 25px;
-    padding: 5px 0px 5px 5px; }
+    border: 1.5px solid #a6a6a6;
+    height: 100%;
+    padding: 5px;
+    width: 100%; }
     .input__contact--message:focus {
-      border: 2px solid #fb6365;
+      border: 1.5px solid #fb6365;
       outline: none; }
 
 header {
@@ -816,6 +855,8 @@ header {
       letter-spacing: 0.15rem;
       padding: 0 25px;
       text-decoration: none; }
+      .nav__item a:hover {
+        color: #fb6365; }
       .nav__item a span {
         font-family: "Milkshake", "Avenir Next", Helvetica, sans-serif;
         font-size: 0.78125rem;
@@ -823,6 +864,8 @@ header {
         letter-spacing: 0rem;
         text-transform: lowercase;
         vertical-align: top; }
+        .nav__item a span:hover {
+          color: #fb6365; }
 
 .the-latest {
   padding-left: 13px;
@@ -1037,13 +1080,12 @@ footer {
 #home-page .contact-form {
   margin-left: 10%; }
 
-#home-page .input__contact {
-  padding-right: 5%;
-  width: 25.37%; }
-  #home-page .input__contact--last {
-    width: 25.37%; }
-  #home-page .input__contact--message {
-    width: 100%; }
+#home-page .input-container {
+  margin-right: 7.5%;
+  width: 28%; }
+
+#home-page .input-container--last {
+  width: 28%; }
 
 #home-page #contact-section .button-div {
   height: 100%; }

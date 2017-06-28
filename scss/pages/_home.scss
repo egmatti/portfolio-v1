@@ -36,8 +36,8 @@
 
 #home-page #blog-section {
   background: $color-body;
-  border-bottom: $border;
-  border-top: $border;
+  border-bottom: $border-section;
+  border-top: $border-section;
   clear: both;
   height: auto;
   overflow: hidden;
@@ -125,7 +125,7 @@
 }
 
 #home-page .fa-facebook, .fa-twitter {
-  border-right: $border;
+  border-right: $border-divider;
 }
 
 #home-page .slick-slide {
@@ -158,7 +158,7 @@
 
   @include e(post) {
     background: $color-body;
-    border-bottom: $border;
+    border-bottom: $border-divider;
     display: block;
     height: 100px;
     cursor: pointer;
@@ -182,7 +182,7 @@
 
 #home-page .blog-slider-nav .slick-current {
   background: $color-blog-post-active;
-  
+
   h5 {
     color: $color-blog-post-title-active;
   }
@@ -252,17 +252,13 @@
   margin-left: 10%;
 }
 
-#home-page .input__contact {
-  padding-right: 5%;
-  width: 25.37%;
+#home-page .input-container {
+  margin-right: 7.5%;
+  width: 28%;
+}
 
-  @include m(last) {
-    width: 25.37%;
-  }
-
-  @include m(message) {
-    width: 100%;
-  }
+#home-page .input-container--last {
+  width: 28%;
 }
 
 #home-page #contact-section .button-div {

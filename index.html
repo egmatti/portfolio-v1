@@ -321,10 +321,22 @@ HOME PAGE
       <div class="left-columns">
         <form class="contact-form">
           <h3>Get In Touch</h3>
-          <input class="input__contact" placeholder="First Name" type="text"></input>
-          <input class="input__contact" placeholder="Last Name" type="text"></input>
-          <input class="input__contact--last" placeholder="Email Address" type="email"></input>
-          <textarea class="input__contact--message" placeholder="Message..."></textarea>
+          <div class="input-container">
+            <input class="input__contact" type="text"></input>
+            <label>First Name</label>
+          </div>
+          <div class="input-container">
+            <input class="input__contact" type="text"></input>
+            <label>Last Name</label>
+          </div>
+          <div class="input-container--last">
+            <input class="input__contact--last" type="email"></input>
+            <label>Email Address</label>
+          </div>
+          <div class="textarea-container">
+            <textarea class="input__contact--message"></textarea>
+            <label>Message</label>
+          </div>
         </form>
       </div>
 

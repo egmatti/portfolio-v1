@@ -7,6 +7,10 @@
   font-size: $base-font-size;
   margin: 0;
   padding: 0;
+
+  ::selection {
+    background: $color-selection;
+  }
 }
 
 

@@ -35,6 +35,10 @@ header {
       padding: 0 25px;
       text-decoration: none;
 
+      &:hover {
+        color: $color-nav-hover;
+      }
+
       span {
         font-family: $font-stack-secondary;
         font-size: 0.78125rem;
@@ -42,6 +46,10 @@ header {
         letter-spacing: 0rem;
         text-transform: lowercase;
         vertical-align: top;
+
+        &:hover {
+          color: $color-nav-hover;
+        }
       }
     }
   }

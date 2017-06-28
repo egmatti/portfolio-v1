@@ -9,9 +9,9 @@
 $white: #fff;
 $black: #0b0b0b;
 $sunset-orange: #fa4a4c;
+$lighter-sunset-orange: lighten($sunset-orange, 5%);
 $bright-turquoise: #1fd4f9;
 $gray: #a6a6a6;
-$dark-gray: darken($gray, 15%);
 $lighter-gray: lighten($gray, 15%);
 $light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
@@ -31,7 +31,11 @@ $color-body-text: $black;
 $color-date: $gray;
 
 $color-button: $sunset-orange;
-$color-button-active: lighten($sunset-orange, 5%);
+$color-button-hover: $lighter-sunset-orange;
+$color-button-click: $lighter-sunset-orange;
+
+$color-input: $gray;
+$color-input-active: $lighter-sunset-orange;
 
 $color-link-default: $bright-turquoise;
 $color-link-visited: $royal-blue;
@@ -43,8 +47,11 @@ $color-hero-background: $sunset-orange;
 
 $color-blog-background: $light-gray;
 $color-blog-post-title: $bright-turquoise;
+$color-blog-post-hover: $light-gray;
+$color-blog-post-active: $light-gray;
+$color-blog-post-title-active: $bright-turquoise;
 $color-blog-social-link: $gray;
-$color-blog-social-link-hover: $dark-gray;
+$color-blog-social-link-hover: $lighter-sunset-orange;
 
 $color-footer: $white;
 
@@ -64,8 +71,15 @@ $font-weight-medium: 600;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 900;
 
-//Font Sizes
+// Font Sizes
 $base-font-size: 16px;
+
+// Letter Spacing
+$letter-spacing-headline: 0.15rem;
+$letter-spacing-headline-small: 0.1rem;
+
+// Line Height
+$line-height-body-text: 2rem;
 
 
 // BORDERS
@@ -73,15 +87,19 @@ $base-font-size: 16px;
 $border: 1.5px solid $color-border;
 
 
-//PADDING AND MARGINS
-
-$padding-section: 100px;
-$padding-div: 50px;
-$padding-body-text: 25px;
+// MARGINS AND PADDING
 
 $margin-section: 125px 10%;
 $margin-section-vertical: 125px;
 $margin-section-horizontal: 10%;
+$margin-div: 50px;
+$margin-input: 50px;
+$margin-body-text: 25px;
+
+$padding-section: 100px;
+$padding-div: 50px;
+$padding-button: 15px 20px;
+$padding-input: 5px 0px 5px 5px;
 
 
 // PATHS

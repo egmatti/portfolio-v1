@@ -53,7 +53,7 @@ h5 {
 p {
   color: #0b0b0b;
   line-height: 2rem;
-  padding-top: 25px; }
+  margin-top: 25px; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -750,6 +750,35 @@ template {
   height: 50px;
   width: 100%; }
 
+.contact-form {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.input__contact {
+  border: 2px solid #a6a6a6;
+  margin-top: 25px;
+  margin-right: 50px;
+  padding: 5px 0px 5px 5px; }
+  .input__contact:focus {
+    border: 2px solid #fb6365;
+    outline: none; }
+  .input__contact--last {
+    border: 2px solid #a6a6a6;
+    margin-top: 25px;
+    padding: 5px 0px 5px 5px; }
+    .input__contact--last:focus {
+      border: 2px solid #fb6365;
+      outline: none; }
+  .input__contact--message {
+    border: 2px solid #a6a6a6;
+    display: block;
+    height: 250px;
+    margin-top: 25px;
+    padding: 5px 0px 5px 5px; }
+    .input__contact--message:focus {
+      border: 2px solid #fb6365;
+      outline: none; }
+
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
   -moz-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
@@ -784,6 +813,7 @@ header {
     .nav__item a {
       color: #0b0b0b;
       font-size: 1.25rem;
+      letter-spacing: 0.15rem;
       padding: 0 25px;
       text-decoration: none; }
       .nav__item a span {
@@ -802,6 +832,17 @@ footer {
   background: #fff;
   height: 160px;
   width: 100%; }
+
+.left-columns {
+  display: inline-block;
+  position: relative;
+  width: 75%; }
+
+.right-column {
+  display: inline-block;
+  left: 75%;
+  position: absolute;
+  width: 25%; }
 
 #home-page #hero-section {
   background: url("../images/home/neon-text.png");
@@ -826,7 +867,7 @@ footer {
 #home-page #about-section img {
   height: 150px;
   object-fit: contain;
-  padding-top: 25px; }
+  margin-top: 25px; }
 
 #home-page #blog-section {
   background: #fff;
@@ -838,16 +879,11 @@ footer {
   width: 100%; }
 
 #home-page #blog-div {
-  float: left;
-  position: relative;
-  width: 75%; }
+  float: left; }
 
-#home-page #blog-panel {
+#home-page #blog-column {
   background: #fff;
-  left: 75%;
-  overflow-y: scroll;
-  position: absolute;
-  width: 25%; }
+  overflow-y: scroll; }
 
 #home-page .blog-slider-for {
   background: #f3f3f3;
@@ -903,7 +939,7 @@ footer {
   color: #a6a6a6;
   padding: 0 35px; }
   #home-page .fa:hover {
-    color: gray; }
+    color: #fb6365; }
 
 #home-page .fa-facebook, .fa-twitter {
   border-right: 1.5px solid #f3f3f3; }
@@ -912,7 +948,8 @@ footer {
   height: 0; }
 
 #home-page .slick-current, .slick-active {
-  height: auto; }
+  height: auto;
+  outline: none; }
 
 #home-page .blog-slider-description {
   display: inline-block;
@@ -920,7 +957,7 @@ footer {
   padding-right: 5%;
   width: 60%; }
   #home-page .blog-slider-description span {
-    padding-top: 25px; }
+    margin-top: 25px; }
   #home-page .blog-slider-description h3 {
     padding-top: 18.75px; }
 
@@ -945,6 +982,13 @@ footer {
       object-fit: contain;
       padding-left: 5%;
       width: 30%; }
+    #home-page .blog-slider-nav__post:hover {
+      background: #f3f3f3; }
+
+#home-page .blog-slider-nav .slick-current {
+  background: #f3f3f3; }
+  #home-page .blog-slider-nav .slick-current h5 {
+    color: #1fd4f9; }
 
 #home-page .blog-post-title-container {
   display: inline-block;
@@ -986,7 +1030,29 @@ footer {
 
 #home-page #contact-section {
   background: #f3f3f3;
-  height: 66vh;
+  height: auto;
+  position: relative;
+  width: 100%; }
+
+#home-page .contact-form {
+  margin-left: 10%; }
+
+#home-page .input__contact {
+  padding-right: 5%;
+  width: 25.37%; }
+  #home-page .input__contact--last {
+    width: 25.37%; }
+  #home-page .input__contact--message {
+    width: 100%; }
+
+#home-page #contact-section .button-div {
+  height: 100%; }
+
+#home-page #contact-section .button-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
   width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

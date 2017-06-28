@@ -23,3 +23,11 @@ window.addEventListener("scroll", function(){ // or window.addEventListener("scr
    }
    lastScrollTop = st;
 }, false);
+
+
+// BUTTON COLOR CHANGE
+
+$(".button").click(function() {
+  $(this).css({"background": "#1fd4f9", "border": "2px solid #1fd4f9"});
+  $(this).find("span").css("color", "#fff");
+});

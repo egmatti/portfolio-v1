@@ -28,7 +28,7 @@
 #home-page #about-section img {
   height: 150px;
   object-fit: contain;
-  padding-top: $padding-body-text;
+  margin-top: $margin-body-text;
 }
 
 
@@ -46,16 +46,11 @@
 
 #home-page #blog-div {
   float: left;
-  position: relative;
-  width: 75%;
 }
 
-#home-page #blog-panel {
+#home-page #blog-column {
   background: $color-body;
-  left: 75%;
   overflow-y: scroll;
-  position: absolute;
-  width: 25%;
 }
 
 #home-page .blog-slider-for {
@@ -139,6 +134,7 @@
 
 #home-page .slick-current, .slick-active {
   height: auto;
+  outline: none;
 }
 
 #home-page .blog-slider-description {
@@ -149,7 +145,7 @@
 
   span {
     @extend %date;
-    padding-top: $padding-body-text;
+    margin-top: $margin-body-text;
   }
 
   h3 {
@@ -177,6 +173,18 @@
       padding-left: 5%;
       width: 30%;
     }
+
+    &:hover {
+      background: $color-blog-post-hover;
+    }
+  }
+}
+
+#home-page .blog-slider-nav .slick-current {
+  background: $color-blog-post-active;
+  
+  h5 {
+    color: $color-blog-post-title-active;
   }
 }
 
@@ -235,6 +243,34 @@
 
 #home-page #contact-section {
   background: $color-body-accent;
-  height: 66vh;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+#home-page .contact-form {
+  margin-left: 10%;
+}
+
+#home-page .input__contact {
+  padding-right: 5%;
+  width: 25.37%;
+
+  @include m(last) {
+    width: 25.37%;
+  }
+
+  @include m(message) {
+    width: 100%;
+  }
+}
+
+#home-page #contact-section .button-div {
+  height: 100%;
+}
+
+#home-page #contact-section .button-container {
+  @include flexbox();
+  height: 100%;
   width: 100%;
 }

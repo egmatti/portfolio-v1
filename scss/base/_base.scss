@@ -14,7 +14,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   color: $color-headline;
-  letter-spacing: 0.15rem;
+  letter-spacing: $letter-spacing-headline;
   text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: $letter-spacing-headline-small;
 }
 
 
@@ -52,6 +52,6 @@ h5 {
 
 p {
   color: $color-body-text;
-  line-height: 2rem;
-  padding-top: $padding-body-text;
+  line-height: $line-height-body-text;
+  margin-top: $margin-body-text;
 }

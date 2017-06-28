@@ -1,4 +1,4 @@
-// HOME PAGE BLOG SLIDER
+// BLOG SLIDER
 
 $(".blog-slider-for").slick({
  arrows: false,
@@ -20,7 +20,7 @@ $(".blog-slider-nav").slick({
 });
 
 
-//HOME PAGE BLOG SLIDER NAV PANEL
+// BLOG SLIDER NAV PANEL
 
 $(document).ready(function(){
   var blogPostHeight = $("#blog-section .slick-current").outerHeight();
@@ -33,11 +33,25 @@ $(document).ready(function(){
 });
 
 
-// HOME PAGE INSTAGRAM SLIDER
+// INSTAGRAM SLIDER
 
 $(".instagram-slider-for").slick({
  arrows: true,
  infinite: true,
  slidesToScroll: 1,
  slidesToShow: 3
+});
+
+
+// INSTAGRAM FOLLOW BUTTON
+
+$(".button-instagram").click(function() {
+  $(this).find("span").html("Followed!");
+});
+
+
+// CONTACT SEND BUTTON
+
+$(".button-send").click(function() {
+  $(this).find("span").html("Sent!");
 });

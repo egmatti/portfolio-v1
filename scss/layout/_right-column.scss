@@ -1,0 +1,16 @@
+// ==========================================
+// RIGHT COLUMN
+// ==========================================
+
+.left-columns {
+  display: inline-block;
+  position: relative;
+  width: 75%;
+}
+
+.right-column {
+  display: inline-block;
+  left: 75%;
+  position: absolute;
+  width: 25%;
+}

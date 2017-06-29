@@ -9,46 +9,46 @@ form {
 
 .input-container {
   display: inline-block;
-  margin-top: $margin-body-text;
+  margin-top: $margin-body-text + ($margin-body-text / 4);
   margin-right: $margin-input;
   position: relative;
-}
 
-.input-container label {
-  color: $color-input-label;
-  left: ($padding-input + $border-size);
-  position: absolute;
-  top: ($padding-input + $border-size);
-}
+  & label {
+    color: $color-input-label;
+    left: ($padding-input + $border-size);
+    position: absolute;
+    top: ($padding-input + $border-size);
+  }
 
-.input-container--last {
-  display: inline-block;
-  margin-top: $margin-body-text;
-  position: relative;
-}
+  @include m(last) {
+    display: inline-block;
+    margin-top: $margin-body-text + ($margin-body-text / 4);
+    position: relative;
 
-.input-container--last label {
-  color: $color-input-label;
-  left: ($padding-input + $border-size);
-  position: absolute;
-  top: ($padding-input + $border-size);
+    & label {
+      color: $color-input-label;
+      left: ($padding-input + $border-size);
+      position: absolute;
+      top: ($padding-input + $border-size);
+    }
+  }
 }
 
 .textarea-container {
   display: block;
   height: 250px;
-  margin-top: $margin-body-text;
+  margin-top: $margin-body-text + ($margin-body-text / 4);
   position: relative;
+
+  & label {
+    color: $color-input-label;
+    left: ($padding-input + $border-size);
+    position: absolute;
+    top: ($padding-input + $border-size);
+  }
 }
 
-.textarea-container label {
-  color: $color-input-label;
-  left: ($padding-input + $border-size);
-  position: absolute;
-  top: ($padding-input + $border-size);
-}
-
-.input__contact {
+input {
   border: $border-input;
   padding: $padding-input;
   width: 100%;
@@ -76,65 +76,35 @@ form {
     padding: $padding-input-label;
     transform: translateY(-105%);
   }
+}
 
-  @include m(last) {
-    border: $border-input;
-    padding: $padding-input;
-    width: 100%;
+textarea {
+  border: $border-input;
+  height: 100%;
+  padding: $padding-input;
+  width: 100%;
 
-    &:valid {
-      padding: $padding-input $padding-input $padding-input ($padding-input + 3);
-    }
-
-    &:valid + label {
-      // @include opacity(0);
-      background: $color-input-label-active-background;
-      color: $color-input-label-valid;
-      padding: $padding-input-label;
-      transform: translateY(-105%);
-    }
-
-    &:focus {
-      border: $border-input-active;
-      outline: none;
-    }
-
-    &:focus + label {
-      background: $color-input-label-active-background;
-      color: $color-input-label-active;
-      padding: $padding-input-label;
-      transform: translateY(-105%);
-    }
+  &:valid {
+    padding: $padding-input $padding-input $padding-input ($padding-input + 3);
   }
 
-  @include m(message) {
-    border: $border-input;
-    height: 100%;
-    padding: $padding-input;
-    width: 100%;
+  &:valid + label {
+    // @include opacity(0);
+    background: $color-input-label-active-background;
+    color: $color-input-label-valid;
+    padding: $padding-input-label;
+    transform: translateY(-105%);
+  }
 
-    &:valid {
-      padding: $padding-input $padding-input $padding-input ($padding-input + 3);
-    }
+  &:focus {
+    border: $border-input-active;
+    outline: none;
+  }
 
-    &:valid + label {
-      // @include opacity(0);
-      background: $color-input-label-active-background;
-      color: $color-input-label-valid;
-      padding: $padding-input-label;
-      transform: translateY(-105%);
-    }
-
-    &:focus {
-      border: $border-input-active;
-      outline: none;
-    }
-
-    &:focus + label {
-      background: $color-input-label-active-background;
-      color: $color-input-label-active;
-      padding: $padding-input-label;
-      transform: translateY(-105%);
-    }
+  &:focus + label {
+    background: $color-input-label-active-background;
+    color: $color-input-label-active;
+    padding: $padding-input-label;
+    transform: translateY(-105%);
   }
 }

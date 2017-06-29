@@ -758,97 +758,75 @@ form {
 
 .input-container {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 31.25px;
   margin-right: 50px;
   position: relative; }
-
-.input-container label {
-  color: #a6a6a6;
-  left: 11.5px;
-  position: absolute;
-  top: 11.5px; }
-
-.input-container--last {
-  display: inline-block;
-  margin-top: 25px;
-  position: relative; }
-
-.input-container--last label {
-  color: #a6a6a6;
-  left: 11.5px;
-  position: absolute;
-  top: 11.5px; }
+  .input-container label {
+    color: #a6a6a6;
+    left: 11.5px;
+    position: absolute;
+    top: 11.5px; }
+  .input-container--last {
+    display: inline-block;
+    margin-top: 31.25px;
+    position: relative; }
+    .input-container--last label {
+      color: #a6a6a6;
+      left: 11.5px;
+      position: absolute;
+      top: 11.5px; }
 
 .textarea-container {
   display: block;
   height: 250px;
-  margin-top: 25px;
+  margin-top: 31.25px;
   position: relative; }
+  .textarea-container label {
+    color: #a6a6a6;
+    left: 11.5px;
+    position: absolute;
+    top: 11.5px; }
 
-.textarea-container label {
-  color: #a6a6a6;
-  left: 11.5px;
-  position: absolute;
-  top: 11.5px; }
-
-.input__contact {
+input {
   border: 1.5px solid #a6a6a6;
   padding: 10px;
   width: 100%; }
-  .input__contact:valid {
+  input:valid {
     padding: 10px 10px 10px 13px; }
-  .input__contact:valid + label {
+  input:valid + label {
     background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
     color: #a6a6a6;
     padding: 0 3px;
     transform: translateY(-105%); }
-  .input__contact:focus {
+  input:focus {
     border: 1.5px solid #fb6365;
     outline: none; }
-  .input__contact:focus + label {
+  input:focus + label {
     background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
     color: #fb6365;
     padding: 0 3px;
     transform: translateY(-105%); }
-  .input__contact--last {
-    border: 1.5px solid #a6a6a6;
-    padding: 10px;
-    width: 100%; }
-    .input__contact--last:valid {
-      padding: 10px 10px 10px 13px; }
-    .input__contact--last:valid + label {
-      background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
-      color: #a6a6a6;
-      padding: 0 3px;
-      transform: translateY(-105%); }
-    .input__contact--last:focus {
-      border: 1.5px solid #fb6365;
-      outline: none; }
-    .input__contact--last:focus + label {
-      background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
-      color: #fb6365;
-      padding: 0 3px;
-      transform: translateY(-105%); }
-  .input__contact--message {
-    border: 1.5px solid #a6a6a6;
-    height: 100%;
-    padding: 10px;
-    width: 100%; }
-    .input__contact--message:valid {
-      padding: 10px 10px 10px 13px; }
-    .input__contact--message:valid + label {
-      background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
-      color: #a6a6a6;
-      padding: 0 3px;
-      transform: translateY(-105%); }
-    .input__contact--message:focus {
-      border: 1.5px solid #fb6365;
-      outline: none; }
-    .input__contact--message:focus + label {
-      background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
-      color: #fb6365;
-      padding: 0 3px;
-      transform: translateY(-105%); }
+
+textarea {
+  border: 1.5px solid #a6a6a6;
+  height: 100%;
+  padding: 10px;
+  width: 100%; }
+  textarea:valid {
+    padding: 10px 10px 10px 13px; }
+  textarea:valid + label {
+    background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
+    color: #a6a6a6;
+    padding: 0 3px;
+    transform: translateY(-105%); }
+  textarea:focus {
+    border: 1.5px solid #fb6365;
+    outline: none; }
+  textarea:focus + label {
+    background: linear-gradient(to bottom, #f3f3f3 50%, #fff 50%);
+    color: #fb6365;
+    padding: 0 3px;
+    transform: translateY(-105%); }
 
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
@@ -1113,11 +1091,11 @@ footer {
   margin-left: 10%; }
 
 #home-page .input-container {
-  margin-right: 7.5%;
-  width: 28%; }
+  margin-right: 10%;
+  width: 25.75%; }
 
 #home-page .input-container--last {
-  width: 28%; }
+  width: 25.75%; }
 
 #home-page #contact-section .button-div {
   height: 100%; }

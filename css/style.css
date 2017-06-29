@@ -789,6 +789,7 @@ form {
 
 input {
   border: 1.5px solid #a6a6a6;
+  box-sizing: border-box;
   padding: 10px;
   width: 100%; }
   input:valid {
@@ -809,6 +810,7 @@ input {
 
 textarea {
   border: 1.5px solid #a6a6a6;
+  box-sizing: border-box;
   height: 100%;
   padding: 10px;
   width: 100%; }
@@ -1088,14 +1090,15 @@ footer {
   width: 100%; }
 
 #home-page .contact-form {
-  margin-left: 10%; }
+  margin-left: 10%;
+  width: 90%; }
 
 #home-page .input-container {
-  margin-right: 10%;
-  width: 25.75%; }
+  margin-right: 4.5%;
+  width: 30%; }
 
 #home-page .input-container--last {
-  width: 25.75%; }
+  width: 30%; }
 
 #home-page #contact-section .button-div {
   height: 100%; }

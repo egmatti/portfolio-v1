@@ -50,6 +50,7 @@ form {
 
 input {
   border: $border-input;
+  box-sizing: border-box;
   padding: $padding-input;
   width: 100%;
 
@@ -80,6 +81,7 @@ input {
 
 textarea {
   border: $border-input;
+  box-sizing: border-box;
   height: 100%;
   padding: $padding-input;
   width: 100%;

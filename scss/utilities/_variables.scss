@@ -41,6 +41,8 @@ $color-input: $gray;
 $color-input-label: $gray;
 $color-input-active: $lighter-sunset-orange;
 $color-input-label-active: $lighter-sunset-orange;
+$color-input-label-valid: $gray;
+$color-input-label-active-background: linear-gradient(to bottom, $light-gray 50%, $color-body 50%);
 
 $color-link-default: $bright-turquoise;
 $color-link-visited: $royal-blue;
@@ -111,7 +113,8 @@ $margin-body-text: 25px;
 $padding-section: 100px;
 $padding-div: 50px;
 $padding-button: 15px 20px;
-$padding-input: 5px;
+$padding-input: 10px;
+$padding-input-label: 0 3px;
 
 
 // PATHS

@@ -7,3 +7,54 @@ footer {
   height: 160px;
   width: 100%;
 }
+
+.footer-row-top, .footer-row-bottom {
+  box-sizing: border-box;
+  height: 50%;
+  width: 100%;
+}
+
+.footer-row-top {
+  padding-top: $padding-footer-row;
+}
+
+.footer-row-bottom {
+  padding-bottom: $padding-footer-row;
+}
+
+footer .nav-logo {
+  float: left;
+  margin-left: $margin-nav;
+}
+
+.footer-social-media {
+  @include vertical-align;
+  float: right;
+  margin-right: $margin-nav;
+
+  @include e(item) {
+    display: inline-block;
+    list-style-type: none;
+    padding: $padding-footer-social-media-item;
+
+    @include m(last) {
+      display: inline-block;
+      list-style-type: none;
+      padding: $padding-footer-social-media-item;
+      padding-right: none;
+    }
+  }
+}
+
+footer .fa-twitter {
+  border-right: none;
+}
+
+footer .nav {
+  float: left;
+  margin-left: $margin-nav;
+}
+
+footer .nav__item--first {
+  padding-left: 0;
+}

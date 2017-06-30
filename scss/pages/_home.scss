@@ -93,7 +93,7 @@
           width: 100%;
 
           span {
-            color: $color-blog-social-link;
+            color: $color-icon;
             font-family: $font-stack-secondary;
             font-size: 2.25rem;
             text-transform: lowercase;
@@ -110,21 +110,24 @@
   padding-top: 5%;
 }
 
-#home-page .social-media {
+#home-page .blog-social-media-container {
   height: 50%;
   padding-bottom: 5%;
 }
 
-#home-page .fa {
-  color: $color-blog-social-link;
-  padding: 0 35px;
+#home-page .blog-social-media {
 
-  &:hover {
-    color: $color-blog-social-link-hover;
+  @include e(item) {
+    display: inline-block;
+    list-style-type: none;
   }
 }
 
-#home-page .fa-facebook, .fa-twitter {
+#home-page #blog-section .fa {
+  padding: $padding-blog-social-media-item;
+}
+
+#home-page #blog-section .fa-facebook, .fa-twitter {
   border-right: $border-divider;
 }
 

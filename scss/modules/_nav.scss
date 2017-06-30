@@ -1,0 +1,56 @@
+// ==========================================
+// NAV
+// ==========================================
+
+.nav-logo {
+  @include vertical-align;
+  height: 45px;
+  width: auto;
+}
+
+.nav {
+  @include vertical-align;
+
+  @include e(item) {
+    display: inline-block;
+    list-style-type: none;
+    padding: $padding-nav-item;
+
+    @include m(first) {
+      display: inline-block;
+      list-style-type: none;
+      padding: $padding-nav-item;
+    }
+
+    @include m(last) {
+      display: inline-block;
+      list-style-type: none;
+      padding: $padding-nav-item;
+    }
+  }
+}
+
+.nav a {
+  @extend h1;
+  color: $color-nav;
+  font-size: 1.25rem;
+  letter-spacing: $letter-spacing-headline;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-nav-hover;
+  }
+
+  span {
+    font-family: $font-stack-secondary;
+    font-size: 0.78125rem;
+    font-weight: $font-weight-regular;
+    letter-spacing: 0rem;
+    text-transform: lowercase;
+    vertical-align: top;
+
+    &:hover {
+      color: $color-nav-hover;
+    }
+  }
+}

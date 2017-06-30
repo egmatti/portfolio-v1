@@ -10,52 +10,17 @@ header {
   z-index: 100;
 }
 
-.logo {
-  @include vertical-align;
+header .nav-logo {
   float: left;
-  height: 45px;
-  margin-left: 5%;
-  width: auto;
+  margin-left: $margin-nav;
 }
 
-.nav {
-  @include vertical-align;
+header .nav {
   float: right;
-  margin-right: 5%;
-
-  @include e(item) {
-    display: inline-block;
-    list-style-type: none;
-
-    a {
-      @extend h1;
-      color: $color-nav;
-      font-size: 1.25rem;
-      letter-spacing: $letter-spacing-headline;
-      padding: 0 25px;
-      text-decoration: none;
-
-      &:hover {
-        color: $color-nav-hover;
-      }
-
-      span {
-        font-family: $font-stack-secondary;
-        font-size: 0.78125rem;
-        font-weight: $font-weight-regular;
-        letter-spacing: 0rem;
-        text-transform: lowercase;
-        vertical-align: top;
-
-        &:hover {
-          color: $color-nav-hover;
-        }
-      }
-    }
-  }
+  margin-right: $margin-nav;
 }
 
-.the-latest {
+header .nav__item--last {
   padding-left: 13px;
-  padding-right: 0px;
+  padding-right: 0;
 }

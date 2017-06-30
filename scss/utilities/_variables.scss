@@ -33,6 +33,9 @@ $color-body-text: $black;
 $color-selection: rgba($bright-turquoise, 0.5);
 $color-date: $gray;
 
+$color-icon: $gray;
+$color-icon-hover: $lighter-sunset-orange;
+
 $color-button: $sunset-orange;
 $color-button-hover: $lighter-sunset-orange;
 $color-button-click: $lighter-sunset-orange;
@@ -57,8 +60,6 @@ $color-blog-post-title: $bright-turquoise;
 $color-blog-post-hover: $light-gray;
 $color-blog-post-active: $light-gray;
 $color-blog-post-title-active: $bright-turquoise;
-$color-blog-social-link: $gray;
-$color-blog-social-link-hover: $lighter-sunset-orange;
 
 $color-footer: $white;
 
@@ -107,14 +108,19 @@ $margin-section: 125px 10%;
 $margin-section-vertical: 125px;
 $margin-section-horizontal: 10%;
 $margin-div: 50px;
-$margin-input: 50px;
 $margin-body-text: 25px;
+$margin-nav: 5%;
+$margin-input: 50px;
 
 $padding-section: 100px;
 $padding-div: 50px;
 $padding-button: 15px 20px;
+$padding-nav-item: 0 25px;
 $padding-input: 10px;
 $padding-input-label: 0 3px;
+$padding-footer-row: 16px;
+$padding-footer-social-media-item: 0 10px;
+$padding-blog-social-media-item: 0 35px;
 
 
 // PATHS

@@ -41,7 +41,7 @@ footer .nav-logo {
       display: inline-block;
       list-style-type: none;
       padding: $padding-footer-social-media-item;
-      padding-right: none;
+      padding-right: 0;
     }
   }
 }
@@ -57,4 +57,12 @@ footer .nav {
 
 footer .nav__item--first {
   padding-left: 0;
+}
+
+.footer-copyright {
+  @include vertical-align;
+  color: $color-footer-copyright;
+  font-size: 0.9rem;
+  float: right;
+  margin-right: $margin-nav;
 }

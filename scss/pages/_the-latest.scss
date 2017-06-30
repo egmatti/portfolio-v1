@@ -1,3 +1,29 @@
 // ==========================================
 // THE LATEST PAGE
 // ==========================================
+
+#the-latest-page {
+  background: $color-body-accent;
+}
+
+
+// HERO
+
+#the-latest-page .hero-section {
+  background: $color-hero-background;
+  height: 75vh;
+  width: 100%;
+}
+
+
+// CONTENT SECTION
+
+#the-latest-page .content-section {
+  @include box-shadow;
+  background: $color-body;
+  height: 800px;
+  margin: 0 $margin-section-horizontal;
+  position: relative;
+  top: -100px;
+  width: 80%;
+}

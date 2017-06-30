@@ -972,7 +972,7 @@ footer .nav__item--first {
   position: absolute;
   width: 25%; }
 
-#home-page #hero-section {
+#home-page .hero-section {
   background: url("../images/home/neon-text.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -980,24 +980,24 @@ footer .nav__item--first {
   height: 100vh;
   width: 100%; }
 
-#home-page #about-section {
+#home-page .about-section {
   background: #fff;
   height: auto;
   width: 100%; }
 
-#home-page #about-section div {
+#home-page .about-section div {
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 100px 25%; }
 
-#home-page #about-section img {
+#home-page .about-section img {
   height: 150px;
   object-fit: contain;
   margin-top: 25px; }
 
-#home-page #blog-section {
+#home-page .blog-section {
   background: #fff;
   border-bottom: 1.5px solid #f3f3f3;
   border-top: 1.5px solid #f3f3f3;
@@ -1067,10 +1067,10 @@ footer .nav__item--first {
   display: inline-block;
   list-style-type: none; }
 
-#home-page #blog-section .fa {
+#home-page .blog-section .fa {
   padding: 0 35px; }
 
-#home-page #blog-section .fa-facebook, .fa-twitter {
+#home-page .blog-section .fa-facebook, .fa-twitter {
   border-right: 1.5px solid #f3f3f3; }
 
 #home-page .slick-slide {
@@ -1130,11 +1130,11 @@ footer .nav__item--first {
     color: #1fd4f9;
     padding-top: 2.5px; }
 
-#home-page #instagram-section {
+#home-page .instagram-section {
   background: #fff;
   height: auto; }
 
-#home-page #instagram-section .slick-prev:before, .slick-next:before {
+#home-page .instagram-section .slick-prev:before, .slick-next:before {
   color: #fa4a4c; }
 
 #home-page .instagram-div {
@@ -1151,13 +1151,13 @@ footer .nav__item--first {
   height: 275px;
   object-fit: contain; }
 
-#home-page #instagram-section .button-container {
+#home-page .instagram-section .button-container {
   align-items: center;
   display: flex;
   justify-content: center;
   margin-bottom: 125px; }
 
-#home-page #contact-section {
+#home-page .contact-section {
   background: #f3f3f3;
   height: auto;
   position: relative;
@@ -1174,14 +1174,33 @@ footer .nav__item--first {
 #home-page .input-container--last {
   width: 30%; }
 
-#home-page #contact-section .button-div {
+#home-page .contact-section .button-div {
   height: 100%; }
 
-#home-page #contact-section .button-container {
+#home-page .contact-section .button-container {
   align-items: center;
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%; }
+
+#the-latest-page {
+  background: #f3f3f3; }
+
+#the-latest-page .hero-section {
+  background: #fa4a4c;
+  height: 75vh;
+  width: 100%; }
+
+#the-latest-page .content-section {
+  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  background: #fff;
+  height: 800px;
+  margin: 0 10%;
+  position: relative;
+  top: -100px;
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */

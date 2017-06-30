@@ -23,12 +23,12 @@ $(".blog-slider-nav").slick({
 // BLOG SLIDER NAV PANEL
 
 $(document).ready(function(){
-  var blogPostHeight = $("#blog-section .slick-current").outerHeight();
-  $("#blog-section .blog-slider-nav").css({"height": blogPostHeight});
+  var blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();
+  $("#home-page .blog-section .blog-slider-nav").css({"height": blogPostHeight});
 
-  $('#blog-section .slick-active').on( "click", function() {
-    blogPostHeight = $("#blog-section .slick-current").outerHeight();
-    $("#blog-section .blog-slider-nav").css({"height": blogPostHeight});
+  $('#home-page .blog-section .slick-active').on( "click", function() {
+    blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();
+    $("#home-page .blog-section .blog-slider-nav").css({"height": blogPostHeight});
   });
 });
 

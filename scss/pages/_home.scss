@@ -4,7 +4,7 @@
 
 // HERO
 
-#home-page #hero-section {
+#home-page .hero-section {
   @include bg-image ($image-folder: "home", $bg-image: "neon-text");
   // background: $color-hero-background;
   height: 100vh;
@@ -14,18 +14,18 @@
 
 // ABOUT SECTION
 
-#home-page #about-section {
+#home-page .about-section {
   background: $color-body;
   height: auto;
   width: 100%;
 }
 
-#home-page #about-section div {
+#home-page .about-section div {
   @include flexbox ($direction: column);
   padding: $padding-section 25%;
 }
 
-#home-page #about-section img {
+#home-page .about-section img {
   height: 150px;
   object-fit: contain;
   margin-top: $margin-body-text;
@@ -34,7 +34,7 @@
 
 // BLOG SECTION
 
-#home-page #blog-section {
+#home-page .blog-section {
   background: $color-body;
   border-bottom: $border-section;
   border-top: $border-section;
@@ -123,11 +123,11 @@
   }
 }
 
-#home-page #blog-section .fa {
+#home-page .blog-section .fa {
   padding: $padding-blog-social-media-item;
 }
 
-#home-page #blog-section .fa-facebook, .fa-twitter {
+#home-page .blog-section .fa-facebook, .fa-twitter {
   border-right: $border-divider;
 }
 
@@ -212,12 +212,12 @@
 
 // INSTAGRAM SECTION
 
-#home-page #instagram-section {
+#home-page .instagram-section {
   background: $color-body;
   height: auto;
 }
 
-#home-page #instagram-section .slick-prev:before, .slick-next:before {
+#home-page .instagram-section .slick-prev:before, .slick-next:before {
     color: $color-arrows-instagram;
   }
 
@@ -236,7 +236,7 @@
   object-fit: contain;
 }
 
-#home-page #instagram-section .button-container {
+#home-page .instagram-section .button-container {
   @include flexbox();
   margin-bottom: $margin-section-vertical;
 }
@@ -244,7 +244,7 @@
 
 // CONTACT SECTION
 
-#home-page #contact-section {
+#home-page .contact-section {
   background: $color-body-accent;
   height: auto;
   position: relative;
@@ -252,7 +252,7 @@
 }
 
 #home-page .contact-form {
-  margin-left: 10%;
+  margin-left: $margin-section-horizontal;
   width: 90%;
 }
 
@@ -265,11 +265,11 @@
   width: 30%;
 }
 
-#home-page #contact-section .button-div {
+#home-page .contact-section .button-div {
   height: 100%;
 }
 
-#home-page #contact-section .button-container {
+#home-page .contact-section .button-container {
   @include flexbox();
   height: 100%;
   width: 100%;

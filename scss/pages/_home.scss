@@ -35,7 +35,7 @@
 // BLOG SECTION
 
 #home-page .blog-section {
-  background: $color-body;
+  background: $color-blog-section;
   border-bottom: $border-section;
   border-top: $border-section;
   clear: both;
@@ -49,12 +49,12 @@
 }
 
 #home-page #blog-column {
-  background: $color-body;
+  background: $color-blog-column;
   overflow-y: scroll;
 }
 
 #home-page .blog-slider-for {
-  background: $color-blog-background;
+  background: $color-blog-div;
   float: right;
   width: 87.5%;
 
@@ -70,8 +70,8 @@
 
     figure {
       @include box-shadow;
-      background: $color-body;
-      border: 15px solid $color-body;
+      background: $color-blog-figure;
+      border: 15px solid $color-blog-figure;
       float: left;
       margin: 0;
       position: relative;
@@ -84,7 +84,7 @@
       }
 
       figcaption {
-        background: $color-body;
+        background: $color-blog-figure;
         height: 160px;
         width: 100%;
 
@@ -160,7 +160,7 @@
   overflow-y: scroll;
 
   @include e(post) {
-    background: $color-body;
+    background: $color-blog-post;
     border-bottom: $border-divider;
     display: block;
     height: 100px;

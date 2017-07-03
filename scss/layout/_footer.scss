@@ -4,6 +4,7 @@
 
 footer {
   background: $color-footer;
+  border-top: $border-footer;
   height: 160px;
   width: 100%;
 }
@@ -46,8 +47,8 @@ footer .nav-logo {
   }
 }
 
-footer .fa-twitter {
-  border-right: none;
+footer .fa {
+  border: none;
 }
 
 footer .nav {

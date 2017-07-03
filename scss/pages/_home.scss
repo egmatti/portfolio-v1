@@ -94,7 +94,7 @@
 
           span {
             color: $color-icon;
-            font-family: $font-stack-secondary;
+            font-family: $font-stack-accent;
             font-size: 2.25rem;
             text-transform: lowercase;
             position: relative;
@@ -127,8 +127,12 @@
   padding: $padding-blog-social-media-item;
 }
 
-#home-page .blog-section .fa-facebook, .fa-twitter {
+#home-page .blog-section .fa-facebook, .fa-pinterest-p {
   border-right: $border-divider;
+}
+
+#home-page .blog-section .fa-twitter {
+  border: none;
 }
 
 #home-page .slick-slide {

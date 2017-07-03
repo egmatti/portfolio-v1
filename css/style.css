@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
 @font-face {
   font-family: "Avenir Next";
   src: url("fonts/avenir_next.eot");
@@ -699,7 +700,7 @@ template {
   opacity: .75;
   color: black; }
 
-#home-page .blog-slider-description span, #home-page .blog-post-title-container span {
+#home-page .blog-slider-description span, #home-page .blog-post-title-container span, #blog-post-page .headline-container span {
   color: #a6a6a6;
   font-size: 0.85rem;
   font-weight: 600;
@@ -904,6 +905,7 @@ header .nav__item--last {
 
 footer {
   background: #fff;
+  border-top: 1.5px solid #f3f3f3;
   height: 160px;
   width: 100%; }
 
@@ -940,8 +942,8 @@ footer .nav-logo {
       padding: 0 10px;
       padding-right: 0; }
 
-footer .fa-twitter {
-  border-right: none; }
+footer .fa {
+  border: none; }
 
 footer .nav {
   float: left;
@@ -1070,8 +1072,11 @@ footer .nav__item--first {
 #home-page .blog-section .fa {
   padding: 0 35px; }
 
-#home-page .blog-section .fa-facebook, .fa-twitter {
+#home-page .blog-section .fa-facebook, .fa-pinterest-p {
   border-right: 1.5px solid #f3f3f3; }
+
+#home-page .blog-section .fa-twitter {
+  border: none; }
 
 #home-page .slick-slide {
   height: 0; }
@@ -1185,22 +1190,120 @@ footer .nav__item--first {
   width: 100%; }
 
 #the-latest-page {
-  background: #f3f3f3; }
+  background: #fff; }
 
 #the-latest-page .hero-section {
-  background: #fa4a4c;
+  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  background: #0b0b0b;
   height: 75vh;
   width: 100%; }
 
 #the-latest-page .content-section {
-  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   background: #fff;
+  border-top: 5px solid #1fd4f9;
   height: 800px;
   margin: 0 10%;
   position: relative;
   top: -100px;
   width: 80%; }
+
+#blog-post-page {
+  background: #fff; }
+
+#blog-post-page .hero-section {
+  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  background: #0b0b0b;
+  height: 75vh;
+  width: 100%; }
+
+#blog-post-page .headline-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: -webkit-calc(100% - 155px);
+  height: calc(100% - 155px);
+  height: calc(100% - 155px);
+  position: relative;
+  top: 80px;
+  width: 100%; }
+
+#blog-post-page .headline-container h3 {
+  color: #fff;
+  font-size: 3rem;
+  padding-top: 28.125px; }
+
+#blog-post-page .headline-container hr {
+  background: #fff;
+  color: #fff; }
+
+#blog-post-page .headline-container span {
+  color: #a6a6a6;
+  font-size: 1.275rem; }
+
+#blog-post-page .content-section {
+  background: linear-gradient(to bottom, #f3f3f3, #fff 250px);
+  border-top: 5px solid #1fd4f9;
+  box-sizing: border-box;
+  height: 800px;
+  margin: 0 10%;
+  position: relative;
+  top: -100px;
+  width: 80%; }
+
+#blog-post-page figure {
+  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  background: #fff;
+  border: 15px solid #fff;
+  float: left;
+  left: 25px;
+  margin: 0;
+  position: relative;
+  top: 25px;
+  width: 100px; }
+  #blog-post-page figure img {
+    object-fit: contain;
+    width: 100%; }
+  #blog-post-page figure figcaption {
+    background: #fff;
+    height: 160px;
+    width: 100%; }
+    #blog-post-page figure figcaption div {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%; }
+      #blog-post-page figure figcaption div span {
+        color: #a6a6a6;
+        font-family: "Milkshake", "Avenir Next", Helvetica, sans-serif;
+        font-size: 1.6875rem;
+        text-transform: lowercase;
+        position: relative; }
+
+#blog-post-page .share-container {
+  height: 30%;
+  padding-top: 5%; }
+
+#blog-post-page .blog-social-media-container {
+  height: 70%;
+  padding-bottom: 5%; }
+
+#blog-post-page .blog-social-media__item {
+  display: block;
+  list-style-type: none; }
+
+#blog-post-page .content-section .fa {
+  font-size: 1.53125rem;
+  padding: 7px 0px; }
+
+#blog-post-page .fa {
+  border: none; }
 
 /*# sourceMappingURL=style.css.map */

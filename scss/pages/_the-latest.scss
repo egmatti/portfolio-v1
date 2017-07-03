@@ -3,13 +3,14 @@
 // ==========================================
 
 #the-latest-page {
-  background: $color-body-accent;
+  background: $color-body;
 }
 
 
 // HERO
 
 #the-latest-page .hero-section {
+  @include box-shadow;
   background: $color-hero-background;
   height: 75vh;
   width: 100%;
@@ -19,8 +20,8 @@
 // CONTENT SECTION
 
 #the-latest-page .content-section {
-  @include box-shadow;
   background: $color-body;
+  border-top: $border-content;
   height: 800px;
   margin: 0 $margin-section-horizontal;
   position: relative;

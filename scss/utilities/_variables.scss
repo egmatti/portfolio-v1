@@ -18,15 +18,12 @@ $light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
 
 // Color Functions
-$color-header: $white;
 
 $color-body: $white;
 $color-body-accent: $light-gray;
 $color-border: $light-gray;
 $color-shadow: rgba($black, 0.15);
 
-$color-nav: $black;
-$color-nav-hover: $lighter-sunset-orange;
 $color-headline: $black;
 $color-headline-gray: $lighter-gray;
 $color-body-text: $black;
@@ -53,7 +50,18 @@ $color-link-visited: $royal-blue;
 $color-arrows: $white;
 $color-arrows-instagram: $sunset-orange;
 
-$color-hero-background: $sunset-orange;
+$color-nav: $black;
+$color-nav-hover: $lighter-sunset-orange;
+
+$color-header: $white;
+
+$color-content-border: $bright-turquoise;
+
+$color-footer: $white;
+$color-footer-border: $light-gray;
+$color-footer-copyright: $gray;
+
+$color-hero-background: $black;
 
 $color-blog-section: $white;
 $color-blog-div: $light-gray;
@@ -65,16 +73,13 @@ $color-blog-post-hover: $light-gray;
 $color-blog-post-active: $light-gray;
 $color-blog-post-title-active: $bright-turquoise;
 
-$color-footer: $white;
-$color-footer-copyright: $gray;
-
 
 // FONTS
 
 // Font Stacks
 $font-stack-primary: "Avenir Next", Helvetica, sans-serif;
-$font-stack-secondary: "Milkshake", "Avenir Next", Helvetica, sans-serif;
-$font-stack-accent: "Emily Mattison", "Milkshake", "Avenir Next", Helvetica, sans-serif;
+$font-stack-secondary: "Merriweather", serif;
+$font-stack-accent: "Milkshake", "Avenir Next", Helvetica, sans-serif;
 
 // Font Weights
 $font-weight-thin: 100;
@@ -105,6 +110,9 @@ $border-button: $border-size solid $color-button;
 $border-button-hover: $border-size solid $color-button-hover;
 $border-input: $border-size solid $color-input;
 $border-input-active: $border-size solid $color-input-active;
+
+$border-content: 5px solid $color-content-border;
+$border-footer: $border-size solid $color-footer-border;
 
 
 // MARGINS AND PADDING

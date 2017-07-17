@@ -1270,27 +1270,21 @@ footer .nav__item--first {
       align-items: center;
       display: flex;
       justify-content: center;
-      flex-direction: column; }
-      #blog-post-page figure figcaption div span {
-        font-size: 1.6875rem; }
-
-#blog-post-page .share-container {
-  height: 30%;
-  padding-top: 5%; }
-
-#blog-post-page .blog-social-media-container {
-  height: 70%;
-  padding-bottom: 5%; }
+      flex-direction: column;
+      height: 100%; }
 
 #blog-post-page .blog-social-media__item {
   display: block;
   list-style-type: none; }
 
 #blog-post-page .content-section .fa {
+  border-bottom: 1.5px solid #f3f3f3;
+  border-right: none;
   font-size: 1.53125rem;
-  padding: 7px 0px; }
+  padding: 15px 15px; }
 
-#blog-post-page .fa {
-  border: none; }
+#blog-post-page .content-section .fa-twitter {
+  border-bottom: none;
+  padding-bottom: 3px; }
 
 /*# sourceMappingURL=style.css.map */

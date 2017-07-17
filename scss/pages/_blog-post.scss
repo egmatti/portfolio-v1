@@ -11,7 +11,6 @@
 
 #blog-post-page .hero-section {
   @include bg-image ($image-folder: "the-latest", $bg-image: "corkboard");
-  // background: $color-hero-background;
 }
 
 #blog-post-page .headline-container {
@@ -24,7 +23,7 @@
 
 #blog-post-page .content-section {
   background: $color-body;
-  height: 800px;
+  height: 800px; // Should be changed to "auto" once there's content
   margin: 0 $margin-section-horizontal;
   position: relative;
   top: -100px;
@@ -43,22 +42,9 @@
 
     div {
       @include flexbox($justify: center, $direction: column);
-
-      span {
-        font-size: (0.75 * 2.25rem);
-      }
+      height: 100%;
     }
   }
-}
-
-#blog-post-page .share-container {
-  height: 30%;
-  padding-top: 5%;
-}
-
-#blog-post-page .blog-social-media-container {
-  height: 70%;
-  padding-bottom: 5%;
 }
 
 #blog-post-page .blog-social-media {
@@ -70,10 +56,13 @@
 }
 
 #blog-post-page .content-section .fa {
+  border-bottom: $border-divider;
+  border-right: none;
   font-size: (0.875 * 1.75rem);
-  padding: 7px 0px;
+  padding: 15px 15px;
 }
 
-#blog-post-page .fa {
-  border: none;
+#blog-post-page .content-section .fa-twitter {
+  border-bottom: none;
+  padding-bottom: 3px;
 }

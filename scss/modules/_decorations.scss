@@ -1,0 +1,14 @@
+// ==========================================
+// DECORATIONS
+// ==========================================
+
+.push-pin-container {
+  @include flexbox();
+  height: auto;
+  width: 100%;
+}
+
+.push-pin {
+  height: 80px;
+  object-fit: contain;
+}

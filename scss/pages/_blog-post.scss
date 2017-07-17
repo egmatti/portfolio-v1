@@ -2,11 +2,6 @@
 // BLOG POST PAGE
 // ==========================================
 
-#blog-post-page {
-  background: $color-body;
-}
-
-
 // HERO
 
 #blog-post-page .hero-section {
@@ -28,17 +23,31 @@
   position: relative;
   top: -100px;
   width: 80%;
+
+  &:before {
+    content: url("#{$path-image}/blog-post/shadow-left.png");
+    left: -8px;
+    position: absolute;
+    top: 100px;
+  }
+
+  &:after {
+    content: url("#{$path-image}/blog-post/shadow-right.png");
+    position: absolute;
+    right: -8px;
+    top: 100px;
+  }
 }
 
 #blog-post-page figure {
   float: left;
   left: 25px;
   position: relative;
-  top: 25px;
+  top: 20px;
   width: 100px;
 
   figcaption {
-    height: 160px;
+    height: auto;
 
     div {
       @include flexbox($justify: center, $direction: column);
@@ -59,10 +68,17 @@
   border-bottom: $border-divider;
   border-right: none;
   font-size: (0.875 * 1.75rem);
-  padding: 15px 15px;
+  padding: 20.25px 15px;
 }
 
 #blog-post-page .content-section .fa-twitter {
   border-bottom: none;
-  padding-bottom: 3px;
+  padding-bottom: 5.25px;
+}
+
+#blog-post-page .blog-nav-container {
+  float: right;
+  position: relative;
+  right: 25px;
+  top: 20px;
 }

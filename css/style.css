@@ -49,7 +49,8 @@ h3 {
   font-size: 1.5rem; }
 
 h4 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem; }
 
 h5 {
   font-size: 1rem;
@@ -699,7 +700,7 @@ template {
   opacity: .75;
   color: black; }
 
-.headline-container span, #home-page .blog-slider-description span, #home-page .blog-post-title-container span {
+.blog-nav__post article span, .headline-container span, #home-page .blog-slider-description span {
   color: #a6a6a6;
   font-size: 0.85rem;
   font-weight: 600;
@@ -746,6 +747,17 @@ template {
     .button:hover span {
       color: #fff; }
 
+.push-pin-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%; }
+
+.push-pin {
+  height: 80px;
+  object-fit: contain; }
+
 .nav-logo {
   position: relative;
   top: 50%;
@@ -791,6 +803,66 @@ template {
     .nav a span:hover {
       color: #fb6365; }
 
+.blog-nav-container {
+  height: 450px;
+  width: 225px; }
+  .blog-nav-container h4 {
+    position: relative;
+    text-align: center;
+    top: 0; }
+
+.blog-nav-border {
+  border-right: 1.5px solid #f3f3f3;
+  float: left;
+  height: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 5px;
+  width: 50%; }
+
+.blog-nav {
+  border: 1.5px solid #f3f3f3;
+  bottom: 0;
+  height: 375px;
+  overflow-y: scroll;
+  position: relative;
+  width: 100%; }
+  .blog-nav__post {
+    background: #fff;
+    border-bottom: 1.5px solid #f3f3f3;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 75px;
+    position: relative;
+    width: 100%; }
+    .blog-nav__post:hover {
+      background: #f3f3f3; }
+    .blog-nav__post img {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: inline-block;
+      max-height: 75%;
+      float: left;
+      object-fit: contain;
+      padding-left: 5%;
+      width: 30%; }
+    .blog-nav__post article {
+      display: inline-block;
+      float: left;
+      padding-left: 5%;
+      position: relative;
+      top: 15%;
+      width: 60%; }
+      .blog-nav__post article span {
+        font-size: 0.6375rem; }
+      .blog-nav__post article h5 {
+        color: #1fd4f9;
+        font-size: 0.75rem;
+        padding-top: 2.5px; }
+
 .divider-white {
   background: white;
   clear: both;
@@ -802,27 +874,6 @@ template {
   clear: both;
   height: 50px;
   width: 100%; }
-
-figure {
-  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  background: #fff;
-  border: 15px solid #fff;
-  margin: 0; }
-  figure img {
-    object-fit: contain;
-    width: 100%; }
-  figure figcaption {
-    background: #fff;
-    width: 100%; }
-    figure figcaption div {
-      width: 100%; }
-      figure figcaption div span {
-        color: #a6a6a6;
-        font-family: "Milkshake", "Avenir Next", Helvetica, sans-serif;
-        position: relative;
-        text-transform: lowercase; }
 
 form {
   margin-top: 50px;
@@ -901,6 +952,27 @@ textarea {
     color: #fb6365;
     padding: 0 3px;
     transform: translateY(-105%); }
+
+figure {
+  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  background: #fff;
+  border: 15px solid #fff;
+  margin: 0; }
+  figure img {
+    object-fit: contain;
+    width: 100%; }
+  figure figcaption {
+    background: #fff;
+    width: 100%; }
+    figure figcaption div {
+      width: 100%; }
+      figure figcaption div span {
+        color: #a6a6a6;
+        font-family: "Milkshake", "Avenir Next", Helvetica, sans-serif;
+        position: relative;
+        text-transform: lowercase; }
 
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
@@ -1134,45 +1206,25 @@ footer .nav__item--first {
   #home-page .blog-slider-description h3 {
     padding-top: 18.75px; }
 
-#home-page .blog-slider-nav {
-  overflow-y: scroll; }
-  #home-page .blog-slider-nav__post {
-    background: #fff;
+#home-page .blog-nav {
+  border: none;
+  overflow-y: scroll;
+  position: static; }
+  #home-page .blog-nav__post {
     border-bottom: 1.5px solid #f3f3f3;
+    box-sizing: content-box;
     display: block;
     height: 100px;
-    cursor: pointer;
-    width: 100%; }
-    #home-page .blog-slider-nav__post img {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      display: inline-block;
-      max-height: 75%;
-      float: left;
-      object-fit: contain;
-      padding-left: 5%;
-      width: 30%; }
-    #home-page .blog-slider-nav__post:hover {
-      background: #f3f3f3; }
+    position: static; }
+    #home-page .blog-nav__post article span {
+      font-size: 0.85rem; }
+    #home-page .blog-nav__post article h5 {
+      font-size: 1rem; }
 
 #home-page .blog-slider-nav .slick-current {
   background: #f3f3f3; }
   #home-page .blog-slider-nav .slick-current h5 {
     color: #1fd4f9; }
-
-#home-page .blog-post-title-container {
-  display: inline-block;
-  float: left;
-  padding-left: 5%;
-  position: relative;
-  top: 15%;
-  width: 60%; }
-  #home-page .blog-post-title-container h5 {
-    color: #1fd4f9;
-    padding-top: 2.5px; }
 
 #home-page .instagram-section {
   background: #fff;
@@ -1237,9 +1289,6 @@ footer .nav__item--first {
   background-size: cover;
   background-position: center; }
 
-#blog-post-page {
-  background: #fff; }
-
 #blog-post-page .hero-section {
   background: url("../images/the-latest/corkboard.png");
   background-repeat: no-repeat;
@@ -1257,15 +1306,25 @@ footer .nav__item--first {
   position: relative;
   top: -100px;
   width: 80%; }
+  #blog-post-page .content-section:before {
+    content: url("../images/blog-post/shadow-left.png");
+    left: -8px;
+    position: absolute;
+    top: 100px; }
+  #blog-post-page .content-section:after {
+    content: url("../images/blog-post/shadow-right.png");
+    position: absolute;
+    right: -8px;
+    top: 100px; }
 
 #blog-post-page figure {
   float: left;
   left: 25px;
   position: relative;
-  top: 25px;
+  top: 20px;
   width: 100px; }
   #blog-post-page figure figcaption {
-    height: 160px; }
+    height: auto; }
     #blog-post-page figure figcaption div {
       align-items: center;
       display: flex;
@@ -1281,10 +1340,16 @@ footer .nav__item--first {
   border-bottom: 1.5px solid #f3f3f3;
   border-right: none;
   font-size: 1.53125rem;
-  padding: 15px 15px; }
+  padding: 20.25px 15px; }
 
 #blog-post-page .content-section .fa-twitter {
   border-bottom: none;
-  padding-bottom: 3px; }
+  padding-bottom: 5.25px; }
+
+#blog-post-page .blog-nav-container {
+  float: right;
+  position: relative;
+  right: 25px;
+  top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

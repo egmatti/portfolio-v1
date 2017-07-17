@@ -1,0 +1,31 @@
+// ==========================================
+// FIGURES
+// ==========================================
+
+figure {
+  @include box-shadow;
+  background: $color-blog-figure;
+  border: 15px solid $color-blog-figure;
+  margin: 0;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  figcaption {
+    background: $color-blog-figure;
+    width: 100%;
+
+    div {
+      width: 100%;
+
+      span {
+        color: $color-icon;
+        font-family: $font-stack-accent;
+        position: relative;
+        text-transform: lowercase;
+      }
+    }
+  }
+}

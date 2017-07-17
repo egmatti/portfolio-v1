@@ -69,35 +69,19 @@
     width: 100%;
 
     figure {
-      @include box-shadow;
-      background: $color-blog-figure;
-      border: 15px solid $color-blog-figure;
       float: left;
-      margin: 0;
       position: relative;
       right: 5%;
       width: 30%;
 
-      img {
-        object-fit: contain;
-        width: 100%;
-      }
-
       figcaption {
-        background: $color-blog-figure;
         height: 160px;
-        width: 100%;
 
         div {
           @include flexbox($direction: row, $justify: space-around);
-          width: 100%;
 
           span {
-            color: $color-icon;
-            font-family: $font-stack-accent;
             font-size: 2.25rem;
-            text-transform: lowercase;
-            position: relative;
           }
         }
       }

@@ -10,47 +10,20 @@
 // HERO
 
 #blog-post-page .hero-section {
-  @include box-shadow;
-  background: $color-hero-background;
-  height: 75vh;
-  width: 100%;
+  @include bg-image ($image-folder: "the-latest", $bg-image: "corkboard");
+  // background: $color-hero-background;
 }
 
 #blog-post-page .headline-container {
-  @include flexbox($direction: column);
   height: -webkit-calc(100% - 155px);
   height: calc(100% - 155px);
-  height: calc(100% - 155px);
-  position: relative;
-  top: 80px; // Height of header
-  width: 100%;
-}
-
-#blog-post-page .headline-container h3 {
-  color: $white;
-  font-size: (1.5 * 2rem);
-  padding-top: (1.5 * 18.75px);
-}
-
-#blog-post-page .headline-container hr {
-  background: $white;
-  color: $white;
-  // font-size: 3rem;
-}
-
-#blog-post-page .headline-container span {
-  @extend %date;
-  color: $gray;
-  font-size: (1.5 * 0.85rem);
 }
 
 
 // CONTENT SECTION
 
 #blog-post-page .content-section {
-  background: linear-gradient(to bottom, $color-body-accent, $color-body 250px);
-  border-top: $border-content;
-  box-sizing: border-box;
+  background: $color-body;
   height: 800px;
   margin: 0 $margin-section-horizontal;
   position: relative;
@@ -59,36 +32,20 @@
 }
 
 #blog-post-page figure {
-  @include box-shadow;
-  background: $color-blog-figure;
-  border: 15px solid $color-blog-figure;
   float: left;
   left: 25px;
-  margin: 0;
   position: relative;
   top: 25px;
   width: 100px;
 
-  img {
-    object-fit: contain;
-    width: 100%;
-  }
-
   figcaption {
-    background: $color-blog-figure;
     height: 160px;
-    width: 100%;
 
     div {
       @include flexbox($justify: center, $direction: column);
-      width: 100%;
 
       span {
-        color: $color-icon;
-        font-family: $font-stack-accent;
         font-size: (0.75 * 2.25rem);
-        text-transform: lowercase;
-        position: relative;
       }
     }
   }

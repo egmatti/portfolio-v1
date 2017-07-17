@@ -22,7 +22,8 @@ $royal-blue: #3d01c2;
 $color-body: $white;
 $color-body-accent: $light-gray;
 $color-border: $light-gray;
-$color-shadow: rgba($black, 0.15);
+$color-box-shadow: rgba($black, 0.15);
+$color-text-shadow: rgba($black, 0.4);
 
 $color-headline: $black;
 $color-headline-gray: $lighter-gray;
@@ -55,13 +56,13 @@ $color-nav-hover: $lighter-sunset-orange;
 
 $color-header: $white;
 
-$color-content-border: $bright-turquoise;
-
 $color-footer: $white;
 $color-footer-border: $light-gray;
 $color-footer-copyright: $gray;
 
 $color-hero-background: $black;
+$color-page-title: $white;
+$color-blog-page-date: $white;
 
 $color-blog-section: $white;
 $color-blog-div: $light-gray;
@@ -78,7 +79,6 @@ $color-blog-post-title-active: $bright-turquoise;
 
 // Font Stacks
 $font-stack-primary: "Avenir Next", Helvetica, sans-serif;
-$font-stack-secondary: "Merriweather", serif;
 $font-stack-accent: "Milkshake", "Avenir Next", Helvetica, sans-serif;
 
 // Font Weights
@@ -91,6 +91,9 @@ $font-weight-extra-bold: 900;
 
 // Font Sizes
 $base-font-size: 16px;
+
+$font-size-page-title: 1.5 * 2rem;
+$font-size-blog-page-date: 1.5 * 0.85rem;
 
 // Letter Spacing
 $letter-spacing-headline: 0.15rem;
@@ -111,7 +114,6 @@ $border-button-hover: $border-size solid $color-button-hover;
 $border-input: $border-size solid $color-input;
 $border-input-active: $border-size solid $color-input-active;
 
-$border-content: 5px solid $color-content-border;
 $border-footer: $border-size solid $color-footer-border;
 
 
@@ -134,6 +136,7 @@ $padding-input-label: 0 3px;
 $padding-footer-row: 16px;
 $padding-footer-social-media-item: 0 10px;
 $padding-blog-social-media-item: 0 35px;
+$padding-page-title: 1.5 * 18.75px;
 
 
 // PATHS

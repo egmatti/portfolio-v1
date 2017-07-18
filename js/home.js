@@ -20,7 +20,7 @@ $(".blog-slider-nav").slick({
 });
 
 
-// BLOG SLIDER NAV PANEL
+// BLOG SLIDER NAV PANEL HEIGHT
 
 $(document).ready(function(){
   var blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();

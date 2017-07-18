@@ -92,6 +92,7 @@ $font-weight-extra-bold: 900;
 $base-font-size: 16px;
 
 $font-size-page-title: 1.5 * 2rem;
+$font-size-page-title-accent: ($font-size-page-title / 1.6);
 $font-size-blog-page-date: 1.5 * 0.85rem;
 
 // Letter Spacing
@@ -120,6 +121,7 @@ $border-blog-nav: $border-size solid $color-border;
 
 // MARGINS AND PADDING
 
+$margin-page-horizontal: 5%;
 $margin-section: 125px 10%;
 $margin-section-vertical: 125px;
 $margin-section-horizontal: 10%;
@@ -138,6 +140,15 @@ $padding-footer-row: 16px;
 $padding-footer-social-media-item: 0 10px;
 $padding-blog-social-media-item: 0 35px;
 $padding-page-title: 1.5 * 18.75px;
+
+
+// HEIGHTS AND WIDTHS
+
+$height-content-offset: -100px;
+
+$width-page: 90%;
+$width-page-blog: 80%;
+$width-blog-nav-container: 300px;
 
 
 // PATHS

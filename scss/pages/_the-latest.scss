@@ -2,13 +2,39 @@
 // THE LATEST PAGE
 // ==========================================
 
-#the-latest-page {
-  background: $color-body;
-}
-
-
 // HERO
 
 #the-latest-page .hero-section {
   @include bg-image ($image-folder: "the-latest", $bg-image: "corkboard");
+}
+
+#the-latest-page .headline-container {
+  height: -webkit-calc(100% - 155px);
+  height:   -moz-calc(100% - 155px);
+  height:     calc(100% - 155px);
+
+  h1 span {
+    font-family: $font-stack-accent;
+    font-size: $font-size-page-title-accent;
+    font-weight: $font-weight-regular;
+    letter-spacing: 0rem;
+    text-transform: lowercase;
+    vertical-align: top;
+  }
+}
+
+
+// CONTENT SECTION
+
+#the-latest-page .content-section {
+  background: $color-body;
+  height: 800px; // Should be changed to "auto" once there's content
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+}
+
+#the-latest-page .blog-nav-container {
+  display: inline-block;
+  float: left;
+  padding-top: $padding-div;
 }

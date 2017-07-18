@@ -40,9 +40,7 @@ footer .main-nav-logo {
     padding: $padding-footer-social-media-item;
 
     @include m(last) {
-      display: inline-block;
-      list-style-type: none;
-      padding: $padding-footer-social-media-item;
+      @extend .footer-social-media__item;
       padding-right: 0;
     }
   }

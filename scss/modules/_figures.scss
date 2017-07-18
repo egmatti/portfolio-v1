@@ -2,7 +2,7 @@
 // FIGURES
 // ==========================================
 
-figure {
+.share-figure {
   @include box-shadow;
   background: $color-blog-figure;
   border: 15px solid $color-blog-figure;
@@ -27,5 +27,47 @@ figure {
         text-transform: lowercase;
       }
     }
+  }
+}
+
+.directory__figure {
+  @include box-shadow;
+  background: $color-blog-figure;
+  border: 15px solid $color-blog-figure;
+  display: inline-block;
+  float: left;
+  margin: 0;
+
+  img {
+    // object-fit: contain;
+    width: 100%;
+  }
+
+  figcaption {
+    background: $color-blog-figure;
+    width: 100%;
+
+    div {
+      @include flexbox();
+      width: 100%;
+
+      span {
+
+      }
+
+      h2 {
+
+      }
+    }
+  }
+
+  @include m(first) {
+    @extend .directory__figure;
+    margin-left: $margin-div;
+    position: relative;
+    top: $height-content-offset;
+    width: -webkit-calc(97.5% - #{$width-blog-nav-container} - #{$margin-div});
+    width:    -moz-calc(97.5% - #{$width-blog-nav-container} - #{$margin-div});
+    width:         calc(97.5% - #{$width-blog-nav-container} - #{$margin-div});
   }
 }

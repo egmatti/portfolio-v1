@@ -17,15 +17,11 @@
     padding: $padding-nav-item;
 
     @include m(first) {
-      display: inline-block;
-      list-style-type: none;
-      padding: $padding-nav-item;
+      @extend .main-nav__item;
     }
 
     @include m(last) {
-      display: inline-block;
-      list-style-type: none;
-      padding: $padding-nav-item;
+      @extend .main-nav__item;
     }
   }
 }

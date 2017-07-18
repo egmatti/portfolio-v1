@@ -10,7 +10,8 @@
 
 #blog-post-page .headline-container {
   height: -webkit-calc(100% - 155px);
-  height: calc(100% - 155px);
+  height:   -moz-calc(100% - 155px);
+  height:     calc(100% - 155px);
 }
 
 
@@ -21,21 +22,21 @@
   height: auto;
   margin: 0 $margin-section-horizontal;
   position: relative;
-  top: -100px;
-  width: 80%;
+  top: $height-content-offset;
+  width: $width-page-blog;
 
   &:before {
     content: url("#{$path-image}/blog-post/shadow-left.png");
     left: -8px;
     position: absolute;
-    top: 100px;
+    top: 100px; // Positive of $height-content-offset
   }
 
   &:after {
     content: url("#{$path-image}/blog-post/shadow-right.png");
     position: absolute;
     right: -8px;
-    top: 100px;
+    top: 100px; // Positive of $height-content-offset
   }
 }
 
@@ -43,13 +44,12 @@
   padding-bottom: 20px;
 }
 
-#blog-post-page figure {
+#blog-post-page .share-figure {
   display: inline-block;
   float: left;
   left: 25px;
   margin: 0;
   position: relative;
-  // transform: translateX(25px);
   width: 100px;
 
   figcaption {

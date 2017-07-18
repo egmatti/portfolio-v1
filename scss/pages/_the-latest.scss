@@ -29,13 +29,14 @@
 #the-latest-page .content-section {
   background: $color-body;
   height: auto;
-  margin: 0 $margin-page-horizontal;
+  margin: 0 $margin-page-horizontal ($margin-section-vertical * 1.5) $margin-page-horizontal;
   width: $width-page;
 }
 
 #the-latest-page .blog-nav-container {
   display: inline-block;
   float: left;
+  // Height is being calculated in the-latest.js
   padding-top: $padding-div;
 }
 

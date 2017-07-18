@@ -41,8 +41,8 @@ $(document).ready(function(){
   $(".directory__figure--second-row .directory__image-container").css({"height": secondRowFigureHeight});
 });
 
-// $(document).ready(function(){
-//   var thirdRowFigureWidth = $(".directory__figure--third-row .directory__image-container").outerWidth();
-//   var thirdRowFigureHeight = thirdRowFigureWidth / 2;
-//   $(".directory__figure--third-row .directory__image-container").css({"height": thirdRowFigureHeight});
-// });
+$(document).ready(function(){
+  var otherRowFigureWidth = $(".directory__figure--other-row .directory__image-container").outerWidth();
+  var otherRowFigureHeight = otherRowFigureWidth / 2;
+  $(".directory__figure--other-row .directory__image-container").css({"height": otherRowFigureHeight});
+});

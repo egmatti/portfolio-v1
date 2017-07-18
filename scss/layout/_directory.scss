@@ -7,3 +7,9 @@
   margin: $margin-div 0;
   width: 100%;
 }
+
+.directory__row--other {
+  @include flexbox($direction: row, $justify: space-between);
+  margin: $margin-div 0;
+  width: 100%;
+}

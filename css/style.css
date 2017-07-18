@@ -700,7 +700,7 @@ template {
   opacity: .75;
   color: black; }
 
-.blog-nav__post article span, .directory__figure figcaption div span, .directory__figure--first-row figcaption div span, .directory__figure--second-row figcaption div span, .headline-container span, #home-page .blog-post-container span {
+.blog-nav__post article span, .directory__figure figcaption div span, .directory__figure--first-row figcaption div span, .directory__figure--second-row figcaption div span, .directory__figure--other-row figcaption div span, .headline-container span, #home-page .blog-post-container span {
   color: #a6a6a6;
   font-size: 0.85rem;
   font-weight: 600;
@@ -966,7 +966,7 @@ textarea {
         position: relative;
         text-transform: lowercase; }
 
-.directory__figure, .directory__figure--first-row, .directory__figure--second-row {
+.directory__figure, .directory__figure--first-row, .directory__figure--second-row, .directory__figure--other-row {
   -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
@@ -976,12 +976,12 @@ textarea {
   display: inline-block;
   float: left;
   margin: 0; }
-  .directory__figure img, .directory__figure--first-row img, .directory__figure--second-row img {
+  .directory__figure img, .directory__figure--first-row img, .directory__figure--second-row img, .directory__figure--other-row img {
     width: 100%; }
-  .directory__figure figcaption, .directory__figure--first-row figcaption, .directory__figure--second-row figcaption {
+  .directory__figure figcaption, .directory__figure--first-row figcaption, .directory__figure--second-row figcaption, .directory__figure--other-row figcaption {
     background: #fff;
     width: 100%; }
-    .directory__figure figcaption div, .directory__figure--first-row figcaption div, .directory__figure--second-row figcaption div {
+    .directory__figure figcaption div, .directory__figure--first-row figcaption div, .directory__figure--second-row figcaption div, .directory__figure--other-row figcaption div {
       align-items: center;
       display: flex;
       justify-content: center;
@@ -1018,6 +1018,22 @@ textarea {
       .directory__figure--second-row figcaption h3 {
         font-weight: 700;
         padding-top: 14.0631153px; }
+  .directory__figure--other-row {
+    width: -webkit-calc((100% - 100px) / 3);
+    width: -moz-calc((100% - 100px) / 3);
+    width: calc((100% - 100px) / 3); }
+    .directory__figure--other-row .directory__image-container {
+      overflow: hidden;
+      width: 100%; }
+      .directory__figure--other-row .directory__image-container img {
+        object-fit: cover; }
+    .directory__figure--other-row figcaption {
+      padding-top: 15px; }
+      .directory__figure--other-row figcaption span {
+        font-size: 0.53125rem; }
+      .directory__figure--other-row figcaption h4 {
+        font-weight: 700;
+        padding-top: 11.7187134px; }
 
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
@@ -1141,6 +1157,14 @@ footer .main-nav__item--first {
   width: 25%; }
 
 .directory__row--second {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 50px 0;
+  width: 100%; }
+
+.directory__row--other {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -1348,7 +1372,7 @@ footer .main-nav__item--first {
 #the-latest-page .content-section {
   background: #fff;
   height: auto;
-  margin: 0 5%;
+  margin: 0 5% 187.5px 5%;
   width: 90%; }
 
 #the-latest-page .blog-nav-container {

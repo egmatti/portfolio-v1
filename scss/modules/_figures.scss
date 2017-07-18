@@ -116,4 +116,34 @@
       }
     }
   }
+
+  @include m(other-row) {
+    @extend .directory__figure;
+    width: -webkit-calc((100% - 100px) / 3);
+    width:  -moz-calc((100% - 100px) / 3);
+    width:    calc((100% - 100px) / 3); // Third of width of content section minus margins
+
+    .directory__image-container {
+      // Height is being calculated in script.js
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    figcaption {
+      padding-top: 15px;
+
+      span {
+        font-size: 0.53125rem; // The same ratio as the span in the hero
+      }
+
+      h4 {
+        font-weight: $font-weight-bold;
+        padding-top: 11.7187134px; // The same ratio as the h1 padding in the hero
+      }
+    }
+  }
 }

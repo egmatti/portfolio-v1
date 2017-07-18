@@ -700,7 +700,7 @@ template {
   opacity: .75;
   color: black; }
 
-.blog-nav__post article span, .headline-container span, #home-page .blog-post-container span {
+.blog-nav__post article span, .directory__figure figcaption div span, .directory__figure--first figcaption div span, .headline-container span, #home-page .blog-post-container span {
   color: #a6a6a6;
   font-size: 0.85rem;
   font-weight: 600;
@@ -972,6 +972,7 @@ textarea {
   box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   background: #fff;
   border: 15px solid #fff;
+  box-sizing: border-box;
   display: inline-block;
   float: left;
   margin: 0; }
@@ -984,14 +985,21 @@ textarea {
       align-items: center;
       display: flex;
       justify-content: center;
+      flex-direction: column;
       width: 100%; }
   .directory__figure--first {
     margin-left: 50px;
     position: relative;
     top: -100px;
-    width: -webkit-calc(97.5% - 300px - 50px);
-    width: -moz-calc(97.5% - 300px - 50px);
-    width: calc(97.5% - 300px - 50px); }
+    width: -webkit-calc(100% - 300px - 50px);
+    width: -moz-calc(100% - 300px - 50px);
+    width: calc(100% - 300px - 50px); }
+    .directory__figure--first figcaption {
+      padding: 15px 0px 7.5px 0px; }
+      .directory__figure--first figcaption span {
+        font-size: 0.74375rem; }
+      .directory__figure--first figcaption h2 {
+        padding-top: 16.4061987px; }
 
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
@@ -1093,7 +1101,6 @@ footer .main-nav__item--first {
   text-shadow: 0px 0.5px 5px rgba(11, 11, 11, 0.4);
   color: #fff;
   font-size: 3rem;
-  font-weight: 600;
   margin-top: 0;
   padding-top: 28.125px; }
 
@@ -1322,6 +1329,10 @@ footer .main-nav__item--first {
   display: inline-block;
   float: left;
   padding-top: 50px; }
+
+#the-latest-page .push-pin-container {
+  position: absolute;
+  top: -15px; }
 
 #blog-post-page .hero-section {
   background: url("../images/the-latest/corkboard.png");

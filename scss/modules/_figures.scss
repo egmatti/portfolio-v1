@@ -34,6 +34,7 @@
   @include box-shadow;
   background: $color-blog-figure;
   border: 15px solid $color-blog-figure;
+  box-sizing: border-box;
   display: inline-block;
   float: left;
   margin: 0;
@@ -48,14 +49,14 @@
     width: 100%;
 
     div {
-      @include flexbox();
+      @include flexbox($direction: column);
       width: 100%;
 
       span {
-
+        @extend %date;
       }
 
-      h2 {
+      h2, h3, h4 {
 
       }
     }
@@ -66,8 +67,20 @@
     margin-left: $margin-div;
     position: relative;
     top: $height-content-offset;
-    width: -webkit-calc(97.5% - #{$width-blog-nav-container} - #{$margin-div});
-    width:    -moz-calc(97.5% - #{$width-blog-nav-container} - #{$margin-div});
-    width:         calc(97.5% - #{$width-blog-nav-container} - #{$margin-div});
+    width: -webkit-calc(100% - #{$width-blog-nav-container} - #{$margin-div});
+    width:    -moz-calc(100% - #{$width-blog-nav-container} - #{$margin-div});
+    width:         calc(100% - #{$width-blog-nav-container} - #{$margin-div});
+
+    figcaption {
+      padding: 15px 0px 7.5px 0px;
+
+      span {
+        font-size: 0.74375rem; // The same ratio as the span in the hero
+      }
+
+      h2 {
+        padding-top: 16.4061987px; // The same ratio as the h1 padding in the hero
+      }
+    }
   }
 }

@@ -5,6 +5,7 @@
 footer {
   background: $color-footer;
   border-top: $border-footer;
+  clear: both;
   height: 160px;
   width: 100%;
 }
@@ -23,7 +24,7 @@ footer {
   padding-bottom: $padding-footer-row;
 }
 
-footer .nav-logo {
+footer .main-nav-logo {
   float: left;
   margin-left: $margin-nav;
 }
@@ -51,12 +52,12 @@ footer .fa {
   border: none;
 }
 
-footer .nav {
+footer .main-nav {
   float: left;
   margin-left: $margin-nav;
 }
 
-footer .nav__item--first {
+footer .main-nav__item--first {
   padding-left: 0;
 }
 

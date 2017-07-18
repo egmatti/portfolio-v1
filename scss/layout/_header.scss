@@ -10,17 +10,17 @@ header {
   z-index: 100;
 }
 
-header .nav-logo {
+header .main-nav-logo {
   float: left;
   margin-left: $margin-nav;
 }
 
-header .nav {
+header .main-nav {
   float: right;
   margin-right: $margin-nav;
 }
 
-header .nav__item--last {
+header .main-nav__item--last {
   padding-left: 13px;
   padding-right: 0;
 }

@@ -2,13 +2,13 @@
 // MAIN NAV
 // ==========================================
 
-.nav-logo {
+.main-nav-logo {
   @include vertical-align;
   height: 45px;
   width: auto;
 }
 
-.nav {
+.main-nav {
   @include vertical-align;
 
   @include e(item) {
@@ -30,7 +30,7 @@
   }
 }
 
-.nav a {
+.main-nav a {
   @extend h1;
   color: $color-nav;
   font-size: 1.25rem;

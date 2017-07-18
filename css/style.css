@@ -28,18 +28,18 @@
 a {
   outline: none; }
 
-h1, .nav a, h2, h3, h4, h5, h6 {
+h1, .main-nav a, h2, h3, h4, h5, h6 {
   color: #0b0b0b;
   letter-spacing: 0.15rem;
   text-transform: uppercase; }
 
-h1, .nav a, h2 {
+h1, .main-nav a, h2 {
   font-weight: 700; }
 
 h3, h4, h5 {
   font-weight: 600; }
 
-h1, .nav a {
+h1, .main-nav a {
   font-size: 2rem; }
 
 h2 {
@@ -103,7 +103,7 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1, .nav a {
+h1, .main-nav a {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -700,7 +700,7 @@ template {
   opacity: .75;
   color: black; }
 
-.blog-nav__post article span, .headline-container span, #home-page .blog-slider-description span {
+.blog-nav__post article span, .headline-container span, #home-page .blog-post-container span {
   color: #a6a6a6;
   font-size: 0.85rem;
   font-weight: 600;
@@ -758,7 +758,7 @@ template {
   height: 80px;
   object-fit: contain; }
 
-.nav-logo {
+.main-nav-logo {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -767,45 +767,45 @@ template {
   height: 45px;
   width: auto; }
 
-.nav {
+.main-nav {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
-  .nav__item {
+  .main-nav__item {
     display: inline-block;
     list-style-type: none;
     padding: 0 25px; }
-    .nav__item--first {
+    .main-nav__item--first {
       display: inline-block;
       list-style-type: none;
       padding: 0 25px; }
-    .nav__item--last {
+    .main-nav__item--last {
       display: inline-block;
       list-style-type: none;
       padding: 0 25px; }
 
-.nav a {
+.main-nav a {
   color: #0b0b0b;
   font-size: 1.25rem;
   letter-spacing: 0.15rem;
   text-decoration: none; }
-  .nav a:hover {
+  .main-nav a:hover {
     color: #fb6365; }
-  .nav a span {
+  .main-nav a span {
     font-family: "Milkshake", "Avenir Next", Helvetica, sans-serif;
     font-size: 0.78125rem;
     font-weight: 400;
     letter-spacing: 0rem;
     text-transform: lowercase;
     vertical-align: top; }
-    .nav a span:hover {
+    .main-nav a span:hover {
       color: #fb6365; }
 
 .blog-nav-container {
-  height: 450px;
-  width: 225px; }
+  height: 575px;
+  width: 300px; }
   .blog-nav-container h4 {
     position: relative;
     text-align: center;
@@ -823,7 +823,7 @@ template {
 .blog-nav {
   border: 1.5px solid #f3f3f3;
   bottom: 0;
-  height: 375px;
+  height: 500px;
   overflow-y: scroll;
   position: relative;
   width: 100%; }
@@ -832,7 +832,7 @@ template {
     border-bottom: 1.5px solid #f3f3f3;
     box-sizing: border-box;
     cursor: pointer;
-    height: 75px;
+    height: 100px;
     position: relative;
     width: 100%; }
     .blog-nav__post:hover {
@@ -857,10 +857,10 @@ template {
       top: 15%;
       width: 60%; }
       .blog-nav__post article span {
-        font-size: 0.6375rem; }
+        font-size: 0.7225rem; }
       .blog-nav__post article h5 {
         color: #1fd4f9;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         padding-top: 2.5px; }
 
 .divider-white {
@@ -983,21 +983,22 @@ header {
   width: 100%;
   z-index: 100; }
 
-header .nav-logo {
+header .main-nav-logo {
   float: left;
   margin-left: 5%; }
 
-header .nav {
+header .main-nav {
   float: right;
   margin-right: 5%; }
 
-header .nav__item--last {
+header .main-nav__item--last {
   padding-left: 13px;
   padding-right: 0; }
 
 footer {
   background: #fff;
   border-top: 1.5px solid #f3f3f3;
+  clear: both;
   height: 160px;
   width: 100%; }
 
@@ -1012,7 +1013,7 @@ footer {
 .footer-row-bottom {
   padding-bottom: 16px; }
 
-footer .nav-logo {
+footer .main-nav-logo {
   float: left;
   margin-left: 5%; }
 
@@ -1037,11 +1038,11 @@ footer .nav-logo {
 footer .fa {
   border: none; }
 
-footer .nav {
+footer .main-nav {
   float: left;
   margin-left: 5%; }
 
-footer .nav__item--first {
+footer .main-nav__item--first {
   padding-left: 0; }
 
 .footer-copyright {
@@ -1056,9 +1057,6 @@ footer .nav__item--first {
   margin-right: 5%; }
 
 .hero-section {
-  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   background: #0b0b0b;
   height: 75vh;
   width: 100%; }
@@ -1073,7 +1071,7 @@ footer .nav__item--first {
   top: 80px;
   width: 100%; }
 
-.headline-container h1, .headline-container .nav a, .nav .headline-container a {
+.headline-container h1, .headline-container .main-nav a, .main-nav .headline-container a {
   -webkit-text-shadow: 0px 0.5px 5px rgba(11, 11, 11, 0.4);
   -moz-text-shadow: 0px 0.5px 5px rgba(11, 11, 11, 0.4);
   text-shadow: 0px 0.5px 5px rgba(11, 11, 11, 0.4);
@@ -1196,14 +1194,14 @@ footer .nav__item--first {
   height: auto;
   outline: none; }
 
-#home-page .blog-slider-description {
+#home-page .blog-post-container {
   display: inline-block;
   float: right;
   padding-right: 5%;
   width: 60%; }
-  #home-page .blog-slider-description span {
+  #home-page .blog-post-container span {
     margin-top: 25px; }
-  #home-page .blog-slider-description h3 {
+  #home-page .blog-post-container h3 {
     padding-top: 18.75px; }
 
 #home-page .blog-nav {
@@ -1301,7 +1299,7 @@ footer .nav__item--first {
 
 #blog-post-page .content-section {
   background: #fff;
-  height: 800px;
+  height: auto;
   margin: 0 10%;
   position: relative;
   top: -100px;
@@ -1317,11 +1315,13 @@ footer .nav__item--first {
     right: -8px;
     top: 100px; }
 
+#blog-post-page .push-pin {
+  padding-bottom: 20px; }
+
 #blog-post-page figure {
   float: left;
   left: 25px;
   position: relative;
-  top: 20px;
   width: 100px; }
   #blog-post-page figure figcaption {
     height: auto; }
@@ -1346,10 +1346,24 @@ footer .nav__item--first {
   border-bottom: none;
   padding-bottom: 5.25px; }
 
+#blog-post-page .blog-post-container {
+  float: left;
+  height: auto;
+  left: 62.5px;
+  position: relative;
+  width: 600px; }
+
+#blog-post-page .blog-post__paragraph--first {
+  margin-top: 0px; }
+
+#blog-post-page .blog-post__image {
+  margin: 25px 0;
+  object-fit: contain;
+  width: 100%; }
+
 #blog-post-page .blog-nav-container {
   float: right;
   position: relative;
-  right: 25px;
-  top: 20px; }
+  right: 25px; }
 
 /*# sourceMappingURL=style.css.map */

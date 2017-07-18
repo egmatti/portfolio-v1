@@ -28,7 +28,7 @@
 
 #the-latest-page .content-section {
   background: $color-body;
-  height: 800px; // Should be changed to "auto" once there's content
+  height: auto;
   margin: 0 $margin-page-horizontal;
   width: $width-page;
 }

@@ -40,7 +40,6 @@
   margin: 0;
 
   img {
-    // object-fit: contain;
     width: 100%;
   }
 
@@ -62,7 +61,7 @@
     }
   }
 
-  @include m(first) {
+  @include m(first-row) {
     @extend .directory__figure;
     margin-left: $margin-div;
     position: relative;
@@ -70,6 +69,10 @@
     width: -webkit-calc(100% - #{$width-blog-nav-container} - #{$margin-div});
     width:    -moz-calc(100% - #{$width-blog-nav-container} - #{$margin-div});
     width:         calc(100% - #{$width-blog-nav-container} - #{$margin-div});
+
+    img {
+      object-fit: contain;
+    }
 
     figcaption {
       padding: 15px 0px 7.5px 0px;
@@ -80,6 +83,36 @@
 
       h2 {
         padding-top: 16.4061987px; // The same ratio as the h1 padding in the hero
+      }
+    }
+  }
+
+  @include m(second-row) {
+    @extend .directory__figure;
+    width: -webkit-calc((100% - 50px) / 2);
+    width:  -moz-calc((100% - 50px) / 2);
+    width:    calc((100% - 50px) / 2); // Half of width of content section minus margin
+
+    .directory__image-container {
+      // Height is being calculated in script.js
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    figcaption {
+      padding-top: 15px;
+
+      span {
+        font-size: 0.6375rem; // The same ratio as the span in the hero
+      }
+
+      h3 {
+        font-weight: $font-weight-bold;
+        padding-top: 14.0631153px; // The same ratio as the h1 padding in the hero
       }
     }
   }

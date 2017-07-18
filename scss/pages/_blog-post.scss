@@ -44,9 +44,12 @@
 }
 
 #blog-post-page figure {
+  display: inline-block;
   float: left;
   left: 25px;
+  margin: 0;
   position: relative;
+  // transform: translateX(25px);
   width: 100px;
 
   figcaption {
@@ -82,7 +85,7 @@
 #blog-post-page .blog-post-container {
   float: left;
   height: auto;
-  left: 62.5px;
+  left: 60px;
   position: relative;
   width: 600px;
 }

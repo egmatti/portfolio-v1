@@ -5,6 +5,10 @@
 .directory__row--second, .directory__row--other, .directory__row--last {
   @include flexbox($direction: row, $justify: space-between);
   margin: $margin-div 0;
-  // Transform is being calculated in the-latest.js
+  transform: translateY(-50px);
   width: 100%;
+}
+
+.directory__row--last {
+  margin-bottom: -50px;
 }

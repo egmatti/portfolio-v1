@@ -41,17 +41,3 @@ $(".instagram-slider-for").slick({
  slidesToScroll: 1,
  slidesToShow: 3
 });
-
-
-// INSTAGRAM FOLLOW BUTTON
-
-$(".button-instagram").click(function() {
-  $(this).find("span").html("Followed!");
-});
-
-
-// CONTACT SEND BUTTON
-
-$(".button-send").click(function() {
-  $(this).find("span").html("Sent!");
-});

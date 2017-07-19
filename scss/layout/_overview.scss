@@ -1,0 +1,28 @@
+// ==========================================
+// OVERVIEW
+// ==========================================
+
+.overview-section {
+  background: $color-body;
+  height: auto;
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+}
+
+.overview-left {
+  float: left;
+  padding-top: $padding-section;
+  width: 60%;
+}
+
+.overview-right {
+  @include flexbox($direction: column);
+  float: right;
+  padding-top: $padding-section;
+  width: 40%;
+
+  img {
+    object-fit: contain;
+    padding-bottom: $padding-div;
+  }
+}

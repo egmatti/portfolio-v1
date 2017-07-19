@@ -33,6 +33,27 @@ $(".button").click(function() {
 });
 
 
+// INSTAGRAM FOLLOW BUTTON
+
+$(".button-instagram").click(function() {
+  $(this).find("span").html("Thanks!");
+});
+
+
+// CONTACT SEND BUTTON
+
+$(".button-send").click(function() {
+  $(this).find("span").html("Sent!");
+});
+
+
+// RÉSUMÉ VIEW BUTTON
+
+$(".button-resume").click(function() {
+  $(this).find("span").html("Thanks!");
+});
+
+
 // DIRECTORY ROW FIGURE HEIGHT
 
 $(document).ready(function(){

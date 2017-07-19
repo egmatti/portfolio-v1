@@ -1,3 +1,60 @@
 // ==========================================
 // ABOUT PAGE
 // ==========================================
+
+// HERO
+
+#about-page .hero-section {
+  @include bg-image ($image-folder: "about", $bg-image: "graffiti");
+}
+
+
+// OVERVIEW SECTION
+
+#about-page .overview-left, .overview-right {
+  margin-bottom: $margin-section-vertical;
+}
+
+#about-page .overview-left h2 {
+  letter-spacing: 0rem;
+  text-transform: none;
+}
+
+#about-page .overview-right img {
+  width: 50%;
+}
+
+
+// CONTACT SECTION
+
+#about-page .contact-section {
+  background: $color-body-accent;
+  clear: both;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+#about-page .contact-form {
+  margin-left: $margin-section-horizontal;
+  width: $width-page;
+}
+
+#about-page .input-container {
+  margin-right: 4.5%;
+  width: 30%;
+}
+
+#about-page .input-container--last {
+  width: 30%;
+}
+
+#about-page .contact-section .button-div {
+  height: 100%;
+}
+
+#about-page .contact-section .button-container {
+  @include flexbox();
+  height: 100%;
+  width: 100%;
+}

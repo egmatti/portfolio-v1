@@ -1,3 +1,45 @@
 // ==========================================
 // WORK PAGE
 // ==========================================
+
+// HERO
+
+#work-page .hero-section {
+  @include bg-image ($image-folder: "work", $bg-image: "triangles");
+}
+
+#work-page .headline-container {
+  height: -webkit-calc(100% - 155px);
+  height:   -moz-calc(100% - 155px);
+  height:     calc(100% - 155px);
+}
+
+
+// CONTENT SECTION
+
+#work-page .content-section {
+  background: $color-body;
+  height: auto;
+  margin: 0 $margin-page-horizontal ($margin-section-vertical * 1.5) $margin-page-horizontal;
+  position: relative;
+  width: $width-page;
+}
+
+#work-page .blog-nav-container {
+  display: inline-block;
+  float: left;
+  // Height is being calculated in the-latest.js
+  padding-top: $padding-div;
+}
+
+#work-page .directory__figure--second-row figcaption {
+  padding: 7.5px 0px 5.625px 0px;
+}
+
+#work-page .directory__figure--other-row figcaption {
+  padding: 5px 0px 3.75px 0px;
+}
+
+#work-page figcaption h2, h3, h4 {
+  padding-top: 0px;
+}

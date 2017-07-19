@@ -1002,6 +1002,8 @@ textarea {
         font-size: 0.74375rem; }
       .directory__figure--first-row figcaption h2 {
         padding-top: 16.4061987px; }
+    .directory__figure--first-row:hover {
+      cursor: pointer; }
   .directory__figure--second-row {
     width: -webkit-calc((100% - 50px) / 2);
     width: -moz-calc((100% - 50px) / 2);
@@ -1018,6 +1020,8 @@ textarea {
       .directory__figure--second-row figcaption h3 {
         font-weight: 700;
         padding-top: 14.0631153px; }
+    .directory__figure--second-row:hover {
+      cursor: pointer; }
   .directory__figure--other-row {
     width: -webkit-calc((100% - 100px) / 3);
     width: -moz-calc((100% - 100px) / 3);
@@ -1034,6 +1038,8 @@ textarea {
       .directory__figure--other-row figcaption h4 {
         font-weight: 700;
         padding-top: 11.7187134px; }
+    .directory__figure--other-row:hover {
+      cursor: pointer; }
 
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
@@ -1346,6 +1352,38 @@ footer .main-nav__item--first {
   justify-content: center;
   height: 100%;
   width: 100%; }
+
+#work-page .hero-section {
+  background: url("../images/work/triangles.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#work-page .headline-container {
+  height: -webkit-calc(100% - 155px);
+  height: -moz-calc(100% - 155px);
+  height: calc(100% - 155px); }
+
+#work-page .content-section {
+  background: #fff;
+  height: auto;
+  margin: 0 5% 187.5px 5%;
+  position: relative;
+  width: 90%; }
+
+#work-page .blog-nav-container {
+  display: inline-block;
+  float: left;
+  padding-top: 50px; }
+
+#work-page .directory__figure--second-row figcaption {
+  padding: 7.5px 0px 5.625px 0px; }
+
+#work-page .directory__figure--other-row figcaption {
+  padding: 5px 0px 3.75px 0px; }
+
+#work-page figcaption h2, h3, h4 {
+  padding-top: 0px; }
 
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");

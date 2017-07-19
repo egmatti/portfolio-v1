@@ -85,6 +85,10 @@
         padding-top: 16.4061987px; // The same ratio as the h1 padding in the hero
       }
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @include m(second-row) {
@@ -115,6 +119,10 @@
         padding-top: 14.0631153px; // The same ratio as the h1 padding in the hero
       }
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @include m(other-row) {
@@ -144,6 +152,10 @@
         font-weight: $font-weight-bold;
         padding-top: 11.7187134px; // The same ratio as the h1 padding in the hero
       }
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 }

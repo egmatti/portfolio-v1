@@ -57,10 +57,11 @@
     article {
       display: inline-block;
       float: left;
-      padding-left: 5%;
+      padding-left: 10%;
       position: relative;
-      top: 15%;
-      width: 60%;
+      top: 47%;
+      transform: translateY(-50%);
+      width: 55%;
 
       span {
         @extend %date;

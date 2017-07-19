@@ -32,6 +32,14 @@
   padding-top: $padding-div;
 }
 
+#work-page .blog-nav article {
+  top: 50%;
+
+  h5 {
+    padding-top: 0px;
+  }
+}
+
 #work-page .directory__figure--second-row figcaption {
   padding: 7.5px 0px 5.625px 0px;
 }

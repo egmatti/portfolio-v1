@@ -844,10 +844,11 @@ template {
     .blog-nav__post article {
       display: inline-block;
       float: left;
-      padding-left: 5%;
+      padding-left: 10%;
       position: relative;
-      top: 15%;
-      width: 60%; }
+      top: 47%;
+      transform: translateY(-50%);
+      width: 55%; }
       .blog-nav__post article span {
         font-size: 0.7225rem; }
       .blog-nav__post article h5 {
@@ -1289,10 +1290,13 @@ footer .main-nav__item--first {
     display: block;
     height: 100px;
     position: static; }
-    #home-page .blog-nav__post article span {
-      font-size: 0.85rem; }
-    #home-page .blog-nav__post article h5 {
-      font-size: 1rem; }
+    #home-page .blog-nav__post article {
+      padding-left: 5%;
+      width: 60%; }
+      #home-page .blog-nav__post article span {
+        font-size: 0.85rem; }
+      #home-page .blog-nav__post article h5 {
+        font-size: 1rem; }
 
 #home-page .blog-slider-nav .slick-current {
   background: #f3f3f3; }
@@ -1375,6 +1379,11 @@ footer .main-nav__item--first {
   display: inline-block;
   float: left;
   padding-top: 50px; }
+
+#work-page .blog-nav article {
+  top: 50%; }
+  #work-page .blog-nav article h5 {
+    padding-top: 0px; }
 
 #work-page .directory__figure--second-row figcaption {
   padding: 7.5px 0px 5.625px 0px; }

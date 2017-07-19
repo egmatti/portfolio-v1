@@ -1156,15 +1156,7 @@ footer .main-nav__item--first {
   position: absolute;
   width: 25%; }
 
-.directory__row--second {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 50px 0;
-  width: 100%; }
-
-.directory__row--other {
+.directory__row--second, .directory__row--other, .directory__row--last {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -1373,6 +1365,7 @@ footer .main-nav__item--first {
   background: #fff;
   height: auto;
   margin: 0 5% 187.5px 5%;
+  position: relative;
   width: 90%; }
 
 #the-latest-page .blog-nav-container {

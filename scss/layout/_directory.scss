@@ -2,14 +2,9 @@
 // DIRECTORY
 // ==========================================
 
-.directory__row--second {
+.directory__row--second, .directory__row--other, .directory__row--last {
   @include flexbox($direction: row, $justify: space-between);
   margin: $margin-div 0;
-  width: 100%;
-}
-
-.directory__row--other {
-  @include flexbox($direction: row, $justify: space-between);
-  margin: $margin-div 0;
+  // Transform is being calculated in the-latest.js
   width: 100%;
 }

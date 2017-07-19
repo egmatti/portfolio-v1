@@ -1,13 +1,13 @@
-// BLOG NAV HEIGHT AND DIRECTORY ROW POSITIONING
+// DIRECTORY NAV HEIGHT AND DIRECTORY ROW POSITIONING
 
 $(document).ready(function(){
   var firstRowFigureHeight = $("#the-latest-page .directory__figure--first-row").outerHeight();
-  var blogNavContainerHeight = firstRowFigureHeight - 100 - 50;
-  var blogNavHeight = blogNavContainerHeight - 75;
-  $("#the-latest-page .blog-nav-container").css({"height": blogNavContainerHeight});
-  $("#the-latest-page .blog-nav").css({"height": blogNavHeight});
+  var directoryNavContainerHeight = firstRowFigureHeight - 100 - 50;
+  var directoryNavHeight = directoryNavContainerHeight - 75;
+  $("#the-latest-page .directory-nav-container").css({"height": directoryNavContainerHeight});
+  $("#the-latest-page .directory-nav").css({"height": directoryNavHeight});
 
-  // var secondRowTranslate = blogNavHeight + 75 + 50;
+  // var secondRowTranslate = directoryNavHeight + 75 + 50;
   // var secondRowTranslate = 50;
   // $("#the-latest-page .directory__row--second").css({"transform": "translateY(-" + secondRowTranslate + "px)"});
   // $("#the-latest-page .directory__row--other").css({"transform": "translateY(-" + secondRowTranslate + "px)"});

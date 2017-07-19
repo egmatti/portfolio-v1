@@ -144,13 +144,13 @@
   }
 }
 
-#home-page .blog-nav {
+#home-page .directory-nav {
   border: none;
   overflow-y: scroll;
   position: static;
 
   @include e(post) {
-    border-bottom: $border-blog-nav;
+    border-bottom: $border-directory-nav;
     box-sizing: content-box;
     display: block;
     height: 100px;

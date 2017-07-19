@@ -25,14 +25,14 @@
   width: $width-page;
 }
 
-#work-page .blog-nav-container {
+#work-page .directory-nav-container {
   display: inline-block;
   float: left;
   // Height is being calculated in the-latest.js
   padding-top: $padding-div;
 }
 
-#work-page .blog-nav article {
+#work-page .directory-nav article {
   top: 50%;
 
   h5 {

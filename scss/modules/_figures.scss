@@ -66,9 +66,9 @@
     margin-left: $margin-div;
     position: relative;
     top: $height-content-offset;
-    width: -webkit-calc(100% - #{$width-blog-nav-container} - #{$margin-div});
-    width:    -moz-calc(100% - #{$width-blog-nav-container} - #{$margin-div});
-    width:         calc(100% - #{$width-blog-nav-container} - #{$margin-div});
+    width: -webkit-calc(100% - #{$width-directory-nav-container} - #{$margin-div});
+    width:    -moz-calc(100% - #{$width-directory-nav-container} - #{$margin-div});
+    width:         calc(100% - #{$width-directory-nav-container} - #{$margin-div});
 
     img {
       object-fit: contain;

@@ -1,10 +1,10 @@
 // ==========================================
-// BLOG NAV
+// DIRECTORY NAV
 // ==========================================
 
-.blog-nav-container {
+.directory-nav-container {
   height: 575px;
-  width: $width-blog-nav-container;
+  width: $width-directory-nav-container;
 
   h4 {
     position: relative;
@@ -13,8 +13,8 @@
   }
 }
 
-.blog-nav-border {
-  border-right: $border-blog-nav;
+.directory-nav-border {
+  border-right: $border-directory-nav;
   float: left;
   height: 40px;
   margin-bottom: 10px;
@@ -23,8 +23,8 @@
   width: 50%;
 }
 
-.blog-nav {
-  border: $border-blog-nav;
+.directory-nav {
+  border: $border-directory-nav;
   bottom: 0;
   height: 500px;
   overflow-y: scroll;
@@ -33,7 +33,7 @@
 
   @include e(post) {
     background: $color-blog-post;
-    border-bottom: $border-blog-nav;
+    border-bottom: $border-directory-nav;
     box-sizing: border-box;
     cursor: pointer;
     height: 100px;
@@ -55,12 +55,11 @@
     }
 
     article {
+      @include vertical-align();
       display: inline-block;
       float: left;
       padding-left: 10%;
-      position: relative;
       top: 47%;
-      transform: translateY(-50%);
       width: 55%;
 
       span {

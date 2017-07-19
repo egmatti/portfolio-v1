@@ -700,7 +700,7 @@ template {
   opacity: .75;
   color: black; }
 
-.blog-nav__post article span, .directory__figure figcaption div span, .directory__figure--first-row figcaption div span, .directory__figure--second-row figcaption div span, .directory__figure--other-row figcaption div span, .headline-container span, #home-page .blog-post-container span {
+.directory-nav__post article span, .directory__figure figcaption div span, .directory__figure--first-row figcaption div span, .directory__figure--second-row figcaption div span, .directory__figure--other-row figcaption div span, .headline-container span, #home-page .blog-post-container span {
   color: #a6a6a6;
   font-size: 0.85rem;
   font-weight: 600;
@@ -795,15 +795,15 @@ template {
     .main-nav a span:hover {
       color: #fb6365; }
 
-.blog-nav-container {
+.directory-nav-container {
   height: 575px;
   width: 300px; }
-  .blog-nav-container h4 {
+  .directory-nav-container h4 {
     position: relative;
     text-align: center;
     top: 0; }
 
-.blog-nav-border {
+.directory-nav-border {
   border-right: 1.5px solid #f3f3f3;
   float: left;
   height: 40px;
@@ -812,14 +812,14 @@ template {
   top: 5px;
   width: 50%; }
 
-.blog-nav {
+.directory-nav {
   border: 1.5px solid #f3f3f3;
   bottom: 0;
   height: 500px;
   overflow-y: scroll;
   position: relative;
   width: 100%; }
-  .blog-nav__post {
+  .directory-nav__post {
     background: #fff;
     border-bottom: 1.5px solid #f3f3f3;
     box-sizing: border-box;
@@ -827,9 +827,9 @@ template {
     height: 100px;
     position: relative;
     width: 100%; }
-    .blog-nav__post:hover {
+    .directory-nav__post:hover {
       background: #f3f3f3; }
-    .blog-nav__post img {
+    .directory-nav__post img {
       position: relative;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -841,17 +841,20 @@ template {
       object-fit: contain;
       padding-left: 5%;
       width: 30%; }
-    .blog-nav__post article {
+    .directory-nav__post article {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
       display: inline-block;
       float: left;
       padding-left: 10%;
-      position: relative;
       top: 47%;
-      transform: translateY(-50%);
       width: 55%; }
-      .blog-nav__post article span {
+      .directory-nav__post article span {
         font-size: 0.7225rem; }
-      .blog-nav__post article h5 {
+      .directory-nav__post article h5 {
         color: #1fd4f9;
         font-size: 0.85rem;
         padding-top: 2.5px; }
@@ -1280,22 +1283,22 @@ footer .main-nav__item--first {
   #home-page .blog-post-container h3 {
     padding-top: 18.75px; }
 
-#home-page .blog-nav {
+#home-page .directory-nav {
   border: none;
   overflow-y: scroll;
   position: static; }
-  #home-page .blog-nav__post {
+  #home-page .directory-nav__post {
     border-bottom: 1.5px solid #f3f3f3;
     box-sizing: content-box;
     display: block;
     height: 100px;
     position: static; }
-    #home-page .blog-nav__post article {
+    #home-page .directory-nav__post article {
       padding-left: 5%;
       width: 60%; }
-      #home-page .blog-nav__post article span {
+      #home-page .directory-nav__post article span {
         font-size: 0.85rem; }
-      #home-page .blog-nav__post article h5 {
+      #home-page .directory-nav__post article h5 {
         font-size: 1rem; }
 
 #home-page .blog-slider-nav .slick-current {
@@ -1375,14 +1378,14 @@ footer .main-nav__item--first {
   position: relative;
   width: 90%; }
 
-#work-page .blog-nav-container {
+#work-page .directory-nav-container {
   display: inline-block;
   float: left;
   padding-top: 50px; }
 
-#work-page .blog-nav article {
+#work-page .directory-nav article {
   top: 50%; }
-  #work-page .blog-nav article h5 {
+  #work-page .directory-nav article h5 {
     padding-top: 0px; }
 
 #work-page .directory__figure--second-row figcaption {
@@ -1419,7 +1422,7 @@ footer .main-nav__item--first {
   position: relative;
   width: 90%; }
 
-#the-latest-page .blog-nav-container {
+#the-latest-page .directory-nav-container {
   display: inline-block;
   float: left;
   padding-top: 50px; }
@@ -1505,7 +1508,7 @@ footer .main-nav__item--first {
   object-fit: contain;
   width: 100%; }
 
-#blog-post-page .blog-nav-container {
+#blog-post-page .directory-nav-container {
   float: right;
   position: relative;
   right: 25px; }

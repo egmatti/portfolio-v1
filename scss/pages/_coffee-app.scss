@@ -1,3 +1,91 @@
 // ==========================================
 // COFFEE APP PAGE
 // ==========================================
+
+// HERO
+
+#coffee-app-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "coffee-app/coffee-app-wall");
+}
+
+
+// OVERVIEW SECTION
+
+#coffee-app-page .overview-left, .overview-right {
+  margin-bottom: $margin-section-vertical;
+}
+
+#coffee-app-page .overview-left h2 {
+  letter-spacing: 0rem;
+  text-transform: none;
+}
+
+#coffee-app-page .overview-right {
+  padding-top: $padding-div;
+
+  img {
+    width: 55%;
+  }
+}
+
+
+// WIREFRAMES SECTION
+
+#coffee-app-page .wireframes-section {
+  background: $color-blog-section;
+  border-bottom: $border-section;
+  border-top: $border-section;
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+#coffee-app-page .left-column {
+  background: $color-body-accent;
+  height: auto;
+  margin-left: $margin-section-horizontal;
+  padding: $padding-section 0;
+  width: $width-page;
+}
+
+#coffee-app-page .left-image {
+  @include box-shadow;
+  background: $color-body;
+  border: 15px solid $color-figure;
+  float: left;
+  height: auto;
+  left: -5%;
+  object-fit: contain;
+  position: relative;
+  width: 40%;
+}
+
+
+#coffee-app-page .right-description {
+  height: auto;
+  padding-right: $margin-section-horizontal;
+  width: 45%;
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+
+// MOCKUPS SECTION
+
+#coffee-app-page .mockups-section {
+  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "coffee-app/palm-trees");
+  height: 75vh; // Should be changed to "auto" once there's content
+  width: 100%;
+}
+
+
+// PROTOTYPE SECTION
+
+#coffee-app-page .prototype-section {
+  background: $color-body;
+  height: 75vh; // Should be changed to auto once there's content
+  width: 100%;
+}

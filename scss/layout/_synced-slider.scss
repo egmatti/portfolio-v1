@@ -1,0 +1,63 @@
+// ==========================================
+// SYNCED SLIDER
+// ==========================================
+
+.mockups-section {
+
+  h2 {
+    padding-left: $margin-page-horizontal;
+    padding-top: $padding-div;
+  }
+
+  p {
+
+    span {
+      font-weight: $font-weight-bold;
+      padding-right: 2.5px;
+    }
+  }
+}
+
+.synced-slider-for {
+  div {
+    margin: auto;
+    width: 80%;
+
+    img {
+      float: right;
+      object-fit: contain;
+      width: 225px;
+    }
+  }
+}
+
+.synced-slider-description {
+  float: left;
+  width: 20%;
+
+  h3 {
+    padding-top: $padding-div;
+  }
+
+  p {
+    width: 80%;
+
+    span {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.synced-slider-nav {
+  margin: auto;
+  position: relative;
+  top: -4%;
+  width: 40%;
+
+    img {
+      left: 25%;
+      object-fit: contain;
+      position: relative;
+      width: 60%;
+    }
+  }

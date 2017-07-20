@@ -4,8 +4,8 @@
 
 .share-figure {
   @include box-shadow;
-  background: $color-blog-figure;
-  border: 15px solid $color-blog-figure;
+  background: $color-figure;
+  border: 15px solid $color-figure;
   margin: 0;
 
   img {
@@ -14,7 +14,7 @@
   }
 
   figcaption {
-    background: $color-blog-figure;
+    background: $color-figure;
     width: 100%;
 
     div {
@@ -32,8 +32,8 @@
 
 .directory__figure {
   @include box-shadow;
-  background: $color-blog-figure;
-  border: 15px solid $color-blog-figure;
+  background: $color-figure;
+  border: 15px solid $color-figure;
   box-sizing: border-box;
   display: inline-block;
   float: left;
@@ -44,7 +44,7 @@
   }
 
   figcaption {
-    background: $color-blog-figure;
+    background: $color-figure;
     width: 100%;
 
     div {

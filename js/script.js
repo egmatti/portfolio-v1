@@ -54,6 +54,13 @@ $(".button-resume").click(function() {
 });
 
 
+// SITE VIEW BUTTON
+
+$(".button-site").click(function() {
+  $(this).find("span").html("Thanks!");
+});
+
+
 // DIRECTORY ROW FIGURE HEIGHT
 
 $(document).ready(function(){

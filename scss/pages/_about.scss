@@ -11,6 +11,11 @@
 
 // OVERVIEW SECTION
 
+#about-page .overview-section {
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+}
+
 #about-page .overview-left, .overview-right {
   margin-bottom: $margin-section-vertical;
 }

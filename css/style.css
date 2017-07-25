@@ -1188,9 +1188,7 @@ footer .main-nav__item--first {
 
 .overview-section {
   background: #fff;
-  height: auto;
-  margin: 0 5%;
-  width: 90%; }
+  height: auto; }
 
 .overview-left {
   float: left;
@@ -1429,6 +1427,10 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
+#about-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
+
 #about-page .overview-left, .overview-right {
   margin-bottom: 125px; }
 
@@ -1504,11 +1506,21 @@ footer .main-nav__item--first {
 #work-page figcaption h2, h3, h4 {
   padding-top: 0px; }
 
+#coffee-app-page .main-nav a:hover {
+  color: #f1a75e; }
+
+#coffee-app-page .fa:hover {
+  color: #f1a75e; }
+
 #coffee-app-page .hero-section {
   background: url("../images/projects/coffee-app/coffee-app-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+#coffee-app-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
 
 #coffee-app-page .overview-left, .overview-right {
   margin-bottom: 125px; }
@@ -1596,6 +1608,69 @@ footer .main-nav__item--first {
   #coffee-app-page .prototype-description span {
     font-weight: 700;
     padding-right: 2.5px; }
+
+#ballad-page .main-nav a:hover {
+  color: #ab0061; }
+
+#ballad-page .fa:hover {
+  color: #ab0061; }
+
+#ballad-page .hero-section {
+  background: url("../images/projects/ballad/ballad-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#ballad-page .overview-section {
+  margin: 0;
+  width: 100%; }
+
+#ballad-page .overview-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 25%; }
+
+#ballad-page .button-container {
+  margin-top: 50px;
+  margin-bottom: 25px; }
+
+#ballad-page .button {
+  border: 1.5px solid #ab0061; }
+  #ballad-page .button span {
+    color: #ab0061; }
+  #ballad-page .button:hover {
+    background: #ab0061;
+    border: 1.5px solid #ab0061; }
+    #ballad-page .button:hover span {
+      color: #fff; }
+
+#ballad-page .style-guides-section {
+  background: #f3f3f3;
+  height: 615px;
+  width: 100%; }
+
+#ballad-page .style-guides-section h2 {
+  padding-left: 5%;
+  padding-top: 50px; }
+
+#ballad-page .synced-slider-for img {
+  width: 200px; }
+
+#ballad-page .logo-section {
+  background: url("../images/projects/ballad/retro-stripes.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 540px;
+  width: 100%; }
+
+#ballad-page .desktop-mockup-section {
+  background: #fff;
+  height: 1000px;
+  width: 100%; }
 
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");

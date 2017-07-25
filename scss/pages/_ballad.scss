@@ -1,0 +1,92 @@
+// ==========================================
+// BALLAD PAGE
+// ==========================================
+
+// HEADER AND FOOTER
+
+#ballad-page .main-nav a:hover {
+  color: $color-project-ballad;
+}
+
+#ballad-page .fa:hover {
+  color: $color-project-ballad;
+}
+
+
+// HERO
+
+#ballad-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "ballad/ballad-wall");
+}
+
+
+// OVERVIEW SECTION
+
+#ballad-page .overview-section {
+  margin: 0;
+  width: 100%;
+}
+
+#ballad-page .overview-container {
+  @include flexbox ($direction: column);
+  padding: $padding-section 25%;
+}
+
+#ballad-page .button-container {
+  margin-top: $padding-div;
+  margin-bottom: $margin-body-text;
+}
+
+#ballad-page .button {
+  border: $border-button-ballad;
+
+  span {
+    color: $color-project-ballad;
+  }
+
+  &:hover {
+    background: $color-project-ballad;
+    border: $border-button-ballad-hover;
+
+    span {
+      color: $color-body;
+    }
+  }
+}
+
+
+// STYLED GUIDES SECTION
+
+#ballad-page .style-guides-section {
+  // @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "coffee-app/palm-trees");
+  background: $color-body-accent;
+  height: 615px;
+  width: 100%;
+}
+
+#ballad-page .style-guides-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-div;
+}
+
+#ballad-page .synced-slider-for img {
+  width: 200px;
+}
+
+
+// LOGO SECTION
+
+#ballad-page .logo-section {
+  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "ballad/retro-stripes");
+  height: 540px;
+  width: 100%;
+}
+
+
+// DESKTOP MOCKUP SECTION
+
+#ballad-page .desktop-mockup-section {
+  background: $color-body;
+  height: 1000px;
+  width: 100%;
+}

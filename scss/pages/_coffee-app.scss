@@ -2,6 +2,16 @@
 // COFFEE APP PAGE
 // ==========================================
 
+// HEADER AND FOOTER
+
+#coffee-app-page .main-nav a:hover {
+  color: $color-project-coffee-app;
+}
+
+#coffee-app-page .fa:hover {
+  color: $color-project-coffee-app;
+}
+
 // HERO
 
 #coffee-app-page .hero-section {
@@ -10,6 +20,11 @@
 
 
 // OVERVIEW SECTION
+
+#coffee-app-page .overview-section {
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+}
 
 #coffee-app-page .overview-left, .overview-right {
   margin-bottom: $margin-section-vertical;

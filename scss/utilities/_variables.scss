@@ -16,8 +16,15 @@ $lighter-gray: lighten($gray, 15%);
 $light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
 
-// Color Functions
+// Project Color Descriptions
+$ballad-blue: #0e5580;
+$ballad-magenta: #ab0061;
 
+$coffee-app-red: #cc4d4b;
+$coffee-app-blue: #98bace;
+$coffee-app-gold: #f1a75e;
+
+// Color Functions
 $color-body: $white;
 $color-body-accent: $light-gray;
 $color-border: $light-gray;
@@ -62,6 +69,9 @@ $color-footer-copyright: $gray;
 $color-hero-background: $black;
 $color-page-title: $white;
 $color-blog-page-date: $white;
+
+$color-project-ballad: $ballad-magenta;
+$color-project-coffee-app: $coffee-app-gold;
 
 $color-blog-section: $white;
 $color-blog-div: $light-gray;
@@ -111,6 +121,8 @@ $border-section: $border-size solid $color-border;
 $border-divider: $border-size solid $color-border;
 $border-button: $border-size solid $color-button;
 $border-button-hover: $border-size solid $color-button-hover;
+$border-button-ballad: $border-size solid $color-project-ballad;
+$border-button-ballad-hover: $border-size solid $color-project-ballad;
 $border-input: $border-size solid $color-input;
 $border-input-active: $border-size solid $color-input-active;
 

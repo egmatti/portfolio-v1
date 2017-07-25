@@ -2,34 +2,30 @@
 // SYNCED SLIDER
 // ==========================================
 
-.synced-slider-for {
-  div {
-    margin: auto;
-    width: 80%;
+.synced-slider-description {
+  float: left;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 55%;
 
-    img {
-      float: right;
-      object-fit: contain;
-    }
+  h3 {
+    display: inline-block;
+    padding-top: $padding-div;
+    width: auto;
+  }
+
+  p span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
   }
 }
 
-.synced-slider-description {
-  float: left;
+.synced-slider-for__slide img {
+  float: right;
+  object-fit: contain;
+  margin-right: 10%;
   width: 20%;
-
-  h3 {
-    padding-top: $padding-div;
-  }
-
-  p {
-    width: 80%;
-
-    span {
-      font-weight: $font-weight-bold;
-      padding-right: 2.5px;
-    }
-  }
 }
 
 .synced-slider-nav {

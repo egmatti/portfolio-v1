@@ -1207,23 +1207,25 @@ footer .main-nav__item--first {
     object-fit: contain;
     padding-bottom: 50px; }
 
-.synced-slider-for div {
-  margin: auto;
-  width: 80%; }
-  .synced-slider-for div img {
-    float: right;
-    object-fit: contain; }
-
 .synced-slider-description {
   float: left;
-  width: 20%; }
+  height: auto;
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 55%; }
   .synced-slider-description h3 {
-    padding-top: 50px; }
-  .synced-slider-description p {
-    width: 80%; }
-    .synced-slider-description p span {
-      font-weight: 700;
-      padding-right: 2.5px; }
+    display: inline-block;
+    padding-top: 50px;
+    width: auto; }
+  .synced-slider-description p span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+.synced-slider-for__slide img {
+  float: right;
+  object-fit: contain;
+  margin-right: 10%;
+  width: 20%; }
 
 .synced-slider-nav {
   margin: auto;
@@ -1579,7 +1581,7 @@ footer .main-nav__item--first {
   padding-top: 50px; }
 
 #coffee-app-page .synced-slider-for img {
-  width: 200px; }
+  max-width: 200px; }
 
 #coffee-app-page .prototype-section {
   background: #fff;
@@ -1655,8 +1657,34 @@ footer .main-nav__item--first {
   padding-left: 5%;
   padding-top: 50px; }
 
-#ballad-page .synced-slider-for img {
-  width: 200px; }
+#ballad-page .synced-slider-for .margin-top {
+  margin-top: 25px; }
+
+#ballad-page .colors li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 12.5px;
+  width: auto; }
+  #ballad-page .colors li img {
+    float: left;
+    margin-right: 0;
+    width: 50px; }
+
+#ballad-page .typefaces li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 25px; }
+
+#ballad-page .synced-slider-for .moodboards {
+  margin-top: 25px; }
+
+#ballad-page .synced-slider-nav {
+  position: relative;
+  top: 4%; }
+  #ballad-page .synced-slider-nav img {
+    -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+    -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+    box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15); }
 
 #ballad-page .logo-section {
   background: url("../images/projects/ballad/retro-stripes.png");

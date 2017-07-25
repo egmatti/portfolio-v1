@@ -58,7 +58,6 @@
 // STYLED GUIDES SECTION
 
 #ballad-page .style-guides-section {
-  // @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "coffee-app/palm-trees");
   background: $color-body-accent;
   height: 615px;
   width: 100%;
@@ -69,8 +68,40 @@
   padding-top: $padding-div;
 }
 
-#ballad-page .synced-slider-for img {
-  width: 200px;
+#ballad-page .synced-slider-for .margin-top {
+  margin-top: $margin-body-text;
+}
+
+#ballad-page .colors li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 12.5px;
+  width: auto;
+
+  img {
+    float: left;
+    margin-right: 0;
+    width: 50px;
+  }
+}
+
+#ballad-page .typefaces li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 25px;
+}
+
+#ballad-page .synced-slider-for .moodboards {
+  margin-top: $margin-body-text;
+}
+
+#ballad-page .synced-slider-nav {
+  position: relative;
+  top: 4%;
+
+  img {
+    @include box-shadow();
+  }
 }
 
 

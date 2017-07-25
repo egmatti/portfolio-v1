@@ -113,11 +113,104 @@
   width: 100%;
 }
 
+#ballad-page .logo-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  margin-left: $margin-page-horizontal;
+  width: 40.5%;
+
+  img {
+    object-fit: contain;
+    width: 55%;
+  }
+}
+
+#ballad-page .logo-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  margin-right: $margin-page-horizontal;
+  width: 49.5%;
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
 
 // DESKTOP MOCKUP SECTION
 
 #ballad-page .desktop-mockup-section {
   background: $color-body;
-  height: 1000px;
+  height: auto;
   width: 100%;
+}
+
+#ballad-page .desktop-mockup-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-section;
+}
+
+#ballad-page .desktop-mockup-section .mockup-image-container {
+  margin: 0 $margin-section-horizontal;
+  width: 80%;
+
+  img {
+    @include box-shadow($v: 0.5px, $s: 1.5px);
+    margin: $padding-div 0 $padding-section 0;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+
+// MOBILE PROTOTYPE SECTION
+
+#ballad-page .mobile-prototype-section {
+  background: $color-body-accent;
+  // Height is being calculated in ballad.js
+  width: 100%;
+}
+
+#ballad-page .mobile-prototype-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  // margin-left: $margin-page-horizontal;
+  width: 40.5%;
+
+  img {
+    object-fit: contain;
+    width: 45%;
+  }
+}
+
+#ballad-page .mobile-prototype-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  margin-right: $margin-section-horizontal;
+  width: 49.5%;
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+
+// RESPONSIVE SITE SECTION
+
+#ballad-page .responsive-site-section {
+  @include flexbox();
+  // Height is being calculated in ballad.js
+  width: 100%;
+
+  img {
+    object-fit: contain;
+    transform: translateX(25px);
+    width: 60%;
+  }
 }

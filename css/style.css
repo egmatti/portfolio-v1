@@ -1695,10 +1695,88 @@ footer .main-nav__item--first {
   height: 540px;
   width: 100%; }
 
+#ballad-page .logo-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  margin-left: 5%;
+  width: 40.5%; }
+  #ballad-page .logo-image-container img {
+    object-fit: contain;
+    width: 55%; }
+
+#ballad-page .logo-description {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 49.5%; }
+  #ballad-page .logo-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
 #ballad-page .desktop-mockup-section {
   background: #fff;
-  height: 1000px;
+  height: auto;
   width: 100%; }
+
+#ballad-page .desktop-mockup-section h2 {
+  padding-left: 5%;
+  padding-top: 100px; }
+
+#ballad-page .desktop-mockup-section .mockup-image-container {
+  margin: 0 10%;
+  width: 80%; }
+  #ballad-page .desktop-mockup-section .mockup-image-container img {
+    -webkit-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
+    -moz-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
+    box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
+    margin: 50px 0 100px 0;
+    object-fit: contain;
+    width: 100%; }
+
+#ballad-page .mobile-prototype-section {
+  background: #f3f3f3;
+  width: 100%; }
+
+#ballad-page .mobile-prototype-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  width: 40.5%; }
+  #ballad-page .mobile-prototype-image-container img {
+    object-fit: contain;
+    width: 45%; }
+
+#ballad-page .mobile-prototype-description {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  margin-right: 10%;
+  width: 49.5%; }
+  #ballad-page .mobile-prototype-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#ballad-page .responsive-site-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  #ballad-page .responsive-site-section img {
+    object-fit: contain;
+    transform: translateX(25px);
+    width: 60%; }
 
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");

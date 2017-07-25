@@ -23,3 +23,19 @@ $(".synced-slider-nav").slick({
   slidesToScroll: 1,
   slidesToShow: 3
 });
+
+
+// MOBILE PROTOTYPE SECTION HEIGHT
+
+$(document).ready(function(){
+  var mobilePrototypeImageContainerHeight = $("#ballad-page .mobile-prototype-image-container").outerHeight() + 200;
+  $("#ballad-page .mobile-prototype-section").css({"height": mobilePrototypeImageContainerHeight});
+});
+
+
+// RESPONSIVE SITE SECTION HEIGHT
+
+$(document).ready(function(){
+  var responsiveSiteImageHeight = $("#ballad-page .responsive-site-section img").outerHeight() + 200;
+  $("#ballad-page .responsive-site-section").css({"height": responsiveSiteImageHeight});
+});

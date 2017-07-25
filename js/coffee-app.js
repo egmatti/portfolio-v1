@@ -17,6 +17,14 @@ $(".synced-slider-nav").slick({
 });
 
 
+// WIREFRAME SECTION HEIGHT
+
+$(document).ready(function(){
+  var leftColumnHeight = $("#coffee-app-page .left-column").outerHeight();
+  $("#coffee-app-page .wireframes-section").css({"height": leftColumnHeight});
+});
+
+
 // PROTOTYPE SECTION HEIGHT
 
 $(document).ready(function(){

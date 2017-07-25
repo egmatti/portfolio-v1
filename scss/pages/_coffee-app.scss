@@ -31,7 +31,7 @@
   border-bottom: $border-section;
   border-top: $border-section;
   clear: both;
-  height: auto;
+  // Height is being calculated in coffee-app.js
   width: 100%;
 }
 
@@ -54,7 +54,6 @@
   position: relative;
   width: 40%;
 }
-
 
 #coffee-app-page .right-description {
   height: auto;

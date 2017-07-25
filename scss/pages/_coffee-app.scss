@@ -15,11 +15,6 @@
   margin-bottom: $margin-section-vertical;
 }
 
-#coffee-app-page .overview-left h2 {
-  letter-spacing: 0rem;
-  text-transform: none;
-}
-
 #coffee-app-page .overview-right {
   padding-top: $padding-div;
 
@@ -77,8 +72,17 @@
 
 #coffee-app-page .mockups-section {
   @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "coffee-app/palm-trees");
-  height: 75vh; // Should be changed to "auto" once there's content
+  height: 615px;
   width: 100%;
+}
+
+#coffee-app-page .mockups-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-div;
+}
+
+#coffee-app-page .synced-slider-for img {
+  width: 200px;
 }
 
 
@@ -86,6 +90,31 @@
 
 #coffee-app-page .prototype-section {
   background: $color-body;
-  height: 75vh; // Should be changed to auto once there's content
-  width: 100%;
+  clear: both;
+  // Height is being calculated in coffee-app.js
+  width: $width-page;
+}
+
+#coffee-app-page .prototype-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  width: 45%;
+
+  img {
+    object-fit: contain;
+    width: 45%;
+  }
+}
+
+#coffee-app-page .prototype-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  width: 55%;
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
 }

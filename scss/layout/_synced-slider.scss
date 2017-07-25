@@ -2,22 +2,6 @@
 // SYNCED SLIDER
 // ==========================================
 
-.mockups-section {
-
-  h2 {
-    padding-left: $margin-page-horizontal;
-    padding-top: $padding-div;
-  }
-
-  p {
-
-    span {
-      font-weight: $font-weight-bold;
-      padding-right: 2.5px;
-    }
-  }
-}
-
 .synced-slider-for {
   div {
     margin: auto;
@@ -26,7 +10,6 @@
     img {
       float: right;
       object-fit: contain;
-      width: 225px;
     }
   }
 }
@@ -44,20 +27,27 @@
 
     span {
       font-weight: $font-weight-bold;
+      padding-right: 2.5px;
     }
   }
 }
 
 .synced-slider-nav {
   margin: auto;
-  position: relative;
-  top: -4%;
-  width: 40%;
+  width: 30%;
 
     img {
       left: 25%;
       object-fit: contain;
       position: relative;
-      width: 60%;
+      width: 50%;
     }
   }
+
+.synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
+  top: 37.5%;
+
+  &:before {
+    color: $color-arrows;
+  }
+}

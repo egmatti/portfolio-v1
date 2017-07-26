@@ -797,7 +797,7 @@ template {
 
 .directory-nav-container {
   height: 575px;
-  width: 300px; }
+  width: 350px; }
   .directory-nav-container h4 {
     position: relative;
     text-align: center;
@@ -995,9 +995,9 @@ textarea {
     margin-left: 50px;
     position: relative;
     top: -100px;
-    width: -webkit-calc(100% - 300px - 50px);
-    width: -moz-calc(100% - 300px - 50px);
-    width: calc(100% - 300px - 50px); }
+    width: -webkit-calc(100% - 350px - 50px);
+    width: -moz-calc(100% - 350px - 50px);
+    width: calc(100% - 350px - 50px); }
     .directory__figure--first-row img {
       object-fit: contain; }
     .directory__figure--first-row figcaption {
@@ -1899,6 +1899,7 @@ footer .main-nav__item--first {
 #blog-post-page .directory-nav-container {
   float: right;
   position: relative;
-  right: 25px; }
+  right: 25px;
+  width: 300px; }
 
 /*# sourceMappingURL=style.css.map */

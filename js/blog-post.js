@@ -1,6 +1,6 @@
 // FIXED SHARE FIGURE ON SCROLL
 
-// Get the headers position from the top of the page, plus its own height
+// Get the position from the top of the page
 var startY = 445;
 
 $(window).scroll(function(){

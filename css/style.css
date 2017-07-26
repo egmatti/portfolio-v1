@@ -1431,6 +1431,7 @@ footer .main-nav__item--first {
 
 #about-page .overview-section {
   margin: 0 5%;
+  min-height: 500px;
   width: 90%; }
 
 #about-page .overview-left, .overview-right {
@@ -1447,6 +1448,7 @@ footer .main-nav__item--first {
   background: #f3f3f3;
   clear: both;
   height: auto;
+  min-height: 480.250px;
   position: relative;
   width: 100%; }
 

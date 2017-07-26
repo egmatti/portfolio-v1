@@ -13,6 +13,7 @@
 
 #about-page .overview-section {
   margin: 0 $margin-page-horizontal;
+  min-height: 500px; // Should be removed if I delete Velocity.js
   width: $width-page;
 }
 
@@ -36,6 +37,7 @@
   background: $color-body-accent;
   clear: both;
   height: auto;
+  min-height: 480.250px; // Should be removed if I delete Velocity.js
   position: relative;
   width: 100%;
 }

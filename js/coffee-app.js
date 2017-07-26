@@ -28,6 +28,6 @@ $(document).ready(function(){
 // PROTOTYPE SECTION HEIGHT
 
 $(document).ready(function(){
-  var prototypeImageContainerHeight = $("#coffee-app-page .prototype-image-container").outerHeight() + 200;
+  var prototypeImageContainerHeight = $("#coffee-app-page .prototype-image-container").outerHeight() + 150;
   $("#coffee-app-page .prototype-section").css({"height": prototypeImageContainerHeight});
 });

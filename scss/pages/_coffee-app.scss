@@ -54,7 +54,7 @@
   background: $color-body-accent;
   height: auto;
   margin-left: $margin-section-horizontal;
-  padding: $padding-section 0;
+  padding: ($padding-div * 2) 0;
   width: $width-page;
 }
 

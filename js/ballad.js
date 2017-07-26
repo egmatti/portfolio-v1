@@ -28,7 +28,7 @@ $(".synced-slider-nav").slick({
 // MOBILE PROTOTYPE SECTION HEIGHT
 
 $(document).ready(function(){
-  var mobilePrototypeImageContainerHeight = $("#ballad-page .mobile-prototype-image-container").outerHeight() + 200;
+  var mobilePrototypeImageContainerHeight = $("#ballad-page .mobile-prototype-image-container").outerHeight() + 150;
   $("#ballad-page .mobile-prototype-section").css({"height": mobilePrototypeImageContainerHeight});
 });
 
@@ -36,6 +36,6 @@ $(document).ready(function(){
 // RESPONSIVE SITE SECTION HEIGHT
 
 $(document).ready(function(){
-  var responsiveSiteImageHeight = $("#ballad-page .responsive-site-section img").outerHeight() + 200;
+  var responsiveSiteImageHeight = $("#ballad-page .responsive-site-section img").outerHeight() + 150;
   $("#ballad-page .responsive-site-section").css({"height": responsiveSiteImageHeight});
 });

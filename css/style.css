@@ -1192,7 +1192,7 @@ footer .main-nav__item--first {
 
 .overview-left {
   float: left;
-  padding-top: 100px;
+  padding-top: 75px;
   width: 60%; }
 
 .overview-right {
@@ -1201,7 +1201,7 @@ footer .main-nav__item--first {
   justify-content: center;
   flex-direction: column;
   float: right;
-  padding-top: 100px;
+  padding-top: 75px;
   width: 40%; }
   .overview-right img {
     object-fit: contain;
@@ -1259,7 +1259,7 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 100px 25%; }
+  padding: 125px 25%; }
 
 #home-page .about-section img {
   height: 150px;
@@ -1632,7 +1632,7 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 100px 25%; }
+  padding: 75px 25%; }
 
 #ballad-page .button-container {
   margin-top: 50px;
@@ -1733,7 +1733,7 @@ footer .main-nav__item--first {
 
 #ballad-page .desktop-mockup-section h2 {
   padding-left: 5%;
-  padding-top: 100px; }
+  padding-top: 75px; }
 
 #ballad-page .desktop-mockup-section .mockup-image-container {
   margin: 0 10%;
@@ -1742,7 +1742,7 @@ footer .main-nav__item--first {
     -webkit-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
     -moz-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
     box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
-    margin: 50px 0 100px 0;
+    margin: 50px 0 75px 0;
     object-fit: contain;
     width: 100%; }
 
@@ -1781,7 +1781,7 @@ footer .main-nav__item--first {
   width: 100%; }
   #ballad-page .responsive-site-section img {
     object-fit: contain;
-    transform: translateX(25px);
+    transform: translateX(35px);
     width: 60%; }
 
 #the-latest-page .hero-section {

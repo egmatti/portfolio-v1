@@ -22,7 +22,7 @@
 
 #home-page .about-section div {
   @include flexbox ($direction: column);
-  padding: $margin-section-vertical 25%;
+  padding: 100px 25%;
 }
 
 #home-page .about-section img {

@@ -1,3 +1,14 @@
+// ABOUT SECTION SCROLL REVEAL
+window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
+sr.reveal('.about-section div', {delay: 250});
+sr.reveal('.about-section img', {delay: 475});
+
+sr.reveal('.blog-section .share-figure', {delay: 250});
+
+sr.reveal('.contact-section .left-column', {delay: 250});
+sr.reveal('.contact-section .right-column', {delay: 250});
+
+
 // BLOG SLIDER
 
 $(".blog-slider-for").slick({

@@ -1259,7 +1259,7 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 125px 25%; }
+  padding: 100px 25%; }
 
 #home-page .about-section img {
   height: 150px;
@@ -1431,11 +1431,12 @@ footer .main-nav__item--first {
 
 #about-page .overview-section {
   margin: 0 5%;
-  min-height: 500px;
   width: 90%; }
 
 #about-page .overview-left, .overview-right {
-  margin-bottom: 125px; }
+  margin-bottom: 125px;
+  transform: scale(0.9);
+  visibility: hidden; }
 
 #about-page .overview-left h2 {
   letter-spacing: 0rem;
@@ -1448,7 +1449,6 @@ footer .main-nav__item--first {
   background: #f3f3f3;
   clear: both;
   height: auto;
-  min-height: 480.250px;
   position: relative;
   width: 100%; }
 

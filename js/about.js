@@ -6,19 +6,17 @@ var startY = 80;
 // Set overview div's displays to "none"
 var $overviewLeft = $(".overview-left");
 var $overviewRight = $(".overview-right");
-// $overviewLeft.css("transform", "scale(0.9)");
-// $overviewRight.css("transform", "scale(0.9)");
 
 $(window).on("scroll", function(){
-    checkY();
+  checkY();
 });
 
 function checkY(){
-    if( $(window).scrollTop() > startY ){
-      $(window).off("scroll");
-      $overviewLeft.velocity({opacity: 1, scale: 1}, {visibility: "visible", duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
-      $overviewRight.velocity({opacity: 1, scale: 1}, {visibility: "visible", delay: 475, duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
-    }
+  if( $(window).scrollTop() > startY ){
+    $(window).off("scroll");
+    $overviewLeft.velocity({opacity: 1, translateY: "-30px"}, {visibility: "visible", duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
+    $overviewRight.velocity({opacity: 1, translateY: "-30px"}, {visibility: "visible", delay: 475, duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
+  }
 };
 
 // Do this on load just in case the user starts half way down the page

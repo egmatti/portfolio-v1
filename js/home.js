@@ -5,6 +5,9 @@ sr.reveal('.about-section img', {delay: 475});
 
 sr.reveal('.blog-section .share-figure', {delay: 250});
 
+sr.reveal('.instagram-slider-for__post img', {delay: 250}, 175);
+sr.reveal('.button-instagram', {delay: 1025});
+
 sr.reveal('.contact-section .left-column', {delay: 250});
 sr.reveal('.contact-section .right-column', {delay: 250});
 

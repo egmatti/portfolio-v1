@@ -1435,7 +1435,7 @@ footer .main-nav__item--first {
 
 #about-page .overview-left, .overview-right {
   margin-bottom: 125px;
-  transform: scale(0.9);
+  padding-top: 105px;
   visibility: hidden; }
 
 #about-page .overview-left h2 {

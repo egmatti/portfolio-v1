@@ -18,7 +18,7 @@
 
 #about-page .overview-left, .overview-right {
   margin-bottom: $margin-section-vertical;
-  transform: scale(0.9);
+  padding-top: $padding-section + 30px;
   visibility: hidden;
 }
 

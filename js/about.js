@@ -1,3 +1,7 @@
+// ==========================================
+// ABOUT PAGE
+// ==========================================
+
 // OVERVIEW SECTION FADE IN ON SCROLL
 
 // Get the position from the top of the page

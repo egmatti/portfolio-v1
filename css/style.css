@@ -1527,12 +1527,12 @@ footer .main-nav__item--first {
   width: 90%; }
 
 #coffee-app-page .overview-left, .overview-right {
-  margin-bottom: 125px; }
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
 
-#coffee-app-page .overview-right {
-  padding-top: 50px; }
-  #coffee-app-page .overview-right img {
-    width: 55%; }
+#coffee-app-page .overview-right img {
+  width: 55%; }
 
 #coffee-app-page .wireframes-section {
   background: #fff;

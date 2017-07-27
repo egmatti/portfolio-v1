@@ -12,6 +12,7 @@
   color: $color-project-coffee-app;
 }
 
+
 // HERO
 
 #coffee-app-page .hero-section {
@@ -27,15 +28,13 @@
 }
 
 #coffee-app-page .overview-left, .overview-right {
-  margin-bottom: $margin-section-vertical;
+  margin-bottom: $margin-section-vertical - 30px;
+  padding-top: $padding-section + 30px;
+  visibility: hidden;
 }
 
-#coffee-app-page .overview-right {
-  padding-top: $padding-div;
-
-  img {
-    width: 55%;
-  }
+#coffee-app-page .overview-right img {
+  width: 55%;
 }
 
 

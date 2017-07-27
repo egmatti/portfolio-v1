@@ -1,3 +1,7 @@
+// ==========================================
+// BLOG POST PAGE
+// ==========================================
+
 // FIXED SHARE FIGURE ON SCROLL
 
 // Get the position from the top of the page

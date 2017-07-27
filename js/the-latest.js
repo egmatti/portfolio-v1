@@ -1,3 +1,7 @@
+// ==========================================
+// THE LATEST PAGE
+// ==========================================
+
 // DIRECTORY NAV HEIGHT AND DIRECTORY ROW POSITIONING
 
 $(document).ready(function(){
@@ -13,3 +17,10 @@ $(document).ready(function(){
   // $("#the-latest-page .directory__row--other").css({"transform": "translateY(-" + secondRowTranslate + "px)"});
   // $("#the-latest-page .directory__row--last").css({"transform": "translateY(-" + secondRowTranslate + "px)", "margin-bottom": "-" + secondRowTranslate + "px"});
 });
+
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
+sr.reveal('.directory__figure--first-row', {delay: 425});
+sr.reveal('.directory__figure--second-row', {delay: 250}, 175);
+sr.reveal('.directory__figure--other-row', {delay: 250}, 175);

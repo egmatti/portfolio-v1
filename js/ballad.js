@@ -1,3 +1,7 @@
+// ==========================================
+// BALLAD PAGE
+// ==========================================
+
 // BUTTON COLOR CHANGE
 
 $("#ballad-page .button").click(function() {

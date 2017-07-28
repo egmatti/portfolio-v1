@@ -8,20 +8,34 @@ footer {
   clear: both;
   height: 160px;
   width: 100%;
+
+  @include media-query(small) {
+    height: 80px;
+  }
 }
 
 .footer-row-top, .footer-row-bottom {
   box-sizing: border-box;
-  height: 50%;
   width: 100%;
 }
 
 .footer-row-top {
+  height: 50%;
   padding-top: $padding-footer-row;
+
+  @include media-query(small) {
+    height: 100%;
+    padding-bottom: $padding-footer-row;
+  }
 }
 
 .footer-row-bottom {
+  height: 50%;
   padding-bottom: $padding-footer-row;
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
 footer .main-nav-logo {
@@ -33,6 +47,10 @@ footer .main-nav-logo {
   @include vertical-align;
   float: right;
   margin-right: $margin-nav;
+
+  @include media-query(small) {
+    display: none;
+  }
 
   @include e(item) {
     display: inline-block;
@@ -65,4 +83,8 @@ footer .main-nav__item--first {
   font-size: 0.9rem;
   float: right;
   margin-right: $margin-nav;
+
+  @include media-query(small) {
+    display: none;
+  }
 }

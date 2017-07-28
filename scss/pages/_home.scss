@@ -9,6 +9,10 @@
   // background: $color-hero-background;
   height: 100vh;
   width: 100%;
+
+  @include media-query(small) {
+    @include bg-image ($image-folder: "home", $bg-image: "neon-text-mobile");
+  }
 }
 
 
@@ -23,6 +27,16 @@
 #home-page .about-section div {
   @include flexbox ($direction: column);
   padding: 100px 25%;
+
+  @include media-query(small) {
+    padding: $padding-div $margin-section-horizontal;
+  }
+}
+
+#home-page .about-section h1 {
+  @include media-query(small) {
+    font-size: 1.75rem;
+  }
 }
 
 #home-page .about-section img {
@@ -46,17 +60,36 @@
 
 #home-page #blog-div {
   float: left;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
 }
 
 #home-page #blog-column {
   background: $color-blog-column;
   overflow-y: scroll;
+
+  @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
 }
 
 #home-page .blog-slider-for {
   background: $color-blog-div;
   float: right;
   width: 87.5%;
+
+  @include media-query(small) {
+    float: none;
+    width: 100%;
+  }
 
   div {
     overflow: visible;
@@ -73,6 +106,10 @@
       position: relative;
       right: 5%;
       width: 30%;
+
+      @include media-query(small) {
+        display: none;
+      }
 
       figcaption {
         height: 160px;
@@ -134,6 +171,13 @@
   padding-right: 5%;
   width: 60%;
 
+  @include media-query(small) {
+    float: none;
+    margin: $margin-section-horizontal;
+    padding-right: none;
+    width: $width-page-mobile;
+  }
+
   span {
     @extend %date;
     margin-top: $margin-body-text;
@@ -185,6 +229,10 @@
 #home-page .instagram-section {
   background: $color-body;
   height: auto;
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
 #home-page .instagram-section .slick-prev:before, .slick-next:before {
@@ -212,6 +260,15 @@
 }
 
 
+// DIVIDER
+
+#home-page .divider-white {
+  @include media-query(large) {
+    display: none;
+  }
+}
+
+
 // CONTACT SECTION
 
 #home-page .contact-section {
@@ -221,22 +278,59 @@
   width: 100%;
 }
 
+#home-page .contact-section .left-column {
+  @include media-query(small) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+}
+
+#home-page .contact-section .right-column {
+  @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+}
+
 #home-page .contact-form {
   margin-left: $margin-section-horizontal;
   width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-section-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-mobile;
+  }
 }
 
 #home-page .input-container {
   margin-right: 4.5%;
   width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 #home-page .input-container--last {
   width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 #home-page .contact-section .button-div {
   height: 100%;
+
+  @include media-query(small) {
+    padding-bottom: $padding-div;
+  }
 }
 
 #home-page .contact-section .button-container {

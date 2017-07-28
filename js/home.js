@@ -41,14 +41,22 @@ $(".blog-slider-nav").slick({
 
 // BLOG SLIDER NAV PANEL HEIGHT
 
-$(document).ready(function(){
-  var blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();
-  $("#home-page .blog-section .blog-slider-nav").css({"height": blogPostHeight});
+const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
 
-  $('#home-page .blog-section .slick-active').on( "click", function() {
-    blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();
+$(document).ready(function(){
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+    $("#home-page .blog-section .blog-slider-nav").css({"height": 300});
+  } else {
+    // window width is at least 767px
+    var blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();
     $("#home-page .blog-section .blog-slider-nav").css({"height": blogPostHeight});
-  });
+
+    $('#home-page .blog-section .slick-active').on( "click", function() {
+      blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();
+      $("#home-page .blog-section .blog-slider-nav").css({"height": blogPostHeight});
+    });
+  }
 });
 
 
@@ -58,5 +66,6 @@ $(".instagram-slider-for").slick({
  arrows: true,
  infinite: true,
  slidesToScroll: 1,
- slidesToShow: 3
+ slidesToShow: 3,
+ vertical: false
 });

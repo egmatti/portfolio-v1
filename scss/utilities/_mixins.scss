@@ -123,21 +123,23 @@
 // MEDIA QUERIES
 
 @mixin media-query($break) {
-  $value: map-get($breakpoints, $break);
-  $small: $value($breakpoints, small);
-  $medium: $value($breakpoints, medium);
-  $large: $value ($breakpoints, large);
-
-  @if $value < $small {
-    @media($max-width: $value) {
-        @content;
+  @if $break == "small" {
+    @media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+      @content;
     }
   }
-
-  @else if $value > $small {
-    @media($min-width: $value) {
-        @content;
+  @else if $break == "medium" {
+    @media (min-width: $breakpoint-medium + 1px) and (max-width: $breakpoint-large) {
+      @content;
     }
+  }
+  @else if $break == "large" {
+    @media (min-width: $breakpoint-large + 1px) {
+      @content;
+    }
+  }
+  @else {
+    @error "Whoops! No value could be retrieved for '#{$break}.'";
   }
 }
 

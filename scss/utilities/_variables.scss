@@ -160,6 +160,7 @@ $height-content-offset: -100px;
 
 $width-page: 90%;
 $width-page-blog: 80%;
+$width-page-mobile: 80%;
 $width-directory-nav-container: 350px;
 
 
@@ -170,9 +171,6 @@ $path-image: "../images";
 
 // BREAKPOINTS
 
-$breakpoints: (
-  x-small : 575px,
-  small: 576px,
-  medium: 768px,
-  large: 992px
-);
+$breakpoint-small: 0px;
+$breakpoint-medium: 767px;
+$breakpoint-large: 1025px;

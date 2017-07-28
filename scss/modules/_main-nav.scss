@@ -24,6 +24,10 @@
       @extend .main-nav__item;
     }
   }
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
 .main-nav a {
@@ -48,5 +52,18 @@
     &:hover {
       color: $color-nav-hover;
     }
+  }
+}
+
+.main-nav-mobile {
+  @include vertical-align();
+  color: $color-nav;
+
+  &:hover {
+    color: $color-nav;
+  }
+
+  @include media-query(large) {
+    display: none;
   }
 }

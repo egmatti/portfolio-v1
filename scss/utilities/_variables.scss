@@ -104,6 +104,9 @@ $base-font-size: 16px;
 $font-size-page-title: 1.5 * 2rem;
 $font-size-page-title-accent: ($font-size-page-title / 1.6);
 $font-size-blog-page-date: 1.5 * 0.85rem;
+$font-size-page-title-mobile: 2rem;
+$font-size-page-title-accent-mobile: ($font-size-page-title-mobile / 1.6);
+$font-size-blog-page-date-mobile: 0.85rem;
 
 // Letter Spacing
 $letter-spacing-headline: 0.15rem;
@@ -134,6 +137,7 @@ $border-directory-nav: $border-size solid $color-border;
 // MARGINS AND PADDING
 
 $margin-page-horizontal: 5%;
+$margin-page-mobile-horizontal: 10%;
 $margin-section: 125px 10%;
 $margin-section-vertical: 125px;
 $margin-section-horizontal: 10%;

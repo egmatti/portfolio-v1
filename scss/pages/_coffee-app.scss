@@ -31,6 +31,12 @@
   margin-bottom: $margin-section-vertical - 30px;
   padding-top: $padding-section + 30px;
   visibility: hidden;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
 }
 
 #coffee-app-page .overview-right img {

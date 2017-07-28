@@ -11,6 +11,12 @@
   float: left;
   padding-top: $padding-section;
   width: 60%;
+
+  @include media-query(small) {
+    float: none;
+    padding-top: $padding-div;
+    width: 100%;
+  }
 }
 
 .overview-right {
@@ -18,6 +24,12 @@
   float: right;
   padding-top: $padding-section;
   width: 40%;
+
+  @include media-query(small) {
+    float: none;
+    padding-top: $padding-div;
+    width: 100%;
+  }
 
   img {
     object-fit: contain;

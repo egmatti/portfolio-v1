@@ -6,6 +6,10 @@
   background: $color-hero-background;
   height: 75vh;
   width: 100%;
+
+  @include media-query(small) {
+    height: 50vh;
+  }
 }
 
 .headline-container {
@@ -24,6 +28,10 @@
   font-size: $font-size-page-title;
   margin-top: 0;
   padding-top: $padding-page-title;
+
+  @include media-query(small) {
+    font-size: $font-size-page-title-mobile;
+  }
 }
 
 .headline-container span {
@@ -31,4 +39,8 @@
   @include text-shadow();
   color: $color-blog-page-date;
   font-size: $font-size-blog-page-date;
+
+  @include media-query(small) {
+    font-size: $font-size-blog-page-date-mobile;
+  }
 }

@@ -6,6 +6,10 @@
 
 #about-page .hero-section {
   @include bg-image ($image-folder: "about", $bg-image: "graffiti");
+
+  @include media-query(small) {
+    @include bg-image ($image-folder: "about", $bg-image: "graffiti-mobile");
+  }
 }
 
 
@@ -14,12 +18,29 @@
 #about-page .overview-section {
   margin: 0 $margin-page-horizontal;
   width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
 }
 
 #about-page .overview-left, .overview-right {
-  margin-bottom: $margin-section-vertical;
+  margin-bottom: $margin-section-vertical - 30px;
   padding-top: $padding-section + 30px;
   visibility: hidden;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+}
+
+#about-page .overview-right {
+  @include media-query(small) {
+    margin-bottom: $padding-div;
+  }
 }
 
 #about-page .overview-left h2 {
@@ -29,6 +50,10 @@
 
 #about-page .overview-right img {
   width: 50%;
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
 
@@ -42,22 +67,59 @@
   width: 100%;
 }
 
+#about-page .contact-section .left-column {
+  @include media-query(small) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+}
+
+#about-page .contact-section .right-column {
+  @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+}
+
 #about-page .contact-form {
   margin-left: $margin-section-horizontal;
   width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-mobile;
+  }
 }
 
 #about-page .input-container {
   margin-right: 4.5%;
   width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 #about-page .input-container--last {
   width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 #about-page .contact-section .button-div {
   height: 100%;
+
+  @include media-query(small) {
+    padding-bottom: $padding-div;
+  }
 }
 
 #about-page .contact-section .button-container {

@@ -29,7 +29,7 @@
   padding: 100px 25%;
 
   @include media-query(small) {
-    padding: $padding-div $margin-section-horizontal;
+    padding: $padding-div $margin-page-mobile-horizontal;
   }
 }
 
@@ -173,7 +173,7 @@
 
   @include media-query(small) {
     float: none;
-    margin: $margin-section-horizontal;
+    margin: $margin-page-mobile-horizontal;
     padding-right: none;
     width: $width-page-mobile;
   }
@@ -300,7 +300,7 @@
   width: $width-page;
 
   @include media-query(small) {
-    margin: 0 $margin-section-horizontal;
+    margin: 0 $margin-page-mobile-horizontal;
     padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
     width: $width-page-mobile;
   }

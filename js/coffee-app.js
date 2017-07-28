@@ -27,6 +27,17 @@ function checkY(){
 checkY();
 
 
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
+sr.reveal('.wireframes-section img', {delay: 250});
+
+sr.reveal('.mockups-section .synced-slider-for img', {delay: 250});
+sr.reveal('.mockups-section .synced-slider-nav img', {delay: 475}, 175);
+
+sr.reveal('.prototype-section img', {delay: 250});
+
+
 // MOCKUPS SLIDER
 
 $(".synced-slider-for").slick({

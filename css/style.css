@@ -1634,11 +1634,13 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 75px 25%; }
+  padding: 105px 25% 45px 25%;
+  visibility: hidden; }
 
 #ballad-page .button-container {
-  margin-top: 50px;
-  margin-bottom: 25px; }
+  margin-top: 80px;
+  margin-bottom: -5px;
+  visibility: hidden; }
 
 #ballad-page .button {
   border: 1.5px solid #ab0061; }

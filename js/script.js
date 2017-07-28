@@ -6,8 +6,6 @@
 
 // FIXDED HEADER ON SCROLL
 
-$("header").css("position", "fixed");
-
 var lastScrollTop = 0;
 // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
 window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
@@ -23,6 +21,14 @@ window.addEventListener("scroll", function(){ // or window.addEventListener("scr
    }
    lastScrollTop = st;
 }, false);
+
+
+// MAIN NAV MOBILE DROPDOWN
+
+$(".main-nav-mobile-icon").on( "click", function() {
+  $(".main-nav-mobile-dropdown").slideToggle();
+  $(".box-shadow-cover").slideToggle();
+});
 
 
 // BUTTON COLOR CHANGE

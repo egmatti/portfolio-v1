@@ -28,18 +28,18 @@
 a {
   outline: none; }
 
-h1, .main-nav a, h2, h3, h4, h5, h6 {
+h1, .main-nav a, .main-nav-mobile a, h2, h3, h4, h5, h6 {
   color: #0b0b0b;
   letter-spacing: 0.15rem;
   text-transform: uppercase; }
 
-h1, .main-nav a, h2 {
+h1, .main-nav a, .main-nav-mobile a, h2 {
   font-weight: 700; }
 
 h3, h4, h5 {
   font-weight: 600; }
 
-h1, .main-nav a {
+h1, .main-nav a, .main-nav-mobile a {
   font-size: 2rem; }
 
 h2 {
@@ -103,7 +103,7 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1, .main-nav a {
+h1, .main-nav a, .main-nav-mobile a {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -798,18 +798,67 @@ template {
     .main-nav a span:hover {
       color: #fb6365; }
 
-.main-nav-mobile {
+.main-nav-mobile-icon {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: #0b0b0b; }
-  .main-nav-mobile:hover {
+  .main-nav-mobile-icon:hover {
     color: #0b0b0b; }
   @media (min-width: 1026px) {
-    .main-nav-mobile {
+    .main-nav-mobile-icon {
       display: none; } }
+
+.box-shadow-cover {
+  background: #fff;
+  display: none;
+  height: 10px;
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  z-index: 10; }
+
+.main-nav-mobile-dropdown {
+  -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
+  background: #fff;
+  display: none;
+  height: 120px;
+  position: absolute;
+  top: 80px;
+  width: 100%; }
+
+.main-nav-mobile {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+
+.main-nav-mobile li {
+  list-style-type: none;
+  padding-bottom: 10px; }
+
+.main-nav-mobile__item--last {
+  padding-right: 13px;
+  padding-bottom: 0; }
+
+.main-nav-mobile a {
+  color: #0b0b0b;
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  text-decoration: none; }
+  .main-nav-mobile a span {
+    font-family: "Milkshake", "Avenir Next", Helvetica, sans-serif;
+    font-size: 0.78125rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    text-transform: lowercase;
+    vertical-align: top; }
 
 .directory-nav-container {
   height: 575px;
@@ -1073,6 +1122,7 @@ header {
   box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
   background: #fff;
   height: 80px;
+  position: fixed;
   width: 100%;
   z-index: 100; }
 
@@ -1088,7 +1138,7 @@ header .main-nav__item--last {
   padding-left: 13px;
   padding-right: 0; }
 
-header .main-nav-mobile {
+header .main-nav-mobile-icon {
   float: right;
   margin-right: 5%; }
 
@@ -1184,7 +1234,7 @@ footer .main-nav__item--first {
   top: 80px;
   width: 100%; }
 
-.headline-container h1, .headline-container .main-nav a, .main-nav .headline-container a {
+.headline-container h1, .headline-container .main-nav a, .main-nav .headline-container a, .headline-container .main-nav-mobile a, .main-nav-mobile .headline-container a {
   -webkit-text-shadow: 0px 0.5px 5px rgba(11, 11, 11, 0.4);
   -moz-text-shadow: 0px 0.5px 5px rgba(11, 11, 11, 0.4);
   text-shadow: 0px 0.5px 5px rgba(11, 11, 11, 0.4);
@@ -1314,7 +1364,7 @@ footer .main-nav__item--first {
       padding: 50px 10%; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  #home-page .about-section h1, #home-page .about-section .main-nav a, .main-nav #home-page .about-section a {
+  #home-page .about-section h1, #home-page .about-section .main-nav a, .main-nav #home-page .about-section a, #home-page .about-section .main-nav-mobile a, .main-nav-mobile #home-page .about-section a {
     font-size: 1.75rem; } }
 
 #home-page .about-section img {
@@ -1915,7 +1965,7 @@ footer .main-nav__item--first {
   height: -webkit-calc(100% - 130px);
   height: -moz-calc(100% - 130px);
   height: calc(100% - 130px); }
-  #the-latest-page .headline-container h1 span, #the-latest-page .headline-container .main-nav a span, .main-nav #the-latest-page .headline-container a span {
+  #the-latest-page .headline-container h1 span, #the-latest-page .headline-container .main-nav a span, .main-nav #the-latest-page .headline-container a span, #the-latest-page .headline-container .main-nav-mobile a span, .main-nav-mobile #the-latest-page .headline-container a span {
     font-family: "Milkshake", "Avenir Next", Helvetica, sans-serif;
     font-size: 1.875rem;
     font-weight: 400;

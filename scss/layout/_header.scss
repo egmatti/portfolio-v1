@@ -6,6 +6,7 @@ header {
   @include box-shadow($b: 7px);
   background: $color-header;
   height: 80px;
+  position: fixed;
   width: 100%;
   z-index: 100;
 }
@@ -25,7 +26,7 @@ header .main-nav__item--last {
   padding-right: 0;
 }
 
-header .main-nav-mobile {
+header .main-nav-mobile-icon {
   float: right;
   margin-right: $margin-nav;
 }

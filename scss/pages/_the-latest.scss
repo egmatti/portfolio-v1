@@ -6,12 +6,22 @@
 
 #the-latest-page .hero-section {
   @include bg-image ($image-folder: "the-latest", $bg-image: "corkboard");
+
+  @include media-query(small) {
+    @include bg-image ($image-folder: "the-latest", $bg-image: "corkboard-mobile");
+  }
 }
 
 #the-latest-page .headline-container {
   height: -webkit-calc(100% - 130px);
   height:   -moz-calc(100% - 130px);
   height:     calc(100% - 130px);
+
+  @include media-query(small) {
+    height: -webkit-calc(100% - 105px);
+    height:   -moz-calc(100% - 105px);
+    height:     calc(100% - 105px);
+  }
 
   h1 span {
     font-family: $font-stack-accent;
@@ -20,6 +30,10 @@
     letter-spacing: 0rem;
     text-transform: lowercase;
     vertical-align: top;
+
+    @include media-query(small) {
+      font-size: $font-size-page-title-accent-mobile;
+    }
   }
 }
 
@@ -39,6 +53,10 @@
   float: left;
   // Height is being calculated in the-latest.js
   padding-top: $padding-div;
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
 #the-latest-page .push-pin-container {

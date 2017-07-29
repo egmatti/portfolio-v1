@@ -18,9 +18,9 @@
   height:     calc(100% - 130px);
 
   @include media-query(small) {
-    height: -webkit-calc(100% - 80px);
-    height:   -moz-calc(100% - 80px);
-    height:     calc(100% - 80px);
+    height: -webkit-calc(100% - 105px);
+    height:   -moz-calc(100% - 105px);
+    height:     calc(100% - 105px);
   }
 }
 

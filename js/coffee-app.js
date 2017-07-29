@@ -4,6 +4,8 @@
 
 // OVERVIEW SECTION FADE IN ON SCROLL
 
+const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
+
 // Get the position from the top of the page
 var startY = 80;
 
@@ -18,8 +20,15 @@ $(window).on("scroll", function(){
 function checkY(){
   if( $(window).scrollTop() > startY ){
     $(window).off("scroll");
-    $overviewLeft.velocity({opacity: 1, translateY: "-30px"}, {visibility: "visible", duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
-    $overviewRight.velocity({opacity: 1, translateY: "-67.5px"}, {visibility: "visible", delay: 225, duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
+    if (mediaQuerySmall.matches) {
+      // window width is less than 767px
+      $overviewLeft.velocity({translateY: "0px"});
+      $overviewRight.velocity({translateY: "0px"});
+    } else {
+      // window width is at least 767px
+      $overviewLeft.velocity({opacity: 1, translateY: "-30px"}, {visibility: "visible", duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
+      $overviewRight.velocity({opacity: 1, translateY: "-30px"}, {visibility: "visible", delay: 225, duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
+    }
   }
 };
 

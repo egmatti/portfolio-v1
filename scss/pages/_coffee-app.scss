@@ -25,6 +25,11 @@
 #coffee-app-page .overview-section {
   margin: 0 $margin-page-horizontal;
   width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
 }
 
 #coffee-app-page .overview-left, .overview-right {
@@ -39,8 +44,18 @@
   }
 }
 
+#about-page .overview-right {
+  @include media-query(small) {
+    margin-bottom: $padding-div;
+  }
+}
+
 #coffee-app-page .overview-right img {
   width: 55%;
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
 
@@ -61,6 +76,22 @@
   margin-left: $margin-section-horizontal;
   padding: ($padding-div * 2) 0;
   width: $width-page;
+
+  @include media-query(small) {
+    margin-left: 0;
+    padding: $padding-div 0;
+    width: 100%;
+  }
+}
+
+#coffee-app-page .headline-mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+    padding: 0 $margin-headline-mobile-horizontal $margin-body-text $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
 }
 
 #coffee-app-page .left-image {
@@ -73,12 +104,33 @@
   object-fit: contain;
   position: relative;
   width: 40%;
+
+  @include media-query(small) {
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    left: 0;
+    margin: 0 $margin-image-mobile-horizontal;
+    position: static;
+    width: $width-image-mobile;
+  }
 }
 
 #coffee-app-page .right-description {
   height: auto;
   padding-right: $margin-section-horizontal;
   width: 45%;
+
+  @include media-query(small) {
+    padding: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  h2 {
+    @include media-query(small) {
+      display: none;
+    }
+  }
 
   span {
     font-weight: $font-weight-bold;
@@ -93,15 +145,39 @@
   @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "coffee-app/palm-trees");
   height: 615px;
   width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $padding-div 0;
+    width: 100%;
+  }
 }
 
 #coffee-app-page .mockups-section h2 {
   padding-left: $margin-page-horizontal;
   padding-top: $padding-div;
+
+  @include media-query(small) {
+    display: block;
+    padding: 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
 }
 
 #coffee-app-page .synced-slider-for img {
   max-width: 200px;
+
+  @include media-query(small) {
+    margin: $margin-body-text 20% $padding-div 20%;
+    max-width: none;
+    width: 60%;
+  }
+}
+
+.synced-slider-nav {
+  @include media-query(small) {
+    width: 60%;
+  }
 }
 
 
@@ -112,6 +188,10 @@
   clear: both;
   // Height is being calculated in coffee-app.js
   width: $width-page;
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
 #coffee-app-page .prototype-image-container {

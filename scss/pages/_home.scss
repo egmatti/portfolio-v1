@@ -263,8 +263,11 @@
 // DIVIDER
 
 #home-page .divider-white {
-  @include media-query(large) {
-    display: none;
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+    height: 35px;
   }
 }
 

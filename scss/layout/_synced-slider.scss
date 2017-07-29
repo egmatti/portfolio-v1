@@ -9,10 +9,21 @@
   margin-right: 5%;
   width: 55%;
 
+  @include media-query(small) {
+    display: block;
+    float: none;
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
   h3 {
     display: inline-block;
     padding-top: $padding-div;
     width: auto;
+
+    @include media-query(small) {
+      padding-top: $margin-body-text;
+    }
   }
 
   p span {
@@ -26,11 +37,22 @@
   object-fit: contain;
   margin-right: 10%;
   width: 20%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    margin: $margin-body-text $margin-image-mobile-horizontal $padding-div $margin-image-mobile-horizontal;
+    width: $width-image-mobile;
+  }
 }
 
 .synced-slider-nav {
   margin: auto;
   width: 30%;
+
+  @include media-query(small) {
+    width: $width-image-mobile;
+  }
 
     img {
       left: 25%;

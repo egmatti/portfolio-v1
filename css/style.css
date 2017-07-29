@@ -2024,11 +2024,20 @@ footer .main-nav__item--first {
   flex-direction: column;
   padding: 105px 25% 45px 25%;
   visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .overview-container {
+      padding: 50px 10%;
+      visibility: visible; } }
 
 #ballad-page .button-container {
   margin-top: 80px;
-  margin-bottom: -5px;
+  margin-bottom: -30px;
   visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .button-container {
+      margin-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
 
 #ballad-page .button {
   border: 1.5px solid #ab0061; }
@@ -2044,37 +2053,77 @@ footer .main-nav__item--first {
   background: #f3f3f3;
   height: 615px;
   width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .style-guides-section {
+      height: auto;
+      padding: 50px 0; } }
 
 #ballad-page .style-guides-section h2 {
   padding-left: 5%;
   padding-top: 50px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .style-guides-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
 
-#ballad-page .synced-slider-for .margin-top {
+#ballad-page .colors-headline {
   margin-top: 25px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .colors-headline {
+      margin-top: 37.5px; } }
 
-#ballad-page .colors li {
-  display: inline-block;
-  list-style-type: none;
-  padding-right: 12.5px;
-  width: auto; }
-  #ballad-page .colors li img {
-    float: left;
-    margin-right: 0;
-    width: 50px; }
-
-#ballad-page .typefaces li {
-  display: inline-block;
-  list-style-type: none;
-  padding-right: 25px; }
-  #ballad-page .typefaces li img {
-    float: left;
-    height: 14px;
-    margin-right: 0;
-    object-fit: contain;
+#ballad-page .colors {
+  margin-top: 25px; }
+  #ballad-page .colors li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 12.5px;
     width: auto; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #ballad-page .colors li {
+        padding-right: 8.75px; } }
+    #ballad-page .colors li img {
+      float: left;
+      margin-right: 0;
+      width: 50px; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        #ballad-page .colors li img {
+          margin: 0;
+          width: 35px; } }
+
+#ballad-page .typefaces-headline {
+  margin-top: 25px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .typefaces-headline {
+      margin-top: 37.5px; } }
+
+#ballad-page .typefaces {
+  margin-top: 25px; }
+  #ballad-page .typefaces li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 25px; }
+    #ballad-page .typefaces li img {
+      float: left;
+      height: 14px;
+      margin: 0;
+      object-fit: contain;
+      width: auto; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #ballad-page .moodboards-headline {
+    display: block;
+    padding: 37.5px 10% 0 10%;
+    width: 80%; } }
 
 #ballad-page .synced-slider-for .moodboards {
   margin-top: 25px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .synced-slider-for .moodboards {
+      margin: 25px 10% 50px 10%;
+      max-width: none;
+      width: 80%; } }
 
 #ballad-page .synced-slider-nav {
   position: relative;
@@ -2092,6 +2141,10 @@ footer .main-nav__item--first {
   background-position: center;
   height: 540px;
   width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .logo-section {
+      height: auto;
+      padding: 50px 0; } }
 
 #ballad-page .logo-image-container {
   align-items: center;
@@ -2101,6 +2154,9 @@ footer .main-nav__item--first {
   height: 100%;
   margin-left: 5%;
   width: 40.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .logo-image-container {
+      display: none; } }
   #ballad-page .logo-image-container img {
     object-fit: contain;
     width: 55%; }
@@ -2114,22 +2170,48 @@ footer .main-nav__item--first {
   height: 100%;
   margin-right: 5%;
   width: 49.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .logo-description {
+      display: block;
+      float: none;
+      height: auto;
+      margin: 0 10%;
+      width: 80%; } }
   #ballad-page .logo-description span {
     font-weight: 700;
     padding-right: 2.5px; }
 
+.logo-mobile {
+  display: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .logo-mobile {
+      display: block;
+      margin: 50px 20% 0 20%;
+      object-fit: contain;
+      width: 60%; } }
+
 #ballad-page .desktop-mockup-section {
   background: #fff;
+  clear: both;
   height: auto;
   width: 100%; }
 
 #ballad-page .desktop-mockup-section h2 {
   padding-left: 5%;
   padding-top: 75px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .desktop-mockup-section h2 {
+      display: block;
+      padding: 50px 5% 0 5%;
+      width: 90%; } }
 
 #ballad-page .desktop-mockup-section .mockup-image-container {
   margin: 0 10%;
   width: 80%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .desktop-mockup-section .mockup-image-container {
+      margin: 0 5%;
+      width: 90%; } }
   #ballad-page .desktop-mockup-section .mockup-image-container img {
     -webkit-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
     -moz-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
@@ -2137,10 +2219,16 @@ footer .main-nav__item--first {
     margin: 50px 0 75px 0;
     object-fit: contain;
     width: 100%; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #ballad-page .desktop-mockup-section .mockup-image-container img {
+        margin-bottom: 50px; } }
 
 #ballad-page .mobile-prototype-section {
   background: #f3f3f3;
   width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .mobile-prototype-section {
+      display: none; } }
 
 #ballad-page .mobile-prototype-image-container {
   align-items: center;
@@ -2171,10 +2259,17 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: center;
   width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .responsive-site-section {
+      background: #f3f3f3; } }
   #ballad-page .responsive-site-section img {
     object-fit: contain;
     transform: translateX(35px);
     width: 60%; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #ballad-page .responsive-site-section img {
+        transform: translateX(10px);
+        width: 90%; } }
 
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");

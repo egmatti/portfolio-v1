@@ -7,6 +7,12 @@
   margin: $margin-div 0;
   transform: translateY(-50px);
   width: 100%;
+
+  @include media-query(small) {
+    @include flexbox($direction: column);
+    margin: 0;
+    transform: translateY(0px);
+  }
 }
 
 .directory__row--last {

@@ -70,6 +70,17 @@
     width:    -moz-calc(100% - #{$width-directory-nav-container} - #{$margin-div});
     width:         calc(100% - #{$width-directory-nav-container} - #{$margin-div});
 
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-query(small) {
+      margin: $padding-div $margin-directory-mobile-horizontal ($padding-div / 2) $margin-directory-mobile-horizontal;
+      position: static;
+      top: 0;
+      width: $width-directory-mobile;
+    }
+
     img {
       object-fit: contain;
     }
@@ -83,11 +94,11 @@
 
       h2 {
         padding-top: 16.4061987px; // The same ratio as the h1 padding in the hero
-      }
-    }
 
-    &:hover {
-      cursor: pointer;
+        @include media-query(small) {
+          font-size: 1rem;
+        }
+      }
     }
   }
 
@@ -96,6 +107,15 @@
     width: -webkit-calc((100% - 50px) / 2);
     width:  -moz-calc((100% - 50px) / 2);
     width:    calc((100% - 50px) / 2); // Half of width of content section minus margin
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-query(small) {
+      margin: ($padding-div / 2) $margin-directory-mobile-horizontal;
+      width: $width-directory-mobile;
+    }
 
     .directory__image-container {
       // Height is being calculated in script.js
@@ -117,11 +137,11 @@
       h3 {
         font-weight: $font-weight-bold;
         padding-top: 14.0631153px; // The same ratio as the h1 padding in the hero
-      }
-    }
 
-    &:hover {
-      cursor: pointer;
+        @include media-query(small) {
+          font-size: 1rem;
+        }
+      }
     }
   }
 
@@ -130,6 +150,15 @@
     width: -webkit-calc((100% - 100px) / 3);
     width:  -moz-calc((100% - 100px) / 3);
     width:    calc((100% - 100px) / 3); // Third of width of content section minus margins
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-query(small) {
+      margin: ($padding-div / 2) $margin-directory-mobile-horizontal;
+      width: $width-directory-mobile;
+    }
 
     .directory__image-container {
       // Height is being calculated in script.js
@@ -151,11 +180,11 @@
       h4 {
         font-weight: $font-weight-bold;
         padding-top: 11.7187134px; // The same ratio as the h1 padding in the hero
-      }
-    }
 
-    &:hover {
-      cursor: pointer;
+        @include media-query(small) {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }

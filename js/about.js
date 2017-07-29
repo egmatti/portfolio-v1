@@ -35,34 +35,6 @@ function checkY(){
 checkY();
 
 
-// CONTACT SECTION FADE IN ON SCROLL
-
-// var contactSectionTop = $("#about-page .contact-section").offset().top;
-// var windowBottom = $(window).scrollTop() + $(window).height();
-// console.log(windowBottom);
-//
-// // Set contact div's displays to "none"
-// var $contactSectionLeft = $("#about-page .contact-section .left-column");
-// var $contactSectionRight = $("#about-page .contact-section .right-column");
-// $contactSectionLeft.css("display", "none");
-// $contactSectionRight.css("display", "none");
-//
-// $(window).on("scroll", function(){
-//     checkContactSectionY();
-// });
-//
-// function checkContactSectionY(){
-//     if( windowBottom  > contactSectionTop ){
-//       $(window).off("scroll");
-//       $contactSectionLeft.velocity("fadeIn", {display: "inline-block", duration: 500});
-//       $contactSectionRight.velocity("fadeIn", {display: "inline-block", duration: 500});
-//     }
-// };
-//
-// // Do this on load just in case the user starts half way down the page
-// checkContactSectionY();
-
-
 // SCROLL REVEAL
 
 window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});

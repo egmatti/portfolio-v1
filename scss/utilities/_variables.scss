@@ -138,6 +138,7 @@ $border-directory-nav: $border-size solid $color-border;
 
 $margin-page-horizontal: 5%;
 $margin-page-mobile-horizontal: 10%;
+$margin-page-blog-mobile-horizontal: 5%;
 $margin-directory-mobile-horizontal: 5%;
 $margin-section: 125px 10%;
 $margin-section-vertical: 125px;
@@ -157,6 +158,7 @@ $padding-footer-row: 16px;
 $padding-footer-social-media-item: 0 10px;
 $padding-blog-social-media-item: 0 35px;
 $padding-page-title: 1.5 * 18.75px;
+$padding-page-title-mobile: 18.75px;
 
 
 // HEIGHTS AND WIDTHS
@@ -165,6 +167,7 @@ $height-content-offset: -100px;
 
 $width-page: 90%;
 $width-page-blog: 80%;
+$width-page-blog-mobile: 90%;
 $width-page-mobile: 80%;
 $width-directory-mobile: 90%;
 $width-directory-nav-container: 350px;

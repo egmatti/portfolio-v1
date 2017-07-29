@@ -31,6 +31,7 @@
 
   @include media-query(small) {
     font-size: $font-size-page-title-mobile;
+    padding-top: $padding-page-title-mobile;
   }
 }
 

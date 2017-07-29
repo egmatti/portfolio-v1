@@ -33,6 +33,11 @@
   margin: 0 $margin-page-horizontal ($margin-section-vertical * 1.5) $margin-page-horizontal;
   position: relative;
   width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-directory-mobile-horizontal (($margin-section-vertical * 1.5) / 2) $margin-directory-mobile-horizontal;
+    width: $width-directory-mobile;
+  }
 }
 
 #work-page .directory-nav-container {

@@ -75,9 +75,9 @@
     }
 
     @include media-query(small) {
-      margin: 0 $margin-directory-mobile-horizontal ($padding-div / 2) $margin-directory-mobile-horizontal;
+      margin: 0 0 ($padding-div / 2) 0;
       top: ($height-content-offset / 2);
-      width: $width-directory-mobile;
+      width: 100%;
     }
 
     img {
@@ -117,8 +117,8 @@
     }
 
     @include media-query(small) {
-      margin: ($padding-div / 2) $margin-directory-mobile-horizontal;
-      width: $width-directory-mobile;
+      margin: ($padding-div / 2) 0;
+      width: 100%;
     }
 
     .directory__image-container {
@@ -165,8 +165,8 @@
     }
 
     @include media-query(small) {
-      margin: ($padding-div / 2) $margin-directory-mobile-horizontal;
-      width: $width-directory-mobile;
+      margin: ($padding-div / 2) 0;
+      width: 100%;
     }
 
     .directory__image-container {

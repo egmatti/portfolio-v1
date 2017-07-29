@@ -6,12 +6,22 @@
 
 #blog-post-page .hero-section {
   @include bg-image ($image-folder: "the-latest", $bg-image: "corkboard");
+
+  @include media-query(small) {
+    @include bg-image ($image-folder: "the-latest", $bg-image: "corkboard-mobile");
+  }
 }
 
 #blog-post-page .headline-container {
   height: -webkit-calc(100% - 130px);
   height:   -moz-calc(100% - 130px);
   height:     calc(100% - 130px);
+
+  @include media-query(small) {
+    height: -webkit-calc(100% - 105px);
+    height:   -moz-calc(100% - 105px);
+    height:     calc(100% - 105px);
+  }
 }
 
 
@@ -30,6 +40,10 @@
     left: -8px;
     position: absolute;
     top: 100px; // Positive of $height-content-offset
+
+    @include media-query(small) {
+      top: 50px; // Positive of ($height-content-offset / 2)
+    }
   }
 
   &:after {
@@ -37,11 +51,25 @@
     position: absolute;
     right: -8px;
     top: 100px; // Positive of $height-content-offset
+
+    @include media-query(small) {
+      top: 50px; // Positive of ($height-content-offset / 2)
+    }
+  }
+
+  @include media-query(small) {
+    top: ($height-content-offset / 2);
+    margin: 0 $margin-page-blog-mobile-horizontal;
+    width: $width-page-blog-mobile;
   }
 }
 
 #blog-post-page .push-pin {
   padding-bottom: 20px;
+
+  @include media-query(small) {
+    padding-bottom: 0;
+  }
 }
 
 #blog-post-page .share-figure {
@@ -51,6 +79,10 @@
   margin: 0;
   position: relative;
   width: 100px;
+
+  @include media-query(small) {
+    display: none;
+  }
 
   figcaption {
     height: auto;
@@ -89,6 +121,14 @@
   margin-bottom: $margin-section-vertical;
   position: relative;
   width: 600px;
+
+  @include media-query(small) {
+    float: none;
+    left: 0;
+    margin: 0 $margin-page-blog-mobile-horizontal ($margin-section-vertical / 2) $margin-page-blog-mobile-horizontal;
+    position: relative;
+    width: $width-page-blog-mobile;
+  }
 }
 
 #blog-post-page .blog-post__paragraph--first {
@@ -106,4 +146,8 @@
   position: relative;
   right: 25px;
   width: 300px;
+
+  @include media-query(small) {
+    display: none;
+  }
 }

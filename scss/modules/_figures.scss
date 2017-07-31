@@ -80,6 +80,12 @@
       width: 100%;
     }
 
+    @include media-query(medium) {
+      width: -webkit-calc(100% - #{$width-directory-nav-container-tablet} - #{$margin-div});
+      width:    -moz-calc(100% - #{$width-directory-nav-container-tablet} - #{$margin-div});
+      width:         calc(100% - #{$width-directory-nav-container-tablet} - #{$margin-div});
+    }
+
     img {
       object-fit: contain;
     }
@@ -93,6 +99,10 @@
         @include media-query(small) {
           font-size: 0.371875rem; // The desktop size divided by 2
         }
+
+        @include media-query(medium) {
+          font-size: 0.53125rem; // The desktop size divided by 1.4
+        }
       }
 
       h2 {
@@ -101,6 +111,11 @@
         @include media-query(small) {
           font-size: 1rem;
           padding-top: 8.20309935px; // The desktop padding divided by 2
+        }
+
+        @include media-query(medium) {
+          font-size: 1.25rem; // The desktop h2 divided by 1.4
+          padding-top: 11.7187134px; // The desktop padding divided by 1.4
         }
       }
     }
@@ -140,6 +155,10 @@
         @include media-query(small) {
           font-size: 0.371875rem; // The h2 desktop size divided by 2
         }
+
+        @include media-query(medium) {
+          font-size: 0.45535714rem; // The h3 desktop size divided by 1.4
+        }
       }
 
       h3 {
@@ -149,6 +168,11 @@
         @include media-query(small) {
           font-size: 1rem;
           padding-top: 8.20309935px; // The h2 desktop padding divided by 2
+        }
+
+        @include media-query(medium) {
+          font-size: 1.07142857rem; // The desktop h3 divided by 1.4
+          padding-top: 10.0450824px; // The desktop padding divided by 1.4
         }
       }
     }
@@ -188,6 +212,10 @@
         @include media-query(small) {
           font-size: 0.371875rem; // The h2 desktop size divided by 2
         }
+
+        @include media-query(medium) {
+          font-size: 0.29513889rem; // The h4 desktop size divided by 1.8
+        }
       }
 
       h4 {
@@ -197,6 +225,11 @@
         @include media-query(small) {
           font-size: 1rem;
           padding-top: 8.20309935px; // The desktop padding divided by 2
+        }
+
+        @include media-query(medium) {
+          font-size: 0.69444rem; // The desktop h4 divided by 1.8
+          padding-top: 6.51039633px; // The desktop padding divided by 1.8
         }
       }
     }

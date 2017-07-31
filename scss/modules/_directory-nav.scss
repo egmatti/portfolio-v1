@@ -6,10 +6,18 @@
   height: 575px;
   width: $width-directory-nav-container;
 
+  @include media-query(medium) {
+    width: $width-directory-nav-container-tablet;
+  }
+
   h4 {
     position: relative;
     text-align: center;
     top: 0;
+
+    @include media-query(medium) {
+      font-size: (1.25rem / 1.4);
+    }
   }
 }
 
@@ -44,6 +52,10 @@
       background: $color-blog-post-hover;
     }
 
+    @include media-query(medium) {
+      height: 50px;
+    }
+
     img {
       @include vertical-align;
       display: inline-block;
@@ -65,12 +77,20 @@
       span {
         @extend %date;
         font-size: (0.85 * 0.85rem);
+
+        @include media-query(medium) {
+          font-size: ((0.85 * 0.85rem) / 1.4);
+        }
       }
 
       h5 {
         color: $color-blog-post-title;
         font-size: (0.85 * 1rem);
         padding-top: 2.5px;
+
+        @include media-query(medium) {
+          font-size: ((0.85 * 1rem) / 1.4);
+        }
       }
     }
   }

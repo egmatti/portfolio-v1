@@ -10,6 +10,10 @@
   @include media-query(small) {
     @include bg-image ($image-folder: "work", $bg-image: "triangles-mobile");
   }
+
+  @include media-query(medium) {
+    @include bg-image ($image-folder: "work", $bg-image: "triangles-tablet");
+  }
 }
 
 #work-page .headline-container {
@@ -18,6 +22,12 @@
   height:     calc(100% - 130px);
 
   @include media-query(small) {
+    height: -webkit-calc(100% - 105px);
+    height:   -moz-calc(100% - 105px);
+    height:     calc(100% - 105px);
+  }
+
+  @include media-query(medium) {
     height: -webkit-calc(100% - 105px);
     height:   -moz-calc(100% - 105px);
     height:     calc(100% - 105px);

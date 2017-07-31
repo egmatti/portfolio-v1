@@ -867,10 +867,16 @@ template {
 .directory-nav-container {
   height: 575px;
   width: 350px; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .directory-nav-container {
+      width: 175px; } }
   .directory-nav-container h4 {
     position: relative;
     text-align: center;
     top: 0; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .directory-nav-container h4 {
+        font-size: 0.89286rem; } }
 
 .directory-nav-border {
   border-right: 1.5px solid #f3f3f3;
@@ -898,6 +904,9 @@ template {
     width: 100%; }
     .directory-nav__post:hover {
       background: #f3f3f3; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .directory-nav__post {
+        height: 50px; } }
     .directory-nav__post img {
       position: relative;
       top: 50%;
@@ -923,10 +932,16 @@ template {
       width: 55%; }
       .directory-nav__post article span {
         font-size: 0.7225rem; }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory-nav__post article span {
+            font-size: 0.51607rem; } }
       .directory-nav__post article h5 {
         color: #1fd4f9;
         font-size: 0.85rem;
         padding-top: 2.5px; }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory-nav__post article h5 {
+            font-size: 0.60714rem; } }
 
 .divider-white {
   background: #fff;
@@ -1080,6 +1095,11 @@ textarea {
         margin: 0 0 25px 0;
         top: -50px;
         width: 100%; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .directory__figure--first-row {
+        width: -webkit-calc(100% - 175px - 50px);
+        width: -moz-calc(100% - 175px - 50px);
+        width: calc(100% - 175px - 50px); } }
     .directory__figure--first-row img {
       object-fit: contain; }
     .directory__figure--first-row figcaption {
@@ -1089,12 +1109,19 @@ textarea {
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--first-row figcaption span {
             font-size: 0.371875rem; } }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory__figure--first-row figcaption span {
+            font-size: 0.53125rem; } }
       .directory__figure--first-row figcaption h2 {
         padding-top: 16.4061987px; }
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--first-row figcaption h2 {
             font-size: 1rem;
             padding-top: 8.20309935px; } }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory__figure--first-row figcaption h2 {
+            font-size: 1.25rem;
+            padding-top: 11.7187134px; } }
   .directory__figure--second-row {
     width: -webkit-calc((100% - 50px) / 2);
     width: -moz-calc((100% - 50px) / 2);
@@ -1117,6 +1144,9 @@ textarea {
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--second-row figcaption span {
             font-size: 0.371875rem; } }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory__figure--second-row figcaption span {
+            font-size: 0.45535714rem; } }
       .directory__figure--second-row figcaption h3 {
         font-weight: 700;
         padding-top: 14.0631153px; }
@@ -1124,6 +1154,10 @@ textarea {
           .directory__figure--second-row figcaption h3 {
             font-size: 1rem;
             padding-top: 8.20309935px; } }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory__figure--second-row figcaption h3 {
+            font-size: 1.07142857rem;
+            padding-top: 10.0450824px; } }
   .directory__figure--other-row {
     width: -webkit-calc((100% - 100px) / 3);
     width: -moz-calc((100% - 100px) / 3);
@@ -1146,6 +1180,9 @@ textarea {
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--other-row figcaption span {
             font-size: 0.371875rem; } }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory__figure--other-row figcaption span {
+            font-size: 0.29513889rem; } }
       .directory__figure--other-row figcaption h4 {
         font-weight: 700;
         padding-top: 11.7187134px; }
@@ -1153,6 +1190,10 @@ textarea {
           .directory__figure--other-row figcaption h4 {
             font-size: 1rem;
             padding-top: 8.20309935px; } }
+        @media (min-width: 768px) and (max-width: 1025px) {
+          .directory__figure--other-row figcaption h4 {
+            font-size: 0.69444rem;
+            padding-top: 6.51039633px; } }
 
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);
@@ -1890,12 +1931,23 @@ footer .main-nav__item--first {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #work-page .hero-section {
+      background: url("../images/work/triangles-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; } }
 
 #work-page .headline-container {
   height: -webkit-calc(100% - 130px);
   height: -moz-calc(100% - 130px);
   height: calc(100% - 130px); }
   @media (min-width: 0px) and (max-width: 767px) {
+    #work-page .headline-container {
+      height: -webkit-calc(100% - 105px);
+      height: -moz-calc(100% - 105px);
+      height: calc(100% - 105px); } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #work-page .headline-container {
       height: -webkit-calc(100% - 105px);
       height: -moz-calc(100% - 105px);
@@ -2393,12 +2445,23 @@ footer .main-nav__item--first {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #the-latest-page .hero-section {
+      background: url("../images/the-latest/corkboard-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; } }
 
 #the-latest-page .headline-container {
   height: -webkit-calc(100% - 130px);
   height: -moz-calc(100% - 130px);
   height: calc(100% - 130px); }
   @media (min-width: 0px) and (max-width: 767px) {
+    #the-latest-page .headline-container {
+      height: -webkit-calc(100% - 105px);
+      height: -moz-calc(100% - 105px);
+      height: calc(100% - 105px); } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #the-latest-page .headline-container {
       height: -webkit-calc(100% - 105px);
       height: -moz-calc(100% - 105px);

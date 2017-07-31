@@ -2516,12 +2516,23 @@ footer .main-nav__item--first {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #blog-post-page .hero-section {
+      background: url("../images/the-latest/corkboard-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; } }
 
 #blog-post-page .headline-container {
   height: -webkit-calc(100% - 130px);
   height: -moz-calc(100% - 130px);
   height: calc(100% - 130px); }
   @media (min-width: 0px) and (max-width: 767px) {
+    #blog-post-page .headline-container {
+      height: -webkit-calc(100% - 105px);
+      height: -moz-calc(100% - 105px);
+      height: calc(100% - 105px); } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #blog-post-page .headline-container {
       height: -webkit-calc(100% - 105px);
       height: -moz-calc(100% - 105px);
@@ -2555,10 +2566,17 @@ footer .main-nav__item--first {
       top: -50px;
       margin: 0 5%;
       width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #blog-post-page .content-section {
+      margin: 0 5%;
+      width: 90%; } }
 
 #blog-post-page .push-pin {
   padding-bottom: 20px; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #blog-post-page .push-pin {
+      padding-bottom: 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #blog-post-page .push-pin {
       padding-bottom: 0; } }
 
@@ -2570,6 +2588,9 @@ footer .main-nav__item--first {
   position: relative;
   width: 100px; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #blog-post-page .share-figure {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #blog-post-page .share-figure {
       display: none; } }
   #blog-post-page .share-figure figcaption {
@@ -2609,12 +2630,19 @@ footer .main-nav__item--first {
       margin: 0 5% 62.5px 5%;
       position: relative;
       width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #blog-post-page .blog-post-container {
+      float: none;
+      left: 0;
+      margin: 0 5% 62.5px 5%;
+      position: relative;
+      width: 90%; } }
 
 #blog-post-page .blog-post__paragraph--first {
   margin-top: 0px; }
 
 #blog-post-page .blog-post__image {
-  margin: 25px 0;
+  margin-top: 25px;
   object-fit: contain;
   width: 100%; }
 
@@ -2624,6 +2652,9 @@ footer .main-nav__item--first {
   right: 25px;
   width: 300px; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #blog-post-page .directory-nav-container {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #blog-post-page .directory-nav-container {
       display: none; } }
 

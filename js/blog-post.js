@@ -5,6 +5,7 @@
 // FIXED SHARE FIGURE ON SCROLL
 
 const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
+const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
 
 // Get the position from the top of the page
 var startY = 445;
@@ -18,6 +19,9 @@ function checkY(){
     if (mediaQuerySmall.matches) {
       // window width is less than 767px
 
+    } else if (mediaQueryMedium.matches) {
+      // window width is less than 1025px
+
     } else {
       // window width is at least 767px
       $("#blog-post-page figure").css({"margin-left": "8.25%", "position": "fixed", "transform": "translate(25px, -450px)"})
@@ -26,6 +30,9 @@ function checkY(){
   } else {
     if (mediaQuerySmall.matches) {
       // window width is less than 767px
+
+    } else if (mediaQueryMedium.matches) {
+      // window width is less than 1025px
 
     } else {
       // window width is at least 767px

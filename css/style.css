@@ -700,7 +700,7 @@ template {
   opacity: .75;
   color: black; }
 
-.directory-nav__post article span, .directory__figure figcaption div span, .directory__figure--first-row figcaption div span, .directory__figure--second-row figcaption div span, .directory__figure--other-row figcaption div span, .headline-container span, #home-page .blog-post-container span {
+.directory-nav__post article span, .headline-container span, #home-page .blog-post-container span {
   color: #a6a6a6;
   font-size: 0.85rem;
   font-weight: 600;
@@ -1081,6 +1081,11 @@ textarea {
       justify-content: center;
       flex-direction: column;
       width: 100%; }
+      .directory__figure figcaption div span, .directory__figure--first-row figcaption div span, .directory__figure--second-row figcaption div span, .directory__figure--other-row figcaption div span {
+        color: #a6a6a6;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase; }
   .directory__figure--first-row {
     margin-left: 50px;
     position: relative;
@@ -1105,23 +1110,23 @@ textarea {
     .directory__figure--first-row figcaption {
       padding: 15px 0px 7.5px 0px; }
       .directory__figure--first-row figcaption span {
-        font-size: 0.74375rem; }
+        font-size: 0.94595rem; }
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--first-row figcaption span {
-            font-size: 0.371875rem; } }
+            font-size: 0.54054rem; } }
         @media (min-width: 768px) and (max-width: 1025px) {
           .directory__figure--first-row figcaption span {
-            font-size: 0.53125rem; } }
+            font-size: 0.67568rem; } }
       .directory__figure--first-row figcaption h2 {
-        padding-top: 16.4061987px; }
+        padding-top: 1.02539rem; }
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--first-row figcaption h2 {
             font-size: 1rem;
-            padding-top: 8.20309935px; } }
+            padding-top: 0.58594rem; } }
         @media (min-width: 768px) and (max-width: 1025px) {
           .directory__figure--first-row figcaption h2 {
             font-size: 1.25rem;
-            padding-top: 11.7187134px; } }
+            padding-top: 0.73242rem; } }
   .directory__figure--second-row {
     width: -webkit-calc((100% - 50px) / 2);
     width: -moz-calc((100% - 50px) / 2);
@@ -1140,24 +1145,24 @@ textarea {
     .directory__figure--second-row figcaption {
       padding-top: 15px; }
       .directory__figure--second-row figcaption span {
-        font-size: 0.6375rem; }
+        font-size: 0.81081rem; }
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--second-row figcaption span {
-            font-size: 0.371875rem; } }
+            font-size: 0.54054rem; } }
         @media (min-width: 768px) and (max-width: 1025px) {
           .directory__figure--second-row figcaption span {
-            font-size: 0.45535714rem; } }
+            font-size: 0.57915rem; } }
       .directory__figure--second-row figcaption h3 {
         font-weight: 700;
-        padding-top: 14.0631153px; }
+        padding-top: 0.87891rem; }
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--second-row figcaption h3 {
             font-size: 1rem;
-            padding-top: 8.20309935px; } }
+            padding-top: 0.58594rem; } }
         @media (min-width: 768px) and (max-width: 1025px) {
           .directory__figure--second-row figcaption h3 {
-            font-size: 1.07142857rem;
-            padding-top: 10.0450824px; } }
+            font-size: 1.07143rem;
+            padding-top: 0.62779rem; } }
   .directory__figure--other-row {
     width: -webkit-calc((100% - 100px) / 3);
     width: -moz-calc((100% - 100px) / 3);
@@ -1176,24 +1181,24 @@ textarea {
     .directory__figure--other-row figcaption {
       padding-top: 15px; }
       .directory__figure--other-row figcaption span {
-        font-size: 0.53125rem; }
+        font-size: 0.67568rem; }
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--other-row figcaption span {
-            font-size: 0.371875rem; } }
+            font-size: 0.54054rem; } }
         @media (min-width: 768px) and (max-width: 1025px) {
           .directory__figure--other-row figcaption span {
-            font-size: 0.29513889rem; } }
+            font-size: 0.37538rem; } }
       .directory__figure--other-row figcaption h4 {
         font-weight: 700;
-        padding-top: 11.7187134px; }
+        padding-top: 0.73242rem; }
         @media (min-width: 0px) and (max-width: 767px) {
           .directory__figure--other-row figcaption h4 {
             font-size: 1rem;
-            padding-top: 8.20309935px; } }
+            padding-top: 0.58594rem; } }
         @media (min-width: 768px) and (max-width: 1025px) {
           .directory__figure--other-row figcaption h4 {
             font-size: 0.69444rem;
-            padding-top: 6.51039633px; } }
+            padding-top: 0.4069rem; } }
 
 header {
   -webkit-box-shadow: 0px 0.5px 7px 0px rgba(11, 11, 11, 0.15);

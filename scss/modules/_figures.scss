@@ -52,7 +52,10 @@
       width: 100%;
 
       span {
-        @extend %date;
+        color: $color-date;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
       }
 
       h2, h3, h4 {
@@ -94,28 +97,28 @@
       padding: 15px 0px 7.5px 0px;
 
       span {
-        font-size: 0.74375rem; // The same ratio as the span in the hero
+        font-size: (1.75rem / 1.85);
 
         @include media-query(small) {
-          font-size: 0.371875rem; // The desktop size divided by 2
+          font-size: ((1.75rem / 1.85) / 1.75); // The desktop size divided by 1.75
         }
 
         @include media-query(medium) {
-          font-size: 0.53125rem; // The desktop size divided by 1.4
+          font-size: ((1.75rem / 1.85) / 1.4); // The desktop size divided by 1.4
         }
       }
 
       h2 {
-        padding-top: 16.4061987px; // The same ratio as the h1 padding in the hero
+        padding-top: (1.75rem / 1.70666); // The same ratio as the h1 padding in the hero
 
         @include media-query(small) {
-          font-size: 1rem;
-          padding-top: 8.20309935px; // The desktop padding divided by 2
+          font-size: (1.75rem / 1.75); // The desktop h2 divided by 1.75
+          padding-top: ((1.75rem / 1.70666) / 1.75); // The desktop padding divided by 1.75
         }
 
         @include media-query(medium) {
-          font-size: 1.25rem; // The desktop h2 divided by 1.4
-          padding-top: 11.7187134px; // The desktop padding divided by 1.4
+          font-size: (1.75rem / 1.4); // The desktop h2 divided by 1.4
+          padding-top: ((1.75rem / 1.70666) / 1.4); // The desktop padding divided by 1.4
         }
       }
     }
@@ -150,29 +153,29 @@
       padding-top: 15px;
 
       span {
-        font-size: 0.6375rem; // The same ratio as the span in the hero
+        font-size: (1.5rem / 1.85); // The same ratio as the span in the hero
 
         @include media-query(small) {
-          font-size: 0.371875rem; // The h2 desktop size divided by 2
+          font-size: ((1.75rem / 1.85) / 1.75); // The h2 desktop size divided by 1.75
         }
 
         @include media-query(medium) {
-          font-size: 0.45535714rem; // The h3 desktop size divided by 1.4
+          font-size: ((1.5rem / 1.85) / 1.4); // The h3 desktop size divided by 1.4
         }
       }
 
       h3 {
         font-weight: $font-weight-bold;
-        padding-top: 14.0631153px; // The same ratio as the h1 padding in the hero
+        padding-top: (1.5rem / 1.70666); // The same ratio as the h1 padding in the hero
 
         @include media-query(small) {
-          font-size: 1rem;
-          padding-top: 8.20309935px; // The h2 desktop padding divided by 2
+          font-size: (1.75rem / 1.75); // The desktop h2 divided by 1.75
+          padding-top: ((1.75rem / 1.70666) / 1.75); // The desktop padding divided by 1.75
         }
 
         @include media-query(medium) {
-          font-size: 1.07142857rem; // The desktop h3 divided by 1.4
-          padding-top: 10.0450824px; // The desktop padding divided by 1.4
+          font-size: (1.5rem / 1.4); // The desktop h3 divided by 1.4
+          padding-top: ((1.5rem / 1.70666) / 1.4); // The desktop padding divided by 1.4
         }
       }
     }
@@ -207,29 +210,29 @@
       padding-top: 15px;
 
       span {
-        font-size: 0.53125rem; // The same ratio as the span in the hero
+        font-size: (1.25rem / 1.85);
 
         @include media-query(small) {
-          font-size: 0.371875rem; // The h2 desktop size divided by 2
+          font-size: ((1.75rem / 1.85) / 1.75); // The h2 desktop size divided by 1.75
         }
 
         @include media-query(medium) {
-          font-size: 0.29513889rem; // The h4 desktop size divided by 1.8
+          font-size: ((1.25rem / 1.85) / 1.8); // The h4 desktop size divided by 1.8
         }
       }
 
       h4 {
         font-weight: $font-weight-bold;
-        padding-top: 11.7187134px; // The same ratio as the h1 padding in the hero
+        padding-top: (1.25rem / 1.70666); // The same ratio as the h1 padding in the hero
 
         @include media-query(small) {
-          font-size: 1rem;
-          padding-top: 8.20309935px; // The desktop padding divided by 2
+          font-size: (1.75rem / 1.75); // The desktop h2 divided by 1.75
+          padding-top: ((1.75rem / 1.70666) / 1.75); // The desktop padding divided by 1.75
         }
 
         @include media-query(medium) {
-          font-size: 0.69444rem; // The desktop h4 divided by 1.8
-          padding-top: 6.51039633px; // The desktop padding divided by 1.8
+          font-size: (1.25rem / 1.8); // The desktop h4 divided by 1.8
+          padding-top: ((1.25rem / 1.70666) / 1.8); // The desktop padding divided by 1.8
         }
       }
     }

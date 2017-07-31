@@ -802,17 +802,18 @@ template {
       color: #fb6365; }
 
 .main-nav-mobile-icon {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: #0b0b0b; }
-  .main-nav-mobile-icon:hover {
-    color: #0b0b0b; }
-  @media (min-width: 1026px) {
+  display: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
     .main-nav-mobile-icon {
-      display: none; } }
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: #0b0b0b;
+      display: inline-block; }
+      .main-nav-mobile-icon:hover {
+        color: #0b0b0b; } }
 
 .box-shadow-cover {
   background: #fff;
@@ -1253,6 +1254,9 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     .footer-copyright {
       display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .footer-copyright {
+      display: none; } }
 
 .hero-section {
   background: #0b0b0b;
@@ -1444,6 +1448,9 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #home-page .about-section div {
       padding: 50px 10%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #home-page .about-section div {
+      padding: 100px 10%; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
   #home-page .about-section h1, #home-page .about-section .main-nav a, .main-nav #home-page .about-section a, #home-page .about-section .main-nav-mobile a, .main-nav-mobile #home-page .about-section a {
@@ -1471,6 +1478,9 @@ footer .main-nav__item--first {
       float: none;
       position: static;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #home-page #blog-div {
+      width: 66%; } }
 
 #home-page #blog-column {
   background: #fff;
@@ -1481,6 +1491,10 @@ footer .main-nav__item--first {
       left: 0;
       position: static;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #home-page #blog-column {
+      left: 66%;
+      width: 33%; } }
 
 #home-page .blog-slider-for {
   background: #f3f3f3;
@@ -1489,6 +1503,9 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #home-page .blog-slider-for {
       float: none;
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #home-page .blog-slider-for {
       width: 100%; } }
   #home-page .blog-slider-for div {
     overflow: visible; }
@@ -1503,6 +1520,9 @@ footer .main-nav__item--first {
       right: 5%;
       width: 30%; }
       @media (min-width: 0px) and (max-width: 767px) {
+        #home-page .blog-slider-for__post figure {
+          display: none; } }
+      @media (min-width: 768px) and (max-width: 1025px) {
         #home-page .blog-slider-for__post figure {
           display: none; } }
       #home-page .blog-slider-for__post figure figcaption {
@@ -1549,6 +1569,12 @@ footer .main-nav__item--first {
   padding-right: 5%;
   width: 60%; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #home-page .blog-post-container {
+      float: none;
+      margin: 10%;
+      padding-right: none;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #home-page .blog-post-container {
       float: none;
       margin: 10%;
@@ -1605,6 +1631,9 @@ footer .main-nav__item--first {
 #home-page .instagram-slider-for__post img {
   height: 275px;
   object-fit: contain; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #home-page .instagram-slider-for__post img {
+      height: 157.14286px; } }
 
 #home-page .instagram-section .button-container {
   align-items: center;
@@ -1630,8 +1659,19 @@ footer .main-nav__item--first {
     display: block;
     position: static;
     width: 100%; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #home-page .contact-section .left-column {
+    display: block;
+    position: static;
+    width: 100%; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  #home-page .contact-section .right-column {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%; } }
+@media (min-width: 768px) and (max-width: 1025px) {
   #home-page .contact-section .right-column {
     display: block;
     left: 0;
@@ -1646,6 +1686,11 @@ footer .main-nav__item--first {
       margin: 0 10%;
       padding: 50px 0 31.25px 0;
       width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #home-page .contact-form {
+      margin: 0 10%;
+      padding: 50px 0 31.25px 0;
+      width: 80%; } }
 
 #home-page .input-container {
   margin-right: 4.5%;
@@ -1654,6 +1699,10 @@ footer .main-nav__item--first {
     #home-page .input-container {
       margin-right: 0;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #home-page .input-container {
+      margin-right: 4.25%;
+      width: 30%; } }
 
 #home-page .input-container--last {
   width: 30%; }
@@ -1665,6 +1714,9 @@ footer .main-nav__item--first {
 #home-page .contact-section .button-div {
   height: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #home-page .contact-section .button-div {
+      padding-bottom: 50px; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #home-page .contact-section .button-div {
       padding-bottom: 50px; } }
 
@@ -1837,6 +1889,10 @@ footer .main-nav__item--first {
 #coffee-app-page .fa:hover {
   color: #f1a75e; }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  #coffee-app-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
 #coffee-app-page .hero-section {
   background: url("../images/projects/coffee-app/coffee-app-wall.png");
   background-repeat: no-repeat;
@@ -2006,6 +2062,10 @@ footer .main-nav__item--first {
 
 #ballad-page .fa:hover {
   color: #ab0061; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #ballad-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
 
 #ballad-page .hero-section {
   background: url("../images/projects/ballad/ballad-wall.png");

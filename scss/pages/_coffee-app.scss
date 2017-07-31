@@ -12,6 +12,12 @@
   color: $color-project-coffee-app;
 }
 
+#coffee-app-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
 
 // HERO
 

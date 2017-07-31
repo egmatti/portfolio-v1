@@ -31,6 +31,10 @@
   @include media-query(small) {
     padding: $padding-div $margin-page-mobile-horizontal;
   }
+
+  @include media-query(medium) {
+    padding: 100px $margin-page-tablet-horizontal;
+  }
 }
 
 #home-page .about-section h1 {
@@ -67,6 +71,10 @@
     position: static;
     width: 100%;
   }
+
+  @include media-query(medium) {
+    width: 66%;
+  }
 }
 
 #home-page #blog-column {
@@ -79,6 +87,11 @@
     position: static;
     width: 100%;
   }
+
+  @include media-query(medium) {
+    left: 66%;
+    width: 33%;
+  }
 }
 
 #home-page .blog-slider-for {
@@ -88,6 +101,10 @@
 
   @include media-query(small) {
     float: none;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
     width: 100%;
   }
 
@@ -108,6 +125,10 @@
       width: 30%;
 
       @include media-query(small) {
+        display: none;
+      }
+
+      @include media-query(medium) {
         display: none;
       }
 
@@ -176,6 +197,13 @@
     margin: $margin-page-mobile-horizontal;
     padding-right: none;
     width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    float: none;
+    margin: $margin-page-tablet-horizontal;
+    padding-right: none;
+    width: $width-page-tablet;
   }
 
   span {
@@ -252,6 +280,10 @@
 #home-page .instagram-slider-for__post img {
   height: 275px;
   object-fit: contain;
+
+  @include media-query(medium) {
+    height: (275px / 1.75);
+  }
 }
 
 #home-page .instagram-section .button-container {
@@ -287,10 +319,23 @@
     position: static;
     width: 100%;
   }
+
+  @include media-query(medium) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
 }
 
 #home-page .contact-section .right-column {
   @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
     display: block;
     left: 0;
     position: static;
@@ -307,6 +352,12 @@
     padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
     width: $width-page-mobile;
   }
+
+  @include media-query(medium) {
+    margin: 0 $margin-page-tablet-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-tablet;
+  }
 }
 
 #home-page .input-container {
@@ -316,6 +367,11 @@
   @include media-query(small) {
     margin-right: 0;
     width: 100%;
+  }
+
+  @include media-query(medium) {
+    margin-right: 4.25%;
+    width: 30%;
   }
 }
 
@@ -332,6 +388,10 @@
   height: 100%;
 
   @include media-query(small) {
+    padding-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
     padding-bottom: $padding-div;
   }
 }

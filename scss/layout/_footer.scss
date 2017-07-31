@@ -87,4 +87,8 @@ footer .main-nav__item--first {
   @include media-query(small) {
     display: none;
   }
+
+  @include media-query(medium) {
+    display: none;
+  }
 }

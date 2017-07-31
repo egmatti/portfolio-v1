@@ -56,15 +56,16 @@
 }
 
 .main-nav-mobile-icon {
-  @include vertical-align();
-  color: $color-nav;
+  display: none;
 
-  &:hover {
+  @include media-query(small) {
+    @include vertical-align();
     color: $color-nav;
-  }
+    display: inline-block;
 
-  @include media-query(large) {
-    display: none;
+    &:hover {
+      color: $color-nav;
+    }
   }
 }
 

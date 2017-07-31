@@ -137,6 +137,7 @@ $border-directory-nav: $border-size solid $color-border;
 // MARGINS AND PADDING
 
 $margin-page-horizontal: 5%;
+$margin-page-tablet-horizontal: 10%;
 $margin-page-mobile-horizontal: 10%;
 $margin-page-blog-mobile-horizontal: 5%;
 $margin-section: 125px 10%;
@@ -168,9 +169,10 @@ $padding-page-title-mobile: 18.75px;
 $height-content-offset: -100px;
 
 $width-page: 90%;
+$width-page-mobile: 80%;
+$width-page-tablet: 80%;
 $width-page-blog: 80%;
 $width-page-blog-mobile: 90%;
-$width-page-mobile: 80%;
 $width-directory-mobile: 90%;
 $width-headline-mobile: 90%;
 $width-image-mobile: 90%;

@@ -17,6 +17,10 @@
     padding-top: $padding-div;
     width: 100%;
   }
+
+  @include media-query(medium) {
+    width: 66%;
+  }
 }
 
 .overview-right {
@@ -29,6 +33,10 @@
     float: none;
     padding-top: $padding-div;
     width: 100%;
+  }
+
+  @include media-query(medium) {
+    width: 33%;
   }
 
   img {

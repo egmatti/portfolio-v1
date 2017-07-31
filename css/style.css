@@ -1265,6 +1265,9 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     .hero-section {
       height: 50vh; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .hero-section {
+      height: 50vh; } }
 
 .headline-container {
   align-items: center;
@@ -1350,6 +1353,9 @@ footer .main-nav__item--first {
       float: none;
       padding-top: 50px;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .overview-left {
+      width: 66%; } }
 
 .overview-right {
   align-items: center;
@@ -1364,6 +1370,9 @@ footer .main-nav__item--first {
       float: none;
       padding-top: 50px;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .overview-right {
+      width: 33%; } }
   .overview-right img {
     object-fit: contain;
     padding-bottom: 50px; }
@@ -1738,6 +1747,12 @@ footer .main-nav__item--first {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #about-page .hero-section {
+      background: url("../images/about/graffiti-tablet-2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; } }
 
 #about-page .overview-section {
   margin: 0 5%;
@@ -1756,10 +1771,20 @@ footer .main-nav__item--first {
       padding-top: 50px;
       margin-bottom: 0;
       visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #about-page .overview-left, .overview-right {
+      padding-top: 75px;
+      margin-bottom: 125px;
+      visibility: visible; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
   #about-page .overview-right {
     margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    padding-top: 75px;
+    margin-bottom: 125px;
+    visibility: visible; } }
 
 #about-page .overview-left h2 {
   letter-spacing: 0rem;
@@ -1770,6 +1795,9 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #about-page .overview-right img {
       display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #about-page .overview-right img {
+      width: 70%; } }
 
 #about-page .contact-section {
   background: #f3f3f3;
@@ -1783,8 +1811,19 @@ footer .main-nav__item--first {
     display: block;
     position: static;
     width: 100%; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .contact-section .left-column {
+    display: block;
+    position: static;
+    width: 100%; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  #about-page .contact-section .right-column {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%; } }
+@media (min-width: 768px) and (max-width: 1025px) {
   #about-page .contact-section .right-column {
     display: block;
     left: 0;
@@ -1799,6 +1838,11 @@ footer .main-nav__item--first {
       margin: 0 10%;
       padding: 50px 0 31.25px 0;
       width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #about-page .contact-form {
+      margin: 0 10%;
+      padding: 50px 0 31.25px 0;
+      width: 80%; } }
 
 #about-page .input-container {
   margin-right: 4.5%;
@@ -1807,6 +1851,10 @@ footer .main-nav__item--first {
     #about-page .input-container {
       margin-right: 0;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #about-page .input-container {
+      margin-right: 4.25%;
+      width: 30%; } }
 
 #about-page .input-container--last {
   width: 30%; }
@@ -1818,6 +1866,9 @@ footer .main-nav__item--first {
 #about-page .contact-section .button-div {
   height: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #about-page .contact-section .button-div {
+      padding-bottom: 50px; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #about-page .contact-section .button-div {
       padding-bottom: 50px; } }
 

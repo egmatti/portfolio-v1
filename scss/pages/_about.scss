@@ -10,6 +10,10 @@
   @include media-query(small) {
     @include bg-image ($image-folder: "about", $bg-image: "graffiti-mobile");
   }
+
+  @include media-query(medium) {
+    @include bg-image ($image-folder: "about", $bg-image: "graffiti-tablet-2");
+  }
 }
 
 
@@ -35,11 +39,23 @@
     margin-bottom: 0;
     visibility: visible;
   }
+
+  @include media-query(medium) {
+    padding-top: $padding-section;
+    margin-bottom: $margin-section-vertical;
+    visibility: visible;
+  }
 }
 
 #about-page .overview-right {
   @include media-query(small) {
     margin-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    padding-top: $padding-section;
+    margin-bottom: $margin-section-vertical;
+    visibility: visible;
   }
 }
 
@@ -53,6 +69,10 @@
 
   @include media-query(small) {
     display: none;
+  }
+
+  @include media-query(medium) {
+    width: 70%;
   }
 }
 
@@ -73,10 +93,23 @@
     position: static;
     width: 100%;
   }
+
+  @include media-query(medium) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
 }
 
 #about-page .contact-section .right-column {
   @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
     display: block;
     left: 0;
     position: static;
@@ -93,6 +126,12 @@
     padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
     width: $width-page-mobile;
   }
+
+  @include media-query(medium) {
+    margin: 0 $margin-page-tablet-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-tablet;
+  }
 }
 
 #about-page .input-container {
@@ -102,6 +141,11 @@
   @include media-query(small) {
     margin-right: 0;
     width: 100%;
+  }
+
+  @include media-query(medium) {
+    margin-right: 4.25%;
+    width: 30%;
   }
 }
 
@@ -118,6 +162,10 @@
   height: 100%;
 
   @include media-query(small) {
+    padding-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
     padding-bottom: $padding-div;
   }
 }

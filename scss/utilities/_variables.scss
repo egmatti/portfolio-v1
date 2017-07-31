@@ -137,8 +137,8 @@ $border-directory-nav: $border-size solid $color-border;
 // MARGINS AND PADDING
 
 $margin-page-horizontal: 5%;
-$margin-page-tablet-horizontal: 10%;
 $margin-page-mobile-horizontal: 10%;
+$margin-page-tablet-horizontal: 10%;
 $margin-page-blog-mobile-horizontal: 5%;
 $margin-page-blog-tablet-horizontal: 5%;
 $margin-section: 125px 10%;
@@ -148,7 +148,9 @@ $margin-div: 50px;
 $margin-body-text: 25px;
 $margin-nav: 5%;
 $margin-headline-mobile-horizontal: 5%;
+$margin-headline-tablet-horizontal: 5%;
 $margin-image-mobile-horizontal: 5%;
+$margin-image-tablet-horizontal: 5%;
 $margin-input: 50px;
 $margin-directory-mobile-horizontal: 5%;
 
@@ -177,7 +179,9 @@ $width-page-blog-mobile: 90%;
 $width-page-blog-tablet: 90%;
 $width-directory-mobile: 90%;
 $width-headline-mobile: 90%;
+$width-headline-tablet: 90%;
 $width-image-mobile: 90%;
+$width-image-tablet: 90%;
 $width-directory-nav-container: 350px;
 $width-directory-nav-container-tablet: 175px;
 

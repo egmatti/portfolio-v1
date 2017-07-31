@@ -16,12 +16,20 @@
     width: $width-page-mobile;
   }
 
+  @include media-query(medium) {
+    margin-left: 5%;
+  }
+
   h3 {
     display: inline-block;
     padding-top: $padding-div;
     width: auto;
 
     @include media-query(small) {
+      padding-top: $margin-body-text;
+    }
+
+    @include media-query(medium) {
       padding-top: $margin-body-text;
     }
   }
@@ -43,6 +51,11 @@
     float: none;
     margin: $margin-body-text $margin-image-mobile-horizontal $padding-div $margin-image-mobile-horizontal;
     width: $width-image-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: $margin-body-text 5% $padding-div 0;
+    width: 30%;
   }
 }
 

@@ -5,6 +5,7 @@
 // OVERVIEW SECTION FADE IN ON SCROLL
 
 const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
+const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
 
 // Get the position from the top of the page
 var startY = 80;
@@ -22,6 +23,10 @@ function checkY(){
     $(window).off("scroll");
     if (mediaQuerySmall.matches) {
       // window width is less than 767px
+      $overviewLeft.velocity({translateY: "0px"});
+      $overviewRight.velocity({translateY: "0px"});
+    } else if (mediaQueryMedium.matches) {
+      // window width is less than 1025px
       $overviewLeft.velocity({translateY: "0px"});
       $overviewRight.velocity({translateY: "0px"});
     } else {
@@ -78,5 +83,15 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   var prototypeImageContainerHeight = $("#coffee-app-page .prototype-image-container").outerHeight() + 150;
-  $("#coffee-app-page .prototype-section").css({"height": prototypeImageContainerHeight});
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+
+  } else {
+    // window width is at least 767px
+    $("#coffee-app-page .prototype-section").css({"height": prototypeImageContainerHeight});
+  }
 });

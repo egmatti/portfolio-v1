@@ -1435,11 +1435,17 @@ footer .main-nav__item--first {
       float: none;
       margin: 0 10%;
       width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .synced-slider-description {
+      margin-left: 5%; } }
   .synced-slider-description h3 {
     display: inline-block;
     padding-top: 50px;
     width: auto; }
     @media (min-width: 0px) and (max-width: 767px) {
+      .synced-slider-description h3 {
+        padding-top: 25px; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
       .synced-slider-description h3 {
         padding-top: 25px; } }
   .synced-slider-description p span {
@@ -1457,6 +1463,10 @@ footer .main-nav__item--first {
       float: none;
       margin: 25px 5% 50px 5%;
       width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .synced-slider-for__slide img {
+      margin: 25px 5% 50px 0;
+      width: 30%; } }
 
 .synced-slider-nav {
   margin: auto;
@@ -2024,10 +2034,20 @@ footer .main-nav__item--first {
       padding-top: 50px;
       margin-bottom: 0;
       visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .overview-left, .overview-right {
+      padding-top: 75px;
+      margin-bottom: 125px;
+      visibility: visible; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
   #about-page .overview-right {
     margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    padding-top: 75px;
+    margin-bottom: 125px;
+    visibility: visible; } }
 
 #coffee-app-page .overview-right img {
   width: 55%; }
@@ -2053,6 +2073,11 @@ footer .main-nav__item--first {
       margin-left: 0;
       padding: 50px 0;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .left-column {
+      margin-left: 0;
+      padding: 50px 5%;
+      width: 90%; } }
 
 #coffee-app-page .headline-mobile {
   display: none; }
@@ -2060,6 +2085,11 @@ footer .main-nav__item--first {
     #coffee-app-page .headline-mobile {
       display: block;
       padding: 0 5% 25px 5%;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .headline-mobile {
+      display: block;
+      padding-bottom: 25px;
       width: 90%; } }
 
 #coffee-app-page .left-image {
@@ -2083,6 +2113,16 @@ footer .main-nav__item--first {
       margin: 0 5%;
       position: static;
       width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .left-image {
+      box-sizing: border-box;
+      display: inline-block;
+      float: left;
+      left: 0;
+      margin-left: 0;
+      margin-right: 5%;
+      padding: 0;
+      width: 45%; } }
 
 #coffee-app-page .right-description {
   height: auto;
@@ -2092,9 +2132,19 @@ footer .main-nav__item--first {
     #coffee-app-page .right-description {
       padding: 0 10%;
       width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .right-description {
+      display: inline;
+      float: none; } }
   @media (min-width: 0px) and (max-width: 767px) {
     #coffee-app-page .right-description h2 {
       display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .right-description h2 {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .right-description p:first-of-type {
+      margin-top: -15px; } }
   #coffee-app-page .right-description span {
     font-weight: 700;
     padding-right: 2.5px; }
@@ -2112,11 +2162,21 @@ footer .main-nav__item--first {
       height: auto;
       padding: 50px 0;
       width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .mockups-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
 
 #coffee-app-page .mockups-section h2 {
   padding-left: 5%;
   padding-top: 50px; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .mockups-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #coffee-app-page .mockups-section h2 {
       display: block;
       padding: 0 5%;
@@ -2141,6 +2201,9 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #coffee-app-page .prototype-section {
       display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .prototype-section {
+      height: auto; } }
 
 #coffee-app-page .prototype-image-container {
   align-items: center;
@@ -2161,6 +2224,9 @@ footer .main-nav__item--first {
   float: right;
   height: 100%;
   width: 55%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .prototype-description {
+      padding: 50px 0; } }
   #coffee-app-page .prototype-description span {
     font-weight: 700;
     padding-right: 2.5px; }

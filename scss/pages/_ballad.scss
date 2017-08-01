@@ -42,6 +42,11 @@
     padding: $padding-div $margin-page-mobile-horizontal;
     visibility: visible;
   }
+
+  @include media-query(medium) {
+    padding: $padding-section $margin-page-tablet-horizontal;
+    visibility: visible;
+  }
 }
 
 #ballad-page .button-container {
@@ -50,6 +55,12 @@
   visibility: hidden;
 
   @include media-query(small) {
+    margin-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
     margin-top: $padding-div;
     margin-bottom: 0;
     visibility: visible;
@@ -85,6 +96,12 @@
     height: auto;
     padding: $padding-div 0;
   }
+
+  @include media-query(medium) {
+    height: auto;
+    padding: $padding-div 0;
+    width: 100%;
+  }
 }
 
 #ballad-page .style-guides-section h2 {
@@ -96,12 +113,22 @@
     padding: 0 $margin-headline-mobile-horizontal;
     width: $width-headline-mobile;
   }
+
+  @include media-query(medium) {
+    display: block;
+    padding: 0 $margin-headline-tablet-horizontal;
+    width: $width-headline-tablet;
+  }
 }
 
 #ballad-page .colors-headline {
   margin-top: $margin-body-text;
 
   @include media-query(small) {
+    margin-top: ($padding-div * (3/4));
+  }
+
+  @include media-query(medium) {
     margin-top: ($padding-div * (3/4));
   }
 }
@@ -119,12 +146,21 @@
       padding-right: 8.75px;
     }
 
+    @include media-query(medium) {
+      padding-right: 8.75px;
+    }
+
     img {
       float: left;
       margin-right: 0;
       width: 50px;
 
       @include media-query(small) {
+        margin: 0;
+        width: 35px;
+      }
+
+      @include media-query(medium) {
         margin: 0;
         width: 35px;
       }
@@ -136,6 +172,10 @@
   margin-top: $margin-body-text;
 
   @include media-query(small) {
+    margin-top: ($padding-div * (3/4));
+  }
+
+  @include media-query(medium) {
     margin-top: ($padding-div * (3/4));
   }
 }
@@ -184,8 +224,20 @@
     width: 60%;
   }
 
+  @include media-query(medium) {
+    position: relative;
+    padding-top: $padding-div;
+    width: 40%;
+  }
+
   img {
     @include box-shadow();
+  }
+}
+
+#ballad-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
+  @include media-query(medium) {
+    padding-top: $padding-div;
   }
 }
 
@@ -201,6 +253,10 @@
     height: auto;
     padding: $padding-div 0;
   }
+
+  @include media-query(medium) {
+    padding: $padding-div 0;
+  }
 }
 
 #ballad-page .logo-image-container {
@@ -214,9 +270,18 @@
     display: none;
   }
 
+  @include media-query(medium) {
+    margin-left: 5%;
+    width: 30%;
+  }
+
   img {
     object-fit: contain;
     width: 55%;
+
+    @include media-query(medium) {
+      width: 80%;
+    }
   }
 }
 
@@ -233,6 +298,12 @@
     height: auto;
     margin: 0 $margin-page-mobile-horizontal;
     width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    margin: 0 5%;
+    width: 55%;
   }
 
   span {
@@ -305,6 +376,11 @@
   @include media-query(small) {
     display: none;
   }
+
+  @include media-query(medium) {
+    height: auto;
+    width: 100%;
+  }
 }
 
 #ballad-page .mobile-prototype-image-container {
@@ -314,9 +390,18 @@
   // margin-left: $margin-page-horizontal;
   width: 40.5%;
 
+  @include media-query(medium) {
+    margin-left: 5%;
+    width: 30%;
+  }
+
   img {
     object-fit: contain;
     width: 45%;
+
+    @include media-query(medium) {
+      width: 80%;
+    }
   }
 }
 
@@ -326,6 +411,10 @@
   height: 100%;
   margin-right: $margin-section-horizontal;
   width: 49.5%;
+
+  @include media-query(medium) {
+    margin: 0 5%;
+  }
 
   span {
     font-weight: $font-weight-bold;

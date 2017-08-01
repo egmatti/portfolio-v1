@@ -2277,12 +2277,21 @@ footer .main-nav__item--first {
     #ballad-page .overview-container {
       padding: 50px 10%;
       visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .overview-container {
+      padding: 75px 10%;
+      visibility: visible; } }
 
 #ballad-page .button-container {
   margin-top: 80px;
   margin-bottom: -30px;
   visibility: hidden; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .button-container {
+      margin-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #ballad-page .button-container {
       margin-top: 50px;
       margin-bottom: 0;
@@ -2306,6 +2315,11 @@ footer .main-nav__item--first {
     #ballad-page .style-guides-section {
       height: auto;
       padding: 50px 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .style-guides-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
 
 #ballad-page .style-guides-section h2 {
   padding-left: 5%;
@@ -2315,10 +2329,18 @@ footer .main-nav__item--first {
       display: block;
       padding: 0 5%;
       width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .style-guides-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
 
 #ballad-page .colors-headline {
   margin-top: 25px; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .colors-headline {
+      margin-top: 37.5px; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #ballad-page .colors-headline {
       margin-top: 37.5px; } }
 
@@ -2332,6 +2354,9 @@ footer .main-nav__item--first {
     @media (min-width: 0px) and (max-width: 767px) {
       #ballad-page .colors li {
         padding-right: 8.75px; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #ballad-page .colors li {
+        padding-right: 8.75px; } }
     #ballad-page .colors li img {
       float: left;
       margin-right: 0;
@@ -2340,10 +2365,17 @@ footer .main-nav__item--first {
         #ballad-page .colors li img {
           margin: 0;
           width: 35px; } }
+      @media (min-width: 768px) and (max-width: 1025px) {
+        #ballad-page .colors li img {
+          margin: 0;
+          width: 35px; } }
 
 #ballad-page .typefaces-headline {
   margin-top: 25px; }
   @media (min-width: 0px) and (max-width: 767px) {
+    #ballad-page .typefaces-headline {
+      margin-top: 37.5px; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
     #ballad-page .typefaces-headline {
       margin-top: 37.5px; } }
 
@@ -2380,10 +2412,19 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #ballad-page .synced-slider-nav {
       width: 60%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .synced-slider-nav {
+      position: relative;
+      padding-top: 50px;
+      width: 40%; } }
   #ballad-page .synced-slider-nav img {
     -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
     -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
     box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15); }
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  #ballad-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
+    padding-top: 50px; } }
 
 #ballad-page .logo-section {
   background: url("../images/projects/ballad/retro-stripes.png");
@@ -2397,6 +2438,9 @@ footer .main-nav__item--first {
     #ballad-page .logo-section {
       height: auto;
       padding: 50px 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .logo-section {
+      padding: 50px 0; } }
 
 #ballad-page .logo-image-container {
   align-items: center;
@@ -2409,9 +2453,16 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #ballad-page .logo-image-container {
       display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .logo-image-container {
+      margin-left: 5%;
+      width: 30%; } }
   #ballad-page .logo-image-container img {
     object-fit: contain;
     width: 55%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #ballad-page .logo-image-container img {
+        width: 80%; } }
 
 #ballad-page .logo-description {
   align-items: flex-start;
@@ -2429,6 +2480,11 @@ footer .main-nav__item--first {
       height: auto;
       margin: 0 10%;
       width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .logo-description {
+      height: auto;
+      margin: 0 5%;
+      width: 55%; } }
   #ballad-page .logo-description span {
     font-weight: 700;
     padding-right: 2.5px; }
@@ -2481,6 +2537,10 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #ballad-page .mobile-prototype-section {
       display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .mobile-prototype-section {
+      height: auto;
+      width: 100%; } }
 
 #ballad-page .mobile-prototype-image-container {
   align-items: center;
@@ -2489,9 +2549,16 @@ footer .main-nav__item--first {
   float: left;
   height: 100%;
   width: 40.5%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .mobile-prototype-image-container {
+      margin-left: 5%;
+      width: 30%; } }
   #ballad-page .mobile-prototype-image-container img {
     object-fit: contain;
     width: 45%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #ballad-page .mobile-prototype-image-container img {
+        width: 80%; } }
 
 #ballad-page .mobile-prototype-description {
   align-items: flex-start;
@@ -2502,6 +2569,9 @@ footer .main-nav__item--first {
   height: 100%;
   margin-right: 10%;
   width: 49.5%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #ballad-page .mobile-prototype-description {
+      margin: 0 5%; } }
   #ballad-page .mobile-prototype-description span {
     font-weight: 700;
     padding-right: 2.5px; }

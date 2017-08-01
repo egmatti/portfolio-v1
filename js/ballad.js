@@ -5,6 +5,7 @@
 // OVERVIEW SECTION FADE IN ON SCROLL
 
 const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
+const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
 
 // Get the position from the top of the page
 var startY = 80;
@@ -22,6 +23,10 @@ function checkY(){
     $(window).off("scroll");
     if (mediaQuerySmall.matches) {
       // window width is less than 767px
+      $overviewContainer.velocity({translateY: "0px"});
+      $overviewButton.velocity({translateY: "0px"});
+    } else if (mediaQueryMedium.matches) {
+      // window width is less than 1025px
       $overviewContainer.velocity({translateY: "0px"});
       $overviewButton.velocity({translateY: "0px"});
     } else {
@@ -78,7 +83,18 @@ $(".synced-slider-nav").slick({
 
 $(document).ready(function(){
   var mobilePrototypeImageContainerHeight = $("#ballad-page .mobile-prototype-image-container").outerHeight() + 150;
-  $("#ballad-page .mobile-prototype-section").css({"height": mobilePrototypeImageContainerHeight});
+  var mobilePrototypeDescriptionHeight = $("#ballad-page .mobile-prototype-description").outerHeight() + 150;
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+    $("#ballad-page .mobile-prototype-section").css({"height": mobilePrototypeDescriptionHeight});
+  } else {
+    // window width is at least 767px
+    $("#ballad-page .mobile-prototype-section").css({"height": mobilePrototypeImageContainerHeight});
+  }
 });
 
 

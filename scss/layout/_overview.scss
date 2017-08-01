@@ -19,7 +19,8 @@
   }
 
   @include media-query(medium) {
-    width: 66%;
+    margin: 0 5%;
+    width: 55%;
   }
 }
 
@@ -36,7 +37,8 @@
   }
 
   @include media-query(medium) {
-    width: 33%;
+    margin-right: 5%;
+    width: 30%;
   }
 
   img {

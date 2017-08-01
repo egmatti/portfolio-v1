@@ -27,6 +27,11 @@
     margin: 0 $margin-page-mobile-horizontal;
     width: $width-page-mobile;
   }
+
+  @include media-query(medium) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 #about-page .overview-left, .overview-right {
@@ -41,8 +46,8 @@
   }
 
   @include media-query(medium) {
-    padding-top: $padding-section;
     margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
     visibility: visible;
   }
 }
@@ -53,8 +58,8 @@
   }
 
   @include media-query(medium) {
-    padding-top: $padding-section;
     margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
     visibility: visible;
   }
 }
@@ -72,7 +77,7 @@
   }
 
   @include media-query(medium) {
-    width: 70%;
+    width: 80%;
   }
 }
 

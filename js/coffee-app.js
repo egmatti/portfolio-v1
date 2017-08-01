@@ -83,13 +83,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   var prototypeImageContainerHeight = $("#coffee-app-page .prototype-image-container").outerHeight() + 150;
+  var prototypeDescriptionHeight = $("#coffee-app-page .prototype-description").outerHeight() + 150;
 
   if (mediaQuerySmall.matches) {
     // window width is less than 767px
 
   } else if (mediaQueryMedium.matches) {
     // window width is less than 1025px
-
+    $("#coffee-app-page .prototype-section").css({"height": prototypeDescriptionHeight});
   } else {
     // window width is at least 767px
     $("#coffee-app-page .prototype-section").css({"height": prototypeImageContainerHeight});

@@ -180,6 +180,10 @@
   position: relative;
   top: 4%;
 
+  @include media-query(small) {
+    width: 60%;
+  }
+
   img {
     @include box-shadow();
   }

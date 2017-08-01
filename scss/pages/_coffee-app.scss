@@ -36,6 +36,11 @@
     margin: 0 $margin-page-mobile-horizontal;
     width: $width-page-mobile;
   }
+
+  @include media-query(medium) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 #coffee-app-page .overview-left, .overview-right {
@@ -50,8 +55,8 @@
   }
 
   @include media-query(medium) {
-    padding-top: $padding-section;
     margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
     visibility: visible;
   }
 }
@@ -62,8 +67,8 @@
   }
 
   @include media-query(medium) {
-    padding-top: $padding-section;
     margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
     visibility: visible;
   }
 }
@@ -73,6 +78,10 @@
 
   @include media-query(small) {
     display: none;
+  }
+
+  @include media-query(medium) {
+    width: 80%;
   }
 }
 
@@ -102,9 +111,10 @@
   }
 
   @include media-query(medium) {
+    @include flexbox($direction: row);
     margin-left: 0;
-    padding: $padding-div 5%;
-    width: 90%;
+    padding: $padding-div 0;
+    width: 100%;
   }
 }
 
@@ -115,12 +125,6 @@
     display: block;
     padding: 0 $margin-headline-mobile-horizontal $margin-body-text $margin-headline-mobile-horizontal;
     width: $width-headline-mobile;
-  }
-
-  @include media-query(medium) {
-    display: block;
-    padding-bottom: $margin-body-text;
-    width: $width-headline-tablet;
   }
 }
 
@@ -147,13 +151,9 @@
 
   @include media-query(medium) {
     box-sizing: border-box;
-    display: inline-block;
-    float: left;
     left: 0;
-    margin-left: 0;
-    margin-right: 5%;
-    padding: 0;
-    width: 45%;
+    margin-left: 5%;
+    width: 30%;
   }
 }
 
@@ -168,23 +168,13 @@
   }
 
   @include media-query(medium) {
-    display: inline;
-    float: none;
+    padding: 0 5%;
+    width: 55%;
   }
 
   h2 {
     @include media-query(small) {
       display: none;
-    }
-
-    @include media-query(medium) {
-      display: none;
-    }
-  }
-
-  p:first-of-type {
-    @include media-query(medium) {
-      margin-top: -15px;
     }
   }
 
@@ -242,9 +232,15 @@
   }
 }
 
-.synced-slider-nav {
+#coffee-app-page .synced-slider-nav {
   @include media-query(small) {
     width: 60%;
+  }
+
+  @include media-query(medium) {
+    position: relative;
+    top: 7.5px;
+    width: 40%;
   }
 }
 
@@ -263,6 +259,7 @@
 
   @include media-query(medium) {
     height: auto;
+    width: 100%;
   }
 }
 
@@ -272,9 +269,18 @@
   height: 100%;
   width: 45%;
 
+  @include media-query(medium) {
+    margin-left: 5%;
+    width: 30%;
+  }
+
   img {
     object-fit: contain;
     width: 45%;
+
+    @include media-query(medium) {
+      width: 80%;
+    }
   }
 }
 
@@ -285,7 +291,7 @@
   width: 55%;
 
   @include media-query(medium) {
-    padding: $padding-div 0;
+    margin: 0 5%;
   }
 
   span {

@@ -20,9 +20,13 @@ $royal-blue: #3d01c2;
 $ballad-blue: #0e5580;
 $ballad-magenta: #ab0061;
 
+$chronicle-turquoise: #008b83;
+$chronicle-purple: #a07679;
+
 $coffee-app-red: #cc4d4b;
 $coffee-app-blue: #98bace;
 $coffee-app-gold: #f1a75e;
+
 
 // Color Functions
 $color-body: $white;
@@ -71,6 +75,7 @@ $color-page-title: $white;
 $color-blog-page-date: $white;
 
 $color-project-ballad: $ballad-magenta;
+$color-project-chronicle: $chronicle-purple;
 $color-project-coffee-app: $coffee-app-gold;
 
 $color-blog-section: $white;
@@ -126,6 +131,8 @@ $border-button: $border-size solid $color-button;
 $border-button-hover: $border-size solid $color-button-hover;
 $border-button-ballad: $border-size solid $color-project-ballad;
 $border-button-ballad-hover: $border-size solid $color-project-ballad;
+$border-button-chronicle: $border-size solid $color-project-chronicle;
+$border-button-ballad-hover: $border-size solid $color-project-chronicle;
 $border-input: $border-size solid $color-input;
 $border-input-active: $border-size solid $color-input-active;
 

@@ -2007,245 +2007,6 @@ footer .main-nav__item--first {
 #work-page figcaption h2, h3, h4 {
   padding-top: 0px; }
 
-#coffee-app-page .main-nav a:hover {
-  color: #f1a75e; }
-
-#coffee-app-page .fa:hover {
-  color: #f1a75e; }
-
-@media (min-width: 0px) and (max-width: 767px) {
-  #coffee-app-page .main-nav-mobile-icon:hover {
-    color: #0b0b0b; } }
-
-#coffee-app-page .hero-section {
-  background: url("../images/projects/coffee-app/coffee-app-wall.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-#coffee-app-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#coffee-app-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .overview-left, .overview-right {
-      margin-bottom: 125px;
-      padding-top: 75px;
-      visibility: visible; } }
-
-@media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
-#coffee-app-page .overview-right img {
-  width: 55%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .overview-right img {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .overview-right img {
-      width: 80%; } }
-
-#coffee-app-page .wireframes-section {
-  background: #fff;
-  border-bottom: 1.5px solid #f3f3f3;
-  border-top: 1.5px solid #f3f3f3;
-  clear: both;
-  width: 100%; }
-
-#coffee-app-page .left-column {
-  background: #f3f3f3;
-  height: auto;
-  margin-left: 10%;
-  padding: 100px 0;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .left-column {
-      margin-left: 0;
-      padding: 50px 0;
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .left-column {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      margin-left: 0;
-      padding: 50px 0;
-      width: 100%; } }
-
-#coffee-app-page .headline-mobile {
-  display: none; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .headline-mobile {
-      display: block;
-      padding: 0 5% 25px 5%;
-      width: 90%; } }
-
-#coffee-app-page .left-image {
-  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  background: #fff;
-  border: 15px solid #fff;
-  float: left;
-  height: auto;
-  left: -5%;
-  object-fit: contain;
-  position: relative;
-  width: 40%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .left-image {
-      box-sizing: border-box;
-      display: block;
-      float: none;
-      left: 0;
-      margin: 0 5%;
-      position: static;
-      width: 90%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .left-image {
-      box-sizing: border-box;
-      left: 0;
-      margin-left: 5%;
-      width: 30%; } }
-
-#coffee-app-page .right-description {
-  height: auto;
-  padding-right: 10%;
-  width: 45%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .right-description {
-      padding: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .right-description {
-      padding: 0 5%;
-      width: 55%; } }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .right-description h2 {
-      display: none; } }
-  #coffee-app-page .right-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
-
-#coffee-app-page .mockups-section {
-  background: url("../images/projects/coffee-app/palm-trees.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 615px;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .mockups-section {
-      height: auto;
-      padding: 50px 0;
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .mockups-section {
-      height: auto;
-      padding: 50px 0;
-      width: 100%; } }
-
-#coffee-app-page .mockups-section h2 {
-  padding-left: 5%;
-  padding-top: 50px; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .mockups-section h2 {
-      display: block;
-      padding: 0 5%;
-      width: 90%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .mockups-section h2 {
-      display: block;
-      padding: 0 5%;
-      width: 90%; } }
-
-#coffee-app-page .synced-slider-for img {
-  max-width: 200px; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .synced-slider-for img {
-      margin: 25px 20% 50px 20%;
-      max-width: none;
-      width: 60%; } }
-
-@media (min-width: 0px) and (max-width: 767px) {
-  #coffee-app-page .synced-slider-nav {
-    width: 60%; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #coffee-app-page .synced-slider-nav {
-    position: relative;
-    top: 7.5px;
-    width: 40%; } }
-
-#coffee-app-page .prototype-section {
-  background: #fff;
-  clear: both;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .prototype-section {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .prototype-section {
-      height: auto;
-      width: 100%; } }
-
-#coffee-app-page .prototype-image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  float: left;
-  height: 100%;
-  width: 45%; }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .prototype-image-container {
-      margin-left: 5%;
-      width: 30%; } }
-  #coffee-app-page .prototype-image-container img {
-    object-fit: contain;
-    width: 45%; }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #coffee-app-page .prototype-image-container img {
-        width: 80%; } }
-
-#coffee-app-page .prototype-description {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  float: right;
-  height: 100%;
-  width: 55%; }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .prototype-description {
-      margin: 0 5%; } }
-  #coffee-app-page .prototype-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
-
 #ballad-page .main-nav a:hover {
   color: #ab0061; }
 
@@ -2303,7 +2064,7 @@ footer .main-nav__item--first {
     color: #ab0061; }
   #ballad-page .button:hover {
     background: #ab0061;
-    border: 1.5px solid #ab0061; }
+    border: 1.5px solid #a07679; }
     #ballad-page .button:hover span {
       color: #fff; }
 
@@ -2592,6 +2353,543 @@ footer .main-nav__item--first {
       #ballad-page .responsive-site-section img {
         transform: translateX(10px);
         width: 90%; } }
+
+#chronicle-page .main-nav a:hover {
+  color: #a07679; }
+
+#chronicle-page .fa:hover {
+  color: #a07679; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #chronicle-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#chronicle-page .hero-section {
+  background: url("../images/projects/chronicle/chronicle-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#chronicle-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .overview-section {
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .overview-section {
+      margin: 0;
+      width: 100%; } }
+
+#chronicle-page .overview-left, .overview-right {
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .overview-left, .overview-right {
+      padding-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .overview-left, .overview-right {
+      margin-bottom: 125px;
+      padding-top: 75px;
+      visibility: visible; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #about-page .overview-right {
+    margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    margin-bottom: 125px;
+    padding-top: 75px;
+    visibility: visible; } }
+
+#chronicle-page .overview-right img {
+  width: 55%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .overview-right img {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .overview-right img {
+      width: 80%; } }
+
+#chronicle-page .logo-section {
+  background: url("../images/projects/chronicle/clock-tower.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clear: both;
+  height: 540px;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .logo-section {
+      height: auto;
+      padding: 50px 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .logo-section {
+      padding: 50px 0; } }
+
+#chronicle-page .logo-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  margin-left: 5%;
+  width: 40.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .logo-image-container {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .logo-image-container {
+      margin-left: 5%;
+      width: 30%; } }
+  #chronicle-page .logo-image-container img {
+    object-fit: contain;
+    width: 80%; }
+
+#chronicle-page .logo-description {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 49.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .logo-description {
+      display: block;
+      float: none;
+      height: auto;
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .logo-description {
+      height: auto;
+      margin: 0 5%;
+      width: 55%; } }
+  #chronicle-page .logo-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+.logo-mobile {
+  display: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .logo-mobile {
+      display: block;
+      margin: 50px 20% 0 20%;
+      object-fit: contain;
+      width: 60%; } }
+
+#chronicle-page .colophon-section {
+  background: #f3f3f3;
+  height: auto;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .colophon-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .colophon-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
+
+#chronicle-page .colophon-section h2 {
+  padding-left: 5%;
+  padding-top: 50px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .colophon-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .colophon-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+
+#chronicle-page .colophon-description {
+  display: inline-block;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 5%;
+  padding-bottom: 75px;
+  width: 50%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .colophon-description {
+      display: block;
+      float: none;
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .colophon-description {
+      margin-left: 5%; } }
+  #chronicle-page .colophon-description p span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#chronicle-page .colophon-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: right;
+  height: 100%;
+  margin-right: 10%;
+  width: 25%; }
+  #chronicle-page .colophon-image-container img {
+    object-fit: contain;
+    width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .colophon-image-container {
+      display: block;
+      float: none;
+      margin: 25px 20% 50px 20%;
+      max-width: none;
+      width: 60%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .colophon-image-container {
+      margin: 25px 5% 50px 0;
+      width: 30%; } }
+
+#chronicle-page .layout-section {
+  background: #fff;
+  clear: both;
+  height: auto;
+  width: 100%; }
+
+#chronicle-page .layout-section h2 {
+  padding-left: 5%;
+  padding-top: 75px;
+  position: relative;
+  z-index: 20; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .layout-section h2 {
+      display: block;
+      padding: 50px 5% 0 5%;
+      width: 90%; } }
+
+#chronicle-page iframe {
+  height: 550px;
+  margin: -100px 0;
+  padding: 0 10%;
+  width: 80%; }
+
+#chronicle-page .iframe-cover, #chronicle-page .iframe-cover--top, #chronicle-page .iframe-cover--bottom {
+  background: #fff;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  z-index: 10; }
+  #chronicle-page .iframe-cover--top {
+    top: -47px; }
+  #chronicle-page .iframe-cover--bottom {
+    bottom: -14px; }
+
+#chronicle-page .layout-description {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  padding-bottom: 75px;
+  margin-top: -75px;
+  position: relative;
+  width: 100%;
+  z-index: 20; }
+  #chronicle-page .layout-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#chronicle-page .collateral-section {
+  background: #f3f3f3;
+  clear: both;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .collateral-section {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .collateral-section {
+      height: auto;
+      width: 100%; } }
+
+#chronicle-page .collateral-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  margin: 0 5%;
+  width: 35.5%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .collateral-image-container {
+      margin-left: 5%;
+      width: 40%; } }
+  #chronicle-page .collateral-image-container img {
+    object-fit: contain;
+    width: 80%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #chronicle-page .collateral-image-container img {
+        width: 80%; } }
+
+#chronicle-page .collateral-description {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 49.5%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #chronicle-page .collateral-description {
+      margin: 0 5%; } }
+  #chronicle-page .collateral-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#coffee-app-page .main-nav a:hover {
+  color: #f1a75e; }
+
+#coffee-app-page .fa:hover {
+  color: #f1a75e; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #coffee-app-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#coffee-app-page .hero-section {
+  background: url("../images/projects/coffee-app/coffee-app-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#coffee-app-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .overview-section {
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .overview-section {
+      margin: 0;
+      width: 100%; } }
+
+#coffee-app-page .overview-left, .overview-right {
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .overview-left, .overview-right {
+      padding-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .overview-left, .overview-right {
+      margin-bottom: 125px;
+      padding-top: 75px;
+      visibility: visible; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #about-page .overview-right {
+    margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    margin-bottom: 125px;
+    padding-top: 75px;
+    visibility: visible; } }
+
+#coffee-app-page .overview-right img {
+  width: 55%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .overview-right img {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .overview-right img {
+      width: 80%; } }
+
+#coffee-app-page .wireframes-section {
+  background: #fff;
+  border-bottom: 1.5px solid #f3f3f3;
+  border-top: 1.5px solid #f3f3f3;
+  clear: both;
+  width: 100%; }
+
+#coffee-app-page .left-column {
+  background: #f3f3f3;
+  height: auto;
+  margin-left: 10%;
+  padding: 100px 0;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .left-column {
+      margin-left: 0;
+      padding: 50px 0;
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .left-column {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-left: 0;
+      padding: 50px 0;
+      width: 100%; } }
+
+#coffee-app-page .headline-mobile {
+  display: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .headline-mobile {
+      display: block;
+      padding: 0 5% 25px 5%;
+      width: 90%; } }
+
+#coffee-app-page .left-image {
+  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  background: #fff;
+  border: 15px solid #fff;
+  float: left;
+  height: auto;
+  left: -5%;
+  object-fit: contain;
+  position: relative;
+  width: 40%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .left-image {
+      box-sizing: border-box;
+      display: block;
+      float: none;
+      left: 0;
+      margin: 0 5%;
+      position: static;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .left-image {
+      box-sizing: border-box;
+      left: 0;
+      margin-left: 5%;
+      width: 30%; } }
+
+#coffee-app-page .right-description {
+  height: auto;
+  padding-right: 10%;
+  width: 45%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .right-description {
+      padding: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .right-description {
+      padding: 0 5%;
+      width: 55%; } }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .right-description h2 {
+      display: none; } }
+  #coffee-app-page .right-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#coffee-app-page .mockups-section {
+  background: url("../images/projects/coffee-app/palm-trees.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 615px;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .mockups-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .mockups-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
+
+#coffee-app-page .mockups-section h2 {
+  padding-left: 5%;
+  padding-top: 50px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .mockups-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .mockups-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+
+#coffee-app-page .synced-slider-for img {
+  max-width: 200px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .synced-slider-for img {
+      margin: 25px 20% 50px 20%;
+      max-width: none;
+      width: 60%; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #coffee-app-page .synced-slider-nav {
+    width: 60%; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #coffee-app-page .synced-slider-nav {
+    position: relative;
+    top: 7.5px;
+    width: 40%; } }
+
+#coffee-app-page .prototype-section {
+  background: #fff;
+  clear: both;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #coffee-app-page .prototype-section {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .prototype-section {
+      height: auto;
+      width: 100%; } }
+
+#coffee-app-page .prototype-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  width: 45%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .prototype-image-container {
+      margin-left: 5%;
+      width: 30%; } }
+  #coffee-app-page .prototype-image-container img {
+    object-fit: contain;
+    width: 45%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #coffee-app-page .prototype-image-container img {
+        width: 80%; } }
+
+#coffee-app-page .prototype-description {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  width: 55%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #coffee-app-page .prototype-description {
+      margin: 0 5%; } }
+  #coffee-app-page .prototype-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
 
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");

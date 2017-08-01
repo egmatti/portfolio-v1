@@ -1,0 +1,375 @@
+// ==========================================
+// COFFEE APP PAGE
+// ==========================================
+
+// HEADER AND FOOTER
+
+#chronicle-page .main-nav a:hover {
+  color: $color-project-chronicle;
+}
+
+#chronicle-page .fa:hover {
+  color: $color-project-chronicle;
+}
+
+#chronicle-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#chronicle-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "chronicle/chronicle-wall");
+}
+
+
+// OVERVIEW SECTION
+
+#chronicle-page .overview-section {
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+#chronicle-page .overview-left, .overview-right {
+  margin-bottom: $margin-section-vertical - 30px;
+  padding-top: $padding-section + 30px;
+  visibility: hidden;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
+    visibility: visible;
+  }
+}
+
+#about-page .overview-right {
+  @include media-query(small) {
+    margin-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
+    visibility: visible;
+  }
+}
+
+#chronicle-page .overview-right img {
+  width: 55%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    width: 80%;
+  }
+}
+
+
+// LOGO SECTION
+
+#chronicle-page .logo-section {
+  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "chronicle/clock-tower");
+  clear: both;
+  height: 540px; // Same height as the wireframes section on the Coffee App page
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $padding-div 0;
+  }
+
+  @include media-query(medium) {
+    padding: $padding-div 0;
+  }
+}
+
+#chronicle-page .logo-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  margin-left: $margin-page-horizontal;
+  width: 40.5%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    margin-left: 5%;
+    width: 30%;
+  }
+
+  img {
+    object-fit: contain;
+    width: 80%;
+  }
+}
+
+#chronicle-page .logo-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  margin-right: $margin-page-horizontal;
+  width: 49.5%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    margin: 0 5%;
+    width: 55%;
+  }
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+.logo-mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+    margin: $padding-div 20% 0 20%;
+    object-fit: contain;
+    width: 60%;
+  }
+}
+
+
+// COLOPHON SECTION
+
+#chronicle-page .colophon-section {
+  background: $color-body-accent;
+  height: auto;
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $padding-div 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    padding: $padding-div 0;
+    width: 100%;
+  }
+}
+
+#chronicle-page .colophon-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-div;
+
+  @include media-query(small) {
+    display: block;
+    padding: 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    padding: 0 $margin-headline-tablet-horizontal;
+    width: $width-headline-tablet;
+  }
+}
+
+#chronicle-page .colophon-description {
+  display: inline-block;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 5%;
+  padding-bottom: $padding-section;
+  width: 50%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin-left: 5%;
+  }
+
+  p span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+#chronicle-page .colophon-image-container {
+  @include flexbox();
+  float: right;
+  height: 100%;
+  margin-right: 10%;
+  width: 25%;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    margin: $margin-body-text 20% $padding-div 20%;
+    max-width: none;
+    width: 60%;
+  }
+
+  @include media-query(medium) {
+    margin: $margin-body-text 5% $padding-div 0;
+    width: 30%;
+  }
+}
+
+
+// LAYOUT SECTION
+
+#chronicle-page .layout-section {
+  background: $color-body;
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+#chronicle-page .layout-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-section;
+  position: relative;
+  z-index: 20;
+
+  @include media-query(small) {
+    display: block;
+    padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+}
+
+#chronicle-page iframe {
+  height: 550px;
+  margin: -100px 0;
+  padding: 0 $margin-section-horizontal;
+  width: 80%;
+}
+
+#chronicle-page .iframe-cover {
+  background: $color-body;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  @include m(top) {
+    @extend .iframe-cover;
+    top: -47px;
+  }
+
+  @include m(bottom) {
+    @extend .iframe-cover;
+    bottom: -14px;
+  }
+}
+
+#chronicle-page .layout-description {
+  @include flexbox();
+  height: 75px;
+  padding-bottom: $padding-section;
+  margin-top: -75px;
+  position: relative;
+  width: 100%;
+  z-index: 20;
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+
+// COLLATERAL SECTION
+
+#chronicle-page .collateral-section {
+  background: $color-body-accent;
+  clear: both;
+  // Height is being calculated in coffee-app.js
+  width: 100%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+#chronicle-page .collateral-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  margin: 0 5%;
+  width: 35.5%;
+
+  @include media-query(medium) {
+    margin-left: 5%;
+    width: 40%;
+  }
+
+  img {
+    object-fit: contain;
+    width: 80%;
+
+    @include media-query(medium) {
+      width: 80%;
+    }
+  }
+}
+
+#chronicle-page .collateral-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 49.5%;
+
+  @include media-query(medium) {
+    margin: 0 5%;
+  }
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}

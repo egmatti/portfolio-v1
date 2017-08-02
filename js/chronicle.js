@@ -54,19 +54,17 @@ sr.reveal('.collateral-section img', {delay: 250});
 // COLOPHON IMAGE CONTAINER HEIGHT
 
 $(document).ready(function(){
-  var colophonSectionHeight = $("#chronicle-page .colophon-section").outerHeight();
-  var colophonHeadlineHeight = $("#chronicle-page .colophon-section h2").outerHeight();
-  var colophonImageContainerHeight = colophonSectionHeight - colophonHeadlineHeight;
+  var colophonSectionDescriptionHeight = $("#chronicle-page .colophon-description").outerHeight();
 
   if (mediaQuerySmall.matches) {
     // window width is less than 767px
-
+    
   } else if (mediaQueryMedium.matches) {
     // window width is less than 1025px
-    $("#chronicle-page .colophon-image-container").css({"height": colophonImageContainerHeight});
+    $("#chronicle-page .colophon-image-container").css({"height": colophonSectionDescriptionHeight});
   } else {
     // window width is at least 767px
-    // $("#chronicle-page .colophon-image-container").css({"height": colophonImageContainerHeight});
+    $("#chronicle-page .colophon-image-container").css({"height": colophonSectionDescriptionHeight});
   }
 });
 

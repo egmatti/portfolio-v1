@@ -176,6 +176,7 @@
 #chronicle-page .colophon-section {
   background: $color-body-accent;
   height: auto;
+  padding-bottom: $padding-section;
   width: 100%;
 
   @include media-query(small) {
@@ -207,7 +208,6 @@
   height: auto;
   margin-left: 10%;
   margin-right: 5%;
-  padding-bottom: $padding-section;
   width: 50%;
 
   @include media-query(small) {

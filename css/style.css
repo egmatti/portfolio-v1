@@ -2509,6 +2509,7 @@ footer .main-nav__item--first {
 #chronicle-page .colophon-section {
   background: #f3f3f3;
   height: auto;
+  padding-bottom: 75px;
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
     #chronicle-page .colophon-section {
@@ -2535,7 +2536,6 @@ footer .main-nav__item--first {
   height: auto;
   margin-left: 10%;
   margin-right: 5%;
-  padding-bottom: 75px;
   width: 50%; }
   @media (min-width: 0px) and (max-width: 767px) {
     #chronicle-page .colophon-description {

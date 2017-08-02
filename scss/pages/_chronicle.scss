@@ -278,31 +278,6 @@
   }
 }
 
-#chronicle-page iframe {
-  height: 550px;
-  margin: -100px 0;
-  padding: 0 $margin-section-horizontal;
-  width: 80%;
-}
-
-#chronicle-page .iframe-cover {
-  background: $color-body;
-  height: 100px;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-
-  @include m(top) {
-    @extend .iframe-cover;
-    top: -47px;
-  }
-
-  @include m(bottom) {
-    @extend .iframe-cover;
-    bottom: -14px;
-  }
-}
-
 #chronicle-page .layout-description {
   @include flexbox();
   height: 75px;

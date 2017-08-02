@@ -1487,6 +1487,23 @@ footer .main-nav__item--first {
   .synced-slider-nav .slick-prev:before, .synced-slider-nav .slick-next:before {
     color: #0b0b0b; }
 
+.layout-iframe {
+  height: 550px;
+  margin: -100px 0;
+  padding: 0 10%;
+  width: 80%; }
+
+.layout-iframe-cover, .layout-iframe-cover--top, .layout-iframe-cover--bottom {
+  background: #fff;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  z-index: 10; }
+  .layout-iframe-cover--top {
+    top: -47px; }
+  .layout-iframe-cover--bottom {
+    bottom: -14px; }
+
 #home-page .hero-section {
   background: url("../images/home/neon-text.png");
   background-repeat: no-repeat;
@@ -2573,23 +2590,6 @@ footer .main-nav__item--first {
       display: block;
       padding: 50px 5% 0 5%;
       width: 90%; } }
-
-#chronicle-page iframe {
-  height: 550px;
-  margin: -100px 0;
-  padding: 0 10%;
-  width: 80%; }
-
-#chronicle-page .iframe-cover, #chronicle-page .iframe-cover--top, #chronicle-page .iframe-cover--bottom {
-  background: #fff;
-  height: 100px;
-  position: relative;
-  width: 100%;
-  z-index: 10; }
-  #chronicle-page .iframe-cover--top {
-    top: -47px; }
-  #chronicle-page .iframe-cover--bottom {
-    bottom: -14px; }
 
 #chronicle-page .layout-description {
   align-items: center;

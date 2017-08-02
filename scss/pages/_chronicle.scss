@@ -25,6 +25,12 @@
   @include bg-image ($image-folder: "projects", $bg-image: "chronicle/chronicle-wall");
 }
 
+#chronicle-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
 
 // OVERVIEW SECTION
 
@@ -55,7 +61,7 @@
   }
 
   @include media-query(medium) {
-    margin-bottom: $margin-section-vertical;
+    margin-bottom: $padding-section;
     padding-top: $padding-section;
     visibility: visible;
   }
@@ -100,7 +106,7 @@
   }
 
   @include media-query(medium) {
-    padding: $padding-div 0;
+    padding: $padding-section 0;
   }
 }
 
@@ -153,12 +159,12 @@
   }
 }
 
-.logo-mobile {
+#chronicle-page .logo-mobile {
   display: none;
 
   @include media-query(small) {
     display: block;
-    margin: $padding-div 20% 0 20%;
+    margin: $margin-body-text 20% 0 20%;
     object-fit: contain;
     width: 60%;
   }
@@ -177,12 +183,6 @@
     padding: $padding-div 0;
     width: 100%;
   }
-
-  @include media-query(medium) {
-    height: auto;
-    padding: $padding-div 0;
-    width: 100%;
-  }
 }
 
 #chronicle-page .colophon-section h2 {
@@ -197,7 +197,7 @@
 
   @include media-query(medium) {
     display: block;
-    padding: 0 $margin-headline-tablet-horizontal;
+    padding: $padding-section $margin-headline-tablet-horizontal 0 $margin-headline-tablet-horizontal;
     width: $width-headline-tablet;
   }
 }
@@ -214,11 +214,13 @@
     display: block;
     float: none;
     margin: 0 $margin-page-mobile-horizontal;
+    padding-bottom: 0;
     width: $width-page-mobile;
   }
 
   @include media-query(medium) {
     margin-left: 5%;
+    width: 55%;
   }
 
   p span {
@@ -230,7 +232,7 @@
 #chronicle-page .colophon-image-container {
   @include flexbox();
   float: right;
-  height: 100%;
+  // Height is being calculated in chronicle.js
   margin-right: 10%;
   width: 25%;
 
@@ -242,13 +244,13 @@
   @include media-query(small) {
     display: block;
     float: none;
-    margin: $margin-body-text 20% $padding-div 20%;
+    margin: $margin-body-text 20% 0 20%;
     max-width: none;
     width: 60%;
   }
 
   @include media-query(medium) {
-    margin: $margin-body-text 5% $padding-div 0;
+    margin: 0 5% 0 0;
     width: 30%;
   }
 }
@@ -310,6 +312,14 @@
   width: 100%;
   z-index: 20;
 
+  @include media-query(small) {
+    bottom: 50px;
+    display: block;
+    margin: 0 5% -75px 5%;
+    position: relative;
+    width: 90%;
+  }
+
   span {
     font-weight: $font-weight-bold;
     padding-right: 2.5px;
@@ -326,12 +336,7 @@
   width: 100%;
 
   @include media-query(small) {
-    display: none;
-  }
-
-  @include media-query(medium) {
     height: auto;
-    width: 100%;
   }
 }
 
@@ -342,18 +347,13 @@
   margin: 0 5%;
   width: 35.5%;
 
-  @include media-query(medium) {
-    margin-left: 5%;
-    width: 40%;
+  @include media-query(small) {
+    display: none;
   }
 
   img {
     object-fit: contain;
     width: 80%;
-
-    @include media-query(medium) {
-      width: 80%;
-    }
   }
 }
 
@@ -364,12 +364,26 @@
   margin-right: 5%;
   width: 49.5%;
 
-  @include media-query(medium) {
-    margin: 0 5%;
+  @include media-query(small) {
+    float: none;
+    height: auto;
+    padding: $padding-div $margin-page-mobile-horizontal 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
   }
 
   span {
     font-weight: $font-weight-bold;
     padding-right: 2.5px;
+  }
+}
+
+#chronicle-page .collateral-mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+    padding: $padding-div 20%;
+    object-fit: contain;
+    width: 60%;
   }
 }

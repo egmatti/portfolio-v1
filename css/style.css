@@ -2250,10 +2250,10 @@ footer .main-nav__item--first {
     font-weight: 700;
     padding-right: 2.5px; }
 
-.logo-mobile {
+#ballad-page .logo-mobile {
   display: none; }
   @media (min-width: 0px) and (max-width: 767px) {
-    .logo-mobile {
+    #ballad-page .logo-mobile {
       display: block;
       margin: 50px 20% 0 20%;
       object-fit: contain;
@@ -2370,6 +2370,10 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  #chronicle-page .headline-container h1, #chronicle-page .headline-container .main-nav a, .main-nav #chronicle-page .headline-container a, #chronicle-page .headline-container .main-nav-mobile a, .main-nav-mobile #chronicle-page .headline-container a {
+    font-size: 1.66rem; } }
+
 #chronicle-page .overview-section {
   margin: 0 5%;
   width: 90%; }
@@ -2393,7 +2397,7 @@ footer .main-nav__item--first {
       visibility: visible; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #chronicle-page .overview-left, .overview-right {
-      margin-bottom: 125px;
+      margin-bottom: 75px;
       padding-top: 75px;
       visibility: visible; } }
 
@@ -2430,7 +2434,7 @@ footer .main-nav__item--first {
       padding: 50px 0; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #chronicle-page .logo-section {
-      padding: 50px 0; } }
+      padding: 75px 0; } }
 
 #chronicle-page .logo-image-container {
   align-items: center;
@@ -2476,12 +2480,12 @@ footer .main-nav__item--first {
     font-weight: 700;
     padding-right: 2.5px; }
 
-.logo-mobile {
+#chronicle-page .logo-mobile {
   display: none; }
   @media (min-width: 0px) and (max-width: 767px) {
-    .logo-mobile {
+    #chronicle-page .logo-mobile {
       display: block;
-      margin: 50px 20% 0 20%;
+      margin: 25px 20% 0 20%;
       object-fit: contain;
       width: 60%; } }
 
@@ -2490,11 +2494,6 @@ footer .main-nav__item--first {
   height: auto;
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
-    #chronicle-page .colophon-section {
-      height: auto;
-      padding: 50px 0;
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
     #chronicle-page .colophon-section {
       height: auto;
       padding: 50px 0;
@@ -2511,7 +2510,7 @@ footer .main-nav__item--first {
   @media (min-width: 768px) and (max-width: 1025px) {
     #chronicle-page .colophon-section h2 {
       display: block;
-      padding: 0 5%;
+      padding: 75px 5% 0 5%;
       width: 90%; } }
 
 #chronicle-page .colophon-description {
@@ -2526,10 +2525,12 @@ footer .main-nav__item--first {
       display: block;
       float: none;
       margin: 0 10%;
+      padding-bottom: 0;
       width: 80%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #chronicle-page .colophon-description {
-      margin-left: 5%; } }
+      margin-left: 5%;
+      width: 55%; } }
   #chronicle-page .colophon-description p span {
     font-weight: 700;
     padding-right: 2.5px; }
@@ -2539,7 +2540,6 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: center;
   float: right;
-  height: 100%;
   margin-right: 10%;
   width: 25%; }
   #chronicle-page .colophon-image-container img {
@@ -2549,12 +2549,12 @@ footer .main-nav__item--first {
     #chronicle-page .colophon-image-container {
       display: block;
       float: none;
-      margin: 25px 20% 50px 20%;
+      margin: 25px 20% 0 20%;
       max-width: none;
       width: 60%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #chronicle-page .colophon-image-container {
-      margin: 25px 5% 50px 0;
+      margin: 0 5% 0 0;
       width: 30%; } }
 
 #chronicle-page .layout-section {
@@ -2601,6 +2601,13 @@ footer .main-nav__item--first {
   position: relative;
   width: 100%;
   z-index: 20; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .layout-description {
+      bottom: 50px;
+      display: block;
+      margin: 0 5% -75px 5%;
+      position: relative;
+      width: 90%; } }
   #chronicle-page .layout-description span {
     font-weight: 700;
     padding-right: 2.5px; }
@@ -2611,11 +2618,7 @@ footer .main-nav__item--first {
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
     #chronicle-page .collateral-section {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #chronicle-page .collateral-section {
-      height: auto;
-      width: 100%; } }
+      height: auto; } }
 
 #chronicle-page .collateral-image-container {
   align-items: center;
@@ -2625,16 +2628,12 @@ footer .main-nav__item--first {
   height: 100%;
   margin: 0 5%;
   width: 35.5%; }
-  @media (min-width: 768px) and (max-width: 1025px) {
+  @media (min-width: 0px) and (max-width: 767px) {
     #chronicle-page .collateral-image-container {
-      margin-left: 5%;
-      width: 40%; } }
+      display: none; } }
   #chronicle-page .collateral-image-container img {
     object-fit: contain;
     width: 80%; }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #chronicle-page .collateral-image-container img {
-        width: 80%; } }
 
 #chronicle-page .collateral-description {
   align-items: flex-start;
@@ -2645,12 +2644,24 @@ footer .main-nav__item--first {
   height: 100%;
   margin-right: 5%;
   width: 49.5%; }
-  @media (min-width: 768px) and (max-width: 1025px) {
+  @media (min-width: 0px) and (max-width: 767px) {
     #chronicle-page .collateral-description {
-      margin: 0 5%; } }
+      float: none;
+      height: auto;
+      padding: 50px 10% 0 10%;
+      width: 80%; } }
   #chronicle-page .collateral-description span {
     font-weight: 700;
     padding-right: 2.5px; }
+
+#chronicle-page .collateral-mobile {
+  display: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #chronicle-page .collateral-mobile {
+      display: block;
+      padding: 50px 20%;
+      object-fit: contain;
+      width: 60%; } }
 
 #coffee-app-page .main-nav a:hover {
   color: #f1a75e; }

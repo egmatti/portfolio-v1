@@ -51,11 +51,23 @@ sr.reveal('.colophon-section img', {delay: 250});
 sr.reveal('.collateral-section img', {delay: 250});
 
 
-// LOGO SECTION HEIGHT
+// COLOPHON IMAGE CONTAINER HEIGHT
 
 $(document).ready(function(){
-  var leftColumnHeight = $("#chronicle-page .left-column").outerHeight();
-  $("#chronicle-page .logo-section").css({"height": leftColumnHeight});
+  var colophonSectionHeight = $("#chronicle-page .colophon-section").outerHeight();
+  var colophonHeadlineHeight = $("#chronicle-page .colophon-section h2").outerHeight();
+  var colophonImageContainerHeight = colophonSectionHeight - colophonHeadlineHeight;
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+    $("#chronicle-page .colophon-image-container").css({"height": colophonImageContainerHeight});
+  } else {
+    // window width is at least 767px
+    // $("#chronicle-page .colophon-image-container").css({"height": colophonImageContainerHeight});
+  }
 });
 
 
@@ -63,16 +75,17 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   var collateralImageContainerHeight = $("#chronicle-page .collateral-image-container").outerHeight() + 150;
-  var collateralDescriptionHeight = $("#chronicle-page .collateral-description").outerHeight() + 150;
+  var collateralDescriptionTabletHeight = $("#chronicle-page .collateral-description").outerHeight() + 100;
+  var collateralDescriptionDesktopHeight = $("#chronicle-page .collateral-description").outerHeight() + 150;
 
   if (mediaQuerySmall.matches) {
     // window width is less than 767px
 
   } else if (mediaQueryMedium.matches) {
     // window width is less than 1025px
-    $("#chronicle-page .collateral-section").css({"height": collateralDescriptionHeight});
+    $("#chronicle-page .collateral-section").css({"height": collateralDescriptionDesktopHeight});
   } else {
     // window width is at least 767px
-    $("#chronicle-page .collateral-section").css({"height": collateralDescriptionHeight});
+    $("#chronicle-page .collateral-section").css({"height": collateralDescriptionDesktopHeight});
   }
 });

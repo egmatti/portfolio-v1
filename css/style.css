@@ -2902,6 +2902,108 @@ footer .main-nav__item--first {
     font-weight: 700;
     padding-right: 2.5px; }
 
+#dogs-booklet-page .main-nav a:hover {
+  color: #c3c230; }
+
+#dogs-booklet-page .fa:hover {
+  color: #c3c230; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #dogs-booklet-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#dogs-booklet-page .hero-section {
+  background: url("../images/projects/dogs-booklet/dogs-booklet-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#dogs-booklet-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogs-booklet-page .overview-section {
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #dogs-booklet-page .overview-section {
+      margin: 0;
+      width: 100%; } }
+
+#dogs-booklet-page .overview-left, .overview-right {
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogs-booklet-page .overview-left, .overview-right {
+      padding-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #dogs-booklet-page .overview-left, .overview-right {
+      margin-bottom: 75px;
+      padding-top: 75px;
+      visibility: visible; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #about-page .overview-right {
+    margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    margin-bottom: 125px;
+    padding-top: 75px;
+    visibility: visible; } }
+
+#dogs-booklet-page .overview-right img {
+  width: 55%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogs-booklet-page .overview-right img {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #dogs-booklet-page .overview-right img {
+      width: 80%; } }
+
+#dogs-booklet-page .layout-section {
+  background: #f3f3f3;
+  clear: both;
+  height: auto;
+  width: 100%; }
+
+#dogs-booklet-page .layout-section h2 {
+  padding-left: 5%;
+  padding-top: 75px;
+  position: relative;
+  z-index: 20; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogs-booklet-page .layout-section h2 {
+      display: block;
+      padding: 50px 5% 0 5%;
+      width: 90%; } }
+
+#dogs-booklet-page .layout-iframe-cover--top, #dogs-booklet-page .layout-iframe-cover--bottom {
+  background: #f3f3f3; }
+
+#dogs-booklet-page .layout-description {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  padding-bottom: 75px;
+  margin-top: -75px;
+  position: relative;
+  width: 100%;
+  z-index: 20; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogs-booklet-page .layout-description {
+      bottom: 50px;
+      display: block;
+      margin: 0 5% -75px 5%;
+      position: relative;
+      width: 90%; } }
+  #dogs-booklet-page .layout-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");
   background-repeat: no-repeat;

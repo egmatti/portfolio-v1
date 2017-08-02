@@ -3145,6 +3145,191 @@ footer .main-nav__item--first {
   #jamaica-stickers-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
     padding-top: 25px; } }
 
+#stillwater-shirt-page .main-nav a:hover {
+  color: #bc5441; }
+
+#stillwater-shirt-page .fa:hover {
+  color: #bc5441; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #stillwater-shirt-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#stillwater-shirt-page .hero-section {
+  background: url("../images/projects/stillwater-shirt/stillwater-shirt-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#stillwater-shirt-page .overview-section {
+  margin: 0;
+  width: 100%; }
+
+#stillwater-shirt-page .overview-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 105px 25% 45px 25%;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .overview-container {
+      padding: 50px 10%;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .overview-container {
+      padding: 75px 10%;
+      visibility: visible; } }
+
+#stillwater-shirt-page .pocket-design-section {
+  background: url("../images/projects/ballad/retro-stripes.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 540px;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .pocket-design-section {
+      height: auto;
+      padding: 50px 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .pocket-design-section {
+      padding: 50px 0; } }
+
+#stillwater-shirt-page .pocket-design-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  margin-left: 5%;
+  width: 40.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .pocket-design-image-container {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .pocket-design-image-container {
+      margin-left: 5%;
+      width: 30%; } }
+  #stillwater-shirt-page .pocket-design-image-container img {
+    object-fit: contain;
+    width: 55%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #stillwater-shirt-page .pocket-design-image-container img {
+        width: 80%; } }
+
+#stillwater-shirt-page .pocket-design-description {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 49.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .pocket-design-description {
+      display: block;
+      float: none;
+      height: auto;
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .pocket-design-description {
+      height: auto;
+      margin: 0 5%;
+      width: 55%; } }
+  #stillwater-shirt-page .pocket-design-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#stillwater-shirt-page .pocket-design-mobile {
+  display: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .pocket-design-mobile {
+      display: block;
+      margin: 50px 20% 0 20%;
+      object-fit: contain;
+      width: 60%; } }
+
+#stillwater-shirt-page .shirt-design-section {
+  height: 700px;
+  padding: 75px 0;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .shirt-design-section {
+      padding: 50px 0; } }
+
+#stillwater-shirt-page .shirt-design-section h2 {
+  padding-left: 5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .shirt-design-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+
+#stillwater-shirt-page .shirt-design-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .shirt-design-image-container {
+      margin: 0 5%;
+      width: 90%; } }
+  #stillwater-shirt-page .shirt-design-image-container img {
+    height: 100%;
+    object-fit: contain; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #stillwater-shirt-page .shirt-design-image-container img {
+        margin-bottom: 50px; } }
+
+#stillwater-shirt-page .screenprinting-section {
+  background: #f3f3f3;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .screenprinting-section {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .screenprinting-section {
+      height: auto;
+      width: 100%; } }
+
+#stillwater-shirt-page .screenprinting-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  width: 40.5%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .screenprinting-image-container {
+      margin-left: 5%;
+      width: 30%; } }
+  #stillwater-shirt-page .screenprinting-image-container img {
+    object-fit: contain;
+    width: 45%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #stillwater-shirt-page .screenprinting-image-container img {
+        width: 80%; } }
+
+#stillwater-shirt-page .screenprinting-description {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  margin-right: 10%;
+  width: 49.5%; }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .screenprinting-description {
+      margin: 0 5%; } }
+  #stillwater-shirt-page .screenprinting-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");
   background-repeat: no-repeat;

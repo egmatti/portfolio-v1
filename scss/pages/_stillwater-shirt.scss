@@ -1,0 +1,232 @@
+// ==========================================
+// STILLWATER SHIRT PAGE
+// ==========================================
+
+// HEADER AND FOOTER
+
+#stillwater-shirt-page .main-nav a:hover {
+  color: $color-project-stillwater-shirt;
+}
+
+#stillwater-shirt-page .fa:hover {
+  color: $color-project-stillwater-shirt;
+}
+
+#stillwater-shirt-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#stillwater-shirt-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "stillwater-shirt/stillwater-shirt-wall");
+}
+
+
+// OVERVIEW SECTION
+
+#stillwater-shirt-page .overview-section {
+  margin: 0;
+  width: 100%;
+}
+
+#stillwater-shirt-page .overview-container {
+  @include flexbox ($direction: column);
+  padding: ($padding-section + 30px) 25% ($padding-section - 30px) 25%;
+  visibility: hidden;
+
+  @include media-query(small) {
+    padding: $padding-div $margin-page-mobile-horizontal;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
+    padding: $padding-section $margin-page-tablet-horizontal;
+    visibility: visible;
+  }
+}
+
+
+// POCKET DESIGN SECTION
+
+#stillwater-shirt-page .pocket-design-section {
+  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "ballad/retro-stripes");
+  height: 540px; // Same height as the wireframes section on the Coffee App page
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $padding-div 0;
+  }
+
+  @include media-query(medium) {
+    padding: $padding-div 0;
+  }
+}
+
+#stillwater-shirt-page .pocket-design-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  margin-left: $margin-page-horizontal;
+  width: 40.5%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    margin-left: 5%;
+    width: 30%;
+  }
+
+  img {
+    object-fit: contain;
+    width: 55%;
+
+    @include media-query(medium) {
+      width: 80%;
+    }
+  }
+}
+
+#stillwater-shirt-page .pocket-design-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  margin-right: $margin-page-horizontal;
+  width: 49.5%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    margin: 0 5%;
+    width: 55%;
+  }
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+#stillwater-shirt-page .pocket-design-mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+    margin: $padding-div 20% 0 20%;
+    object-fit: contain;
+    width: 60%;
+  }
+}
+
+
+// SHIRT DESIGN SECTION
+
+#stillwater-shirt-page .shirt-design-section {
+  height: 700px;
+  padding: $padding-section 0;
+  width: 100%;
+
+  @include media-query(small) {
+    padding: $padding-div 0;
+  }
+}
+
+#stillwater-shirt-page .shirt-design-section h2 {
+  padding-left: $margin-page-horizontal;
+
+  @include media-query(small) {
+    display: block;
+    padding: 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+}
+
+#stillwater-shirt-page .shirt-design-image-container {
+  @include flexbox();
+  // Height is being calculated in stillwater-shirt.js
+  width: 100%;
+
+  @include media-query(small) {
+    margin: 0 $margin-image-mobile-horizontal;
+    width: $width-image-mobile;
+  }
+
+  img {
+    height: 100%;
+    object-fit: contain;
+
+    @include media-query(small) {
+      margin-bottom: $padding-div;
+    }
+  }
+}
+
+
+// SCREENPRINTING SECTION
+
+#stillwater-shirt-page .screenprinting-section {
+  background: $color-body-accent;
+  // Height is being calculated in stillwater-shirt.js
+  width: 100%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+#stillwater-shirt-page .screenprinting-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  // margin-left: $margin-page-horizontal;
+  width: 40.5%;
+
+  @include media-query(medium) {
+    margin-left: 5%;
+    width: 30%;
+  }
+
+  img {
+    object-fit: contain;
+    width: 45%;
+
+    @include media-query(medium) {
+      width: 80%;
+    }
+  }
+}
+
+#stillwater-shirt-page .screenprinting-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  margin-right: $margin-section-horizontal;
+  width: 49.5%;
+
+  @include media-query(medium) {
+    margin: 0 5%;
+  }
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}

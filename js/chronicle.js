@@ -85,7 +85,7 @@ $(document).ready(function(){
     // window width is less than 1025px
     $("#chronicle-page .collateral-section").css({"height": collateralDescriptionDesktopHeight});
   } else {
-    // window width is at least 767px
+    // window width is at least 1025px
     $("#chronicle-page .collateral-section").css({"height": collateralDescriptionDesktopHeight});
   }
 });

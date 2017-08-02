@@ -52,6 +52,14 @@ sr.reveal('.mockups-section .synced-slider-nav img', {delay: 475}, 175);
 sr.reveal('.prototype-section img', {delay: 250});
 
 
+// WIREFRAME SECTION HEIGHT
+
+$(document).ready(function(){
+  var leftColumnHeight = $("#coffee-app-page .left-column").outerHeight();
+  $("#coffee-app-page .wireframes-section").css({"height": leftColumnHeight});
+});
+
+
 // MOCKUPS SLIDER
 
 $(".synced-slider-for").slick({
@@ -68,14 +76,6 @@ $(".synced-slider-nav").slick({
   infinite: true,
   slidesToScroll: 1,
   slidesToShow: 3
-});
-
-
-// WIREFRAME SECTION HEIGHT
-
-$(document).ready(function(){
-  var leftColumnHeight = $("#coffee-app-page .left-column").outerHeight();
-  $("#coffee-app-page .wireframes-section").css({"height": leftColumnHeight});
 });
 
 

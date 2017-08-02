@@ -1,0 +1,183 @@
+// ==========================================
+// JAMAICA STICKERS PAGE
+// ==========================================
+
+// HEADER AND FOOTER
+
+#jamaica-stickers-page .main-nav a:hover {
+  color: $color-project-jamaica-stickers;
+}
+
+#jamaica-stickers-page .fa:hover {
+  color: $color-project-jamaica-stickers;
+}
+
+#jamaica-stickers-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#jamaica-stickers-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "jamaica-stickers/jamaica-stickers-wall");
+}
+
+#jamaica-stickers-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
+
+// OVERVIEW SECTION
+
+#jamaica-stickers-page .overview-section {
+  margin: 0;
+  width: 100%;
+}
+
+#jamaica-stickers-page .overview-container {
+  @include flexbox ($direction: column);
+  padding: ($padding-section + 30px) 25% ($padding-section - 30px) 25%;
+  visibility: hidden;
+
+  @include media-query(small) {
+    padding: $padding-div $margin-page-mobile-horizontal;
+    visibility: visible;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    padding: $padding-section $margin-page-tablet-horizontal;
+    visibility: visible;
+  }
+}
+
+
+// DESIGNS SECTION
+
+#jamaica-stickers-page .designs-section {
+  background: $color-body-accent;
+  height: 615px;
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $padding-div 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    padding: $padding-div 0;
+    width: 100%;
+  }
+}
+
+#jamaica-stickers-page .designs-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-div;
+
+  @include media-query(small) {
+    display: block;
+    padding: 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    padding: 0 $margin-headline-tablet-horizontal;
+    width: $width-headline-tablet;
+  }
+}
+
+#jamaica-stickers-page .synced-slider-for {
+  padding-bottom: $padding-div;
+
+  @include media-query(small) {
+    padding-bottom: 0;
+  }
+
+  @include media-query(medium) {
+    padding-bottom: 0;
+  }
+}
+
+#jamaica-stickers-page .design-image-container {
+  @include flexbox();
+  float: right;
+  // Height is being calculated in jamaica-stickers.js
+  margin-right: 10%;
+  width: 20%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    margin: $margin-body-text 20% $padding-div 20%;
+    width: 60%;
+  }
+
+  @include media-query(medium) {
+    margin-right: 5%;
+    width: 30%;
+  }
+}
+
+#jamaica-stickers-page .synced-slider-for img {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+
+  @include media-query(small) {
+    margin: 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+#jamaica-stickers-page .synced-slider-nav {
+  bottom: 40px;
+  position: relative;
+  width: 15%;
+
+  @include media-query(small) {
+    bottom: 0;
+    position: relative;
+    width: 40%;
+  }
+
+  @include media-query(medium) {
+    bottom: 0;
+    padding-top: $margin-body-text;
+    position: relative;
+    top: 7.5px;
+    width: 30%;
+  }
+
+  img {
+    left: 30%;
+    width: 45%;
+
+    @include media-query(small) {
+      left: 27.5%;
+      width: 50%;
+    }
+
+    @include media-query(medium) {
+      width: 50%;
+    }
+  }
+}
+
+#jamaica-stickers-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
+  @include media-query(medium) {
+    padding-top: $margin-body-text;
+  }
+}

@@ -3004,6 +3004,147 @@ footer .main-nav__item--first {
     font-weight: 700;
     padding-right: 2.5px; }
 
+#jamaica-stickers-page .main-nav a:hover {
+  color: #ef506d; }
+
+#jamaica-stickers-page .fa:hover {
+  color: #ef506d; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #jamaica-stickers-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#jamaica-stickers-page .hero-section {
+  background: url("../images/projects/jamaica-stickers/jamaica-stickers-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #jamaica-stickers-page .headline-container h1, #jamaica-stickers-page .headline-container .main-nav a, .main-nav #jamaica-stickers-page .headline-container a, #jamaica-stickers-page .headline-container .main-nav-mobile a, .main-nav-mobile #jamaica-stickers-page .headline-container a {
+    font-size: 1.66rem; } }
+
+#jamaica-stickers-page .overview-section {
+  margin: 0;
+  width: 100%; }
+
+#jamaica-stickers-page .overview-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 105px 25% 45px 25%;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #jamaica-stickers-page .overview-container {
+      padding: 50px 10%;
+      visibility: visible;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #jamaica-stickers-page .overview-container {
+      padding: 75px 10%;
+      visibility: visible; } }
+
+#jamaica-stickers-page .designs-section {
+  background: #f3f3f3;
+  height: 615px;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #jamaica-stickers-page .designs-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #jamaica-stickers-page .designs-section {
+      height: auto;
+      padding: 50px 0;
+      width: 100%; } }
+
+#jamaica-stickers-page .designs-section h2 {
+  padding-left: 5%;
+  padding-top: 50px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #jamaica-stickers-page .designs-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #jamaica-stickers-page .designs-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+
+#jamaica-stickers-page .synced-slider-for {
+  padding-bottom: 50px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #jamaica-stickers-page .synced-slider-for {
+      padding-bottom: 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #jamaica-stickers-page .synced-slider-for {
+      padding-bottom: 0; } }
+
+#jamaica-stickers-page .design-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  float: right;
+  margin-right: 10%;
+  width: 20%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #jamaica-stickers-page .design-image-container {
+      display: block;
+      float: none;
+      margin: 25px 20% 50px 20%;
+      width: 60%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #jamaica-stickers-page .design-image-container {
+      margin-right: 5%;
+      width: 30%; } }
+
+#jamaica-stickers-page .synced-slider-for img {
+  float: none;
+  margin-right: 0;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #jamaica-stickers-page .synced-slider-for img {
+      margin: 0;
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #jamaica-stickers-page .synced-slider-for img {
+      margin: 0;
+      width: 100%; } }
+
+#jamaica-stickers-page .synced-slider-nav {
+  bottom: 40px;
+  position: relative;
+  width: 15%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #jamaica-stickers-page .synced-slider-nav {
+      bottom: 0;
+      position: relative;
+      width: 40%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #jamaica-stickers-page .synced-slider-nav {
+      bottom: 0;
+      padding-top: 25px;
+      position: relative;
+      top: 7.5px;
+      width: 30%; } }
+  #jamaica-stickers-page .synced-slider-nav img {
+    left: 30%;
+    width: 45%; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #jamaica-stickers-page .synced-slider-nav img {
+        left: 27.5%;
+        width: 50%; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #jamaica-stickers-page .synced-slider-nav img {
+        width: 50%; } }
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  #jamaica-stickers-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
+    padding-top: 25px; } }
+
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");
   background-repeat: no-repeat;

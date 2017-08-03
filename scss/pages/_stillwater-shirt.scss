@@ -25,6 +25,12 @@
   @include bg-image ($image-folder: "projects", $bg-image: "stillwater-shirt/stillwater-shirt-wall");
 }
 
+#stillwater-shirt-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
 
 // OVERVIEW SECTION
 
@@ -53,7 +59,7 @@
 // POCKET DESIGN SECTION
 
 #stillwater-shirt-page .pocket-design-section {
-  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "ballad/retro-stripes");
+  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "stillwater-shirt/guitar-and-amp");
   height: 540px; // Same height as the wireframes section on the Coffee App page
   width: 100%;
 
@@ -63,7 +69,7 @@
   }
 
   @include media-query(medium) {
-    padding: $padding-div 0;
+    padding: $padding-section 0;
   }
 }
 
@@ -135,11 +141,12 @@
 // SHIRT DESIGN SECTION
 
 #stillwater-shirt-page .shirt-design-section {
-  height: 700px;
+  height: 600px;
   padding: $padding-section 0;
   width: 100%;
 
   @include media-query(small) {
+    height: auto;
     padding: $padding-div 0;
   }
 }
@@ -160,7 +167,8 @@
   width: 100%;
 
   @include media-query(small) {
-    margin: 0 $margin-image-mobile-horizontal;
+    display: block;
+    margin: $margin-body-text $margin-image-mobile-horizontal 0 $margin-image-mobile-horizontal;
     width: $width-image-mobile;
   }
 
@@ -169,21 +177,40 @@
     object-fit: contain;
 
     @include media-query(small) {
-      margin-bottom: $padding-div;
+      height: auto;
+      width: 100%;
     }
   }
 }
 
+#stillwater-shirt-page .shirt-design-description {
+  @include flexbox();
+  height: 75px;
+  width: 100%;
 
-// SCREENPRINTING SECTION
+  @include media-query(small) {
+    display: block;
+    margin: 0 5%;
+    width: 90%;
+  }
 
-#stillwater-shirt-page .screenprinting-section {
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+
+// SCREENPRINT SECTION
+
+#stillwater-shirt-page .screenprint-section {
   background: $color-body-accent;
   // Height is being calculated in stillwater-shirt.js
   width: 100%;
 
   @include media-query(small) {
-    display: none;
+    height: auto;
+    padding: $padding-div 0;
   }
 
   @include media-query(medium) {
@@ -192,12 +219,15 @@
   }
 }
 
-#stillwater-shirt-page .screenprinting-image-container {
+#stillwater-shirt-page .screenprint-image-container {
   @include flexbox();
   float: left;
   height: 100%;
-  // margin-left: $margin-page-horizontal;
   width: 40.5%;
+
+  @include media-query(small) {
+    display: none;
+  }
 
   @include media-query(medium) {
     margin-left: 5%;
@@ -206,7 +236,7 @@
 
   img {
     object-fit: contain;
-    width: 45%;
+    width: 55%;
 
     @include media-query(medium) {
       width: 80%;
@@ -214,12 +244,20 @@
   }
 }
 
-#stillwater-shirt-page .screenprinting-description {
+#stillwater-shirt-page .screenprint-description {
   @include flexbox($direction: column, $align: flex-start);
   float: right;
   height: 100%;
   margin-right: $margin-section-horizontal;
   width: 49.5%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    height: auto;
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
 
   @include media-query(medium) {
     margin: 0 5%;
@@ -228,5 +266,16 @@
   span {
     font-weight: $font-weight-bold;
     padding-right: 2.5px;
+  }
+}
+
+#stillwater-shirt-page .screenprint-mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+    margin: $padding-div 20% 0 20%;
+    object-fit: contain;
+    width: 60%;
   }
 }

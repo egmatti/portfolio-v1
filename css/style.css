@@ -2218,7 +2218,7 @@ footer .main-nav__item--first {
       padding: 50px 0; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #ballad-page .logo-section {
-      padding: 50px 0; } }
+      padding: 75px 0; } }
 
 #ballad-page .logo-image-container {
   align-items: center;
@@ -3161,6 +3161,10 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  #stillwater-shirt-page .headline-container h1, #stillwater-shirt-page .headline-container .main-nav a, .main-nav #stillwater-shirt-page .headline-container a, #stillwater-shirt-page .headline-container .main-nav-mobile a, .main-nav-mobile #stillwater-shirt-page .headline-container a {
+    font-size: 1.66rem; } }
+
 #stillwater-shirt-page .overview-section {
   margin: 0;
   width: 100%; }
@@ -3182,7 +3186,7 @@ footer .main-nav__item--first {
       visibility: visible; } }
 
 #stillwater-shirt-page .pocket-design-section {
-  background: url("../images/projects/ballad/retro-stripes.png");
+  background: url("../images/projects/stillwater-shirt/guitar-and-amp.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3195,7 +3199,7 @@ footer .main-nav__item--first {
       padding: 50px 0; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #stillwater-shirt-page .pocket-design-section {
-      padding: 50px 0; } }
+      padding: 75px 0; } }
 
 #stillwater-shirt-page .pocket-design-image-container {
   align-items: center;
@@ -3254,11 +3258,12 @@ footer .main-nav__item--first {
       width: 60%; } }
 
 #stillwater-shirt-page .shirt-design-section {
-  height: 700px;
+  height: 600px;
   padding: 75px 0;
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
     #stillwater-shirt-page .shirt-design-section {
+      height: auto;
       padding: 50px 0; } }
 
 #stillwater-shirt-page .shirt-design-section h2 {
@@ -3276,45 +3281,66 @@ footer .main-nav__item--first {
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
     #stillwater-shirt-page .shirt-design-image-container {
-      margin: 0 5%;
+      display: block;
+      margin: 25px 5% 0 5%;
       width: 90%; } }
   #stillwater-shirt-page .shirt-design-image-container img {
     height: 100%;
     object-fit: contain; }
     @media (min-width: 0px) and (max-width: 767px) {
       #stillwater-shirt-page .shirt-design-image-container img {
-        margin-bottom: 50px; } }
+        height: auto;
+        width: 100%; } }
 
-#stillwater-shirt-page .screenprinting-section {
+#stillwater-shirt-page .shirt-design-description {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .shirt-design-description {
+      display: block;
+      margin: 0 5%;
+      width: 90%; } }
+  #stillwater-shirt-page .shirt-design-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#stillwater-shirt-page .screenprint-section {
   background: #f3f3f3;
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .screenprinting-section {
-      display: none; } }
+    #stillwater-shirt-page .screenprint-section {
+      height: auto;
+      padding: 50px 0; } }
   @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .screenprinting-section {
+    #stillwater-shirt-page .screenprint-section {
       height: auto;
       width: 100%; } }
 
-#stillwater-shirt-page .screenprinting-image-container {
+#stillwater-shirt-page .screenprint-image-container {
   align-items: center;
   display: flex;
   justify-content: center;
   float: left;
   height: 100%;
   width: 40.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .screenprint-image-container {
+      display: none; } }
   @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .screenprinting-image-container {
+    #stillwater-shirt-page .screenprint-image-container {
       margin-left: 5%;
       width: 30%; } }
-  #stillwater-shirt-page .screenprinting-image-container img {
+  #stillwater-shirt-page .screenprint-image-container img {
     object-fit: contain;
-    width: 45%; }
+    width: 55%; }
     @media (min-width: 768px) and (max-width: 1025px) {
-      #stillwater-shirt-page .screenprinting-image-container img {
+      #stillwater-shirt-page .screenprint-image-container img {
         width: 80%; } }
 
-#stillwater-shirt-page .screenprinting-description {
+#stillwater-shirt-page .screenprint-description {
   align-items: flex-start;
   display: flex;
   justify-content: center;
@@ -3323,12 +3349,28 @@ footer .main-nav__item--first {
   height: 100%;
   margin-right: 10%;
   width: 49.5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .screenprint-description {
+      display: block;
+      float: none;
+      height: auto;
+      margin: 0 10%;
+      width: 80%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .screenprinting-description {
+    #stillwater-shirt-page .screenprint-description {
       margin: 0 5%; } }
-  #stillwater-shirt-page .screenprinting-description span {
+  #stillwater-shirt-page .screenprint-description span {
     font-weight: 700;
     padding-right: 2.5px; }
+
+#stillwater-shirt-page .screenprint-mobile {
+  display: none; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .screenprint-mobile {
+      display: block;
+      margin: 50px 20% 0 20%;
+      object-fit: contain;
+      width: 60%; } }
 
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");

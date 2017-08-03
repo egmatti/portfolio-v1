@@ -91,6 +91,165 @@
   }
 }
 
+// ADVERTISEMENTS SECTION
+
+#toptix-page .advertisements-section {
+  background: $color-body-accent;
+  clear: both;
+  height: auto;
+  padding: $padding-section 0;
+
+  @include media-query(small) {
+    padding: $padding-div 0;
+  }
+}
+
+#toptix-page .advertisements-section h2 {
+  padding-left: $margin-page-horizontal;
+
+  @include media-query(small) {
+    display: block;
+    padding: 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    padding: 0 $margin-headline-tablet-horizontal;
+    width: $width-headline-tablet;
+  }
+}
+
+#toptix-page .advertisements-div {
+  height: auto;
+  margin: $padding-div $margin-section-horizontal;
+
+  @include media-query(small) {
+    margin-bottom: 0;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: 0;
+  }
+}
+
+#toptix-page .advertisements-slider-for__post {
+  @include flexbox($align: baseline);
+
+  @include flexbox($align: center);
+}
+
+#toptix-page .advertisements-slider-for__post img {
+  height: 275px;
+  object-fit: contain;
+
+  @include media-query(small) {
+    height: auto;
+    max-height: 275px;
+    width: 80%;
+  }
+
+  @include media-query(medium) {
+    height: (275px / 1.75);
+  }
+}
+
+#toptix-page .banner-ad {
+  object-fit: contain;
+  width: 50%;
+
+  @include media-query(small) {
+    height: auto;
+    width: 80%;
+  }
+}
+
+#toptix-page .slick-prev, #toptix-page .slick-next {
+  &:before {
+    color: $color-arrows;
+  }
+}
+
+#toptix-page .slick-prev {
+  transform: translate(100px, -25px);
+
+  @include media-query(small) {
+    transform: translate(0px, -25px);
+  }
+}
+
+#toptix-page .slick-next {
+  transform: translate(-100px, -25px);
+
+  @include media-query(small) {
+    transform: translate(0px, -25px);
+  }
+}
+
+
+// MAILINGS SECTION
+
+#toptix-page .mailings-section {
+
+  background: $color-body;
+  clear: both;
+  // Height is being calculated in coffee-app.js
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+  }
+}
+
+#toptix-page .mailings-image-container {
+  @include flexbox();
+  float: left;
+  height: 100%;
+  margin: 0 5%;
+  width: 35.5%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  img {
+    object-fit: contain;
+    width: 80%;
+  }
+}
+
+#toptix-page .mailings-description {
+  @include flexbox($direction: column, $align: flex-start);
+  float: right;
+  height: 100%;
+  margin-right: 5%;
+  width: 49.5%;
+
+  @include media-query(small) {
+    float: none;
+    height: auto;
+    padding: $padding-div $margin-page-mobile-horizontal 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+#toptix-page .mailings-mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+    padding: $padding-div 20%;
+    object-fit: contain;
+    width: 60%;
+  }
+}
+
+
 // PROPOSALS SECTION
 
 #toptix-page .proposals-section {
@@ -111,6 +270,10 @@
     padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
     width: $width-headline-mobile;
   }
+}
+
+#toptix-page .layout-iframe-cover--top, #toptix-page .layout-iframe-cover--bottom {
+  background: $color-body-accent;
 }
 
 #toptix-page .proposals-description {
@@ -134,8 +297,4 @@
     font-weight: $font-weight-bold;
     padding-right: 2.5px;
   }
-}
-
-#toptix-page .layout-iframe-cover--top, #toptix-page .layout-iframe-cover--bottom {
-  background: $color-body-accent;
 }

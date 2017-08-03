@@ -3004,6 +3004,115 @@ footer .main-nav__item--first {
     font-weight: 700;
     padding-right: 2.5px; }
 
+#dogtooth-cover-art-page .main-nav a:hover {
+  color: #be7d9a; }
+
+#dogtooth-cover-art-page .fa:hover {
+  color: #be7d9a; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #dogtooth-cover-art-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#dogtooth-cover-art-page .hero-section {
+  background: url("../images/projects/dogtooth-cover-art/dogtooth-cover-art-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#dogtooth-cover-art-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogtooth-cover-art-page .overview-section {
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #dogtooth-cover-art-page .overview-section {
+      margin: 0;
+      width: 100%; } }
+
+#dogtooth-cover-art-page .overview-left, .overview-right {
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogtooth-cover-art-page .overview-left, .overview-right {
+      padding-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #dogtooth-cover-art-page .overview-left, .overview-right {
+      margin-bottom: 75px;
+      padding-top: 75px;
+      visibility: visible; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #about-page .overview-right {
+    margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    margin-bottom: 125px;
+    padding-top: 75px;
+    visibility: visible; } }
+
+#dogtooth-cover-art-page .overview-right iframe {
+  height: 500px;
+  width: 55%; }
+
+#dogtooth-cover-art-page .cover-art-section {
+  clear: both;
+  color: #f3f3f3;
+  height: 625px;
+  padding: 75px 0;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogtooth-cover-art-page .cover-art-section {
+      height: auto;
+      padding: 50px 0; } }
+
+#dogtooth-cover-art-page .cover-art-section h2 {
+  padding-left: 5%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogtooth-cover-art-page .cover-art-section h2 {
+      display: block;
+      padding: 0 5%;
+      width: 90%; } }
+
+#dogtooth-cover-art-page .cover-art-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogtooth-cover-art-page .cover-art-image-container {
+      display: block;
+      margin: 25px 5% 0 5%;
+      width: 90%; } }
+  #dogtooth-cover-art-page .cover-art-image-container img {
+    height: 100%;
+    object-fit: contain; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #dogtooth-cover-art-page .cover-art-image-container img {
+        height: auto;
+        width: 100%; } }
+
+#dogtooth-cover-art-page .cover-art-description {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogtooth-cover-art-page .cover-art-description {
+      display: block;
+      margin: 0 5%;
+      width: 90%; } }
+  #dogtooth-cover-art-page .cover-art-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
 #jamaica-stickers-page .main-nav a:hover {
   color: #ef506d; }
 

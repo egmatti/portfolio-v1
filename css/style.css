@@ -3372,6 +3372,112 @@ footer .main-nav__item--first {
       object-fit: contain;
       width: 60%; } }
 
+#toptix-page .main-nav a:hover {
+  color: #c6dd77; }
+
+#toptix-page .fa:hover {
+  color: #c6dd77; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #toptix-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#toptix-page .hero-section {
+  background: url("../images/projects/toptix/toptix-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #toptix-page .headline-container h1, #toptix-page .headline-container .main-nav a, .main-nav #toptix-page .headline-container a, #toptix-page .headline-container .main-nav-mobile a, .main-nav-mobile #toptix-page .headline-container a {
+    font-size: 1.66rem; } }
+
+#toptix-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #toptix-page .overview-section {
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #toptix-page .overview-section {
+      margin: 0;
+      width: 100%; } }
+
+#toptix-page .overview-left, .overview-right {
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #toptix-page .overview-left, .overview-right {
+      padding-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #toptix-page .overview-left, .overview-right {
+      margin-bottom: 75px;
+      padding-top: 75px;
+      visibility: visible; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #about-page .overview-right {
+    margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    margin-bottom: 125px;
+    padding-top: 75px;
+    visibility: visible; } }
+
+#toptix-page .overview-right img {
+  width: 55%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #toptix-page .overview-right img {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #toptix-page .overview-right img {
+      width: 80%; } }
+
+#toptix-page .proposals-section {
+  background: #f3f3f3;
+  clear: both;
+  height: auto;
+  width: 100%; }
+
+#toptix-page .proposals-section h2 {
+  padding-left: 5%;
+  padding-top: 75px;
+  position: relative;
+  z-index: 20; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #toptix-page .proposals-section h2 {
+      display: block;
+      padding: 50px 5% 0 5%;
+      width: 90%; } }
+
+#toptix-page .proposals-description {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  padding-bottom: 75px;
+  margin-top: -75px;
+  position: relative;
+  width: 100%;
+  z-index: 20; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #toptix-page .proposals-description {
+      bottom: 50px;
+      display: block;
+      margin: 0 5% -75px 5%;
+      position: relative;
+      width: 90%; } }
+  #toptix-page .proposals-description span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+#toptix-page .layout-iframe-cover--top, #toptix-page .layout-iframe-cover--bottom {
+  background: #f3f3f3; }
+
 #the-latest-page .hero-section {
   background: url("../images/the-latest/corkboard.png");
   background-repeat: no-repeat;

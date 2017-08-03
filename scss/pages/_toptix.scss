@@ -1,0 +1,141 @@
+// ==========================================
+// TOPTIX PAGE
+// ==========================================
+
+// HEADER AND FOOTER
+
+#toptix-page .main-nav a:hover {
+  color: $color-project-toptix;
+}
+
+#toptix-page .fa:hover {
+  color: $color-project-toptix;
+}
+
+#toptix-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#toptix-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "toptix/toptix-wall");
+}
+
+#toptix-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
+
+// OVERVIEW SECTION
+
+#toptix-page .overview-section {
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+#toptix-page .overview-left, .overview-right {
+  margin-bottom: $margin-section-vertical - 30px;
+  padding-top: $padding-section + 30px;
+  visibility: hidden;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: $padding-section;
+    padding-top: $padding-section;
+    visibility: visible;
+  }
+}
+
+#about-page .overview-right {
+  @include media-query(small) {
+    margin-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
+    visibility: visible;
+  }
+}
+
+#toptix-page .overview-right img {
+  width: 55%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    width: 80%;
+  }
+}
+
+// PROPOSALS SECTION
+
+#toptix-page .proposals-section {
+  background: $color-body-accent;
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+#toptix-page .proposals-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-section;
+  position: relative;
+  z-index: 20;
+
+  @include media-query(small) {
+    display: block;
+    padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+}
+
+#toptix-page .proposals-description {
+  @include flexbox();
+  height: 75px;
+  padding-bottom: $padding-section;
+  margin-top: -75px;
+  position: relative;
+  width: 100%;
+  z-index: 20;
+
+  @include media-query(small) {
+    bottom: 50px;
+    display: block;
+    margin: 0 5% -75px 5%;
+    position: relative;
+    width: 90%;
+  }
+
+  span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+#toptix-page .layout-iframe-cover--top, #toptix-page .layout-iframe-cover--bottom {
+  background: $color-body-accent;
+}

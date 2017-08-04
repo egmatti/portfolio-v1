@@ -2371,6 +2371,160 @@ footer .main-nav__item--first {
         transform: translateX(10px);
         width: 90%; } }
 
+#bookshelf-page .main-nav a:hover {
+  color: #5e9082; }
+
+#bookshelf-page .fa:hover {
+  color: #5e9082; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #bookshelf-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#bookshelf-page .hero-section {
+  background: url("../images/projects/bookshelf/bookshelf-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#bookshelf-page .overview-section {
+  margin: 0 5%;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #bookshelf-page .overview-section {
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #bookshelf-page .overview-section {
+      margin: 0;
+      width: 100%; } }
+
+#bookshelf-page .overview-left, .overview-right {
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #bookshelf-page .overview-left, .overview-right {
+      padding-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #bookshelf-page .overview-left, .overview-right {
+      margin-bottom: 75px;
+      padding-top: 75px;
+      visibility: visible; } }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #about-page .overview-right {
+    margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  #about-page .overview-right {
+    margin-bottom: 125px;
+    padding-top: 75px;
+    visibility: visible; } }
+
+#bookshelf-page .desktop-mockups-section {
+  background: #f3f3f3;
+  clear: both;
+  height: auto;
+  width: 100%; }
+
+#bookshelf-page .desktop-mockups-section h2 {
+  padding-left: 5%;
+  padding-top: 75px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #bookshelf-page .desktop-mockups-section h2 {
+      display: block;
+      padding: 50px 5% 0 5%;
+      width: 90%; } }
+
+#bookshelf-page .desktop-mockup-image-container {
+  margin: 0 10%;
+  width: 80%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #bookshelf-page .desktop-mockup-image-container {
+      margin: 0 5%;
+      width: 90%; } }
+
+#bookshelf-page .desktop-mockup-image, #bookshelf-page .desktop-mockup-image--last {
+  -webkit-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
+  margin: 50px 0;
+  object-fit: contain;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #bookshelf-page .desktop-mockup-image, #bookshelf-page .desktop-mockup-image--last {
+      margin-bottom: 50px; } }
+  #bookshelf-page .desktop-mockup-image--last {
+    margin-bottom: 75px; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #bookshelf-page .desktop-mockup-image--last {
+        margin-bottom: 50px;
+        margin-top: 0; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #bookshelf-page .desktop-mockup-image--last {
+        margin-top: 0; } }
+
+#bookshelf-page .mobile-mockups-section {
+  background: #fff;
+  clear: both;
+  height: auto;
+  width: 100%; }
+
+#bookshelf-page .mobile-mockups-section h2 {
+  padding-left: 5%;
+  padding-top: 75px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #bookshelf-page .mobile-mockups-section h2 {
+      display: block;
+      padding: 50px 5% 0 5%;
+      width: 90%; } }
+
+#bookshelf-page .mobile-mockup-image-container, #bookshelf-page .mobile-mockup-image-container--left, #bookshelf-page .mobile-mockup-image-container--right {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  width: 25%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #bookshelf-page .mobile-mockup-image-container, #bookshelf-page .mobile-mockup-image-container--left, #bookshelf-page .mobile-mockup-image-container--right {
+      height: auto;
+      padding-bottom: 50px;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #bookshelf-page .mobile-mockup-image-container, #bookshelf-page .mobile-mockup-image-container--left, #bookshelf-page .mobile-mockup-image-container--right {
+      width: 40%; } }
+  #bookshelf-page .mobile-mockup-image-container--left {
+    float: left;
+    margin-left: 25%; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #bookshelf-page .mobile-mockup-image-container--left {
+        float: none;
+        margin: 0 5%;
+        padding-bottom: 0; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #bookshelf-page .mobile-mockup-image-container--left {
+        margin-left: 10%; } }
+    #bookshelf-page .mobile-mockup-image-container--left img {
+      object-fit: contain;
+      height: 100%; }
+  #bookshelf-page .mobile-mockup-image-container--right {
+    float: right;
+    margin-right: 25%; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      #bookshelf-page .mobile-mockup-image-container--right {
+        float: none;
+        margin: 0 5%; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #bookshelf-page .mobile-mockup-image-container--right {
+        margin-right: 10%; } }
+    #bookshelf-page .mobile-mockup-image-container--right img {
+      object-fit: contain;
+      height: 100%; }
+
 #chronicle-page .main-nav a:hover {
   color: #a07679; }
 

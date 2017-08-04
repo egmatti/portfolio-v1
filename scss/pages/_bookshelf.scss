@@ -1,0 +1,210 @@
+// ==========================================
+// BOOKSHELF PAGE
+// ==========================================
+
+// HEADER AND FOOTER
+
+#bookshelf-page .main-nav a:hover {
+  color: $color-project-bookshelf;
+}
+
+#bookshelf-page .fa:hover {
+  color: $color-project-bookshelf;
+}
+
+#bookshelf-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#bookshelf-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "bookshelf/bookshelf-wall");
+}
+
+
+// OVERVIEW SECTION
+
+#bookshelf-page .overview-section {
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+#bookshelf-page .overview-left, .overview-right {
+  margin-bottom: $margin-section-vertical - 30px;
+  padding-top: $padding-section + 30px;
+  visibility: hidden;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: $padding-section;
+    padding-top: $padding-section;
+    visibility: visible;
+  }
+}
+
+#about-page .overview-right {
+  @include media-query(small) {
+    margin-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: $margin-section-vertical;
+    padding-top: $padding-section;
+    visibility: visible;
+  }
+}
+
+
+// DESKTOP MOCKUPS SECTION
+
+#bookshelf-page .desktop-mockups-section {
+  background: $color-body-accent;
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+#bookshelf-page .desktop-mockups-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-section;
+
+  @include media-query(small) {
+    display: block;
+    padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+}
+
+#bookshelf-page .desktop-mockup-image-container {
+  margin: 0 $margin-section-horizontal;
+  width: 80%;
+
+  @include media-query(small) {
+    margin: 0 $margin-image-mobile-horizontal;
+    width: $width-image-mobile;
+  }
+}
+
+#bookshelf-page .desktop-mockup-image {
+  @include box-shadow($v: 0.5px, $s: 1.5px);
+  margin: $padding-div 0;
+  object-fit: contain;
+  width: 100%;
+
+  @include media-query(small) {
+    margin-bottom: $padding-div;
+  }
+
+  @include m(last) {
+    @extend .desktop-mockup-image;
+    margin-bottom: $padding-section;
+
+    @include media-query(small) {
+      margin-bottom: $padding-div;
+      margin-top: 0;
+    }
+
+    @include media-query(medium) {
+      margin-top: 0;
+    }
+  }
+}
+
+
+// MOBILE MOCKUPS SECTION
+
+#bookshelf-page .mobile-mockups-section {
+  background: $color-body;
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+#bookshelf-page .mobile-mockups-section h2 {
+  padding-left: $margin-page-horizontal;
+  padding-top: $padding-section;
+
+  @include media-query(small) {
+    display: block;
+    padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
+    width: $width-headline-mobile;
+  }
+}
+
+#bookshelf-page .mobile-mockup-image-container {
+  @include flexbox();
+  height: 400px;
+  padding-top: $padding-div;
+  padding-bottom: $padding-section;
+  width: 25%;
+
+  @include media-query(small) {
+    height: auto;
+    padding-bottom: $padding-div;
+    width: $width-image-mobile;
+  }
+
+  @include media-query(medium) {
+    width: 40%;
+  }
+
+  @include m(left) {
+    @extend .mobile-mockup-image-container;
+    float: left;
+    margin-left: 25%;
+
+    @include media-query(small) {
+      float: none;
+      margin: 0 $margin-image-mobile-horizontal;
+      padding-bottom: 0;
+    }
+
+    @include media-query(medium) {
+      margin-left: 10%;
+    }
+
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+
+  @include m(right) {
+    @extend .mobile-mockup-image-container;
+    float: right;
+    margin-right: 25%;
+
+    @include media-query(small) {
+      float: none;
+      margin: 0 $margin-image-mobile-horizontal;
+    }
+
+    @include media-query(medium) {
+      margin-right: 10%;
+    }
+
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+}

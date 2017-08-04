@@ -155,8 +155,8 @@ $border-button: $border-size solid $color-button;
 $border-button-hover: $border-size solid $color-button-hover;
 $border-button-ballad: $border-size solid $color-project-ballad;
 $border-button-ballad-hover: $border-size solid $color-project-ballad;
-$border-button-chronicle: $border-size solid $color-project-chronicle;
-$border-button-ballad-hover: $border-size solid $color-project-chronicle;
+$border-button-bookshelf: $border-size solid $color-project-bookshelf;
+$border-button-bookshelf-hover: $border-size solid $color-project-bookshelf;
 $border-input: $border-size solid $color-input;
 $border-input-active: $border-size solid $color-input-active;
 
@@ -215,6 +215,8 @@ $width-image-mobile: 90%;
 $width-image-tablet: 90%;
 $width-directory-nav-container: 350px;
 $width-directory-nav-container-tablet: 175px;
+$width-project-details-container: 350px;
+$width-project-details-container-tablet: 175px;
 
 
 // PATHS

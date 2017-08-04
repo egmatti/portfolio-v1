@@ -73,6 +73,23 @@
   }
 }
 
+#bookshelf-page .button {
+  border: $border-button-bookshelf;
+
+  span {
+    color: $color-project-bookshelf;
+  }
+
+  &:hover {
+    background: $color-project-bookshelf;
+    border: $border-button-bookshelf-hover;
+
+    span {
+      color: $color-body;
+    }
+  }
+}
+
 
 // DESKTOP MOCKUPS SECTION
 

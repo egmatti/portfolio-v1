@@ -943,6 +943,51 @@ template {
           .directory-nav__post article h5 {
             font-size: 0.60714rem; } }
 
+.project-details-container {
+  height: auto;
+  padding-bottom: 50px;
+  width: 350px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-details-container {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-details-container {
+      width: 175px; } }
+  .project-details-container h3 {
+    position: relative;
+    text-align: center;
+    top: 0; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .project-details-container h3 {
+        font-size: 1.07143rem; } }
+
+.project-details-border {
+  border-right: 1.5px solid #f3f3f3;
+  float: left;
+  height: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 5px;
+  width: 50%; }
+
+.project-details {
+  border: 1.5px solid #f3f3f3;
+  bottom: 0;
+  height: auto;
+  overflow-y: scroll;
+  padding-bottom: 25px;
+  position: relative;
+  width: 100%; }
+  .project-details h4 {
+    margin-top: 25px;
+    text-align: center; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .project-details h4 {
+        font-size: 0.89286rem; } }
+  .project-details p {
+    margin-top: 6.25px;
+    text-align: center; }
+
 .divider-white {
   background: #fff;
   clear: both;
@@ -2081,7 +2126,7 @@ footer .main-nav__item--first {
     color: #ab0061; }
   #ballad-page .button:hover {
     background: #ab0061;
-    border: 1.5px solid #a07679; }
+    border: 1.5px solid #ab0061; }
     #ballad-page .button:hover span {
       color: #fff; }
 
@@ -2422,6 +2467,16 @@ footer .main-nav__item--first {
     margin-bottom: 125px;
     padding-top: 75px;
     visibility: visible; } }
+
+#bookshelf-page .button {
+  border: 1.5px solid #5e9082; }
+  #bookshelf-page .button span {
+    color: #5e9082; }
+  #bookshelf-page .button:hover {
+    background: #5e9082;
+    border: 1.5px solid #5e9082; }
+    #bookshelf-page .button:hover span {
+      color: #fff; }
 
 #bookshelf-page .desktop-mockups-section {
   background: #f3f3f3;

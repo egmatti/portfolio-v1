@@ -1,0 +1,61 @@
+// ==========================================
+// PROJECT DETAILS
+// ==========================================
+
+.project-details-container {
+  height: auto;
+  padding-bottom: $padding-div;
+  width: $width-project-details-container;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    width: $width-project-details-container-tablet;
+  }
+
+  h3 {
+    position: relative;
+    text-align: center;
+    top: 0;
+
+    @include media-query(medium) {
+      font-size: (1.5rem / 1.4);
+    }
+  }
+}
+
+.project-details-border {
+  border-right: $border-directory-nav;
+  float: left;
+  height: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 5px;
+  width: 50%;
+}
+
+.project-details {
+  border: $border-directory-nav;
+  bottom: 0;
+  height: auto;
+  overflow-y: scroll;
+  padding-bottom: $margin-body-text;
+  position: relative;
+  width: 100%;
+
+  h4 {
+    margin-top: $margin-body-text;
+    text-align: center;
+
+    @include media-query(medium) {
+      font-size: (1.25rem / 1.4);
+    }
+  }
+
+  p {
+    margin-top: ($margin-body-text / 4);
+    text-align: center;
+  }
+}

@@ -34,25 +34,9 @@
 
 // OVERVIEW SECTION
 
-#jamaica-stickers-page .overview-section {
-  margin: 0;
-  width: 100%;
-}
-
-#jamaica-stickers-page .overview-container {
-  @include flexbox ($direction: column);
-  padding: ($padding-section + 30px) 25% ($padding-section - 30px) 25%;
-  visibility: hidden;
-
+#jamaica-stickers-page .overview-right {
   @include media-query(small) {
-    padding: $padding-div $margin-page-mobile-horizontal;
-    visibility: visible;
-    width: $width-page-mobile;
-  }
-
-  @include media-query(medium) {
-    padding: $padding-section $margin-page-tablet-horizontal;
-    visibility: visible;
+    padding-bottom: 0;
   }
 }
 
@@ -61,6 +45,7 @@
 
 #jamaica-stickers-page .designs-section {
   background: $color-body-accent;
+  clear: both;
   height: 615px;
   width: 100%;
 

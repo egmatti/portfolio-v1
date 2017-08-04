@@ -34,24 +34,9 @@
 
 // OVERVIEW SECTION
 
-#stillwater-shirt-page .overview-section {
-  margin: 0;
-  width: 100%;
-}
-
-#stillwater-shirt-page .overview-container {
-  @include flexbox ($direction: column);
-  padding: ($padding-section + 30px) 25% ($padding-section - 30px) 25%;
-  visibility: hidden;
-
+#stillwater-shirt-page .overview-right {
   @include media-query(small) {
-    padding: $padding-div $margin-page-mobile-horizontal;
-    visibility: visible;
-  }
-
-  @include media-query(medium) {
-    padding: $padding-section $margin-page-tablet-horizontal;
-    visibility: visible;
+    padding-bottom: 0;
   }
 }
 
@@ -60,6 +45,7 @@
 
 #stillwater-shirt-page .pocket-design-section {
   @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "stillwater-shirt/guitar-and-amp");
+  clear: both;
   height: 540px; // Same height as the wireframes section on the Coffee App page
   width: 100%;
 

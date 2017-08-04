@@ -28,60 +28,9 @@
 
 // OVERVIEW SECTION
 
-#coffee-app-page .overview-section {
-  margin: 0 $margin-page-horizontal;
-  width: $width-page;
-
+#coffee-app-page .overview-right {
   @include media-query(small) {
-    margin: 0 $margin-page-mobile-horizontal;
-    width: $width-page-mobile;
-  }
-
-  @include media-query(medium) {
-    margin: 0;
-    width: 100%;
-  }
-}
-
-#coffee-app-page .overview-left, .overview-right {
-  margin-bottom: $margin-section-vertical - 30px;
-  padding-top: $padding-section + 30px;
-  visibility: hidden;
-
-  @include media-query(small) {
-    padding-top: $padding-div;
-    margin-bottom: 0;
-    visibility: visible;
-  }
-
-  @include media-query(medium) {
-    margin-bottom: $margin-section-vertical;
-    padding-top: $padding-section;
-    visibility: visible;
-  }
-}
-
-#about-page .overview-right {
-  @include media-query(small) {
-    margin-bottom: $padding-div;
-  }
-
-  @include media-query(medium) {
-    margin-bottom: $margin-section-vertical;
-    padding-top: $padding-section;
-    visibility: visible;
-  }
-}
-
-#coffee-app-page .overview-right img {
-  width: 55%;
-
-  @include media-query(small) {
-    display: none;
-  }
-
-  @include media-query(medium) {
-    width: 80%;
+    padding-bottom: 0;
   }
 }
 

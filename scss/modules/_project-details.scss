@@ -12,7 +12,7 @@
   }
 
   @include media-query(medium) {
-    width: $width-project-details-container-tablet;
+    width: 100%;
   }
 
   h3 {

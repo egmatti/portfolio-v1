@@ -28,45 +28,6 @@
 
 // OVERVIEW SECTION
 
-#ballad-page .overview-section {
-  margin: 0;
-  width: 100%;
-}
-
-#ballad-page .overview-container {
-  @include flexbox ($direction: column);
-  padding: ($padding-section + 30px) 25% ($padding-section - 30px) 25%;
-  visibility: hidden;
-
-  @include media-query(small) {
-    padding: $padding-div $margin-page-mobile-horizontal;
-    visibility: visible;
-  }
-
-  @include media-query(medium) {
-    padding: $padding-section $margin-page-tablet-horizontal;
-    visibility: visible;
-  }
-}
-
-#ballad-page .button-container {
-  margin-top: $padding-div + 30px;
-  margin-bottom: -30px;
-  visibility: hidden;
-
-  @include media-query(small) {
-    margin-top: $padding-div;
-    margin-bottom: 0;
-    visibility: visible;
-  }
-
-  @include media-query(medium) {
-    margin-top: $padding-div;
-    margin-bottom: 0;
-    visibility: visible;
-  }
-}
-
 #ballad-page .button {
   border: $border-button-ballad;
 
@@ -89,6 +50,7 @@
 
 #ballad-page .style-guides-section {
   background: $color-body-accent;
+  clear: both;
   height: 615px;
   width: 100%;
 

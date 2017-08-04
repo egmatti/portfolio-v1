@@ -952,7 +952,7 @@ template {
       display: none; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-details-container {
-      width: 175px; } }
+      width: 100%; } }
   .project-details-container h3 {
     position: relative;
     text-align: center;
@@ -1433,11 +1433,36 @@ footer .main-nav__item--first {
 
 .overview-section {
   background: #fff;
-  height: auto; }
+  height: auto;
+  margin: 0 5%;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .overview-section {
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .overview-section {
+      margin: 0;
+      width: 100%; } }
+
+.overview-left, .overview-right {
+  margin-bottom: 95px;
+  padding-top: 105px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .overview-left, .overview-right {
+      padding-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .overview-left, .overview-right {
+      margin-bottom: 75px;
+      padding-bottom: 75px;
+      padding-top: 75px;
+      visibility: visible; } }
 
 .overview-left {
   float: left;
-  padding-top: 75px;
   width: 60%; }
   @media (min-width: 0px) and (max-width: 767px) {
     .overview-left {
@@ -1455,16 +1480,19 @@ footer .main-nav__item--first {
   justify-content: center;
   flex-direction: column;
   float: right;
-  padding-top: 75px;
   width: 40%; }
   @media (min-width: 0px) and (max-width: 767px) {
     .overview-right {
       float: none;
+      padding-bottom: 50px;
       padding-top: 50px;
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .overview-right {
+      margin-bottom: 125px;
       margin-right: 5%;
+      padding-top: 75px;
+      visibility: visible;
       width: 30%; } }
   .overview-right img {
     object-fit: contain;
@@ -1874,42 +1902,6 @@ footer .main-nav__item--first {
       background-size: cover;
       background-position: center; } }
 
-#about-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #about-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #about-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#about-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #about-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #about-page .overview-left, .overview-right {
-      margin-bottom: 125px;
-      padding-top: 75px;
-      visibility: visible; } }
-
-@media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
 #about-page .overview-left h2 {
   letter-spacing: 0rem;
   text-transform: none; }
@@ -2085,41 +2077,6 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
-#ballad-page .overview-section {
-  margin: 0;
-  width: 100%; }
-
-#ballad-page .overview-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 105px 25% 45px 25%;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #ballad-page .overview-container {
-      padding: 50px 10%;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #ballad-page .overview-container {
-      padding: 75px 10%;
-      visibility: visible; } }
-
-#ballad-page .button-container {
-  margin-top: 80px;
-  margin-bottom: -30px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #ballad-page .button-container {
-      margin-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #ballad-page .button-container {
-      margin-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-
 #ballad-page .button {
   border: 1.5px solid #ab0061; }
   #ballad-page .button span {
@@ -2132,6 +2089,7 @@ footer .main-nav__item--first {
 
 #ballad-page .style-guides-section {
   background: #f3f3f3;
+  clear: both;
   height: 615px;
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
@@ -2432,42 +2390,6 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
-#bookshelf-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #bookshelf-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #bookshelf-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#bookshelf-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #bookshelf-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #bookshelf-page .overview-left, .overview-right {
-      margin-bottom: 75px;
-      padding-top: 75px;
-      visibility: visible; } }
-
-@media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
 #bookshelf-page .button {
   border: 1.5px solid #5e9082; }
   #bookshelf-page .button span {
@@ -2600,50 +2522,9 @@ footer .main-nav__item--first {
   #chronicle-page .headline-container h1, #chronicle-page .headline-container .main-nav a, .main-nav #chronicle-page .headline-container a, #chronicle-page .headline-container .main-nav-mobile a, .main-nav-mobile #chronicle-page .headline-container a {
     font-size: 1.66rem; } }
 
-#chronicle-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #chronicle-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #chronicle-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#chronicle-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #chronicle-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #chronicle-page .overview-left, .overview-right {
-      margin-bottom: 75px;
-      padding-top: 75px;
-      visibility: visible; } }
-
 @media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
-#chronicle-page .overview-right img {
-  width: 55%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #chronicle-page .overview-right img {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #chronicle-page .overview-right img {
-      width: 80%; } }
+  #chronicle-page .overview-right {
+    padding-bottom: 0; } }
 
 #chronicle-page .logo-section {
   background: url("../images/projects/chronicle/clock-tower.png");
@@ -2888,50 +2769,9 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
-#coffee-app-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#coffee-app-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .overview-left, .overview-right {
-      margin-bottom: 125px;
-      padding-top: 75px;
-      visibility: visible; } }
-
 @media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
-#coffee-app-page .overview-right img {
-  width: 55%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .overview-right img {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .overview-right img {
-      width: 80%; } }
+  #coffee-app-page .overview-right {
+    padding-bottom: 0; } }
 
 #coffee-app-page .wireframes-section {
   background: #fff;
@@ -3127,50 +2967,9 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
-#dogs-booklet-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogs-booklet-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #dogs-booklet-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#dogs-booklet-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogs-booklet-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #dogs-booklet-page .overview-left, .overview-right {
-      margin-bottom: 75px;
-      padding-top: 75px;
-      visibility: visible; } }
-
 @media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
-#dogs-booklet-page .overview-right img {
-  width: 55%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogs-booklet-page .overview-right img {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #dogs-booklet-page .overview-right img {
-      width: 80%; } }
+  #dogs-booklet-page .overview-right {
+    padding-bottom: 0; } }
 
 #dogs-booklet-page .layout-section {
   background: #f3f3f3;
@@ -3233,48 +3032,9 @@ footer .main-nav__item--first {
   #dogtooth-cover-art-page .headline-container h1, #dogtooth-cover-art-page .headline-container .main-nav a, .main-nav #dogtooth-cover-art-page .headline-container a, #dogtooth-cover-art-page .headline-container .main-nav-mobile a, .main-nav-mobile #dogtooth-cover-art-page .headline-container a {
     font-size: 1.66rem; } }
 
-#dogtooth-cover-art-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogtooth-cover-art-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #dogtooth-cover-art-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#dogtooth-cover-art-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogtooth-cover-art-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #dogtooth-cover-art-page .overview-left, .overview-right {
-      margin-bottom: 75px;
-      padding-top: 75px;
-      visibility: visible; } }
-
 @media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
-#dogtooth-cover-art-page .overview-right iframe {
-  height: 500px;
-  width: 55%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogtooth-cover-art-page .overview-right iframe {
-      display: none; } }
+  #dogtooth-cover-art-page .overview-right {
+    padding-bottom: 0; } }
 
 #dogtooth-cover-art-page .cover-art-section {
   background: #f3f3f3;
@@ -3358,29 +3118,13 @@ footer .main-nav__item--first {
   #jamaica-stickers-page .headline-container h1, #jamaica-stickers-page .headline-container .main-nav a, .main-nav #jamaica-stickers-page .headline-container a, #jamaica-stickers-page .headline-container .main-nav-mobile a, .main-nav-mobile #jamaica-stickers-page .headline-container a {
     font-size: 1.66rem; } }
 
-#jamaica-stickers-page .overview-section {
-  margin: 0;
-  width: 100%; }
-
-#jamaica-stickers-page .overview-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 105px 25% 45px 25%;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #jamaica-stickers-page .overview-container {
-      padding: 50px 10%;
-      visibility: visible;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #jamaica-stickers-page .overview-container {
-      padding: 75px 10%;
-      visibility: visible; } }
+@media (min-width: 0px) and (max-width: 767px) {
+  #jamaica-stickers-page .overview-right {
+    padding-bottom: 0; } }
 
 #jamaica-stickers-page .designs-section {
   background: #f3f3f3;
+  clear: both;
   height: 615px;
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
@@ -3499,25 +3243,9 @@ footer .main-nav__item--first {
   #stillwater-shirt-page .headline-container h1, #stillwater-shirt-page .headline-container .main-nav a, .main-nav #stillwater-shirt-page .headline-container a, #stillwater-shirt-page .headline-container .main-nav-mobile a, .main-nav-mobile #stillwater-shirt-page .headline-container a {
     font-size: 1.66rem; } }
 
-#stillwater-shirt-page .overview-section {
-  margin: 0;
-  width: 100%; }
-
-#stillwater-shirt-page .overview-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 105px 25% 45px 25%;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .overview-container {
-      padding: 50px 10%;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .overview-container {
-      padding: 75px 10%;
-      visibility: visible; } }
+@media (min-width: 0px) and (max-width: 767px) {
+  #stillwater-shirt-page .overview-right {
+    padding-bottom: 0; } }
 
 #stillwater-shirt-page .pocket-design-section {
   background: url("../images/projects/stillwater-shirt/guitar-and-amp.png");
@@ -3525,6 +3253,7 @@ footer .main-nav__item--first {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  clear: both;
   height: 540px;
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
@@ -3726,50 +3455,9 @@ footer .main-nav__item--first {
   #toptix-page .headline-container h1, #toptix-page .headline-container .main-nav a, .main-nav #toptix-page .headline-container a, #toptix-page .headline-container .main-nav-mobile a, .main-nav-mobile #toptix-page .headline-container a {
     font-size: 1.66rem; } }
 
-#toptix-page .overview-section {
-  margin: 0 5%;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #toptix-page .overview-section {
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #toptix-page .overview-section {
-      margin: 0;
-      width: 100%; } }
-
-#toptix-page .overview-left, .overview-right {
-  margin-bottom: 95px;
-  padding-top: 105px;
-  visibility: hidden; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #toptix-page .overview-left, .overview-right {
-      padding-top: 50px;
-      margin-bottom: 0;
-      visibility: visible; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #toptix-page .overview-left, .overview-right {
-      margin-bottom: 75px;
-      padding-top: 75px;
-      visibility: visible; } }
-
 @media (min-width: 0px) and (max-width: 767px) {
-  #about-page .overview-right {
-    margin-bottom: 50px; } }
-@media (min-width: 768px) and (max-width: 1025px) {
-  #about-page .overview-right {
-    margin-bottom: 125px;
-    padding-top: 75px;
-    visibility: visible; } }
-
-#toptix-page .overview-right img {
-  width: 55%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #toptix-page .overview-right img {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #toptix-page .overview-right img {
-      width: 80%; } }
+  #toptix-page .overview-right {
+    padding-bottom: 0; } }
 
 #toptix-page .advertisements-section {
   background: #f3f3f3;

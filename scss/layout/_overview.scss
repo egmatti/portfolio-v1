@@ -5,11 +5,41 @@
 .overview-section {
   background: $color-body;
   height: auto;
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.overview-left, .overview-right {
+  margin-bottom: $margin-section-vertical - 30px;
+  padding-top: $padding-section + 30px;
+  visibility: hidden;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
+    margin-bottom: $padding-section;
+    padding-bottom: $padding-section;
+    padding-top: $padding-section;
+    visibility: visible;
+  }
 }
 
 .overview-left {
   float: left;
-  padding-top: $padding-section;
   width: 60%;
 
   @include media-query(small) {
@@ -27,17 +57,20 @@
 .overview-right {
   @include flexbox($direction: column);
   float: right;
-  padding-top: $padding-section;
   width: 40%;
 
   @include media-query(small) {
     float: none;
+    padding-bottom: $padding-div;
     padding-top: $padding-div;
     width: 100%;
   }
 
   @include media-query(medium) {
+    margin-bottom: $margin-section-vertical;
     margin-right: 5%;
+    padding-top: $padding-section;
+    visibility: visible;
     width: 30%;
   }
 

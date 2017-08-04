@@ -39,24 +39,3 @@ function checkY(){
 
 // Do this on load just in case the user starts half way down the page
 checkY();
-
-
-// COVER ART SECTION HEIGHT
-
-$(document).ready(function(){
-  var coverArtSectionHeight = $("#dogtooth-cover-art-page .cover-art-section").height();
-  var coverArtSectionHeadlineHeight = $("#dogtooth-cover-art-page .cover-art-section h2").outerHeight();
-  var coverArtDescriptionHeight = $("#dogtooth-cover-art-page .cover-art-description").outerHeight();
-  var coverArtImageContainerHeight = coverArtSectionHeight - coverArtSectionHeadlineHeight - coverArtDescriptionHeight;
-
-  if (mediaQuerySmall.matches) {
-    // window width is less than 767px
-
-  } else if (mediaQueryMedium.matches) {
-    // window width is less than 1025px
-    $("#dogtooth-cover-art-page .cover-art-image-container").css({"height": coverArtImageContainerHeight});
-  } else {
-    // window width is at least 767px
-    $("#dogtooth-cover-art-page .cover-art-image-container").css({"height": coverArtImageContainerHeight});
-  }
-});

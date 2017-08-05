@@ -41,8 +41,6 @@ $(".blog-slider-nav").slick({
 
 // BLOG SLIDER NAV PANEL HEIGHT
 
-const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
-
 $(document).ready(function(){
   if (mediaQuerySmall.matches) {
     // window width is less than 767px

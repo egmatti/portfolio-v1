@@ -12,11 +12,6 @@
     margin: 0 $margin-page-mobile-horizontal;
     width: $width-page-mobile;
   }
-
-  @include media-query(medium) {
-    margin: 0;
-    width: 100%;
-  }
 }
 
 .overview-left, .overview-right {
@@ -31,9 +26,7 @@
   }
 
   @include media-query(medium) {
-    margin-bottom: $padding-section;
-    padding-bottom: $padding-section;
-    padding-top: $padding-section;
+    margin-bottom: 0;
     visibility: visible;
   }
 }
@@ -49,8 +42,12 @@
   }
 
   @include media-query(medium) {
+    clear: both;
+    float: none;
     margin: 0 5%;
-    width: 55%;
+    padding-bottom: $padding-section;
+    padding-top: $padding-div;
+    width: 90%;
   }
 }
 
@@ -67,15 +64,31 @@
   }
 
   @include media-query(medium) {
-    margin-bottom: $margin-section-vertical;
-    margin-right: 5%;
+    float: none;
+    margin: 0 5%;
+    padding-bottom: 0;
     padding-top: $padding-section;
-    visibility: visible;
-    width: 30%;
+    width: 90%;
   }
 
   img {
     object-fit: contain;
     padding-bottom: $padding-div;
+  }
+}
+
+.overview-right .button-container {
+  @include media-query(medium) {
+    display: none;
+  }
+}
+
+.overview-left .button-container {
+  display: none;
+
+  @include media-query(medium) {
+    @include flexbox();
+    padding-top: $padding-div;
+    width: 100%;
   }
 }

@@ -4,9 +4,6 @@
 
 // FIXED SHARE FIGURE ON SCROLL
 
-const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
-const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
-
 // Get the position from the top of the page
 var startY = 445;
 

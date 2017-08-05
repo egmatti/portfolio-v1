@@ -1,7 +1,7 @@
 .divider-white {
   background: $white;
   clear: both;
-  height: 80px;
+  height: 75px;
   width: 100%;
 
   @include media-query(small) {
@@ -12,7 +12,7 @@
 .divider-black {
   background: $black;
   clear: both;
-  height: 80px;
+  height: 75px;
   width: 100%;
 
   @include media-query(small) {

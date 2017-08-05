@@ -1,0 +1,88 @@
+// ==========================================
+// PROJECT IMAGE
+// ==========================================
+
+.project-image-section {
+  // background: $color-body-accent;
+  clear: both;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+
+  @include media-query(medium) {
+    height: auto;
+  }
+
+  @include e(image) {
+    @include vertical-align();
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    width: 60%;
+
+    @include media-query(medium) {
+      margin: 0 15%;
+      top: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      width: 70%;
+    }
+
+    @include m(left) {
+      @extend .project-image-section__image;
+      float: left;
+
+      @include media-query(medium) {
+        float: none;
+      }
+    }
+
+    @include m(right) {
+      @extend .project-image-section__image;
+      float: right;
+
+      @include media-query(medium) {
+        float: none;
+      }
+    }
+  }
+
+  @include e(div) {
+    height: auto;
+    margin-top: $padding-div;
+    text-align: justify;
+    width: 35%;
+
+    @include media-query(medium) {
+      clear: both;
+      margin: $margin-body-text 5% 0 5%;
+      text-align: center;
+      width: 90%;
+    }
+
+    @include m(left) {
+      @extend .project-image-section__div;
+      float: left;
+      margin-right: 5%;
+
+      span {
+        font-weight: $font-weight-bold;
+        padding-right: 2.5px;
+      }
+    }
+
+    @include m(right) {
+      @extend .project-image-section__div;
+      float: right;
+      margin-left: 5%;
+
+      span {
+        font-weight: $font-weight-bold;
+        padding-right: 2.5px;
+      }
+    }
+  }
+}

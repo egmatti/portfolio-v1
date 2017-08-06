@@ -1583,10 +1583,10 @@ footer .main-nav__item--first {
   height: -webkit-calc(100vh - 80px);
   height: -moz-calc(100vh - 80px);
   height: calc(100vh - 80px);
-  margin: 0 5%;
+  margin: 0 10%;
   position: absolute;
   top: calc((100vh - 80px) / 2);
-  width: 90%; }
+  width: 80%; }
   .project-main-image-section__image-container img {
     max-height: 100%;
     object-fit: cover;
@@ -1679,6 +1679,84 @@ footer .main-nav__item--first {
   .project-flex-section img {
     max-height: 100%;
     object-fit: contain; }
+
+.project-desktop-mockups-section {
+  clear: both;
+  height: -webkit-calc((100vh - 80px) * 2);
+  height: -moz-calc((100vh - 80px) * 2);
+  height: calc((100vh - 80px) * 2);
+  margin-bottom: 375px;
+  position: relative;
+  width: 100%; }
+
+.project-desktop-mockups-section__border {
+  border: 1.5px solid #f3f3f3;
+  height: 100%;
+  margin: 0 5%;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  z-index: 10; }
+
+.project-desktop-mockups-section__background--white {
+  background: #fff;
+  height: -webkit-calc(100vh - 80px);
+  height: -moz-calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.project-desktop-mockups-section__description-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: -webkit-calc((100vh - 80px) / 2);
+  height: -moz-calc((100vh - 80px) / 2);
+  height: calc((100vh - 80px) / 2);
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.project-desktop-mockups-section__description {
+  height: auto;
+  padding: 0 25%;
+  text-align: center; }
+
+.project-desktop-mockups-section__background--gray {
+  background: #f3f3f3;
+  height: auto;
+  position: absolute;
+  top: calc(100vh - 80px);
+  width: 100%; }
+
+.project-desktop-mockups-section__row, .project-desktop-mockups-section__row--first, .project-desktop-mockups-section__row--second, .project-desktop-mockups-section__row--last {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: auto;
+  margin: 0 5%;
+  padding-top: 75px;
+  width: 90%; }
+  .project-desktop-mockups-section__row--first {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    position: absolute; }
+  .project-desktop-mockups-section__row--last {
+    padding-bottom: 75px; }
+
+.project-desktop-mockups-section__image {
+  object-fit: contain;
+  width: 45%;
+  z-index: 15; }
+
+.project-desktop-mockups-section__image--laptop {
+  object-fit: contain;
+  width: 55%;
+  z-index: 15; }
 
 .project-layout-section {
   background: #fff;

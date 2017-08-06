@@ -1,0 +1,95 @@
+// ==========================================
+// PROJECT DESKTOP MOCKUPS
+// ==========================================
+
+.project-desktop-mockups-section {
+  clear: both;
+  // height: auto;
+  height: -webkit-calc((100vh - 80px) * 2);
+  height:   -moz-calc((100vh - 80px) * 2);
+  height:     calc((100vh - 80px) * 2);
+  margin-bottom: 375px;
+  position: relative;
+  width: 100%;
+}
+
+.project-desktop-mockups-section__border {
+  border: $border-project-desktop-mockups;
+  height: 100%;
+  margin: 0 $margin-page-horizontal;
+  position: absolute;
+  top: 0;
+  width: $width-page;
+  z-index: 10;
+}
+
+.project-desktop-mockups-section__background--white {
+  background: $color-body;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.project-desktop-mockups-section__description-container {
+  @include flexbox();
+  // background: $gray;
+  height: -webkit-calc((100vh - 80px) / 2);
+  height:   -moz-calc((100vh - 80px) / 2);
+  height:     calc((100vh - 80px) / 2);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.project-desktop-mockups-section__description {
+  height: auto;
+  padding: 0 25%;
+  text-align: center;
+}
+
+.project-desktop-mockups-section__background--gray {
+  background: $color-body-accent;
+  height: auto;
+  position: absolute;
+  top: calc(100vh - 80px);
+  width: 100%;
+}
+
+.project-desktop-mockups-section__row {
+  @include flexbox($direction: row, $justify: space-around);
+  height: auto;
+  margin: 0 $margin-page-horizontal;
+  padding-top: $padding-section;
+  width: $width-page;
+
+  @include m(first) {
+    @extend .project-desktop-mockups-section__row;
+    @include flexbox($justify: center);
+    padding-top: 0;
+    position: absolute;
+  }
+
+  @include m(second) {
+    @extend .project-desktop-mockups-section__row;
+  }
+
+  @include m(last) {
+    @extend .project-desktop-mockups-section__row;
+    padding-bottom: $padding-section;
+  }
+}
+
+.project-desktop-mockups-section__image {
+  object-fit: contain;
+  width: 45%;
+  z-index: 15;
+}
+
+.project-desktop-mockups-section__image--laptop {
+  object-fit: contain;
+  width: 55%;
+  z-index: 15;
+}

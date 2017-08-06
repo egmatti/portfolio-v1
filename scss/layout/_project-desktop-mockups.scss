@@ -4,11 +4,7 @@
 
 .project-desktop-mockups-section {
   clear: both;
-  // height: auto;
-  height: -webkit-calc((100vh - 80px) * 2);
-  height:   -moz-calc((100vh - 80px) * 2);
-  height:     calc((100vh - 80px) * 2);
-  margin-bottom: 375px;
+  height: auto;
   position: relative;
   width: 100%;
 }
@@ -35,11 +31,10 @@
 
 .project-desktop-mockups-section__description-container {
   @include flexbox();
-  // background: $gray;
   height: -webkit-calc((100vh - 80px) / 2);
   height:   -moz-calc((100vh - 80px) / 2);
   height:     calc((100vh - 80px) / 2);
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
 }
@@ -48,6 +43,15 @@
   height: auto;
   padding: 0 25%;
   text-align: center;
+}
+
+.project-desktop-mockups-section__line {
+  border-right: $border-project-desktop-mockups;
+  height: 150px;
+  position: relative;
+  top: -70px;
+  width: 50%;
+  z-index: 10;
 }
 
 .project-desktop-mockups-section__background--gray {

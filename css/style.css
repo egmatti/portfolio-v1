@@ -1529,28 +1529,49 @@ footer .main-nav__item--first {
       width: 100%; } }
 
 .project-overview-section {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   height: -webkit-calc(100vh - 80px);
   height: -moz-calc(100vh - 80px);
   height: calc(100vh - 80px);
+  position: relative;
   width: 100%; }
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-overview-section {
       height: auto; } }
 
-.project-overview-section div {
+.project-overview-section__line--hero {
+  border-right: 1.5px solid #fff;
+  height: 75px;
+  position: absolute;
+  top: -75px;
+  width: 50%;
+  z-index: 10; }
+
+.project-overview-section__line--overview {
+  border-right: 1.5px solid #f3f3f3;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  z-index: 10; }
+
+.project-overview-section__description-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
+
+.project-overview-section__description {
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0 25%; }
   @media (min-width: 0px) and (max-width: 767px) {
-    .project-overview-section div {
+    .project-overview-section__description {
       padding: 50px 10%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
-    .project-overview-section div {
+    .project-overview-section__description {
       padding: 100px 10%; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1680,12 +1701,24 @@ footer .main-nav__item--first {
     max-height: 100%;
     object-fit: contain; }
 
+.project-slider-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  clear: both;
+  height: -webkit-calc(100vh - 80px);
+  height: -moz-calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  margin: 0 5%;
+  width: 90%; }
+  .project-slider-section img {
+    max-height: 100%;
+    object-fit: contain; }
+
 .project-desktop-mockups-section {
   clear: both;
-  height: -webkit-calc((100vh - 80px) * 2);
-  height: -moz-calc((100vh - 80px) * 2);
-  height: calc((100vh - 80px) * 2);
-  margin-bottom: 375px;
+  height: auto;
   position: relative;
   width: 100%; }
 
@@ -1714,7 +1747,7 @@ footer .main-nav__item--first {
   height: -webkit-calc((100vh - 80px) / 2);
   height: -moz-calc((100vh - 80px) / 2);
   height: calc((100vh - 80px) / 2);
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%; }
 
@@ -1722,6 +1755,14 @@ footer .main-nav__item--first {
   height: auto;
   padding: 0 25%;
   text-align: center; }
+
+.project-desktop-mockups-section__line {
+  border-right: 1.5px solid #f3f3f3;
+  height: 150px;
+  position: relative;
+  top: -70px;
+  width: 50%;
+  z-index: 10; }
 
 .project-desktop-mockups-section__background--gray {
   background: #f3f3f3;
@@ -3243,6 +3284,9 @@ footer .main-nav__item--first {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+.project-overview-section__line--overview {
+  border-color: #b31e57; }
 
 #dogs-booklet-page .project-background-image-section {
   background: url("../images/projects/dogs-booklet/run.png");

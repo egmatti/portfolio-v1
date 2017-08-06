@@ -3,16 +3,33 @@
 // ==========================================
 
 .project-slider-section {
-  @include flexbox($direction: row, $justify: space-around);
   clear: both;
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);
   height:     calc(100vh - 80px);
-  margin: 0 $margin-page-horizontal;
-  width: $width-page;
-
-  img {
-    max-height: 100%;
-    object-fit: contain;
-  }
+  margin: 0 10%;
+  width: 80%;
 }
+
+.project-slider-section-for {
+  @include flexbox();
+  height: 100%;
+  width: 100%;
+}
+
+.project-slider-section-for__post {
+  @include flexbox();
+  height: 100%;
+  width: 33%;
+}
+
+.project-slider-section-for__post img {
+  margin: 0 auto;
+  max-height: 100%;
+  object-fit: contain;
+  width: 80%;
+}
+
+.project-slider-section .slick-prev:before, .project-slider-section .slick-next:before {
+    color: $color-arrows;
+  }

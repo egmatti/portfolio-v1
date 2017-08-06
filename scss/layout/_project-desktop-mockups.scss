@@ -11,7 +11,7 @@
 
 .project-desktop-mockups-section__border {
   border: $border-project-desktop-mockups;
-  height: 100%;
+  // Height is being calculated in dogs-booklet.js
   margin: 0 $margin-page-horizontal;
   position: absolute;
   top: 0;
@@ -87,6 +87,7 @@
 }
 
 .project-desktop-mockups-section__image {
+  @include box-shadow();
   object-fit: contain;
   width: 45%;
   z-index: 15;

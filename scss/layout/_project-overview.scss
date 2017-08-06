@@ -1,0 +1,40 @@
+// ==========================================
+// PROJECT OVERVIEW
+// ==========================================
+
+.project-overview-section {
+  @include flexbox();
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  width: 100%;
+
+  @include media-query(medium) {
+    height: auto;
+  }
+}
+
+.project-overview-section div {
+  @include flexbox ($direction: column);
+  padding: 0 25%;
+
+  @include media-query(small) {
+    padding: $padding-div $margin-page-mobile-horizontal;
+  }
+
+  @include media-query(medium) {
+    padding: 100px $margin-page-tablet-horizontal;
+  }
+}
+
+.project-overview-section h1 {
+  @include media-query(small) {
+    font-size: 1.75rem;
+  }
+}
+
+.project-overview-section img {
+  height: 150px;
+  object-fit: contain;
+  margin-top: $margin-body-text;
+}

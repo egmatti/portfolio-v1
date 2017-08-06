@@ -26,10 +26,15 @@
 }
 
 
-// OVERVIEW SECTION
+// PROJECT BACKGROUND IMAGE SECTION
 
-#dogs-booklet-page .overview-right {
-  @include media-query(small) {
-    padding-bottom: 0;
-  }
+#dogs-booklet-page .project-background-image-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "dogs-booklet/run");
+}
+
+
+// PROJECT FLEX SECTION
+
+#dogs-booklet-page .project-flex-section img {
+  height: 80%;
 }

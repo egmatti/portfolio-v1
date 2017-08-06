@@ -1,9 +1,8 @@
 // ==========================================
-// PROJECT IMAGE
+// PROJECT FLOAT
 // ==========================================
 
-.project-image-section {
-  // background: $color-body-accent;
+.project-float-section {
   clear: both;
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);
@@ -32,7 +31,7 @@
     }
 
     @include m(left) {
-      @extend .project-image-section__image;
+      @extend .project-float-section__image;
       float: left;
 
       @include media-query(medium) {
@@ -41,7 +40,7 @@
     }
 
     @include m(right) {
-      @extend .project-image-section__image;
+      @extend .project-float-section__image;
       float: right;
 
       @include media-query(medium) {
@@ -51,12 +50,14 @@
   }
 
   @include e(div) {
-    height: auto;
-    margin-top: $padding-div;
+    @include flexbox($direction: column, $align: flex-start);
+    height: 100%;
+    // margin-top: $padding-div;
     text-align: justify;
     width: 35%;
 
     @include media-query(medium) {
+      display: block;
       clear: both;
       margin: $margin-body-text 5% 0 5%;
       text-align: center;
@@ -64,7 +65,7 @@
     }
 
     @include m(left) {
-      @extend .project-image-section__div;
+      @extend .project-float-section__div;
       float: left;
       margin-right: 5%;
 
@@ -75,7 +76,7 @@
     }
 
     @include m(right) {
-      @extend .project-image-section__div;
+      @extend .project-float-section__div;
       float: right;
       margin-left: 5%;
 

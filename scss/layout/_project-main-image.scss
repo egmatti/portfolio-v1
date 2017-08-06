@@ -1,0 +1,36 @@
+// ==========================================
+// PROJECT MAIN IMAGE
+// ==========================================
+
+.project-main-image-section {
+  clear: both;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.project-main-image-section__background {
+  background: $color-body-accent;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  margin-bottom: calc((100vh - 80px) / 2);
+  width: 100%;
+}
+
+.project-main-image-section__image-container {
+  @include box-shadow();
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  margin: 0 $margin-page-horizontal;
+  position: absolute;
+  top: calc((100vh - 80px) / 2);
+  width: $width-page;
+
+  img {
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}

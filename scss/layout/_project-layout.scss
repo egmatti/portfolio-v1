@@ -12,8 +12,12 @@
   position: relative;
   width: $width-page;
 
+  @include media-query(small) {
+    height: 50vh;
+  }
+
   @include media-query(medium) {
-    height: 793px;
+    height: 50vh;
   }
 
   @include e(iframe) {
@@ -23,9 +27,16 @@
     top: 0;
     width: 80%;
 
+    @include media-query(small) {
+      height: 95%;
+      margin-bottom: -325px;
+      max-width: 80%;
+      width: auto;
+    }
+
     @include media-query(medium) {
-      // padding: 0 auto;
-      // width: auto;
+      height: 510px;
+      margin-bottom: -325px;
     }
   }
 }
@@ -40,11 +51,19 @@
     @extend .project-layout-section__cover;
     height: 53px;
     top: 0;
+
+    @include media-query(small) {
+      height: 25px;
+    }
   }
 
   @include m(bottom) {
     @extend .project-layout-section__cover;
     height: 90px;
     bottom: 0;
+
+    @include media-query(small) {
+      height: 62px;
+    }
   }
 }

@@ -1,0 +1,26 @@
+// ==========================================
+// PROJECT FULL DESKTOP MOCKUP
+// ==========================================
+
+.project-full-desktop-mockup-section {
+  background: $color-body;
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+.project-full-desktop-mockup-section .mockup-image-container {
+  margin: 0 $margin-section-horizontal;
+  width: 80%;
+
+  @include media-query(small) {
+    margin: 0 $margin-image-mobile-horizontal;
+    width: $width-image-mobile;
+  }
+
+  img {
+    @include box-shadow($v: 0.5px, $s: 1.5px);
+    object-fit: contain;
+    width: 100%;
+  }
+}

@@ -10,58 +10,60 @@ $("#ballad-page .button").click(function() {
 });
 
 
-// SCROLL REVEAL
-
-window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
-sr.reveal('.style-guides-section .moodboards', {delay: 250});
-sr.reveal('.style-guides-section .synced-slider-nav img', {delay: 475}, 175);
-
-sr.reveal('.logo-section img', {delay: 250});
-
-sr.reveal('.mobile-prototype-section img', {delay: 250});
-
-
-// STYLE GUIDES SLIDER
-
-$(".synced-slider-for").slick({
- arrows: false,
- asNavFor: ".synced-slider-nav",
- fade: true,
- slidesToScroll: 1,
- slidesToShow: 1
-});
-
-$(".synced-slider-nav").slick({
-  arrows: true,
-  asNavFor: ".synced-slider-for",
-  infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 3
-});
-
-
-// MOBILE PROTOTYPE SECTION HEIGHT
+// PROJECT MAIN IMAGE MARGIN
 
 $(document).ready(function(){
-  var mobilePrototypeImageContainerHeight = $("#ballad-page .mobile-prototype-image-container").outerHeight() + 150;
-  var mobilePrototypeDescriptionHeight = $("#ballad-page .mobile-prototype-description").outerHeight() + 150;
+  var projectMainImageHeight = $("#ballad-page .project-main-image-section__image-container").height();
+  var projectMainImageBackgroundMargin = (projectMainImageHeight / 2);
 
   if (mediaQuerySmall.matches) {
     // window width is less than 767px
-
+    $("#ballad-page .project-main-image-section__background").css({"margin-bottom": projectMainImageBackgroundMargin});
   } else if (mediaQueryMedium.matches) {
     // window width is less than 1025px
-    $("#ballad-page .mobile-prototype-section").css({"height": mobilePrototypeDescriptionHeight});
+
   } else {
-    // window width is at least 767px
-    $("#ballad-page .mobile-prototype-section").css({"height": mobilePrototypeImageContainerHeight});
+    // window width is at least 1025px
+
   }
 });
 
 
-// RESPONSIVE SITE SECTION HEIGHT
+// PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING
 
 $(document).ready(function(){
-  var responsiveSiteImageHeight = $("#ballad-page .responsive-site-section img").outerHeight() + 150;
-  $("#ballad-page .responsive-site-section").css({"height": responsiveSiteImageHeight});
+  var laptopHeight = $("#ballad-page .project-desktop-mockups-section__row--first").height();
+  var laptopPosition = -(laptopHeight / 2);
+  var rowMargin = (laptopHeight / 2);
+
+  var rowMarginMobile = -(laptopHeight / 2);
+
+  var backgroundWhiteHeight = $("#ballad-page .project-desktop-mockups-section__background--white").outerHeight();
+  var backgroundGrayHeight = $("#ballad-page .project-desktop-mockups-section__background--gray").outerHeight();
+  var desktopMockupsSectionHeight = backgroundWhiteHeight + backgroundGrayHeight + rowMargin;
+
+  var borderHeight = backgroundWhiteHeight + backgroundGrayHeight;
+  var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight - (laptopHeight / 2);
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+    $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeightMobile});
+
+    $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+    $("#ballad-page .project-desktop-mockups-section__row--first").css({"margin-bottom": rowMarginMobile});
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+    $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+    $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
+
+    $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+    $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+  } else {
+    // window width is at least 1025px
+    $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+    $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
+
+    $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+    $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+  }
 });

@@ -26,7 +26,11 @@
 }
 
 
-// OVERVIEW SECTION
+// PROJECT OVERVIEW SECTION
+
+#ballad-page .project-overview-section__line--overview {
+  border-color: $ballad-blue;
+}
 
 #ballad-page .button {
   border: $border-button-ballad;
@@ -45,365 +49,34 @@
   }
 }
 
+// PROJECT MAIN IMAGE SECTION
 
-// STYLED GUIDES SECTION
-
-#ballad-page .style-guides-section {
-  background: $color-body-accent;
-  clear: both;
-  height: 615px;
-  width: 100%;
-
+#ballad-page .project-main-image-section__background {
   @include media-query(small) {
-    height: auto;
-    padding: $padding-div 0;
-  }
-
-  @include media-query(medium) {
-    height: auto;
-    padding: $padding-div 0;
-    width: 100%;
+    height: 66vh;
+    // Margin is being calculated in ballad.js
   }
 }
 
-#ballad-page .style-guides-section h2 {
-  padding-left: $margin-page-horizontal;
-  padding-top: $padding-div;
-
+#ballad-page .project-main-image-section__description-container {
   @include media-query(small) {
-    display: block;
-    padding: 0 $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
-  }
-
-  @include media-query(medium) {
-    display: block;
-    padding: 0 $margin-headline-tablet-horizontal;
-    width: $width-headline-tablet;
+    height: -webkit-calc(66vh * (3/4));
+    height:  -moz-calc(66vh * (3/4));
+    height:    calc(66vh * (3/4));
   }
 }
 
-#ballad-page .colors-headline {
-  margin-top: $margin-body-text;
-
+#ballad-page .project-main-image-section__image-container {
   @include media-query(small) {
-    margin-top: ($padding-div * (3/4));
-  }
-
-  @include media-query(medium) {
-    margin-top: ($padding-div * (3/4));
-  }
-}
-
-#ballad-page .colors {
-  margin-top: $margin-body-text;
-
-  li {
-    display: inline-block;
-    list-style-type: none;
-    padding-right: 12.5px;
-    width: auto;
-
-    @include media-query(small) {
-      padding-right: 8.75px;
-    }
-
-    @include media-query(medium) {
-      padding-right: 8.75px;
-    }
-
-    img {
-      float: left;
-      margin-right: 0;
-      width: 50px;
-
-      @include media-query(small) {
-        margin: 0;
-        width: 35px;
-      }
-
-      @include media-query(medium) {
-        margin: 0;
-        width: 35px;
-      }
-    }
-  }
-}
-
-#ballad-page .typefaces-headline {
-  margin-top: $margin-body-text;
-
-  @include media-query(small) {
-    margin-top: ($padding-div * (3/4));
-  }
-
-  @include media-query(medium) {
-    margin-top: ($padding-div * (3/4));
-  }
-}
-
-#ballad-page .typefaces {
-  margin-top: $margin-body-text;
-
-  li {
-    display: inline-block;
-    list-style-type: none;
-    padding-right: 25px;
-
-    img {
-      float: left;
-      height: 14px;
-      margin: 0;
-      object-fit: contain;
-      width: auto;
-    }
-  }
-}
-
-#ballad-page .moodboards-headline {
-  @include media-query(small) {
-    display: block;
-    padding: ($padding-div * (3/4)) $margin-page-mobile-horizontal 0 $margin-page-mobile-horizontal;
-    width: $width-page-mobile;
-  }
-}
-
-#ballad-page .synced-slider-for .moodboards {
-  margin-top: $margin-body-text;
-
-  @include media-query(small) {
-    margin: $margin-body-text 10% $padding-div 10%;
-    max-width: none;
-    width: 80%;
-  }
-}
-
-#ballad-page .synced-slider-nav {
-  position: relative;
-  top: 4%;
-
-  @include media-query(small) {
-    width: 60%;
-  }
-
-  @include media-query(medium) {
-    position: relative;
-    padding-top: $padding-div;
-    width: 40%;
-  }
-
-  img {
-    @include box-shadow();
-  }
-}
-
-#ballad-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
-  @include media-query(medium) {
-    padding-top: $padding-div;
+    top: -webkit-calc(66vh * (3/4));
+    top:  -moz-calc(66vh * (3/4));
+    top:    calc(66vh * (3/4));
   }
 }
 
 
-// LOGO SECTION
+// PROJECT BACKGROUND IMAGE SECTION
 
-#ballad-page .logo-section {
-  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "ballad/retro-stripes");
-  height: 540px; // Same height as the wireframes section on the Coffee App page
-  width: 100%;
-
-  @include media-query(small) {
-    height: auto;
-    padding: $padding-div 0;
-  }
-
-  @include media-query(medium) {
-    padding: $padding-section 0;
-  }
-}
-
-#ballad-page .logo-image-container {
-  @include flexbox();
-  float: left;
-  height: 100%;
-  margin-left: $margin-page-horizontal;
-  width: 40.5%;
-
-  @include media-query(small) {
-    display: none;
-  }
-
-  @include media-query(medium) {
-    margin-left: 5%;
-    width: 30%;
-  }
-
-  img {
-    object-fit: contain;
-    width: 55%;
-
-    @include media-query(medium) {
-      width: 80%;
-    }
-  }
-}
-
-#ballad-page .logo-description {
-  @include flexbox($direction: column, $align: flex-start);
-  float: right;
-  height: 100%;
-  margin-right: $margin-page-horizontal;
-  width: 49.5%;
-
-  @include media-query(small) {
-    display: block;
-    float: none;
-    height: auto;
-    margin: 0 $margin-page-mobile-horizontal;
-    width: $width-page-mobile;
-  }
-
-  @include media-query(medium) {
-    height: auto;
-    margin: 0 5%;
-    width: 55%;
-  }
-
-  span {
-    font-weight: $font-weight-bold;
-    padding-right: 2.5px;
-  }
-}
-
-#ballad-page .logo-mobile {
-  display: none;
-
-  @include media-query(small) {
-    display: block;
-    margin: $padding-div 20% 0 20%;
-    object-fit: contain;
-    width: 60%;
-  }
-}
-
-
-// DESKTOP MOCKUP SECTION
-
-#ballad-page .desktop-mockup-section {
-  background: $color-body;
-  clear: both;
-  height: auto;
-  width: 100%;
-}
-
-#ballad-page .desktop-mockup-section h2 {
-  padding-left: $margin-page-horizontal;
-  padding-top: $padding-section;
-
-  @include media-query(small) {
-    display: block;
-    padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
-  }
-}
-
-#ballad-page .desktop-mockup-section .mockup-image-container {
-  margin: 0 $margin-section-horizontal;
-  width: 80%;
-
-  @include media-query(small) {
-    margin: 0 $margin-image-mobile-horizontal;
-    width: $width-image-mobile;
-  }
-
-  img {
-    @include box-shadow($v: 0.5px, $s: 1.5px);
-    margin: $padding-div 0 $padding-section 0;
-    object-fit: contain;
-    width: 100%;
-
-    @include media-query(small) {
-      margin-bottom: $padding-div;
-    }
-  }
-}
-
-
-// MOBILE PROTOTYPE SECTION
-
-#ballad-page .mobile-prototype-section {
-  background: $color-body-accent;
-  // Height is being calculated in ballad.js
-  width: 100%;
-
-  @include media-query(small) {
-    display: none;
-  }
-
-  @include media-query(medium) {
-    height: auto;
-    width: 100%;
-  }
-}
-
-#ballad-page .mobile-prototype-image-container {
-  @include flexbox();
-  float: left;
-  height: 100%;
-  // margin-left: $margin-page-horizontal;
-  width: 40.5%;
-
-  @include media-query(medium) {
-    margin-left: 5%;
-    width: 30%;
-  }
-
-  img {
-    object-fit: contain;
-    width: 45%;
-
-    @include media-query(medium) {
-      width: 80%;
-    }
-  }
-}
-
-#ballad-page .mobile-prototype-description {
-  @include flexbox($direction: column, $align: flex-start);
-  float: right;
-  height: 100%;
-  margin-right: $margin-section-horizontal;
-  width: 49.5%;
-
-  @include media-query(medium) {
-    margin: 0 5%;
-  }
-
-  span {
-    font-weight: $font-weight-bold;
-    padding-right: 2.5px;
-  }
-}
-
-
-// RESPONSIVE SITE SECTION
-
-#ballad-page .responsive-site-section {
-  @include flexbox();
-  // Height is being calculated in ballad.js
-  width: 100%;
-
-  @include media-query(small) {
-    background: $color-body-accent;
-  }
-
-  img {
-    object-fit: contain;
-    transform: translateX(35px);
-    width: 60%;
-
-    @include media-query(small) {
-      transform: translateX(10px);
-      width: 90%;
-    }
-  }
+#ballad-page .project-background-image-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "ballad/keyboard");
 }

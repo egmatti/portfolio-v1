@@ -8,6 +8,15 @@
   width: 100%;
 }
 
+.project-mobile-mockups-section--second {
+  @extend .project-mobile-mockups-section;
+  transform: translateY(-175px);
+
+  .project-mobile-mockups-section__image-container {
+    margin-bottom: -175px;
+  }
+}
+
 .project-mobile-mockups-section__image-container {
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);

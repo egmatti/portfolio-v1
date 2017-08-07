@@ -25,9 +25,9 @@
   @include bg-image ($image-folder: "projects", $bg-image: "dogs-booklet/dogs-booklet-wall");
 }
 
-// PROJECT OVERVIEW
+// PROJECT OVERVIEW SECTION
 
-.project-overview-section__line--overview {
+#dogs-booklet-page .project-overview-section__line--overview {
   border-color: $dogs-booklet-magenta;
 }
 

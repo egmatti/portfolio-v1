@@ -33,7 +33,7 @@
 }
 
 .project-main-image-section__description-container {
-  @include flexbox($direction: row, $justify: space-around);
+  @include flexbox($direction: row, $justify: space-around, $align: center, $wrap: wrap);
   height: -webkit-calc((100vh - 80px) / 2);
   height:   -moz-calc((100vh - 80px) / 2);
   height:     calc((100vh - 80px) / 2);
@@ -43,7 +43,7 @@
   width: $width-section;
 
   @include media-query(small) {
-    @include flexbox($direction: column, $justify: center);
+    @include flexbox($direction: column, $justify: center, $wrap: nowrap);
     height: -webkit-calc(50vh * (3/4));
     height:  -moz-calc(50vh * (3/4));
     height:    calc(50vh * (3/4));
@@ -63,9 +63,9 @@
     padding: 10px 0;
   }
 
-  h4 {
+  h5 {
     @include media-query(small) {
-      font-size: 0.9375rem;
+      font-size: 0.75rem;
     }
   }
 

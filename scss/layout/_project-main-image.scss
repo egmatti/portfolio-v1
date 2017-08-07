@@ -14,8 +14,17 @@
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);
   height:     calc(100vh - 80px);
-  margin-bottom: calc((100vh - 80px) / 2);
+  margin-bottom: -webkit-calc((100vh - 80px) / 2);
+  margin-bottom:  -moz-calc((100vh - 80px) / 2);
+  margin-bottom:    calc((100vh - 80px) / 2);
   width: 100%;
+
+  @include media-query(medium) {
+    height: 50vh;
+    margin-bottom: -webkit-calc(50vh / 2);
+    margin-bottom:  -moz-calc(50vh / 2);
+    margin-bottom:    calc(50vh / 2);
+  }
 }
 
 .project-main-image-section__image-container {
@@ -25,12 +34,28 @@
   height:     calc(100vh - 80px);
   margin: 0 10%;
   position: absolute;
-  top: calc((100vh - 80px) / 2);
+  top: -webkit-calc((100vh - 80px) / 2);
+  top:  -moz-calc((100vh - 80px) / 2);
+  top:    calc((100vh - 80px) / 2);
   width: 80%;
+
+  @include media-query(medium) {
+    height: 50vh;
+    margin: 0 5%;
+    overflow: hidden;
+    top: -webkit-calc(50vh / 2);
+    top:  -moz-calc(50vh / 2);
+    top:    calc(50vh / 2);
+    width: 90%;
+  }
 
   img {
     max-height: 100%;
     object-fit: cover;
     width: 100%;
+
+    @include media-query(medium) {
+      width: auto;
+    }
   }
 }

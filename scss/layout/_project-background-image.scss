@@ -8,4 +8,8 @@
   height:   -moz-calc(100vh - 80px);
   height:     calc(100vh - 80px);
   width: 100%;
+
+  @include media-query(medium) {
+    height: 50vh;
+  }
 }

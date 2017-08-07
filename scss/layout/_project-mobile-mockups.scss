@@ -16,6 +16,10 @@
   position: relative;
   width: 47.5%;
 
+  @include media-query(medium) {
+    height: 50vh;
+  }
+
   @include m(left) {
     @extend .project-mobile-mockups-section__image-container;
     @include flexbox($justify: flex-end);
@@ -26,7 +30,15 @@
     @extend .project-mobile-mockups-section__image-container;
     @include flexbox($justify: flex-start);
     float: right;
-    margin-top: calc((100vh - 80px) / 4);
+    margin-top: -webkit-calc((100vh - 80px) / 4);
+    margin-top:   -moz-calc((100vh - 80px) / 4);
+    margin-top:     calc((100vh - 80px) / 4);
+
+    @include media-query(medium) {
+      margin-top: -webkit-calc(50vh / 4);
+      margin-top:   -moz-calc(50vh / 4);
+      margin-top:     calc(50vh / 4);
+    }
   }
 }
 

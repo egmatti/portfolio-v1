@@ -11,6 +11,10 @@
   margin: 0 $margin-section-horizontal;
   width: $width-section;
 
+  @include media-query(medium) {
+    height: 50vh;
+  }
+
   img {
     max-height: 90%;
     object-fit: contain;

@@ -27,6 +27,10 @@
   position: absolute;
   top: 0;
   width: 100%;
+
+  @include media-query(medium) {
+    height: 50vh;
+  }
 }
 
 .project-desktop-mockups-section__description-container {
@@ -37,6 +41,12 @@
   position: relative;
   top: 0;
   width: 100%;
+
+  @include media-query(medium) {
+    height: -webkit-calc(50vh / 2);
+    height:   -moz-calc(50vh / 2);
+    height:     calc(50vh / 2);
+  }
 }
 
 .project-desktop-mockups-section__description {
@@ -52,14 +62,24 @@
   top: -70px;
   width: 50%;
   z-index: 10;
+
+  @include media-query(medium) {
+    display: none;
+  }
 }
 
 .project-desktop-mockups-section__background--gray {
   background: $color-body-accent;
   height: auto;
   position: absolute;
-  top: calc(100vh - 80px);
+  top: -webkit-calc(100vh - 80px);
+  top:  -moz-calc(100vh - 80px);
+  top:    calc(100vh - 80px);
   width: 100%;
+
+  @include media-query(medium) {
+    top: 50vh;
+  }
 }
 
 .project-desktop-mockups-section__row {

@@ -9,6 +9,10 @@
   height:     calc(100vh - 80px);
   margin: 0 $margin-section-horizontal;
   width: $width-section;
+
+  @include media-query(medium) {
+    height: 50vh;
+  }
 }
 
 .project-slider-section-for {

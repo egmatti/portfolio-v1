@@ -20,7 +20,11 @@ $(document).ready(function(){
 
   } else if (mediaQueryMedium.matches) {
     // window width is less than 1025px
+    $("#dogs-booklet-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+    $("#dogs-booklet-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
 
+    $("#dogs-booklet-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+    $("#dogs-booklet-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
   } else {
     // window width is at least 1025px
     $("#dogs-booklet-page .project-desktop-mockups-section__border").css({"height": borderHeight});

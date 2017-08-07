@@ -9,6 +9,10 @@
   height:     calc(100vh - 80px);
   width: 100%;
 
+  @include media-query(small) {
+    height: 50vh;
+  }
+
   @include media-query(medium) {
     height: 50vh;
   }

@@ -10,6 +10,10 @@
   margin: 0 $margin-page-horizontal;
   width: $width-page;
 
+  @include media-query(small) {
+    height: auto;
+  }
+
   @include media-query(medium) {
     height: auto;
   }
@@ -20,6 +24,15 @@
     max-height: 90%;
     object-fit: contain;
     width: 60%;
+
+    @include media-query(small) {
+      margin: 0 $margin-page-mobile-horizontal;
+      top: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      width: $width-page-mobile;
+    }
 
     @include media-query(medium) {
       margin: 0 15%;
@@ -34,6 +47,10 @@
       @extend .project-float-section__image;
       float: left;
 
+      @include media-query(small) {
+        float: none;
+      }
+
       @include media-query(medium) {
         float: none;
       }
@@ -42,6 +59,10 @@
     @include m(right) {
       @extend .project-float-section__image;
       float: right;
+
+      @include media-query(small) {
+        float: none;
+      }
 
       @include media-query(medium) {
         float: none;
@@ -55,6 +76,14 @@
     // margin-top: $padding-div;
     text-align: justify;
     width: 35%;
+
+    @include media-query(small) {
+      display: block;
+      clear: both;
+      margin: 0 5%;
+      text-align: center;
+      width: 90%; // Since this is 90% of 90% it roughly equals the $width-page-mobile
+    }
 
     @include media-query(medium) {
       display: block;

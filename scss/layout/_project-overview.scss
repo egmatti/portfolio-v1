@@ -9,6 +9,10 @@
   position: relative;
   width: 100%;
 
+  @include media-query(small) {
+    height: auto;
+  }
+
   @include media-query(medium) {
     height: auto;
   }
@@ -21,6 +25,11 @@
   top: -75px;
   width: 50%;
   z-index: 10;
+
+  @include media-query(small) {
+    height: 25px;
+    top: -25px;
+  }
 }
 
 .project-overview-section__line--overview {
@@ -30,6 +39,10 @@
   top: 0;
   width: 50%;
   z-index: 10;
+
+  @include media-query(small) {
+    height: 25px;
+  }
 }
 
 .project-overview-section__description-container {

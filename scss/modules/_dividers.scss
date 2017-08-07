@@ -3,10 +3,6 @@
   clear: both;
   height: 75px;
   width: 100%;
-
-  @include media-query(small) {
-    height: 50px;
-  }
 }
 
 .divider-black {
@@ -14,8 +10,4 @@
   clear: both;
   height: 75px;
   width: 100%;
-
-  @include media-query(small) {
-    height: 50px;
-  }
 }

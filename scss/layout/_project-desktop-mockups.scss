@@ -28,6 +28,11 @@
   top: 0;
   width: 100%;
 
+  @include media-query(small) {
+    height: auto;
+    position: relative;
+  }
+
   @include media-query(medium) {
     height: 50vh;
   }
@@ -42,10 +47,12 @@
   top: 0;
   width: 100%;
 
+  @include media-query(small) {
+    height: auto;
+  }
+
   @include media-query(medium) {
-    height: -webkit-calc(50vh / 2);
-    height:   -moz-calc(50vh / 2);
-    height:     calc(50vh / 2);
+    height: 25vh;
   }
 }
 
@@ -63,6 +70,12 @@
   width: 50%;
   z-index: 10;
 
+  @include media-query(small) {
+    height: 100px;
+    margin: 25px 0;
+    top: 0;
+  }
+
   @include media-query(medium) {
     display: none;
   }
@@ -77,6 +90,13 @@
   top:    calc(100vh - 80px);
   width: 100%;
 
+  @include media-query(small) {
+    height: auto;
+    padding: $margin-body-text 0;
+    position: relative;
+    top: 0;
+  }
+
   @include media-query(medium) {
     top: 50vh;
   }
@@ -89,11 +109,21 @@
   padding-top: $padding-section;
   width: $width-page;
 
+  @include media-query(small) {
+    @include flexbox($direction: column, $justify: center);
+    padding: 0;
+  }
+
   @include m(first) {
     @extend .project-desktop-mockups-section__row;
     @include flexbox($justify: center);
     padding-top: 0;
     position: absolute;
+
+    @include media-query(small) {
+      padding: 0;
+      position: relative;
+    }
   }
 
   @include m(second) {
@@ -103,6 +133,10 @@
   @include m(last) {
     @extend .project-desktop-mockups-section__row;
     padding-bottom: $padding-section;
+
+    @include media-query(small) {
+      padding: 0;
+    }
   }
 }
 
@@ -111,10 +145,20 @@
   object-fit: contain;
   width: 45%;
   z-index: 15;
+
+  @include media-query(small) {
+    margin: $margin-body-text 0;
+    width: 90%;
+  }
 }
 
 .project-desktop-mockups-section__image--laptop {
   object-fit: contain;
   width: 55%;
   z-index: 15;
+
+  @include media-query(small) {
+    margin: $margin-body-text 0;
+    width: 90%;
+  }
 }

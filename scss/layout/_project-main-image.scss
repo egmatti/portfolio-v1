@@ -19,11 +19,63 @@
   margin-bottom:    calc((100vh - 80px) / 2);
   width: 100%;
 
+  @include media-query(small) {
+    height: 50vh;
+    // Margin is being calculated in dogs-booklet.js
+  }
+
   @include media-query(medium) {
     height: 50vh;
     margin-bottom: -webkit-calc(50vh / 2);
     margin-bottom:  -moz-calc(50vh / 2);
     margin-bottom:    calc(50vh / 2);
+  }
+}
+
+.project-main-image-section__description-container {
+  @include flexbox($direction: row, $justify: space-around);
+  height: -webkit-calc((100vh - 80px) / 2);
+  height:   -moz-calc((100vh - 80px) / 2);
+  height:     calc((100vh - 80px) / 2);
+  margin: 0 $margin-section-horizontal;
+  position: absolute;
+  top: 0;
+  width: $width-section;
+
+  @include media-query(small) {
+    @include flexbox($direction: column, $justify: center);
+    height: -webkit-calc(50vh * (3/4));
+    height:  -moz-calc(50vh * (3/4));
+    height:    calc(50vh * (3/4));
+  }
+
+  @include media-query(medium) {
+    height: 25vh;
+  }
+}
+
+.project-main-image-section__description {
+  height: auto;
+  text-align: center;
+  width: auto;
+
+  @include media-query(small) {
+    padding: 10px 0;
+  }
+
+  h4 {
+    @include media-query(small) {
+      font-size: 0.9375rem;
+    }
+  }
+
+  p {
+    margin-top: ($margin-body-text / 4);
+
+    @include media-query(small) {
+      font-size: 0.75rem;
+      margin-top: (($margin-body-text / 4) * (3/4));
+    }
   }
 }
 
@@ -38,6 +90,16 @@
   top:  -moz-calc((100vh - 80px) / 2);
   top:    calc((100vh - 80px) / 2);
   width: 80%;
+
+  @include media-query(small) {
+    height: auto;
+    margin: 0 5%;
+    overflow: hidden;
+    top: -webkit-calc(50vh * (3/4));
+    top:  -moz-calc(50vh * (3/4));
+    top:    calc(50vh * (3/4));
+    width: 90%;
+  }
 
   @include media-query(medium) {
     height: 50vh;

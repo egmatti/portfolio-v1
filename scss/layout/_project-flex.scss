@@ -11,6 +11,12 @@
   margin: 0 $margin-section-horizontal;
   width: $width-section;
 
+  @include media-query(small) {
+    // height: 50vh;
+    @include flexbox($direction: column, $justify: center);
+    height: auto;
+  }
+
   @include media-query(medium) {
     height: 50vh;
   }
@@ -18,5 +24,11 @@
   img {
     max-height: 90%;
     object-fit: contain;
+
+    @include media-query(small) {
+      max-height: 50vh;
+      max-width: 80%;
+      padding: $margin-body-text 0;
+    }
   }
 }

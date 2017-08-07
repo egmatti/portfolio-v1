@@ -1,3 +1,36 @@
 // ==========================================
 // PROJECT MOBILE MOCKUPS
 // ==========================================
+
+.project-mobile-mockups-section {
+  clear: both;
+  height: auto;
+  width: 100%;
+}
+
+.project-mobile-mockups-section__image-container {
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  display: inline-block;
+  position: relative;
+  width: 47.5%;
+
+  @include m(left) {
+    @extend .project-mobile-mockups-section__image-container;
+    @include flexbox($justify: flex-end);
+    float: left;
+  }
+
+  @include m(right) {
+    @extend .project-mobile-mockups-section__image-container;
+    @include flexbox($justify: flex-start);
+    float: right;
+    margin-top: calc((100vh - 80px) / 4);
+  }
+}
+
+.project-mobile-mockups-section__image {
+  max-height: 90%;
+  object-fit: contain;
+}

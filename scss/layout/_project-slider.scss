@@ -7,8 +7,8 @@
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);
   height:     calc(100vh - 80px);
-  margin: 0 10%;
-  width: 80%;
+  margin: 0 $margin-section-horizontal;
+  width: $width-section;
 }
 
 .project-slider-section-for {

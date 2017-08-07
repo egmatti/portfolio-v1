@@ -64,10 +64,26 @@ $(document).ready(function(){
 
 // PROJECT SLIDER
 
-$(".project-slider-section-for").slick({
+$(".project-slider-section-for--desktop").slick({
  arrows: true,
  infinite: true,
  slidesToScroll: 1,
  slidesToShow: 3,
+ vertical: false
+});
+
+$(".project-slider-section-for--tablet").slick({
+ arrows: true,
+ infinite: true,
+ slidesToScroll: 1,
+ slidesToShow: 2,
+ vertical: false
+});
+
+$(".project-slider-section-for--mobile").slick({
+ arrows: true,
+ infinite: true,
+ slidesToScroll: 1,
+ slidesToShow: 1,
  vertical: false
 });

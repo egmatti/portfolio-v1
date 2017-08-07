@@ -16,6 +16,10 @@
   position: relative;
   width: 47.5%;
 
+  @include media-query(small) {
+    height: 50vh;
+  }
+
   @include media-query(medium) {
     height: 50vh;
   }
@@ -33,6 +37,12 @@
     margin-top: -webkit-calc((100vh - 80px) / 4);
     margin-top:   -moz-calc((100vh - 80px) / 4);
     margin-top:     calc((100vh - 80px) / 4);
+
+    @include media-query(small) {
+      margin-top: -webkit-calc(50vh / 4);
+      margin-top:   -moz-calc(50vh / 4);
+      margin-top:     calc(50vh / 4);
+    }
 
     @include media-query(medium) {
       margin-top: -webkit-calc(50vh / 4);

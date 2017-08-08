@@ -72,6 +72,13 @@
   }
 }
 
+#ballad-page .project-main-image-section__description {
+  @include media-query(medium) {
+    padding: 0 25px;
+  }
+}
+
+
 #ballad-page .project-main-image-section__image-container {
   @include media-query(small) {
     top: -webkit-calc(66vh * (3/4));

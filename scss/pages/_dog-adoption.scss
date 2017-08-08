@@ -1,0 +1,62 @@
+// ==========================================
+// DOG ADOPTION PAGE
+// ==========================================
+
+#dog-adoption-page * {
+  ::selection {
+    background: rgba($color-project-dog-adoption-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#dog-adoption-page .main-nav a:hover {
+  color: $color-project-dog-adoption-secondary;
+}
+
+#dog-adoption-page .fa:hover {
+  color: $color-project-dog-adoption-secondary;
+}
+
+#dog-adoption-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#dog-adoption-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "dog-adoption/dog-adoption-wall");
+}
+
+#dog-adoption-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.5rem;
+  }
+}
+
+
+// PROJECT OVERVIEW SECTION
+
+#dog-adoption-page .project-overview-section__line--overview {
+  border-color: $color-project-dog-adoption-primary;
+}
+
+#dog-adoption-page .button {
+  border: $border-button-dog-adoption;
+
+  span {
+    color: $color-project-dog-adoption-secondary;
+  }
+
+  &:hover {
+    background: $color-project-dog-adoption-secondary;
+    border: $border-button-dog-adoption-hover;
+
+    span {
+      color: $color-body;
+    }
+  }
+}

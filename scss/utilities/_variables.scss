@@ -30,6 +30,9 @@ $coffee-app-red: #cc4d4b;
 $coffee-app-blue: #98bace;
 $coffee-app-gold: #f1a75e;
 
+$dog-adoption-turquoise: #28be9b;
+$dog-adoption-orange: #f98a5f;
+
 $dogs-booklet-magenta: #b31e57;
 $dogs-booklet-green: #c3c230;
 
@@ -104,6 +107,9 @@ $color-project-chronicle-secondary: $chronicle-purple;
 $color-project-coffee-app-primary: $coffee-app-red;
 $color-project-coffee-app-secondary: $coffee-app-gold;
 
+$color-project-dog-adoption-primary: $dog-adoption-turquoise;
+$color-project-dog-adoption-secondary: $dog-adoption-orange;
+
 $color-project-dogs-booklet-primary: $dogs-booklet-magenta;
 $color-project-dogs-booklet-secondary: $dogs-booklet-green;
 
@@ -174,6 +180,8 @@ $border-button-ballad: $border-size solid $color-project-ballad-secondary;
 $border-button-ballad-hover: $border-size solid $color-project-ballad-secondary;
 $border-button-bookshelf: $border-size solid $color-project-bookshelf-secondary;
 $border-button-bookshelf-hover: $border-size solid $color-project-bookshelf-secondary;
+$border-button-dog-adoption: $border-size solid $color-project-dog-adoption-secondary;
+$border-button-dog-adoption-hover: $border-size solid $color-project-dog-adoption-secondary;
 $border-input: $border-size solid $color-input;
 $border-input-active: $border-size solid $color-input-active;
 

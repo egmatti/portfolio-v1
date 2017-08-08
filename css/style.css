@@ -2759,6 +2759,10 @@ footer .main-nav__item--first {
     height: -moz-calc(66vh * (3/4));
     height: calc(66vh * (3/4)); } }
 
+@media (min-width: 768px) and (max-width: 1025px) {
+  #ballad-page .project-main-image-section__description {
+    padding: 0 25px; } }
+
 @media (min-width: 0px) and (max-width: 767px) {
   #ballad-page .project-main-image-section__image-container {
     top: -webkit-calc(66vh * (3/4));
@@ -3257,6 +3261,42 @@ footer .main-nav__item--first {
   #coffee-app-page .prototype-description span {
     font-weight: 700;
     padding-right: 2.5px; }
+
+#dog-adoption-page * ::selection {
+  background: rgba(40, 190, 155, 0.25); }
+
+#dog-adoption-page .main-nav a:hover {
+  color: #f98a5f; }
+
+#dog-adoption-page .fa:hover {
+  color: #f98a5f; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #dog-adoption-page .main-nav-mobile-icon:hover {
+    color: #0b0b0b; } }
+
+#dog-adoption-page .hero-section {
+  background: url("../images/projects/dog-adoption/dog-adoption-wall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #dog-adoption-page .headline-container h1, #dog-adoption-page .headline-container .main-nav a, .main-nav #dog-adoption-page .headline-container a, #dog-adoption-page .headline-container .main-nav-mobile a, .main-nav-mobile #dog-adoption-page .headline-container a {
+    font-size: 1.5rem; } }
+
+#dog-adoption-page .project-overview-section__line--overview {
+  border-color: #28be9b; }
+
+#dog-adoption-page .button {
+  border: 1.5px solid #f98a5f; }
+  #dog-adoption-page .button span {
+    color: #f98a5f; }
+  #dog-adoption-page .button:hover {
+    background: #f98a5f;
+    border: 1.5px solid #f98a5f; }
+    #dog-adoption-page .button:hover span {
+      color: #fff; }
 
 #dogs-booklet-page * ::selection {
   background: rgba(179, 30, 87, 0.25); }

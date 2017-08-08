@@ -2,14 +2,20 @@
 // TOPTIX PAGE
 // ==========================================
 
+#toptix-page * {
+  ::selection {
+    background: rgba($color-project-toptix-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #toptix-page .main-nav a:hover {
-  color: $color-project-toptix;
+  color: $color-project-toptix-secondary;
 }
 
 #toptix-page .fa:hover {
-  color: $color-project-toptix;
+  color: $color-project-toptix-secondary;
 }
 
 #toptix-page .main-nav-mobile-icon:hover {

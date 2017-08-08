@@ -2,14 +2,20 @@
 // BALLAD PAGE
 // ==========================================
 
+#ballad-page * {
+  ::selection {
+    background: rgba($color-project-ballad-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #ballad-page .main-nav a:hover {
-  color: $color-project-ballad;
+  color: $color-project-ballad-secondary;
 }
 
 #ballad-page .fa:hover {
-  color: $color-project-ballad;
+  color: $color-project-ballad-secondary;
 }
 
 #ballad-page .main-nav-mobile-icon:hover {
@@ -29,18 +35,18 @@
 // PROJECT OVERVIEW SECTION
 
 #ballad-page .project-overview-section__line--overview {
-  border-color: $ballad-blue;
+  border-color: $color-project-ballad-primary;
 }
 
 #ballad-page .button {
   border: $border-button-ballad;
 
   span {
-    color: $color-project-ballad;
+    color: $color-project-ballad-secondary;
   }
 
   &:hover {
-    background: $color-project-ballad;
+    background: $color-project-ballad-secondary;
     border: $border-button-ballad-hover;
 
     span {

@@ -2,14 +2,20 @@
 // COFFEE APP PAGE
 // ==========================================
 
+#coffee-app-page * {
+  ::selection {
+    background: rgba($color-project-coffee-app-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #coffee-app-page .main-nav a:hover {
-  color: $color-project-coffee-app;
+  color: $color-project-coffee-app-secondary;
 }
 
 #coffee-app-page .fa:hover {
-  color: $color-project-coffee-app;
+  color: $color-project-coffee-app-secondary;
 }
 
 #coffee-app-page .main-nav-mobile-icon:hover {

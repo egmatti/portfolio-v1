@@ -92,15 +92,32 @@ $color-hero-background: $black;
 $color-page-title: $white;
 $color-blog-page-date: $white;
 
-$color-project-ballad: $ballad-magenta;
-$color-project-bookshelf: $bookshelf-green;
-$color-project-chronicle: $chronicle-purple;
-$color-project-coffee-app: $coffee-app-gold;
-$color-project-dogs-booklet: $dogs-booklet-green;
-$color-project-dogtooth-cover-art: $dogtooth-cover-art-dark-pink;
-$color-project-jamaica-stickers: $jamaica-stickers-coral;
-$color-project-stillwater-shirt: $stillwater-shirt-red;
-$color-project-toptix: $toptix-green;
+$color-project-ballad-primary: $ballad-blue;
+$color-project-ballad-secondary: $ballad-magenta;
+
+$color-project-bookshelf-primary: $bookshelf-red;
+$color-project-bookshelf-secondary: $bookshelf-green;
+
+$color-project-chronicle-primary: $chronicle-turquoise;
+$color-project-chronicle-secondary: $chronicle-purple;
+
+$color-project-coffee-app-primary: $coffee-app-red;
+$color-project-coffee-app-secondary: $coffee-app-gold;
+
+$color-project-dogs-booklet-primary: $dogs-booklet-magenta;
+$color-project-dogs-booklet-secondary: $dogs-booklet-green;
+
+$color-project-dogtooth-cover-art-primary: $dogtooth-cover-art-light-pink;
+$color-project-dogtooth-cover-art-secondary: $dogtooth-cover-art-dark-pink;
+
+$color-project-jamaica-stickers-primary: $jamaica-stickers-aqua;
+$color-project-jamaica-stickers-secondary: $jamaica-stickers-coral;
+
+$color-project-stillwater-shirt-primary: $stillwater-shirt-purple;
+$color-project-stillwater-shirt-secondary: $stillwater-shirt-red;
+
+$color-project-toptix-primary: $toptix-blue;
+$color-project-toptix-secondary: $toptix-green;
 
 $color-blog-section: $white;
 $color-blog-div: $light-gray;
@@ -153,10 +170,10 @@ $border-section: $border-size solid $color-border;
 $border-divider: $border-size solid $color-border;
 $border-button: $border-size solid $color-button;
 $border-button-hover: $border-size solid $color-button-hover;
-$border-button-ballad: $border-size solid $color-project-ballad;
-$border-button-ballad-hover: $border-size solid $color-project-ballad;
-$border-button-bookshelf: $border-size solid $color-project-bookshelf;
-$border-button-bookshelf-hover: $border-size solid $color-project-bookshelf;
+$border-button-ballad: $border-size solid $color-project-ballad-secondary;
+$border-button-ballad-hover: $border-size solid $color-project-ballad-secondary;
+$border-button-bookshelf: $border-size solid $color-project-bookshelf-secondary;
+$border-button-bookshelf-hover: $border-size solid $color-project-bookshelf-secondary;
 $border-input: $border-size solid $color-input;
 $border-input-active: $border-size solid $color-input-active;
 

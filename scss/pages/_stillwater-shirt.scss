@@ -2,14 +2,20 @@
 // STILLWATER SHIRT PAGE
 // ==========================================
 
+#stillwater-shirt-page * {
+  ::selection {
+    background: rgba($color-project-stillwater-shirt-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #stillwater-shirt-page .main-nav a:hover {
-  color: $color-project-stillwater-shirt;
+  color: $color-project-stillwater-shirt-secondary;
 }
 
 #stillwater-shirt-page .fa:hover {
-  color: $color-project-stillwater-shirt;
+  color: $color-project-stillwater-shirt-secondary;
 }
 
 #stillwater-shirt-page .main-nav-mobile-icon:hover {

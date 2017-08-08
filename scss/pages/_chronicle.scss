@@ -2,14 +2,20 @@
 // CHRONICLE PAGE
 // ==========================================
 
+#chronicle-page * {
+  ::selection {
+    background: rgba($color-project-chronicle-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #chronicle-page .main-nav a:hover {
-  color: $color-project-chronicle;
+  color: $color-project-chronicle-secondary;
 }
 
 #chronicle-page .fa:hover {
-  color: $color-project-chronicle;
+  color: $color-project-chronicle-secondary;
 }
 
 #chronicle-page .main-nav-mobile-icon:hover {

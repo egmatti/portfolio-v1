@@ -2,14 +2,20 @@
 // JAMAICA STICKERS PAGE
 // ==========================================
 
+#jamaica-stickers-page * {
+  ::selection {
+    background: rgba($color-project-jamaica-stickers-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #jamaica-stickers-page .main-nav a:hover {
-  color: $color-project-jamaica-stickers;
+  color: $color-project-jamaica-stickers-secondary;
 }
 
 #jamaica-stickers-page .fa:hover {
-  color: $color-project-jamaica-stickers;
+  color: $color-project-jamaica-stickers-secondary;
 }
 
 #jamaica-stickers-page .main-nav-mobile-icon:hover {

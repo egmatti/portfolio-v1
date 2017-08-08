@@ -2,14 +2,20 @@
 // BOOKSHELF PAGE
 // ==========================================
 
+#bookshelf-page * {
+  ::selection {
+    background: rgba($color-project-bookshelf-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #bookshelf-page .main-nav a:hover {
-  color: $color-project-bookshelf;
+  color: $color-project-bookshelf-secondary;
 }
 
 #bookshelf-page .fa:hover {
-  color: $color-project-bookshelf;
+  color: $color-project-bookshelf-secondary;
 }
 
 #bookshelf-page .main-nav-mobile-icon:hover {
@@ -26,157 +32,25 @@
 }
 
 
-// OVERVIEW SECTION
+// PROJECT OVERVIEW SECTION
+
+#bookshelf-page .project-overview-section__line--overview {
+  border-color: $color-project-bookshelf-primary;
+}
 
 #bookshelf-page .button {
   border: $border-button-bookshelf;
 
   span {
-    color: $color-project-bookshelf;
+    color: $color-project-bookshelf-secondary;
   }
 
   &:hover {
-    background: $color-project-bookshelf;
+    background: $color-project-bookshelf-secondary;
     border: $border-button-bookshelf-hover;
 
     span {
       color: $color-body;
-    }
-  }
-}
-
-
-// DESKTOP MOCKUPS SECTION
-
-#bookshelf-page .desktop-mockups-section {
-  background: $color-body-accent;
-  clear: both;
-  height: auto;
-  width: 100%;
-}
-
-#bookshelf-page .desktop-mockups-section h2 {
-  padding-left: $margin-page-horizontal;
-  padding-top: $padding-section;
-
-  @include media-query(small) {
-    display: block;
-    padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
-  }
-}
-
-#bookshelf-page .desktop-mockup-image-container {
-  margin: 0 $margin-section-horizontal;
-  width: 80%;
-
-  @include media-query(small) {
-    margin: 0 $margin-image-mobile-horizontal;
-    width: $width-image-mobile;
-  }
-}
-
-#bookshelf-page .desktop-mockup-image {
-  @include box-shadow($v: 0.5px, $s: 1.5px);
-  margin: $padding-div 0;
-  object-fit: contain;
-  width: 100%;
-
-  @include media-query(small) {
-    margin-bottom: $padding-div;
-  }
-
-  @include m(last) {
-    @extend .desktop-mockup-image;
-    margin-bottom: $padding-section;
-
-    @include media-query(small) {
-      margin-bottom: $padding-div;
-      margin-top: 0;
-    }
-
-    @include media-query(medium) {
-      margin-top: 0;
-    }
-  }
-}
-
-
-// MOBILE MOCKUPS SECTION
-
-#bookshelf-page .mobile-mockups-section {
-  background: $color-body;
-  clear: both;
-  height: auto;
-  width: 100%;
-}
-
-#bookshelf-page .mobile-mockups-section h2 {
-  padding-left: $margin-page-horizontal;
-  padding-top: $padding-section;
-
-  @include media-query(small) {
-    display: block;
-    padding: $padding-div $margin-headline-mobile-horizontal 0 $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
-  }
-}
-
-#bookshelf-page .mobile-mockup-image-container {
-  @include flexbox();
-  height: 400px;
-  padding-top: $padding-div;
-  padding-bottom: $padding-section;
-  width: 25%;
-
-  @include media-query(small) {
-    height: auto;
-    padding-bottom: $padding-div;
-    width: $width-image-mobile;
-  }
-
-  @include media-query(medium) {
-    width: 40%;
-  }
-
-  @include m(left) {
-    @extend .mobile-mockup-image-container;
-    float: left;
-    margin-left: 25%;
-
-    @include media-query(small) {
-      float: none;
-      margin: 0 $margin-image-mobile-horizontal;
-      padding-bottom: 0;
-    }
-
-    @include media-query(medium) {
-      margin-left: 10%;
-    }
-
-    img {
-      object-fit: contain;
-      height: 100%;
-    }
-  }
-
-  @include m(right) {
-    @extend .mobile-mockup-image-container;
-    float: right;
-    margin-right: 25%;
-
-    @include media-query(small) {
-      float: none;
-      margin: 0 $margin-image-mobile-horizontal;
-    }
-
-    @include media-query(medium) {
-      margin-right: 10%;
-    }
-
-    img {
-      object-fit: contain;
-      height: 100%;
     }
   }
 }

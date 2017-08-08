@@ -2,14 +2,20 @@
 // DOGS BOOKLET PAGE
 // ==========================================
 
+#dogs-booklet-page * {
+  ::selection {
+    background: rgba($color-project-dogs-booklet-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #dogs-booklet-page .main-nav a:hover {
-  color: $color-project-dogs-booklet;
+  color: $color-project-dogs-booklet-secondary;
 }
 
 #dogs-booklet-page .fa:hover {
-  color: $color-project-dogs-booklet;
+  color: $color-project-dogs-booklet-secondary;
 }
 
 #dogs-booklet-page .main-nav-mobile-icon:hover {
@@ -28,7 +34,7 @@
 // PROJECT OVERVIEW SECTION
 
 #dogs-booklet-page .project-overview-section__line--overview {
-  border-color: $dogs-booklet-magenta;
+  border-color: $color-project-dogs-booklet-primary;
 }
 
 

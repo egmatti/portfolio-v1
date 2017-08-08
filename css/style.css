@@ -1549,7 +1549,7 @@ footer .main-nav__item--first {
 
 .project-overview-section__line--overview {
   border-right: 1.5px solid #f3f3f3;
-  height: 75px;
+  height: 25px;
   position: absolute;
   top: 0;
   width: 50%;
@@ -2717,6 +2717,9 @@ footer .main-nav__item--first {
 #work-page figcaption h2, h3, h4 {
   padding-top: 0px; }
 
+#ballad-page * ::selection {
+  background: rgba(14, 85, 128, 0.25); }
+
 #ballad-page .main-nav a:hover {
   color: #ab0061; }
 
@@ -2768,6 +2771,9 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
+#bookshelf-page * ::selection {
+  background: rgba(197, 79, 68, 0.25); }
+
 #bookshelf-page .main-nav a:hover {
   color: #5e9082; }
 
@@ -2784,6 +2790,9 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
+#bookshelf-page .project-overview-section__line--overview {
+  border-color: #c54f44; }
+
 #bookshelf-page .button {
   border: 1.5px solid #5e9082; }
   #bookshelf-page .button span {
@@ -2794,107 +2803,8 @@ footer .main-nav__item--first {
     #bookshelf-page .button:hover span {
       color: #fff; }
 
-#bookshelf-page .desktop-mockups-section {
-  background: #f3f3f3;
-  clear: both;
-  height: auto;
-  width: 100%; }
-
-#bookshelf-page .desktop-mockups-section h2 {
-  padding-left: 5%;
-  padding-top: 75px; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #bookshelf-page .desktop-mockups-section h2 {
-      display: block;
-      padding: 50px 5% 0 5%;
-      width: 90%; } }
-
-#bookshelf-page .desktop-mockup-image-container {
-  margin: 0 10%;
-  width: 80%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #bookshelf-page .desktop-mockup-image-container {
-      margin: 0 5%;
-      width: 90%; } }
-
-#bookshelf-page .desktop-mockup-image, #bookshelf-page .desktop-mockup-image--last {
-  -webkit-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
-  -moz-box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
-  box-shadow: 0px 0.5px 10px 1.5px rgba(11, 11, 11, 0.15);
-  margin: 50px 0;
-  object-fit: contain;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #bookshelf-page .desktop-mockup-image, #bookshelf-page .desktop-mockup-image--last {
-      margin-bottom: 50px; } }
-  #bookshelf-page .desktop-mockup-image--last {
-    margin-bottom: 75px; }
-    @media (min-width: 0px) and (max-width: 767px) {
-      #bookshelf-page .desktop-mockup-image--last {
-        margin-bottom: 50px;
-        margin-top: 0; } }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #bookshelf-page .desktop-mockup-image--last {
-        margin-top: 0; } }
-
-#bookshelf-page .mobile-mockups-section {
-  background: #fff;
-  clear: both;
-  height: auto;
-  width: 100%; }
-
-#bookshelf-page .mobile-mockups-section h2 {
-  padding-left: 5%;
-  padding-top: 75px; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #bookshelf-page .mobile-mockups-section h2 {
-      display: block;
-      padding: 50px 5% 0 5%;
-      width: 90%; } }
-
-#bookshelf-page .mobile-mockup-image-container, #bookshelf-page .mobile-mockup-image-container--left, #bookshelf-page .mobile-mockup-image-container--right {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-  padding-top: 50px;
-  padding-bottom: 75px;
-  width: 25%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #bookshelf-page .mobile-mockup-image-container, #bookshelf-page .mobile-mockup-image-container--left, #bookshelf-page .mobile-mockup-image-container--right {
-      height: auto;
-      padding-bottom: 50px;
-      width: 90%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #bookshelf-page .mobile-mockup-image-container, #bookshelf-page .mobile-mockup-image-container--left, #bookshelf-page .mobile-mockup-image-container--right {
-      width: 40%; } }
-  #bookshelf-page .mobile-mockup-image-container--left {
-    float: left;
-    margin-left: 25%; }
-    @media (min-width: 0px) and (max-width: 767px) {
-      #bookshelf-page .mobile-mockup-image-container--left {
-        float: none;
-        margin: 0 5%;
-        padding-bottom: 0; } }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #bookshelf-page .mobile-mockup-image-container--left {
-        margin-left: 10%; } }
-    #bookshelf-page .mobile-mockup-image-container--left img {
-      object-fit: contain;
-      height: 100%; }
-  #bookshelf-page .mobile-mockup-image-container--right {
-    float: right;
-    margin-right: 25%; }
-    @media (min-width: 0px) and (max-width: 767px) {
-      #bookshelf-page .mobile-mockup-image-container--right {
-        float: none;
-        margin: 0 5%; } }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #bookshelf-page .mobile-mockup-image-container--right {
-        margin-right: 10%; } }
-    #bookshelf-page .mobile-mockup-image-container--right img {
-      object-fit: contain;
-      height: 100%; }
+#chronicle-page * ::selection {
+  background: rgba(0, 139, 131, 0.25); }
 
 #chronicle-page .main-nav a:hover {
   color: #a07679; }
@@ -3147,6 +3057,9 @@ footer .main-nav__item--first {
       object-fit: contain;
       width: 60%; } }
 
+#coffee-app-page * ::selection {
+  background: rgba(204, 77, 75, 0.25); }
+
 #coffee-app-page .main-nav a:hover {
   color: #f1a75e; }
 
@@ -3345,6 +3258,9 @@ footer .main-nav__item--first {
     font-weight: 700;
     padding-right: 2.5px; }
 
+#dogs-booklet-page * ::selection {
+  background: rgba(179, 30, 87, 0.25); }
+
 #dogs-booklet-page .main-nav a:hover {
   color: #c3c230; }
 
@@ -3372,6 +3288,9 @@ footer .main-nav__item--first {
 
 #dogs-booklet-page .project-flex-section img {
   height: 80%; }
+
+#dogtooth-cover-art-page * ::selection {
+  background: rgba(215, 166, 188, 0.25); }
 
 #dogtooth-cover-art-page .main-nav a:hover {
   color: #be7d9a; }
@@ -3458,6 +3377,9 @@ footer .main-nav__item--first {
   #dogtooth-cover-art-page .cover-art-description span {
     font-weight: 700;
     padding-right: 2.5px; }
+
+#jamaica-stickers-page * ::selection {
+  background: rgba(129, 208, 217, 0.25); }
 
 #jamaica-stickers-page .main-nav a:hover {
   color: #ef506d; }
@@ -3583,6 +3505,9 @@ footer .main-nav__item--first {
 @media (min-width: 768px) and (max-width: 1025px) {
   #jamaica-stickers-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
     padding-top: 25px; } }
+
+#stillwater-shirt-page * ::selection {
+  background: rgba(145, 121, 137, 0.25); }
 
 #stillwater-shirt-page .main-nav a:hover {
   color: #bc5441; }
@@ -3795,6 +3720,9 @@ footer .main-nav__item--first {
       margin: 50px 20% 0 20%;
       object-fit: contain;
       width: 60%; } }
+
+#toptix-page * ::selection {
+  background: rgba(48, 76, 161, 0.25); }
 
 #toptix-page .main-nav a:hover {
   color: #c6dd77; }

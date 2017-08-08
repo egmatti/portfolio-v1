@@ -2,14 +2,20 @@
 // DOGTOOTH COVER ART PAGE
 // ==========================================
 
+#dogtooth-cover-art-page * {
+  ::selection {
+    background: rgba($color-project-dogtooth-cover-art-primary, 0.25);
+  }
+}
+
 // HEADER AND FOOTER
 
 #dogtooth-cover-art-page .main-nav a:hover {
-  color: $color-project-dogtooth-cover-art;
+  color: $color-project-dogtooth-cover-art-secondary;
 }
 
 #dogtooth-cover-art-page .fa:hover {
-  color: $color-project-dogtooth-cover-art;
+  color: $color-project-dogtooth-cover-art-secondary;
 }
 
 #dogtooth-cover-art-page .main-nav-mobile-icon:hover {

@@ -38,137 +38,33 @@
 }
 
 
-// OVERVIEW SECTION
+// PROJECT OVERVIEW
 
-#jamaica-stickers-page .overview-right {
-  @include media-query(small) {
-    padding-bottom: 0;
-  }
+#jamaica-stickers-page .project-overview-section__line--overview {
+  border-color: $color-project-jamaica-stickers-primary;
 }
 
 
-// DESIGNS SECTION
+// PROJECT MAIN IMAGE SECTION
 
-#jamaica-stickers-page .designs-section {
-  background: $color-body-accent;
-  clear: both;
-  height: 615px;
-  width: 100%;
-
-  @include media-query(small) {
-    height: auto;
-    padding: $padding-div 0;
-    width: 100%;
-  }
-
+#jamaica-stickers-page .project-main-image-section__image-container img {
   @include media-query(medium) {
-    height: auto;
-    padding: $padding-div 0;
     width: 100%;
   }
 }
 
-#jamaica-stickers-page .designs-section h2 {
-  padding-left: $margin-page-horizontal;
-  padding-top: $padding-div;
+// PROJECT FLEX SECTION
+
+#jamaica-stickers-page .project-flex-section img {
+  height: 50%;
+  padding: 0 25px;
 
   @include media-query(small) {
-    display: block;
-    padding: 0 $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
+    padding: 0;
   }
 
   @include media-query(medium) {
-    display: block;
-    padding: 0 $margin-headline-tablet-horizontal;
-    width: $width-headline-tablet;
-  }
-}
-
-#jamaica-stickers-page .synced-slider-for {
-  padding-bottom: $padding-div;
-
-  @include media-query(small) {
-    padding-bottom: 0;
-  }
-
-  @include media-query(medium) {
-    padding-bottom: 0;
-  }
-}
-
-#jamaica-stickers-page .design-image-container {
-  @include flexbox();
-  float: right;
-  // Height is being calculated in jamaica-stickers.js
-  margin-right: 10%;
-  width: 20%;
-
-  @include media-query(small) {
-    display: block;
-    float: none;
-    margin: $margin-body-text 20% $padding-div 20%;
-    width: 60%;
-  }
-
-  @include media-query(medium) {
-    margin-right: 5%;
-    width: 30%;
-  }
-}
-
-#jamaica-stickers-page .synced-slider-for img {
-  float: none;
-  margin-right: 0;
-  width: 100%;
-
-  @include media-query(small) {
-    margin: 0;
-    width: 100%;
-  }
-
-  @include media-query(medium) {
-    margin: 0;
-    width: 100%;
-  }
-}
-
-#jamaica-stickers-page .synced-slider-nav {
-  bottom: 40px;
-  position: relative;
-  width: 15%;
-
-  @include media-query(small) {
-    bottom: 0;
-    position: relative;
-    width: 40%;
-  }
-
-  @include media-query(medium) {
-    bottom: 0;
-    padding-top: $margin-body-text;
-    position: relative;
-    top: 7.5px;
-    width: 30%;
-  }
-
-  img {
-    left: 30%;
-    width: 45%;
-
-    @include media-query(small) {
-      left: 27.5%;
-      width: 50%;
-    }
-
-    @include media-query(medium) {
-      width: 50%;
-    }
-  }
-}
-
-#jamaica-stickers-page .synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
-  @include media-query(medium) {
-    padding-top: $margin-body-text;
+    height: 40%;
+    padding: 0 15px;
   }
 }

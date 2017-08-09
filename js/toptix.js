@@ -2,76 +2,21 @@
 // TOPTIX PAGE
 // ==========================================
 
-// SCROLL REVEAL
-
-window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
-
-// sr.reveal('.advertisements-slider-for__post img', {delay: 250}, 175);
-
-sr.reveal('.mailings-section img', {delay: 250});
-
-
-// ADVERTISEMENTS SLIDER
-
-$(".advertisements-slider-for").slick({
- adaptiveHeight: true,
- arrows: true,
- infinite: true,
- slidesToScroll: 1,
- slidesToShow: 1,
- vertical: false
-});
-
-
-// ADVERTISEMENTS SECTION HEIGHT
+// PROJECT MAIN IMAGE MARGIN
 
 $(document).ready(function(){
-  if (mediaQuerySmall.matches) {
-    // window width is less than 767px
-    var advertisementHeight = $("#toptix-page .advertisements-section .slick-current").outerHeight();
-    var advertisementsSectionHeadlineHeight = $("#toptix-page .advertisements-section h2").outerHeight();
-    var advertisementsSectionHeight = advertisementHeight + advertisementsSectionHeadlineHeight + 100;
-
-    $("#toptix-page .advertisements-section").css({"height": advertisementsSectionHeight});
-
-    $('#toptix-page .advertisements-section .slick-next').on( "click", function() {
-
-      var advertisementHeight = $("#toptix-page .advertisements-section .slick-current").outerHeight();
-      var advertisementsSectionHeadlineHeight = $("#toptix-page .advertisements-section h2").outerHeight();
-      var advertisementsSectionHeight = advertisementHeight + advertisementsSectionHeadlineHeight + 50;
-      $("#toptix-page .advertisements-section").css({"height": advertisementsSectionHeight});
-    });
-
-    $('#toptix-page .advertisements-section .slick-prev').on( "click", function() {
-
-      var advertisementHeight = $("#toptix-page .advertisements-section .slick-current").outerHeight();
-      var advertisementsSectionHeadlineHeight = $("#toptix-page .advertisements-section h2").outerHeight();
-      var advertisementsSectionHeight = advertisementHeight + advertisementsSectionHeadlineHeight + 50;
-      $("#toptix-page .advertisements-section").css({"height": advertisementsSectionHeight});
-    });
-
-  } else {
-    // window width is at least 767px
-
-  }
-});
-
-
-// MAILINGS SECTION HEIGHT
-
-$(document).ready(function(){
-  var mailingsImageContainerHeight = $("#toptix-page .mailings-image-container").outerHeight() + 150;
-  var mailingsDescriptionTabletHeight = $("#toptix-page .mailings-description").outerHeight() + 100;
-  var mailingsDescriptionDesktopHeight = $("#toptix-page .mailings-description").outerHeight() + 150;
+  var projectMainImageHeight = $("#toptix-page .project-main-image-section__image-container").height();
+  var projectMainImagePosition = $("#toptix-page .project-main-image-section__image-container").position().top;
+  var projectMainImageBackgroundMargin = (projectMainImageHeight * (3/4)) - ((projectMainImageHeight - projectMainImagePosition) * 4);
 
   if (mediaQuerySmall.matches) {
     // window width is less than 767px
-
+    $("#toptix-page .project-main-image-section__background").css({"margin-bottom": projectMainImageBackgroundMargin});
   } else if (mediaQueryMedium.matches) {
     // window width is less than 1025px
-    $("#toptix-page .mailings-section").css({"height": mailingsDescriptionDesktopHeight});
+
   } else {
     // window width is at least 1025px
-    $("#toptix-page .mailings-section").css({"height": mailingsDescriptionDesktopHeight});
+
   }
 });

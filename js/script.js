@@ -72,12 +72,14 @@ $(".button-site").click(function() {
 $(document).ready(function(){
   var secondRowFigureWidth = $(".directory__figure--second-row .directory__image-container").outerWidth();
   var secondRowFigureHeight = secondRowFigureWidth / 2;
+
   $(".directory__figure--second-row .directory__image-container").css({"height": secondRowFigureHeight});
 });
 
 $(document).ready(function(){
   var otherRowFigureWidth = $(".directory__figure--other-row .directory__image-container").outerWidth();
   var otherRowFigureHeight = otherRowFigureWidth / 2;
+
   $(".directory__figure--other-row .directory__image-container").css({"height": otherRowFigureHeight});
 });
 

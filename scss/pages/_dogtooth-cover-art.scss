@@ -37,84 +37,20 @@
   }
 }
 
+// PROJECT OVERVIEW SECTION
 
-// OVERVIEW SECTION
+#dogtooth-cover-art-page .project-overview-section__line--overview {
+  border-color: $color-project-dogtooth-cover-art-primary;
+}
 
-#dogtooth-cover-art-page .overview-right {
-  @include media-query(small) {
-    padding-bottom: 0;
-  }
+#dogtooth-cover-art-page .project-overview-section img {
+  height: 110px;
+  margin-top: $padding-div;
 }
 
 
-// COVER ART SECTION
+// PROJECT FLEX SECTION
 
-#dogtooth-cover-art-page .cover-art-section {
-  background: $color-body-accent;
-  clear: both;
-  height: auto;
-  padding: $padding-section 0;
-  width: 100%;
-
-  @include media-query(small) {
-    height: auto;
-    padding: $padding-div 0;
-  }
-
-  @include media-query(medium) {
-    height: auto;
-  }
-}
-
-#dogtooth-cover-art-page .cover-art-section h2 {
-  padding-left: $margin-page-horizontal;
-
-  @include media-query(small) {
-    display: block;
-    padding: 0 $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
-  }
-}
-
-#dogtooth-cover-art-page .cover-art-image-container {
-  @include flexbox();
-  height: auto;
-  margin: $margin-body-text 36.25% 0 36.25%;
-  width: 27.5%;
-
-  @include media-query(small) {
-    display: block;
-    margin: $padding-div 10% 0 10%;
-    width: 80%;
-  }
-
-  @include media-query(medium) {
-    display: block;
-    margin: $padding-div 20% 0 20%;
-    width: 60%;
-  }
-
-  img {
-    @include box-shadow();
-    height: auto;
-    object-fit: contain;
-    width: 100%;
-  }
-}
-
-#dogtooth-cover-art-page .cover-art-description {
-  @include flexbox();
-  height: 75px;
-  width: 100%;
-
-  @include media-query(small) {
-    display: block;
-    padding: 0 5%;
-    width: 90%;
-  }
-
-  span {
-    font-weight: $font-weight-bold;
-    padding-right: 2.5px;
-  }
+#dogtooth-cover-art-page .project-flex-section img {
+  height: 75%;
 }

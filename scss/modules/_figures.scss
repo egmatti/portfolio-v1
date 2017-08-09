@@ -126,9 +126,7 @@
 
   @include m(second-row) {
     @extend .directory__figure;
-    width: -webkit-calc((100% - 50px) / 2);
-    width:  -moz-calc((100% - 50px) / 2);
-    width:    calc((100% - 50px) / 2); // Half of width of content section minus margin
+    width: 100%;
 
     &:hover {
       cursor: pointer;
@@ -183,9 +181,7 @@
 
   @include m(other-row) {
     @extend .directory__figure;
-    width: -webkit-calc((100% - 100px) / 3);
-    width:  -moz-calc((100% - 100px) / 3);
-    width:    calc((100% - 100px) / 3); // Third of width of content section minus margins
+    width: auto;
 
     &:hover {
       cursor: pointer;

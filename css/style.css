@@ -1096,6 +1096,16 @@ textarea {
     padding: 0 3px;
     transform: translateY(-105%); }
 
+.directory__link--second-row {
+  width: -webkit-calc((100% - 50px) / 2);
+  width: -moz-calc((100% - 50px) / 2);
+  width: calc((100% - 50px) / 2); }
+
+.directory__link--other-row {
+  width: -webkit-calc((100% - 100px) / 3);
+  width: -moz-calc((100% - 100px) / 3);
+  width: calc((100% - 100px) / 3); }
+
 .share-figure {
   -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
@@ -1185,9 +1195,7 @@ textarea {
             font-size: 1.25rem;
             padding-top: 0.73242rem; } }
   .directory__figure--second-row {
-    width: -webkit-calc((100% - 50px) / 2);
-    width: -moz-calc((100% - 50px) / 2);
-    width: calc((100% - 50px) / 2); }
+    width: 100%; }
     .directory__figure--second-row:hover {
       cursor: pointer; }
     @media (min-width: 0px) and (max-width: 767px) {
@@ -1221,9 +1229,7 @@ textarea {
             font-size: 1.07143rem;
             padding-top: 0.62779rem; } }
   .directory__figure--other-row {
-    width: -webkit-calc((100% - 100px) / 3);
-    width: -moz-calc((100% - 100px) / 3);
-    width: calc((100% - 100px) / 3); }
+    width: auto; }
     .directory__figure--other-row:hover {
       cursor: pointer; }
     @media (min-width: 0px) and (max-width: 767px) {
@@ -2550,7 +2556,7 @@ footer .main-nav__item--first {
       background-position: center; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #about-page .hero-section {
-      background: url("../images/about/graffiti-tablet-2.png");
+      background: url("../images/about/graffiti-tablet.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
@@ -3147,71 +3153,15 @@ footer .main-nav__item--first {
   #dogtooth-cover-art-page .headline-container h1, #dogtooth-cover-art-page .headline-container .main-nav a, .main-nav #dogtooth-cover-art-page .headline-container a, #dogtooth-cover-art-page .headline-container .main-nav-mobile a, .main-nav-mobile #dogtooth-cover-art-page .headline-container a {
     font-size: 1.66rem; } }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  #dogtooth-cover-art-page .overview-right {
-    padding-bottom: 0; } }
+#dogtooth-cover-art-page .project-overview-section__line--overview {
+  border-color: #d7a6bc; }
 
-#dogtooth-cover-art-page .cover-art-section {
-  background: #f3f3f3;
-  clear: both;
-  height: auto;
-  padding: 75px 0;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogtooth-cover-art-page .cover-art-section {
-      height: auto;
-      padding: 50px 0; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #dogtooth-cover-art-page .cover-art-section {
-      height: auto; } }
+#dogtooth-cover-art-page .project-overview-section img {
+  height: 110px;
+  margin-top: 50px; }
 
-#dogtooth-cover-art-page .cover-art-section h2 {
-  padding-left: 5%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogtooth-cover-art-page .cover-art-section h2 {
-      display: block;
-      padding: 0 5%;
-      width: 90%; } }
-
-#dogtooth-cover-art-page .cover-art-image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: 25px 36.25% 0 36.25%;
-  width: 27.5%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogtooth-cover-art-page .cover-art-image-container {
-      display: block;
-      margin: 50px 10% 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #dogtooth-cover-art-page .cover-art-image-container {
-      display: block;
-      margin: 50px 20% 0 20%;
-      width: 60%; } }
-  #dogtooth-cover-art-page .cover-art-image-container img {
-    -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-    -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-    box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-    height: auto;
-    object-fit: contain;
-    width: 100%; }
-
-#dogtooth-cover-art-page .cover-art-description {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 75px;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #dogtooth-cover-art-page .cover-art-description {
-      display: block;
-      padding: 0 5%;
-      width: 90%; } }
-  #dogtooth-cover-art-page .cover-art-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
+#dogtooth-cover-art-page .project-flex-section img {
+  height: 75%; }
 
 #jamaica-stickers-page * ::selection {
   background: rgba(129, 208, 217, 0.25); }

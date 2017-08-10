@@ -2,22 +2,62 @@
 // COFFEE APP PAGE
 // ==========================================
 
-// SCROLL REVEAL
-
-window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
-sr.reveal('.wireframes-section img', {delay: 250});
-
-sr.reveal('.mockups-section .synced-slider-for img', {delay: 250});
-sr.reveal('.mockups-section .synced-slider-nav img', {delay: 475}, 175);
-
-sr.reveal('.prototype-section img', {delay: 250});
-
-
-// WIREFRAME SECTION HEIGHT
+// PROJECT MAIN IMAGE MARGIN
 
 $(document).ready(function(){
-  var leftColumnHeight = $("#coffee-app-page .left-column").outerHeight();
-  $("#coffee-app-page .wireframes-section").css({"height": leftColumnHeight});
+  var projectMainImageHeight = $("#coffee-app-page .project-main-image-section__image-container").height();
+  var projectMainImageBackgroundMargin = (projectMainImageHeight / 2);
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+    $("#coffee-app-page .project-main-image-section__background").css({"margin-bottom": projectMainImageBackgroundMargin});
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+
+  } else {
+    // window width is at least 1025px
+
+  }
+});
+
+
+// PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING
+
+$(document).ready(function(){
+  var laptopHeight = $("#coffee-app-page .project-desktop-mockups-section__row--first").height();
+  var laptopPosition = -(laptopHeight / 2);
+  var rowMargin = (laptopHeight / 2);
+
+  var rowMarginMobile = -(laptopHeight / 2);
+
+  var backgroundWhiteHeight = $("#coffee-app-page .project-desktop-mockups-section__background--white").outerHeight();
+  var backgroundGrayHeight = $("#coffee-app-page .project-desktop-mockups-section__background--gray").outerHeight();
+  var desktopMockupsSectionHeight = backgroundWhiteHeight + backgroundGrayHeight + rowMargin;
+
+  var borderHeight = backgroundWhiteHeight + backgroundGrayHeight;
+  var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight - (laptopHeight / 2);
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+    $("#coffee-app-page .project-desktop-mockups-section__border").css({"height": borderHeightMobile});
+
+    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"margin-bottom": rowMarginMobile});
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+    $("#coffee-app-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+    $("#coffee-app-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
+
+    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+    $("#coffee-app-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+  } else {
+    // window width is at least 1025px
+    $("#coffee-app-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+    $("#coffee-app-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
+
+    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+    $("#coffee-app-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+  }
 });
 
 
@@ -37,23 +77,4 @@ $(".synced-slider-nav").slick({
   infinite: true,
   slidesToScroll: 1,
   slidesToShow: 3
-});
-
-
-// PROTOTYPE SECTION HEIGHT
-
-$(document).ready(function(){
-  var prototypeImageContainerHeight = $("#coffee-app-page .prototype-image-container").outerHeight() + 150;
-  var prototypeDescriptionHeight = $("#coffee-app-page .prototype-description").outerHeight() + 150;
-
-  if (mediaQuerySmall.matches) {
-    // window width is less than 767px
-
-  } else if (mediaQueryMedium.matches) {
-    // window width is less than 1025px
-    $("#coffee-app-page .prototype-section").css({"height": prototypeDescriptionHeight});
-  } else {
-    // window width is at least 767px
-    $("#coffee-app-page .prototype-section").css({"height": prototypeImageContainerHeight});
-  }
 });

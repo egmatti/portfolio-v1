@@ -1,0 +1,84 @@
+// ==========================================
+// PROJECT DOUBLE SLIDER
+// ==========================================
+
+.synced-slider-description {
+  float: left;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 55%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin-left: 5%;
+  }
+
+  h3 {
+    display: inline-block;
+    padding-top: $padding-div;
+    width: auto;
+
+    @include media-query(small) {
+      padding-top: $margin-body-text;
+    }
+
+    @include media-query(medium) {
+      padding-top: $margin-body-text;
+    }
+  }
+
+  p span {
+    font-weight: $font-weight-bold;
+    padding-right: 2.5px;
+  }
+}
+
+.synced-slider-for__slide img {
+  float: right;
+  object-fit: contain;
+  margin-right: 10%;
+  width: 20%;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    margin: $margin-body-text $margin-image-mobile-horizontal $padding-div $margin-image-mobile-horizontal;
+    width: $width-image-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: $margin-body-text 5% $padding-div 0;
+    width: 30%;
+  }
+}
+
+.synced-slider-nav {
+  margin: auto;
+  width: 30%;
+
+  @include media-query(small) {
+    width: $width-image-mobile;
+  }
+
+    img {
+      left: 25%;
+      object-fit: contain;
+      position: relative;
+      width: 50%;
+    }
+  }
+
+.synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
+  top: 37.5%;
+
+  &:before {
+    color: $color-arrows;
+  }
+}

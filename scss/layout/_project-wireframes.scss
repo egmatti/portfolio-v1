@@ -1,0 +1,151 @@
+// ==========================================
+// PROJECT WIREFRAMES
+// ==========================================
+
+.project-wireframes-section {
+  clear: both;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.project-wireframes-section__border {
+  border: $border-project-desktop-mockups;
+  // Height is being calculated in dogs-booklet.js
+  margin: 0 $margin-page-horizontal;
+  position: absolute;
+  top: 0;
+  width: $width-page;
+  z-index: 10;
+}
+
+.project-wireframes-section__background--white {
+  background: $color-body;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    position: relative;
+  }
+
+  @include media-query(medium) {
+    height: 50vh;
+  }
+}
+
+.project-wireframes-section__description-container {
+  @include flexbox();
+  height: -webkit-calc((100vh - 80px) / 2);
+  height:   -moz-calc((100vh - 80px) / 2);
+  height:     calc((100vh - 80px) / 2);
+  position: relative;
+  top: 0;
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+  }
+
+  @include media-query(medium) {
+    height: 25vh;
+  }
+}
+
+.project-wireframes-section__description {
+  height: auto;
+  padding: 0 25%;
+  text-align: center;
+}
+
+.project-wireframes-section__line {
+  border-right: $border-project-desktop-mockups;
+  height: 150px;
+  position: relative;
+  top: -70px;
+  width: 50%;
+  z-index: 10;
+
+  @include media-query(small) {
+    height: 100px;
+    margin: 25px 0;
+    top: 0;
+  }
+
+  @include media-query(medium) {
+    display: none;
+  }
+}
+
+.project-wireframes-section__background--gray {
+  background: $color-body-accent;
+  height: auto;
+  position: absolute;
+  top: -webkit-calc(100vh - 80px);
+  top:  -moz-calc(100vh - 80px);
+  top:    calc(100vh - 80px);
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $margin-body-text 0;
+    position: relative;
+    top: 0;
+  }
+
+  @include media-query(medium) {
+    top: 50vh;
+  }
+}
+
+.project-wireframes-section__row {
+  @include flexbox($direction: row, $justify: space-around);
+  height: auto;
+  margin: 0 $margin-page-horizontal;
+  padding-top: $padding-section;
+  width: $width-page;
+
+  @include media-query(small) {
+    @include flexbox($direction: column, $justify: center);
+    padding: 0;
+  }
+
+  @include m(first) {
+    @extend .project-wireframes-section__row;
+    @include flexbox($justify: center);
+    padding-top: 0;
+
+    @include media-query(small) {
+      padding: 0;
+    }
+  }
+
+  @include m(second) {
+    @extend .project-wireframes-section__row;
+  }
+
+  @include m(last) {
+    @extend .project-wireframes-section__row;
+    padding-bottom: $padding-section;
+
+    @include media-query(small) {
+      padding: 0;
+    }
+  }
+}
+
+.project-wireframes-section__image {
+  @include box-shadow();
+  object-fit: contain;
+  width: 45%;
+  z-index: 15;
+
+  @include media-query(small) {
+    margin: $margin-body-text 0;
+    width: 90%;
+  }
+}

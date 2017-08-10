@@ -2,7 +2,6 @@
 // DOGTOOTH COVER ART PAGE
 // ==========================================
 
-
 // PROJECT MAIN IMAGE MARGIN
 
 $(document).ready(function(){

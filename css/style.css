@@ -1914,6 +1914,196 @@ footer .main-nav__item--first {
   object-fit: contain;
   width: 80%; }
 
+.synced-slider-description {
+  float: left;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 55%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .synced-slider-description {
+      display: block;
+      float: none;
+      margin: 0 10%;
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .synced-slider-description {
+      margin-left: 5%; } }
+  .synced-slider-description h3 {
+    display: inline-block;
+    padding-top: 50px;
+    width: auto; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .synced-slider-description h3 {
+        padding-top: 25px; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .synced-slider-description h3 {
+        padding-top: 25px; } }
+  .synced-slider-description p span {
+    font-weight: 700;
+    padding-right: 2.5px; }
+
+.synced-slider-for__slide img {
+  float: right;
+  object-fit: contain;
+  margin-right: 10%;
+  width: 20%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .synced-slider-for__slide img {
+      display: block;
+      float: none;
+      margin: 25px 5% 50px 5%;
+      width: 90%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .synced-slider-for__slide img {
+      margin: 25px 5% 50px 0;
+      width: 30%; } }
+
+.synced-slider-nav {
+  margin: auto;
+  width: 30%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .synced-slider-nav {
+      width: 90%; } }
+  .synced-slider-nav img {
+    left: 25%;
+    object-fit: contain;
+    position: relative;
+    width: 50%; }
+
+.synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
+  top: 37.5%; }
+  .synced-slider-nav .slick-prev:before, .synced-slider-nav .slick-next:before {
+    color: #0b0b0b; }
+
+.project-wireframes-section {
+  clear: both;
+  height: auto;
+  position: relative;
+  width: 100%; }
+
+.project-wireframes-section__border {
+  border: 1.5px solid #f3f3f3;
+  margin: 0 5%;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  z-index: 10; }
+
+.project-wireframes-section__background--white {
+  background: #fff;
+  height: -webkit-calc(100vh - 80px);
+  height: -moz-calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-wireframes-section__background--white {
+      height: auto;
+      position: relative; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-wireframes-section__background--white {
+      height: 50vh; } }
+
+.project-wireframes-section__description-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: -webkit-calc((100vh - 80px) / 2);
+  height: -moz-calc((100vh - 80px) / 2);
+  height: calc((100vh - 80px) / 2);
+  position: relative;
+  top: 0;
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-wireframes-section__description-container {
+      height: auto; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-wireframes-section__description-container {
+      height: 25vh; } }
+
+.project-wireframes-section__description {
+  height: auto;
+  padding: 0 25%;
+  text-align: center; }
+
+.project-wireframes-section__line {
+  border-right: 1.5px solid #f3f3f3;
+  height: 150px;
+  position: relative;
+  top: -70px;
+  width: 50%;
+  z-index: 10; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-wireframes-section__line {
+      height: 100px;
+      margin: 25px 0;
+      top: 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-wireframes-section__line {
+      display: none; } }
+
+.project-wireframes-section__background--gray {
+  background: #f3f3f3;
+  height: auto;
+  position: absolute;
+  top: -webkit-calc(100vh - 80px);
+  top: -moz-calc(100vh - 80px);
+  top: calc(100vh - 80px);
+  width: 100%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-wireframes-section__background--gray {
+      height: auto;
+      padding: 25px 0;
+      position: relative;
+      top: 0; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-wireframes-section__background--gray {
+      top: 50vh; } }
+
+.project-wireframes-section__row, .project-wireframes-section__row--first, .project-wireframes-section__row--second, .project-wireframes-section__row--last {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: auto;
+  margin: 0 5%;
+  padding-top: 75px;
+  width: 90%; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-wireframes-section__row, .project-wireframes-section__row--first, .project-wireframes-section__row--second, .project-wireframes-section__row--last {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0; } }
+  .project-wireframes-section__row--first {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 0; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .project-wireframes-section__row--first {
+        padding: 0; } }
+  .project-wireframes-section__row--last {
+    padding-bottom: 75px; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .project-wireframes-section__row--last {
+        padding: 0; } }
+
+.project-wireframes-section__image {
+  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
+  object-fit: contain;
+  width: 45%;
+  z-index: 15; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-wireframes-section__image {
+      margin: 25px 0;
+      width: 90%; } }
+
 .project-desktop-mockups-section {
   clear: both;
   height: auto;
@@ -2173,68 +2363,6 @@ footer .main-nav__item--first {
     @media (min-width: 0px) and (max-width: 767px) {
       .project-layout-section__cover--bottom {
         height: 62px; } }
-
-.synced-slider-description {
-  float: left;
-  height: auto;
-  margin-left: 10%;
-  margin-right: 5%;
-  width: 55%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    .synced-slider-description {
-      display: block;
-      float: none;
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    .synced-slider-description {
-      margin-left: 5%; } }
-  .synced-slider-description h3 {
-    display: inline-block;
-    padding-top: 50px;
-    width: auto; }
-    @media (min-width: 0px) and (max-width: 767px) {
-      .synced-slider-description h3 {
-        padding-top: 25px; } }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      .synced-slider-description h3 {
-        padding-top: 25px; } }
-  .synced-slider-description p span {
-    font-weight: 700;
-    padding-right: 2.5px; }
-
-.synced-slider-for__slide img {
-  float: right;
-  object-fit: contain;
-  margin-right: 10%;
-  width: 20%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    .synced-slider-for__slide img {
-      display: block;
-      float: none;
-      margin: 25px 5% 50px 5%;
-      width: 90%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    .synced-slider-for__slide img {
-      margin: 25px 5% 50px 0;
-      width: 30%; } }
-
-.synced-slider-nav {
-  margin: auto;
-  width: 30%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    .synced-slider-nav {
-      width: 90%; } }
-  .synced-slider-nav img {
-    left: 25%;
-    object-fit: contain;
-    position: relative;
-    width: 50%; }
-
-.synced-slider-nav .slick-prev, .synced-slider-nav .slick-next {
-  top: 37.5%; }
-  .synced-slider-nav .slick-prev:before, .synced-slider-nav .slick-next:before {
-    color: #0b0b0b; }
 
 #home-page .hero-section {
   background: url("../images/home/neon-text.png");
@@ -2881,92 +3009,14 @@ footer .main-nav__item--first {
   background-size: cover;
   background-position: center; }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  #coffee-app-page .overview-right {
-    padding-bottom: 0; } }
+#coffee-app-page .project-overview-section__line--overview {
+  border-color: #cc4d4b; }
 
-#coffee-app-page .wireframes-section {
-  background: #fff;
-  border-bottom: 1.5px solid #f3f3f3;
-  border-top: 1.5px solid #f3f3f3;
-  clear: both;
-  width: 100%; }
-
-#coffee-app-page .left-column {
-  background: #f3f3f3;
-  height: auto;
-  margin-left: 10%;
-  padding: 100px 0;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .left-column {
-      margin-left: 0;
-      padding: 50px 0;
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .left-column {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      margin-left: 0;
-      padding: 50px 0;
-      width: 100%; } }
-
-#coffee-app-page .headline-mobile {
-  display: none; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .headline-mobile {
-      display: block;
-      padding: 0 5% 25px 5%;
-      width: 90%; } }
-
-#coffee-app-page .left-image {
-  -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  background: #fff;
-  border: 15px solid #fff;
-  float: left;
-  height: auto;
-  left: -5%;
-  object-fit: contain;
-  position: relative;
-  width: 40%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .left-image {
-      box-sizing: border-box;
-      display: block;
-      float: none;
-      left: 0;
-      margin: 0 5%;
-      position: static;
-      width: 90%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .left-image {
-      box-sizing: border-box;
-      left: 0;
-      margin-left: 5%;
-      width: 30%; } }
-
-#coffee-app-page .right-description {
-  height: auto;
-  padding-right: 10%;
-  width: 45%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .right-description {
-      padding: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .right-description {
-      padding: 0 5%;
-      width: 55%; } }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .right-description h2 {
-      display: none; } }
-  #coffee-app-page .right-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
+#coffee-app-page .project-background-image-section {
+  background: url("../images/projects/coffee-app/palm-trees.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 #coffee-app-page .mockups-section {
   background: url("../images/projects/coffee-app/palm-trees.png");
@@ -3017,51 +3067,6 @@ footer .main-nav__item--first {
     position: relative;
     top: 7.5px;
     width: 40%; } }
-
-#coffee-app-page .prototype-section {
-  background: #fff;
-  clear: both;
-  width: 90%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #coffee-app-page .prototype-section {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .prototype-section {
-      height: auto;
-      width: 100%; } }
-
-#coffee-app-page .prototype-image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  float: left;
-  height: 100%;
-  width: 45%; }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .prototype-image-container {
-      margin-left: 5%;
-      width: 30%; } }
-  #coffee-app-page .prototype-image-container img {
-    object-fit: contain;
-    width: 45%; }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #coffee-app-page .prototype-image-container img {
-        width: 80%; } }
-
-#coffee-app-page .prototype-description {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  float: right;
-  height: 100%;
-  width: 55%; }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #coffee-app-page .prototype-description {
-      margin: 0 5%; } }
-  #coffee-app-page .prototype-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
 
 #dog-adoption-page * ::selection {
   background: rgba(40, 190, 155, 0.25); }
@@ -3227,197 +3232,12 @@ footer .main-nav__item--first {
   #stillwater-shirt-page .headline-container h1, #stillwater-shirt-page .headline-container .main-nav a, .main-nav #stillwater-shirt-page .headline-container a, #stillwater-shirt-page .headline-container .main-nav-mobile a, .main-nav-mobile #stillwater-shirt-page .headline-container a {
     font-size: 1.66rem; } }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  #stillwater-shirt-page .overview-right {
-    padding-bottom: 0; } }
+#stillwater-shirt-page .project-overview-section__line--overview {
+  border-color: #917989; }
 
-#stillwater-shirt-page .pocket-design-section {
-  background: url("../images/projects/stillwater-shirt/guitar-and-amp.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  clear: both;
-  height: 540px;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .pocket-design-section {
-      height: auto;
-      padding: 50px 0; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .pocket-design-section {
-      padding: 75px 0; } }
-
-#stillwater-shirt-page .pocket-design-image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  float: left;
-  height: 100%;
-  margin-left: 5%;
-  width: 40.5%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .pocket-design-image-container {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .pocket-design-image-container {
-      margin-left: 5%;
-      width: 30%; } }
-  #stillwater-shirt-page .pocket-design-image-container img {
-    object-fit: contain;
-    width: 55%; }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #stillwater-shirt-page .pocket-design-image-container img {
-        width: 80%; } }
-
-#stillwater-shirt-page .pocket-design-description {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  float: right;
-  height: 100%;
-  margin-right: 5%;
-  width: 49.5%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .pocket-design-description {
-      display: block;
-      float: none;
-      height: auto;
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .pocket-design-description {
-      height: auto;
-      margin: 0 5%;
-      width: 55%; } }
-  #stillwater-shirt-page .pocket-design-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
-
-#stillwater-shirt-page .pocket-design-mobile {
-  display: none; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .pocket-design-mobile {
-      display: block;
-      margin: 50px 20% 0 20%;
-      object-fit: contain;
-      width: 60%; } }
-
-#stillwater-shirt-page .shirt-design-section {
-  height: 600px;
-  padding: 75px 0;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .shirt-design-section {
-      height: auto;
-      padding: 50px 0; } }
-
-#stillwater-shirt-page .shirt-design-section h2 {
-  padding-left: 5%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .shirt-design-section h2 {
-      display: block;
-      padding: 0 5%;
-      width: 90%; } }
-
-#stillwater-shirt-page .shirt-design-image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .shirt-design-image-container {
-      display: block;
-      margin: 25px 5% 0 5%;
-      width: 90%; } }
-  #stillwater-shirt-page .shirt-design-image-container img {
-    height: 100%;
-    object-fit: contain; }
-    @media (min-width: 0px) and (max-width: 767px) {
-      #stillwater-shirt-page .shirt-design-image-container img {
-        height: auto;
-        width: 100%; } }
-
-#stillwater-shirt-page .shirt-design-description {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+#stillwater-shirt-page .project-overview-section img {
   height: 75px;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .shirt-design-description {
-      display: block;
-      margin: 0 5%;
-      width: 90%; } }
-  #stillwater-shirt-page .shirt-design-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
-
-#stillwater-shirt-page .screenprint-section {
-  background: #f3f3f3;
-  width: 100%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .screenprint-section {
-      height: auto;
-      padding: 50px 0; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .screenprint-section {
-      height: auto;
-      width: 100%; } }
-
-#stillwater-shirt-page .screenprint-image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  float: left;
-  height: 100%;
-  width: 40.5%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .screenprint-image-container {
-      display: none; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .screenprint-image-container {
-      margin-left: 5%;
-      width: 30%; } }
-  #stillwater-shirt-page .screenprint-image-container img {
-    object-fit: contain;
-    width: 55%; }
-    @media (min-width: 768px) and (max-width: 1025px) {
-      #stillwater-shirt-page .screenprint-image-container img {
-        width: 80%; } }
-
-#stillwater-shirt-page .screenprint-description {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  float: right;
-  height: 100%;
-  margin-right: 10%;
-  width: 49.5%; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .screenprint-description {
-      display: block;
-      float: none;
-      height: auto;
-      margin: 0 10%;
-      width: 80%; } }
-  @media (min-width: 768px) and (max-width: 1025px) {
-    #stillwater-shirt-page .screenprint-description {
-      margin: 0 5%; } }
-  #stillwater-shirt-page .screenprint-description span {
-    font-weight: 700;
-    padding-right: 2.5px; }
-
-#stillwater-shirt-page .screenprint-mobile {
-  display: none; }
-  @media (min-width: 0px) and (max-width: 767px) {
-    #stillwater-shirt-page .screenprint-mobile {
-      display: block;
-      margin: 50px 20% 0 20%;
-      object-fit: contain;
-      width: 60%; } }
+  margin-top: 50px; }
 
 #toptix-page * ::selection {
   background: rgba(48, 76, 161, 0.25); }

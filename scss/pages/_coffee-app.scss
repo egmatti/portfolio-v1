@@ -31,112 +31,17 @@
   @include bg-image ($image-folder: "projects", $bg-image: "coffee-app/coffee-app-wall");
 }
 
+// PROJECT OVERVIEW SECTION
 
-// OVERVIEW SECTION
-
-#coffee-app-page .overview-right {
-  @include media-query(small) {
-    padding-bottom: 0;
-  }
+#coffee-app-page .project-overview-section__line--overview {
+  border-color: $color-project-coffee-app-primary;
 }
 
 
-// WIREFRAMES SECTION
+// PROJECT BACKGROUND IMAGE SECTION
 
-#coffee-app-page .wireframes-section {
-  background: $color-blog-section;
-  border-bottom: $border-section;
-  border-top: $border-section;
-  clear: both;
-  // Height is being calculated in coffee-app.js
-  width: 100%;
-}
-
-#coffee-app-page .left-column {
-  background: $color-body-accent;
-  height: auto;
-  margin-left: $margin-section-horizontal;
-  padding: ($padding-div * 2) 0;
-  width: $width-page;
-
-  @include media-query(small) {
-    margin-left: 0;
-    padding: $padding-div 0;
-    width: 100%;
-  }
-
-  @include media-query(medium) {
-    @include flexbox($direction: row);
-    margin-left: 0;
-    padding: $padding-div 0;
-    width: 100%;
-  }
-}
-
-#coffee-app-page .headline-mobile {
-  display: none;
-
-  @include media-query(small) {
-    display: block;
-    padding: 0 $margin-headline-mobile-horizontal $margin-body-text $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
-  }
-}
-
-#coffee-app-page .left-image {
-  @include box-shadow;
-  background: $color-body;
-  border: 15px solid $color-figure;
-  float: left;
-  height: auto;
-  left: -5%;
-  object-fit: contain;
-  position: relative;
-  width: 40%;
-
-  @include media-query(small) {
-    box-sizing: border-box;
-    display: block;
-    float: none;
-    left: 0;
-    margin: 0 $margin-image-mobile-horizontal;
-    position: static;
-    width: $width-image-mobile;
-  }
-
-  @include media-query(medium) {
-    box-sizing: border-box;
-    left: 0;
-    margin-left: 5%;
-    width: 30%;
-  }
-}
-
-#coffee-app-page .right-description {
-  height: auto;
-  padding-right: $margin-section-horizontal;
-  width: 45%;
-
-  @include media-query(small) {
-    padding: 0 $margin-page-mobile-horizontal;
-    width: $width-page-mobile;
-  }
-
-  @include media-query(medium) {
-    padding: 0 5%;
-    width: 55%;
-  }
-
-  h2 {
-    @include media-query(small) {
-      display: none;
-    }
-  }
-
-  span {
-    font-weight: $font-weight-bold;
-    padding-right: 2.5px;
-  }
+#coffee-app-page .project-background-image-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "coffee-app/palm-trees");
 }
 
 
@@ -196,61 +101,5 @@
     position: relative;
     top: 7.5px;
     width: 40%;
-  }
-}
-
-
-// PROTOTYPE SECTION
-
-#coffee-app-page .prototype-section {
-  background: $color-body;
-  clear: both;
-  // Height is being calculated in coffee-app.js
-  width: $width-page;
-
-  @include media-query(small) {
-    display: none;
-  }
-
-  @include media-query(medium) {
-    height: auto;
-    width: 100%;
-  }
-}
-
-#coffee-app-page .prototype-image-container {
-  @include flexbox();
-  float: left;
-  height: 100%;
-  width: 45%;
-
-  @include media-query(medium) {
-    margin-left: 5%;
-    width: 30%;
-  }
-
-  img {
-    object-fit: contain;
-    width: 45%;
-
-    @include media-query(medium) {
-      width: 80%;
-    }
-  }
-}
-
-#coffee-app-page .prototype-description {
-  @include flexbox($direction: column, $align: flex-start);
-  float: right;
-  height: 100%;
-  width: 55%;
-
-  @include media-query(medium) {
-    margin: 0 5%;
-  }
-
-  span {
-    font-weight: $font-weight-bold;
-    padding-right: 2.5px;
   }
 }

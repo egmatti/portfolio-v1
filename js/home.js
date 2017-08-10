@@ -60,10 +60,26 @@ $(document).ready(function(){
 
 // INSTAGRAM SLIDER
 
-$(".instagram-slider-for").slick({
+$(".instagram-slider-for--desktop").slick({
  arrows: true,
  infinite: true,
  slidesToScroll: 1,
  slidesToShow: 3,
+ vertical: false
+});
+
+$(".instagram-slider-for--tablet").slick({
+ arrows: true,
+ infinite: true,
+ slidesToScroll: 1,
+ slidesToShow: 2,
+ vertical: false
+});
+
+$(".instagram-slider-for--mobile").slick({
+ arrows: true,
+ infinite: true,
+ slidesToScroll: 1,
+ slidesToShow: 1,
  vertical: false
 });

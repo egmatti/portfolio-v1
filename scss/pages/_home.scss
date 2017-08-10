@@ -19,9 +19,19 @@
 // ABOUT SECTION
 
 #home-page .about-section {
-  background: $color-body;
-  height: auto;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  position: relative;
   width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+  }
 }
 
 #home-page .about-section div {
@@ -255,11 +265,45 @@
 // INSTAGRAM SECTION
 
 #home-page .instagram-section {
-  background: $color-body;
-  height: auto;
+  clear: both;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+
+  @include media-query(small) {
+    height: auto;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+  }
+}
+
+#home-page .instagram-slider-for--desktop {
+  display: block;
 
   @include media-query(small) {
     display: none;
+  }
+
+  @include media-query(medium) {
+    display: none;
+  }
+}
+
+#home-page .instagram-slider-for--tablet {
+  display: none;
+
+  @include media-query(medium) {
+    display: block;
+  }
+}
+
+#home-page .instagram-slider-for--mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
   }
 }
 
@@ -269,37 +313,69 @@
 
 #home-page .instagram-div {
   height: auto;
-  margin: $margin-section;
-  margin-bottom: 75px;
+  padding: $margin-section;
+  padding-bottom: 75px;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    padding-bottom: $padding-div;
+  }
 }
 
 #home-page .instagram-slider-for__post {
   @include flexbox($align: baseline);
+  background: $color-body-accent;
+
+  @include media-query(small) {
+    @include flexbox($align: center);
+    // height: 100%;
+    // width: 33%;
+  }
+
+  @include media-query(medium) {
+    @include flexbox($align: center);
+    height: 100%;
+    // width: 33%;
+  }
 }
 
 #home-page .instagram-slider-for__post img {
   height: 275px;
   object-fit: contain;
 
+  @include media-query(small) {
+    // height: auto;
+    // margin: 0 auto;
+    // max-height: 90%;
+    object-fit: contain;
+    // width: 80%;
+  }
+
   @include media-query(medium) {
-    height: (275px / 1.75);
+    // height: (275px / 1.75);
+    // height: auto;
+    // margin: 0 auto;
+    // max-height: 90%;
+    object-fit: contain;
+    // width: 80%;
   }
 }
 
 #home-page .instagram-section .button-container {
   @include flexbox();
   margin-bottom: $margin-section-vertical;
+
+  @include media-query(small) {
+    display: none;
+  }
 }
 
-
-// DIVIDER
-
-#home-page .divider-white {
+#home-page .instagram-section .button-container--mobile {
   display: none;
 
   @include media-query(small) {
-    display: block;
-    height: 35px;
+    @include flexbox();
+    margin-bottom: $padding-div;
   }
 }
 

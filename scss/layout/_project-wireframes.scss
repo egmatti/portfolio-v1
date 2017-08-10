@@ -21,9 +21,9 @@
 
 .project-wireframes-section__background--white {
   background: $color-body;
-  height: -webkit-calc(100vh - 80px);
-  height:   -moz-calc(100vh - 80px);
-  height:     calc(100vh - 80px);
+  height: -webkit-calc(75vh - 80px);
+  height:   -moz-calc(75vh - 80px);
+  height:     calc(75vh - 80px);
   position: absolute;
   top: 0;
   width: 100%;
@@ -40,9 +40,9 @@
 
 .project-wireframes-section__description-container {
   @include flexbox();
-  height: -webkit-calc((100vh - 80px) / 2);
-  height:   -moz-calc((100vh - 80px) / 2);
-  height:     calc((100vh - 80px) / 2);
+  height: -webkit-calc((75vh - 80px) / 2);
+  height:   -moz-calc((75vh - 80px) / 2);
+  height:     calc((75vh - 80px) / 2);
   position: relative;
   top: 0;
   width: 100%;
@@ -65,19 +65,16 @@
 .project-wireframes-section__line {
   border-right: $border-project-desktop-mockups;
   height: 150px;
-  position: relative;
-  top: -70px;
   width: 50%;
   z-index: 10;
 
   @include media-query(small) {
     height: 100px;
     margin: 25px 0;
-    top: 0;
   }
 
   @include media-query(medium) {
-    display: none;
+    margin: 35px 0;
   }
 }
 
@@ -85,9 +82,9 @@
   background: $color-body-accent;
   height: auto;
   position: absolute;
-  top: -webkit-calc(100vh - 80px);
-  top:  -moz-calc(100vh - 80px);
-  top:    calc(100vh - 80px);
+  top: -webkit-calc(75vh - 80px);
+  top:  -moz-calc(75vh - 80px);
+  top:    calc(75vh - 80px);
   width: 100%;
 
   @include media-query(small) {
@@ -114,20 +111,6 @@
     padding: 0;
   }
 
-  @include m(first) {
-    @extend .project-wireframes-section__row;
-    @include flexbox($justify: center);
-    padding-top: 0;
-
-    @include media-query(small) {
-      padding: 0;
-    }
-  }
-
-  @include m(second) {
-    @extend .project-wireframes-section__row;
-  }
-
   @include m(last) {
     @extend .project-wireframes-section__row;
     padding-bottom: $padding-section;
@@ -140,12 +123,16 @@
 
 .project-wireframes-section__image {
   @include box-shadow();
+  max-height: -webkit-calc((100vh - 80px) * 0.9);
+  max-height:   -moz-calc((100vh - 80px) * 0.9);
+  max-height:     calc((100vh - 80px) * 0.9);
+  max-width: 45%;
   object-fit: contain;
-  width: 45%;
-  z-index: 15;
 
   @include media-query(small) {
     margin: $margin-body-text 0;
+    max-height: none;
+    max-width: none;
     width: 90%;
   }
 }

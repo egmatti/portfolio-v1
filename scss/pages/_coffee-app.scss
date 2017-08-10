@@ -45,61 +45,10 @@
 }
 
 
-// MOCKUPS SECTION
+// PROJECT WIREFRAMES SECTION
 
-#coffee-app-page .mockups-section {
-  @include bg-image ($bg-attachment: fixed, $image-folder: "projects", $bg-image: "coffee-app/palm-trees");
-  height: 615px;
-  width: 100%;
-
+#coffee-app-page .project-wireframes-section__image {
   @include media-query(small) {
-    height: auto;
-    padding: $padding-div 0;
-    width: 100%;
-  }
-
-  @include media-query(medium) {
-    height: auto;
-    padding: $padding-div 0;
-    width: 100%;
-  }
-}
-
-#coffee-app-page .mockups-section h2 {
-  padding-left: $margin-page-horizontal;
-  padding-top: $padding-div;
-
-  @include media-query(small) {
-    display: block;
-    padding: 0 $margin-headline-mobile-horizontal;
-    width: $width-headline-mobile;
-  }
-
-  @include media-query(medium) {
-    display: block;
-    padding: 0 $margin-headline-tablet-horizontal;
-    width: $width-headline-tablet;
-  }
-}
-
-#coffee-app-page .synced-slider-for img {
-  max-width: 200px;
-
-  @include media-query(small) {
-    margin: $margin-body-text 20% $padding-div 20%;
-    max-width: none;
-    width: 60%;
-  }
-}
-
-#coffee-app-page .synced-slider-nav {
-  @include media-query(small) {
-    width: 60%;
-  }
-
-  @include media-query(medium) {
-    position: relative;
-    top: 7.5px;
-    width: 40%;
+    width: 75%;
   }
 }

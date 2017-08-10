@@ -62,7 +62,7 @@ $(document).ready(function(){
 });
 
 
-// PROJECT SLIDER
+// PROJECT SINGLE SLIDER
 
 $(".project-slider-section-for--desktop").slick({
  arrows: true,

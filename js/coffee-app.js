@@ -24,56 +24,61 @@ $(document).ready(function(){
 // PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING
 
 $(document).ready(function(){
-  var laptopHeight = $("#coffee-app-page .project-desktop-mockups-section__row--first").height();
-  var laptopPosition = -(laptopHeight / 2);
-  var rowMargin = (laptopHeight / 2);
+  var backgroundWhiteHeight = $("#coffee-app-page .project-wireframes-section__background--white").outerHeight();
+  var backgroundGrayHeight = $("#coffee-app-page .project-wireframes-section__background--gray").outerHeight();
+  var wireframesSectionHeight = backgroundWhiteHeight + backgroundGrayHeight;
 
-  var rowMarginMobile = -(laptopHeight / 2);
-
-  var backgroundWhiteHeight = $("#coffee-app-page .project-desktop-mockups-section__background--white").outerHeight();
-  var backgroundGrayHeight = $("#coffee-app-page .project-desktop-mockups-section__background--gray").outerHeight();
-  var desktopMockupsSectionHeight = backgroundWhiteHeight + backgroundGrayHeight + rowMargin;
-
-  var borderHeight = backgroundWhiteHeight + backgroundGrayHeight;
-  var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight - (laptopHeight / 2);
+  var borderHeight = backgroundWhiteHeight + backgroundGrayHeight - 10;
+  var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight + 10;
 
   if (mediaQuerySmall.matches) {
     // window width is less than 767px
-    $("#coffee-app-page .project-desktop-mockups-section__border").css({"height": borderHeightMobile});
-
-    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"margin-bottom": rowMarginMobile});
+    $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeightMobile});
   } else if (mediaQueryMedium.matches) {
     // window width is less than 1025px
-    $("#coffee-app-page .project-desktop-mockups-section__border").css({"height": borderHeight});
-    $("#coffee-app-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
-
-    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#coffee-app-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+    $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeight});
+    $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": wireframesSectionHeight});
   } else {
     // window width is at least 1025px
-    $("#coffee-app-page .project-desktop-mockups-section__border").css({"height": borderHeight});
-    $("#coffee-app-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
-
-    $("#coffee-app-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#coffee-app-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+    $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeight});
+    $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": wireframesSectionHeight});
   }
 });
 
 
-// MOCKUPS SLIDER
+// PROJECT DOUBLE SLIDER
 
-$(".synced-slider-for").slick({
+$(document).ready(function(){
+  var doubleSliderSectionHeight = $("#coffee-app-page .project-double-slider-section").outerHeight();
+  var doubleSliderNavHeight = $("#coffee-app-page .project-double-slider-nav").outerHeight();
+  var doubleSliderDescriptionHeight = doubleSliderSectionHeight - doubleSliderNavHeight;
+  var doubleSliderImageHeight = (doubleSliderSectionHeight * 0.9) - doubleSliderNavHeight;
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+
+  } else {
+    // window width is at least 1025px
+    // $("#coffee-app-page .project-double-slider-description").css({"height": doubleSliderDescriptionHeight);
+    // $("#coffee-app-page .project-double-slider-for__slide img").css({"height": doubleSliderImageHeight);
+
+  }
+});
+
+$(".project-double-slider-for").slick({
  arrows: false,
- asNavFor: ".synced-slider-nav",
+ asNavFor: ".project-double-slider-nav",
  fade: true,
  slidesToScroll: 1,
  slidesToShow: 1
 });
 
-$(".synced-slider-nav").slick({
+$(".project-double-slider-nav").slick({
   arrows: true,
-  asNavFor: ".synced-slider-for",
+  asNavFor: ".project-double-slider-for",
   infinite: true,
   slidesToScroll: 1,
   slidesToShow: 3

@@ -78,8 +78,8 @@
     width: 35%;
 
     @include media-query(small) {
-      display: block;
       clear: both;
+      display: block;
       margin: 0 5%;
       text-align: center;
       width: 90%; // Since this is 90% of 90% it roughly equals the $width-page-mobile

@@ -19,31 +19,65 @@
 
 // OVERVIEW SECTION
 
-#about-page .overview-left {
-  @include media-query(medium) {
-    padding-top: $padding-section;
-  }
-
-  h2 {
-    letter-spacing: 0rem;
-    text-transform: none;
-  }
+#about-page .project-overview-section__line--overview {
+  border-color: $color-border-about-overview;
 }
 
-#about-page .overview-right {
-  @include media-query(medium) {
-    display: none;
-  }
-
-  img {
-    width: 50%;
-  }
+#about-page .project-overview-section h1 {
+  letter-spacing: 0rem;
+  text-transform: none;
 
   @include media-query(small) {
-    display: none;
+    font-size: 1.75rem;
   }
 }
 
+
+// MAIN IMAGE SECTION
+
+#about-page .project-main-image-section__background {
+  margin-bottom: -webkit-calc((100vh - 80px) / 8);
+  margin-bottom:  -moz-calc((100vh - 80px) / 8);
+  margin-bottom:    calc((100vh - 80px) / 8);
+
+  @include media-query(small) {
+    height: 35vh;
+    // Margin is being calculated in about.js
+  }
+
+  @include media-query(medium) {
+    margin-bottom: -webkit-calc(50vh / 8);
+    margin-bottom:  -moz-calc(50vh / 8);
+    margin-bottom:    calc(50vh / 8);
+  }
+}
+
+#about-page .project-main-image-section__image-container {
+  top: -webkit-calc((100vh - 80px) / 8);
+  top:  -moz-calc((100vh - 80px) / 8);
+  top:    calc((100vh - 80px) / 8);
+
+  @include media-query(small) {
+    top: -webkit-calc(50vh * (1/4));
+    top:  -moz-calc(50vh * (1/4));
+    top:    calc(50vh * (1/4));
+  }
+
+  @include media-query(medium) {
+    top: -webkit-calc(50vh / 8);
+    top:  -moz-calc(50vh / 8);
+    top:    calc(50vh / 8);
+  }
+}
+
+
+// MAIN BODY SECTION
+
+#about-page .main-body-section {
+  height: auto;
+  margin: 0 10%;
+  width: 80%;
+}
 
 // CONTACT SECTION
 

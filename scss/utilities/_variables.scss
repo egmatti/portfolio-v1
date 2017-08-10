@@ -95,6 +95,8 @@ $color-hero-background: $black;
 $color-page-title: $white;
 $color-blog-page-date: $white;
 
+$color-border-about-overview: $gray;
+
 $color-project-ballad-primary: $ballad-blue;
 $color-project-ballad-secondary: $ballad-magenta;
 
@@ -190,7 +192,6 @@ $border-footer: $border-size solid $color-footer-border;
 $border-directory-nav: $border-size solid $color-border;
 $border-project-hero: $border-size solid $white;
 $border-project-overview: $border-size solid $color-border;
-$border-project-details: $border-size solid $color-border;
 $border-project-desktop-mockups: $border-size solid $color-border;
 
 
@@ -245,8 +246,6 @@ $width-image-mobile: 90%;
 $width-image-tablet: 90%;
 $width-directory-nav-container: 350px;
 $width-directory-nav-container-tablet: 175px;
-$width-project-details-container: 350px;
-$width-project-details-container-tablet: 175px;
 
 
 // PATHS

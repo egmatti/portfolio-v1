@@ -23,7 +23,7 @@
     height: auto;
     max-height: 90%;
     object-fit: contain;
-    width: 60%;
+    width: 50%;
 
     @include media-query(small) {
       margin: 0 $margin-page-mobile-horizontal;
@@ -73,9 +73,9 @@
   @include e(div) {
     @include flexbox($direction: column, $align: flex-start);
     height: 100%;
-    // margin-top: $padding-div;
+    margin: 0 5%;
     text-align: justify;
-    width: 35%;
+    width: 40%;
 
     @include media-query(small) {
       clear: both;
@@ -88,7 +88,7 @@
     @include media-query(medium) {
       display: block;
       clear: both;
-      margin: $margin-body-text 5% 0 5%;
+      margin: 0 5%;
       text-align: center;
       width: 90%;
     }
@@ -96,23 +96,11 @@
     @include m(left) {
       @extend .project-float-section__div;
       float: left;
-      margin-right: 5%;
-
-      span {
-        font-weight: $font-weight-bold;
-        padding-right: 2.5px;
-      }
     }
 
     @include m(right) {
       @extend .project-float-section__div;
       float: right;
-      margin-left: 5%;
-
-      span {
-        font-weight: $font-weight-bold;
-        padding-right: 2.5px;
-      }
     }
   }
 }

@@ -1739,7 +1739,7 @@ footer .main-nav__item--first {
     height: auto;
     max-height: 90%;
     object-fit: contain;
-    width: 60%; }
+    width: 50%; }
     @media (min-width: 0px) and (max-width: 767px) {
       .project-float-section__image, .project-float-section__image--left, .project-float-section__image--right {
         margin: 0 10%;
@@ -1778,8 +1778,9 @@ footer .main-nav__item--first {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    margin: 0 5%;
     text-align: justify;
-    width: 35%; }
+    width: 40%; }
     @media (min-width: 0px) and (max-width: 767px) {
       .project-float-section__div, .project-float-section__div--left, .project-float-section__div--right {
         clear: both;
@@ -1791,21 +1792,13 @@ footer .main-nav__item--first {
       .project-float-section__div, .project-float-section__div--left, .project-float-section__div--right {
         display: block;
         clear: both;
-        margin: 25px 5% 0 5%;
+        margin: 0 5%;
         text-align: center;
         width: 90%; } }
     .project-float-section__div--left {
-      float: left;
-      margin-right: 5%; }
-      .project-float-section__div--left span {
-        font-weight: 700;
-        padding-right: 2.5px; }
+      float: left; }
     .project-float-section__div--right {
-      float: right;
-      margin-left: 5%; }
-      .project-float-section__div--right span {
-        font-weight: 700;
-        padding-right: 2.5px; }
+      float: right; }
 
 .project-flex-section {
   align-items: center;
@@ -1927,10 +1920,12 @@ footer .main-nav__item--first {
   width: 90%; }
   @media (min-width: 0px) and (max-width: 767px) {
     .project-double-slider-section {
-      height: auto; } }
+      height: auto;
+      margin-bottom: 0; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-double-slider-section {
-      height: auto; } }
+      height: auto;
+      margin-bottom: 0; } }
 
 .project-double-slider-description {
   align-items: flex-start;
@@ -1941,8 +1936,7 @@ footer .main-nav__item--first {
   height: -webkit-calc(100vh - 80px);
   height: -moz-calc(100vh - 80px);
   height: calc(100vh - 80px);
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 5%;
   text-align: justify;
   width: 45%; }
   @media (min-width: 0px) and (max-width: 767px) {
@@ -1950,14 +1944,16 @@ footer .main-nav__item--first {
       clear: both;
       display: block;
       float: none;
+      height: auto;
       margin: 0 5%;
       text-align: center;
       width: 90%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-double-slider-description {
+      clear: both;
       display: block;
       float: none;
-      clear: both;
+      height: auto;
       margin: 25px 5% 0 5%;
       text-align: center;
       width: 90%; } }
@@ -1982,14 +1978,19 @@ footer .main-nav__item--first {
       display: block;
       float: none;
       height: auto;
-      margin: 25px 20% 50px 20%;
+      margin: 50px 20%;
+      top: auto;
       width: 60%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-double-slider-for__slide img {
       display: block;
       float: none;
-      margin: 0 15%;
-      width: 70%; } }
+      max-height: -webkit-calc((50vh - 80px) * 0.9);
+      max-height: -moz-calc((50vh - 80px) * 0.9);
+      max-height: calc((50vh - 80px) * 0.9);
+      margin: 50px auto;
+      top: 0;
+      max-width: 90%; } }
 
 .project-double-slider-nav {
   margin: 0 35%;
@@ -2000,14 +2001,17 @@ footer .main-nav__item--first {
   width: 30%; }
   @media (min-width: 0px) and (max-width: 767px) {
     .project-double-slider-nav {
+      margin: 0 20%;
+      position: relative;
+      top: auto;
       width: 60%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-double-slider-nav {
       position: relative;
-      top: 7.5px;
-      width: 40%; } }
+      top: auto;
+      width: 30%; } }
   .project-double-slider-nav img {
-    left: 25%;
+    margin: 0 auto;
     object-fit: contain;
     position: relative;
     width: 50%; }
@@ -2106,16 +2110,18 @@ footer .main-nav__item--first {
   justify-content: space-around;
   flex-direction: row;
   height: auto;
-  margin: 0 5%;
+  margin: 0 12.5%;
   padding-top: 75px;
-  width: 90%; }
+  width: 75%; }
   @media (min-width: 0px) and (max-width: 767px) {
     .project-wireframes-section__row, .project-wireframes-section__row--last {
       align-items: center;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding: 0; } }
+      margin: 0 5%;
+      padding: 0;
+      width: 90%; } }
   .project-wireframes-section__row--last {
     padding-bottom: 75px; }
     @media (min-width: 0px) and (max-width: 767px) {
@@ -2126,9 +2132,9 @@ footer .main-nav__item--first {
   -webkit-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   -moz-box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
   box-shadow: 0px 0.5px 10px 0px rgba(11, 11, 11, 0.15);
-  max-height: -webkit-calc((100vh - 80px) * 0.9);
-  max-height: -moz-calc((100vh - 80px) * 0.9);
-  max-height: calc((100vh - 80px) * 0.9);
+  max-height: -webkit-calc((100vh - 80px) * 0.8);
+  max-height: -moz-calc((100vh - 80px) * 0.8);
+  max-height: calc((100vh - 80px) * 0.8);
   max-width: 45%;
   object-fit: contain; }
   @media (min-width: 0px) and (max-width: 767px) {
@@ -2136,7 +2142,12 @@ footer .main-nav__item--first {
       margin: 25px 0;
       max-height: none;
       max-width: none;
-      width: 90%; } }
+      width: 54%; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-wireframes-section__image {
+      max-height: -webkit-calc((50vh - 80px) * 0.8);
+      max-height: -moz-calc((50vh - 80px) * 0.8);
+      max-height: calc((50vh - 80px) * 0.8); } }
 
 .project-desktop-mockups-section {
   clear: both;
@@ -2942,6 +2953,10 @@ footer .main-nav__item--first {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  #ballad-page .project-float-section__div--left, #ballad-page .project-float-section__div--right {
+    margin: 25px 5% 0 5%; } }
 
 #bookshelf-page * ::selection {
   background: rgba(197, 79, 68, 0.25); }

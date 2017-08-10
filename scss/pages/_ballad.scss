@@ -93,3 +93,12 @@
 #ballad-page .project-background-image-section {
   @include bg-image ($image-folder: "projects", $bg-image: "ballad/keyboard");
 }
+
+
+// PROJECT FLOAT SECTION
+
+#ballad-page .project-float-section__div--left, #ballad-page .project-float-section__div--right {
+  @include media-query(medium) {
+    margin: $margin-body-text 5% 0 5%;
+  }
+}

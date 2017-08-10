@@ -102,13 +102,15 @@
 .project-wireframes-section__row {
   @include flexbox($direction: row, $justify: space-around);
   height: auto;
-  margin: 0 $margin-page-horizontal;
+  margin: 0 12.5%;
   padding-top: $padding-section;
-  width: $width-page;
+  width: 75%;
 
   @include media-query(small) {
     @include flexbox($direction: column, $justify: center);
+    margin: 0 5%;
     padding: 0;
+    width: 90%;
   }
 
   @include m(last) {
@@ -123,9 +125,9 @@
 
 .project-wireframes-section__image {
   @include box-shadow();
-  max-height: -webkit-calc((100vh - 80px) * 0.9);
-  max-height:   -moz-calc((100vh - 80px) * 0.9);
-  max-height:     calc((100vh - 80px) * 0.9);
+  max-height: -webkit-calc((100vh - 80px) * 0.8);
+  max-height:   -moz-calc((100vh - 80px) * 0.8);
+  max-height:     calc((100vh - 80px) * 0.8);
   max-width: 45%;
   object-fit: contain;
 
@@ -133,6 +135,12 @@
     margin: $margin-body-text 0;
     max-height: none;
     max-width: none;
-    width: 90%;
+    width: 54%;
+  }
+
+  @include media-query(medium) {
+    max-height: -webkit-calc((50vh - 80px) * 0.8);
+    max-height:   -moz-calc((50vh - 80px) * 0.8);
+    max-height:     calc((50vh - 80px) * 0.8);
   }
 }

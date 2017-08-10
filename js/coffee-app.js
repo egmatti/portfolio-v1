@@ -48,26 +48,6 @@ $(document).ready(function(){
 
 // PROJECT DOUBLE SLIDER
 
-$(document).ready(function(){
-  var doubleSliderSectionHeight = $("#coffee-app-page .project-double-slider-section").outerHeight();
-  var doubleSliderNavHeight = $("#coffee-app-page .project-double-slider-nav").outerHeight();
-  var doubleSliderDescriptionHeight = doubleSliderSectionHeight - doubleSliderNavHeight;
-  var doubleSliderImageHeight = (doubleSliderSectionHeight * 0.9) - doubleSliderNavHeight;
-
-  if (mediaQuerySmall.matches) {
-    // window width is less than 767px
-
-  } else if (mediaQueryMedium.matches) {
-    // window width is less than 1025px
-
-  } else {
-    // window width is at least 1025px
-    // $("#coffee-app-page .project-double-slider-description").css({"height": doubleSliderDescriptionHeight);
-    // $("#coffee-app-page .project-double-slider-for__slide img").css({"height": doubleSliderImageHeight);
-
-  }
-});
-
 $(".project-double-slider-for").slick({
  arrows: false,
  asNavFor: ".project-double-slider-nav",

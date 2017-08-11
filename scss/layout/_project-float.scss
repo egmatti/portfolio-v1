@@ -3,6 +3,7 @@
 // ==========================================
 
 .project-float-section {
+  // background: $gray;
   clear: both;
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);
@@ -18,33 +19,25 @@
     height: auto;
   }
 
-  @include e(image) {
-    @include vertical-align();
-    height: auto;
-    max-height: 90%;
-    object-fit: contain;
+  @include e(image-container) {
+    @include flexbox();
+    height: 100%;
     width: 50%;
 
     @include media-query(small) {
+      height: auto;
       margin: 0 $margin-page-mobile-horizontal;
-      top: 0;
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none;
       width: $width-page-mobile;
     }
 
     @include media-query(medium) {
+      height: auto;
       margin: 0 15%;
-      top: 0;
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none;
       width: 70%;
     }
 
     @include m(left) {
-      @extend .project-float-section__image;
+      @extend .project-float-section__image-container;
       float: left;
 
       @include media-query(small) {
@@ -57,7 +50,7 @@
     }
 
     @include m(right) {
-      @extend .project-float-section__image;
+      @extend .project-float-section__image-container;
       float: right;
 
       @include media-query(small) {
@@ -68,6 +61,11 @@
         float: none;
       }
     }
+  }
+
+  @include e(image) {
+    object-fit: contain;
+    width: 100%;
   }
 
   @include e(div) {

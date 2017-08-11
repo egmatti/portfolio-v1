@@ -1594,48 +1594,41 @@ footer .main-nav__item--first {
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-float-section {
       height: auto; } }
-  .project-float-section__image, .project-float-section__image--left, .project-float-section__image--right {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    height: auto;
-    max-height: 90%;
-    object-fit: contain;
+  .project-float-section__image-container, .project-float-section__image-container--left, .project-float-section__image-container--right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
     width: 50%; }
     @media (min-width: 0px) and (max-width: 767px) {
-      .project-float-section__image, .project-float-section__image--left, .project-float-section__image--right {
+      .project-float-section__image-container, .project-float-section__image-container--left, .project-float-section__image-container--right {
+        height: auto;
         margin: 0 10%;
-        top: 0;
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
         width: 80%; } }
     @media (min-width: 768px) and (max-width: 1025px) {
-      .project-float-section__image, .project-float-section__image--left, .project-float-section__image--right {
+      .project-float-section__image-container, .project-float-section__image-container--left, .project-float-section__image-container--right {
+        height: auto;
         margin: 0 15%;
-        top: 0;
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
         width: 70%; } }
-    .project-float-section__image--left {
+    .project-float-section__image-container--left {
       float: left; }
       @media (min-width: 0px) and (max-width: 767px) {
-        .project-float-section__image--left {
+        .project-float-section__image-container--left {
           float: none; } }
       @media (min-width: 768px) and (max-width: 1025px) {
-        .project-float-section__image--left {
+        .project-float-section__image-container--left {
           float: none; } }
-    .project-float-section__image--right {
+    .project-float-section__image-container--right {
       float: right; }
       @media (min-width: 0px) and (max-width: 767px) {
-        .project-float-section__image--right {
+        .project-float-section__image-container--right {
           float: none; } }
       @media (min-width: 768px) and (max-width: 1025px) {
-        .project-float-section__image--right {
+        .project-float-section__image-container--right {
           float: none; } }
+  .project-float-section__image {
+    object-fit: contain;
+    width: 100%; }
   .project-float-section__div, .project-float-section__div--left, .project-float-section__div--right {
     align-items: flex-start;
     display: flex;

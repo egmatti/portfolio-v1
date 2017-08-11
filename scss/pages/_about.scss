@@ -32,6 +32,10 @@
   }
 }
 
+#about-page .project-overview-section img {
+  height: 100px;
+}
+
 
 // MAIN IMAGE SECTION
 
@@ -75,9 +79,82 @@
 
 #about-page .main-body-section {
   height: auto;
-  margin: 0 10%;
-  width: 80%;
+  width: 100%;
 }
+
+#about-page .main-body-section .left-column {
+  @include media-query(small) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+}
+
+#about-page .main-body-section__description {
+  margin-left: $margin-section-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0 $margin-page-tablet-horizontal;
+    width: $width-page-tablet;
+  }
+}
+
+#about-page .main-body-section .right-column {
+  @include media-query(small) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+}
+
+#about-page .main-body-section .button-div {
+  height: 100%;
+}
+
+#about-page .main-body-section .button-container {
+  @include flexbox();
+  height: 100%;
+  margin: -75px 0;
+  padding-bottom: 75px;
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $padding-div 0 0 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    padding: $padding-div 0 0 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
 
 // CONTACT SECTION
 

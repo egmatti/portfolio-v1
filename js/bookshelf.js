@@ -29,6 +29,15 @@ $(document).ready(function(){
 });
 
 
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
+sr.reveal('.project-mobile-mockups-section__image', {delay: 250}, 175);
+sr.reveal('.project-desktop-mockups-section__image--laptop', {delay: 250});
+sr.reveal('.project-desktop-mockups-section__row--second img', {delay: 250}, 175);
+sr.reveal('.project-desktop-mockups-section__row--last img', {delay: 250}, 175);
+
+
 // PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING
 
 $(document).ready(function(){

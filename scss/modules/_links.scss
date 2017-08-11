@@ -6,10 +6,18 @@
   width: -webkit-calc((100% - 50px) / 2);
   width:  -moz-calc((100% - 50px) / 2);
   width:    calc((100% - 50px) / 2); // Half of width of content section minus margin
+
+  @include media-query(small) {
+    width: 100%;
+  }
 }
 
 .directory__link--other-row {
   width: -webkit-calc((100% - 100px) / 3);
   width:  -moz-calc((100% - 100px) / 3);
   width:    calc((100% - 100px) / 3); // Third of width of content section minus margins
+
+  @include media-query(small) {
+    width: 100%;
+  }
 }

@@ -19,3 +19,9 @@ $(document).ready(function(){
 
   }
 });
+
+
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
+sr.reveal('.project-float-section img', {delay: 250});

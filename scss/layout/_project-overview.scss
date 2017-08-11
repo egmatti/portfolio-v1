@@ -53,14 +53,17 @@
 
 .project-overview-section__description {
   @include flexbox ($direction: column);
-  padding: 0 25%;
+  padding: 130px 25% 40px 25%;
+  visibility: hidden;
 
   @include media-query(small) {
     padding: $padding-div $margin-page-mobile-horizontal;
+    visibility: visible;
   }
 
   @include media-query(medium) {
     padding: 100px $margin-page-tablet-horizontal;
+    visibility: visible;
   }
 }
 
@@ -76,6 +79,20 @@
   margin-top: $margin-body-text;
 }
 
-.project-overview-section .button {
-  margin-top: $padding-div;
+.project-overview-section .button-container {
+  margin-top: $padding-div + 30px;
+  margin-bottom: -30px;
+  visibility: hidden;
+
+  @include media-query(small) {
+    margin-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
+    margin-top: $padding-div;
+    margin-bottom: 0;
+    visibility: visible;
+  }
 }

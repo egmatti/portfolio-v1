@@ -1440,13 +1440,16 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 25%; }
+  padding: 130px 25% 40px 25%;
+  visibility: hidden; }
   @media (min-width: 0px) and (max-width: 767px) {
     .project-overview-section__description {
-      padding: 50px 10%; } }
+      padding: 50px 10%;
+      visibility: visible; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .project-overview-section__description {
-      padding: 100px 10%; } }
+      padding: 100px 10%;
+      visibility: visible; } }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .project-overview-section h1, .project-overview-section .main-nav a, .main-nav .project-overview-section a, .project-overview-section .main-nav-mobile a, .main-nav-mobile .project-overview-section a {
@@ -1457,8 +1460,20 @@ footer .main-nav__item--first {
   object-fit: contain;
   margin-top: 25px; }
 
-.project-overview-section .button {
-  margin-top: 50px; }
+.project-overview-section .button-container {
+  margin-top: 80px;
+  margin-bottom: -30px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-overview-section .button-container {
+      margin-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-overview-section .button-container {
+      margin-top: 50px;
+      margin-bottom: 0;
+      visibility: visible; } }
 
 .project-main-image-section {
   clear: both;

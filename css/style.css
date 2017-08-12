@@ -1654,6 +1654,7 @@ footer .main-nav__item--first {
         .project-float-section__image-container--right {
           float: none; } }
   .project-float-section__image {
+    max-height: 90%;
     object-fit: contain;
     width: 100%; }
   .project-float-section__div, .project-float-section__div--left, .project-float-section__div--right {

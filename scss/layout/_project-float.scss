@@ -64,6 +64,7 @@
   }
 
   @include e(image) {
+    max-height: 90%;
     object-fit: contain;
     width: 100%;
   }

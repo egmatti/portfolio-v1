@@ -45,7 +45,15 @@
 
 #dogtooth-cover-art-page .project-overview-section img {
   height: 110px;
-  margin-top: $padding-div;
+  margin-top: $padding-div + 30px;
+
+  @include media-query(small) {
+    margin-top: $padding-div;
+  }
+
+  @include media-query(medium) {
+    margin-top: $padding-div;
+  }
 }
 
 

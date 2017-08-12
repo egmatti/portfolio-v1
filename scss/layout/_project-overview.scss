@@ -76,7 +76,21 @@
 .project-overview-section img {
   height: 150px;
   object-fit: contain;
-  margin-top: $margin-body-text;
+  margin-top: $margin-body-text + 30px;
+  margin-bottom: -30px;
+  visibility: hidden;
+
+  @include media-query(small) {
+    margin-top: $margin-body-text;
+    margin-bottom: 0;
+    visibility: visible;
+  }
+
+  @include media-query(medium) {
+    margin-top: $margin-body-text;
+    margin-bottom: 0;
+    visibility: visible;
+  }
 }
 
 .project-overview-section .button-container {

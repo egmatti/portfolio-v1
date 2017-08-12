@@ -1458,7 +1458,19 @@ footer .main-nav__item--first {
 .project-overview-section img {
   height: 150px;
   object-fit: contain;
-  margin-top: 25px; }
+  margin-top: 55px;
+  margin-bottom: -30px;
+  visibility: hidden; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .project-overview-section img {
+      margin-top: 25px;
+      margin-bottom: 0;
+      visibility: visible; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .project-overview-section img {
+      margin-top: 25px;
+      margin-bottom: 0;
+      visibility: visible; } }
 
 .project-overview-section .button-container {
   margin-top: 80px;
@@ -3170,7 +3182,13 @@ footer .main-nav__item--first {
 
 #dogtooth-cover-art-page .project-overview-section img {
   height: 110px;
-  margin-top: 50px; }
+  margin-top: 80px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #dogtooth-cover-art-page .project-overview-section img {
+      margin-top: 50px; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #dogtooth-cover-art-page .project-overview-section img {
+      margin-top: 50px; } }
 
 #dogtooth-cover-art-page .project-flex-section img {
   height: 75%; }
@@ -3244,7 +3262,13 @@ footer .main-nav__item--first {
 
 #stillwater-shirt-page .project-overview-section img {
   height: 75px;
-  margin-top: 50px; }
+  margin-top: 80px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #stillwater-shirt-page .project-overview-section img {
+      margin-top: 50px; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #stillwater-shirt-page .project-overview-section img {
+      margin-top: 50px; } }
 
 #toptix-page * ::selection {
   background: rgba(48, 76, 161, 0.25); }
@@ -3274,7 +3298,13 @@ footer .main-nav__item--first {
 
 #toptix-page .project-overview-section img {
   height: 100px;
-  margin-top: 50px; }
+  margin-top: 80px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #toptix-page .project-overview-section img {
+      margin-top: 50px; } }
+  @media (min-width: 768px) and (max-width: 1025px) {
+    #toptix-page .project-overview-section img {
+      margin-top: 50px; } }
 
 #toptix-page .project-background-image-section {
   background: url("../images/projects/toptix/concert.png");

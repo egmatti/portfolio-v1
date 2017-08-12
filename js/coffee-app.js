@@ -2,6 +2,18 @@
 // COFFEE APP PAGE
 // ==========================================
 
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
+sr.reveal('.project-overview-section__line--hero', {distance: "-25px", duration: 1000});
+sr.reveal('.project-overview-section__line--overview', {delay: 50, distance: "-25px", duration: 1000});
+sr.reveal('.project-mobile-mockups-section__image', {delay: 250}, 175);
+sr.reveal('.project-wireframes-section__row img', {delay: 250}, 175);
+sr.reveal('.project-wireframes-section__row--last img', {delay: 250}, 175);
+sr.reveal('.project-double-slider-for__slide img', {delay: 250});
+sr.reveal('.project-double-slider-nav img', {delay: 250}, 175);
+
+
 // PROJECT OVERVIEW FADE IN ON SCROLL
 
 // Get the position from the top of the page
@@ -55,16 +67,6 @@ $(document).ready(function(){
 
   }
 });
-
-
-// SCROLL REVEAL
-
-window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
-sr.reveal('.project-mobile-mockups-section__image', {delay: 250}, 175);
-sr.reveal('.project-wireframes-section__row img', {delay: 250}, 175);
-sr.reveal('.project-wireframes-section__row--last img', {delay: 250}, 175);
-sr.reveal('.project-double-slider-for__slide img', {delay: 250});
-sr.reveal('.project-double-slider-nav img', {delay: 250}, 175);
 
 
 // PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING

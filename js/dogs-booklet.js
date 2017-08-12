@@ -2,6 +2,13 @@
 // DOGS BOOKLET PAGE
 // ==========================================
 
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({distance: "30px", duration: 500, scale: 0});
+sr.reveal('.project-overview-section__line--hero', {distance: "-25px", duration: 1000});
+sr.reveal('.project-overview-section__line--overview', {delay: 50, distance: "-25px", duration: 1000});
+
+
 // PROJECT OVERVIEW FADE IN ON SCROLL
 
 // Get the position from the top of the page
